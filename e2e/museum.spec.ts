@@ -1,6 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-import content from '../src/content/modules.json';
+import content from '../src/content/modules.json' with { type: 'json' };
 const slug = (id: string) => id === 'clima' ? 'clima-vegetacao' : id;
 async function noOverflow(page: Page) { expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true); }
 test('seis percursos completos: 30 slides e 18 respostas corretas', async ({ page }) => {
