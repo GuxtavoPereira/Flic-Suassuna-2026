@@ -1,0 +1,35 @@
+{
+  "framework": "vite",
+  "buildCommand": "npm run lint && npm test && npm run build && npm test && npm run test:e2e",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/((?!api(?:/|$)|assets/|icons/|sw\\.js|workbox-|manifest\\.webmanifest).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}

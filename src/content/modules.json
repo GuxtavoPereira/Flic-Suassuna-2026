@@ -1,0 +1,523 @@
+{
+  "project": "Ariano Suassuna e o Sertão — FLIC 2026",
+  "version": "1.0-editorial",
+  "language": "pt-BR",
+  "modules": [
+    {
+      "id": "clima",
+      "title": "Clima e Vegetação",
+      "subtitle": "O sertão muda com a chuva.",
+      "cover": "/assets/xilogravuras/clima.webp",
+      "slides": [
+        {
+          "id": "clima-01",
+          "title": "O sertão é só seca?",
+          "body": "Muitas áreas do sertão têm clima semiárido: faz calor e as chuvas são irregulares. Mas também há rios, serras, plantações e vida.",
+          "curiosity": "Semiárido não significa ausência total de chuva.",
+          "visualKey": "sol-e-nuvens",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "clima-02",
+          "title": "A Caatinga é especial",
+          "body": "A Caatinga é um bioma exclusivamente brasileiro. Suas plantas e seus animais desenvolveram maneiras de enfrentar longos períodos secos.",
+          "curiosity": "Uma parte da vegetação perde folhas para reduzir a perda de água.",
+          "visualKey": "caatinga",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "clima-03",
+          "title": "Quando a chuva chega",
+          "body": "Depois das chuvas, muitas plantas brotam, florescem e deixam a paisagem mais verde. A transformação pode ser rápida, mas varia de lugar para lugar.",
+          "curiosity": "A aparência seca não significa que a vegetação esteja morta.",
+          "visualKey": "chuva",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "clima-04",
+          "title": "Plantas resistentes",
+          "body": "Mandacarus e xique-xiques armazenam água em seus tecidos e possuem espinhos. Outras plantas têm raízes, folhas ou ciclos de vida adaptados à escassez de água.",
+          "curiosity": "Nem todas as espécies da Caatinga são cactos.",
+          "visualKey": "mandacaru",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "clima-05",
+          "title": "O sertão tem muitas paisagens",
+          "body": "O relevo reúne depressões, planaltos e serras. O Nordeste também possui outros ambientes, como o litoral e a Zona da Mata, além do sertão.",
+          "curiosity": "Nordeste e sertão não são sinônimos.",
+          "visualKey": "relevo",
+          "status": "draft-editorial"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "clima-q1",
+          "question": "Qual bioma é exclusivamente brasileiro?",
+          "options": [
+            "Caatinga",
+            "Pampa",
+            "Pantanal",
+            "Amazônia"
+          ],
+          "correctIndex": 0,
+          "feedback": "A Caatinga ocorre somente no Brasil."
+        },
+        {
+          "id": "clima-q2",
+          "question": "O que acontece com muitas plantas após chover?",
+          "options": [
+            "Todas desaparecem",
+            "Podem brotar e florescer",
+            "Deixam de crescer para sempre",
+            "Viraram árvores tropicais"
+          ],
+          "correctIndex": 1,
+          "feedback": "A resposta à chuva varia entre as espécies."
+        },
+        {
+          "id": "clima-q3",
+          "question": "Qual frase está correta?",
+          "options": [
+            "Nunca chove no sertão",
+            "Todo o Nordeste é semiárido",
+            "A chuva no semiárido é irregular",
+            "Não existe vegetação na Caatinga"
+          ],
+          "correctIndex": 2,
+          "feedback": "Irregularidade de chuvas é uma característica do semiárido."
+        }
+      ]
+    },
+    {
+      "id": "cultura",
+      "title": "Cultura do Sertão",
+      "subtitle": "Vozes, ritmos e histórias.",
+      "cover": "/assets/xilogravuras/cultura.webp",
+      "slides": [
+        {
+          "id": "cultura-01",
+          "title": "Histórias que viajam",
+          "body": "A oralidade preserva histórias, causos e saberes transmitidos entre gerações. Cada comunidade contribui com suas próprias versões e lembranças.",
+          "curiosity": "Contar histórias também é preservar memória.",
+          "visualKey": "oralidade",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "cultura-02",
+          "title": "Cordel e xilogravura",
+          "body": "Muitos folhetos de cordel apresentam poemas narrativos e capas ilustradas por gravuras. A xilogravura usa uma matriz de madeira entalhada para imprimir imagens.",
+          "curiosity": "Nem todo cordel tem xilogravura; os formatos variam.",
+          "visualKey": "cordel",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "cultura-03",
+          "title": "O som do sertão",
+          "body": "Cantorias, repente, baião, forró e xote fazem parte de diferentes tradições nordestinas. Instrumentos e estilos mudam conforme o lugar.",
+          "curiosity": "No repente, versos podem ser criados no momento.",
+          "visualKey": "musica",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "cultura-04",
+          "title": "A festa reúne pessoas",
+          "body": "Festas juninas, quadrilhas e celebrações locais movimentam comidas, músicas e encontros comunitários.",
+          "curiosity": "A cultura regional é diversa e está sempre mudando.",
+          "visualKey": "festa",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "cultura-05",
+          "title": "A arte de muitas raízes",
+          "body": "Ariano Suassuna valorizou manifestações populares como a literatura de cordel e o teatro. Essa inspiração foi essencial ao Movimento Armorial.",
+          "curiosity": "O Movimento Armorial foi lançado em Recife em 1970.",
+          "visualKey": "armorial",
+          "status": "draft-editorial"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "cultura-q1",
+          "question": "O que é xilogravura?",
+          "options": [
+            "Pintura digital",
+            "Impressão com matriz de madeira",
+            "Fotografia",
+            "Dança"
+          ],
+          "correctIndex": 1,
+          "feedback": "Na xilogravura, a matriz entalhada recebe tinta para imprimir."
+        },
+        {
+          "id": "cultura-q2",
+          "question": "O que é repente?",
+          "options": [
+            "Versos improvisados em desafios de cantoria",
+            "Tipo de solo",
+            "Nome de um rio",
+            "Receita"
+          ],
+          "correctIndex": 0,
+          "feedback": "O improviso poético é central em muitas tradições de repente."
+        },
+        {
+          "id": "cultura-q3",
+          "question": "Qual movimento foi lançado por Ariano em 1970?",
+          "options": [
+            "Modernismo",
+            "Armorial",
+            "Tropicalismo",
+            "Concretismo"
+          ],
+          "correctIndex": 1,
+          "feedback": "O Armorial buscava diálogo entre arte erudita e raízes populares."
+        }
+      ]
+    },
+    {
+      "id": "personalidades",
+      "title": "Figuras Influentes",
+      "subtitle": "Pessoas que ajudaram a contar a região.",
+      "cover": "/assets/xilogravuras/personalidades.webp",
+      "slides": [
+        {
+          "id": "personalidades-01",
+          "title": "A voz de Luiz Gonzaga",
+          "body": "Nascido em Exu, Pernambuco, Luiz Gonzaga popularizou o baião e levou referências do Nordeste para diferentes públicos.",
+          "curiosity": "Seu repertório inclui temas da seca, da saudade e das festas.",
+          "visualKey": "luiz-gonzaga",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "personalidades-02",
+          "title": "A poesia de Patativa",
+          "body": "Patativa do Assaré, poeta cearense, retratou experiências e desigualdades sociais com uma voz marcante da poesia popular.",
+          "curiosity": "Poesia também é uma forma de interpretar a história.",
+          "visualKey": "patativa",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "personalidades-03",
+          "title": "Rachel de Queiroz",
+          "body": "A escritora cearense publicou O Quinze, romance que aborda os efeitos da seca de 1915 sobre personagens e famílias.",
+          "curiosity": "A literatura pode mostrar diferentes perspectivas de um mesmo problema.",
+          "visualKey": "rachel",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "personalidades-04",
+          "title": "Mestre Vitalino",
+          "body": "O artista de Caruaru ficou conhecido pelas figuras de barro que representam cenas e personagens do cotidiano popular.",
+          "curiosity": "Arte também registra modos de vida.",
+          "visualKey": "vitalino",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "personalidades-05",
+          "title": "Muitas histórias, muitas vozes",
+          "body": "Antônio Conselheiro, Lampião e Maria Bonita integram episódios complexos da história regional. É preciso conhecer o contexto sem romantizar a violência.",
+          "curiosity": "Personalidades são diferentes entre si: nem todas representam as mesmas ideias.",
+          "visualKey": "historia",
+          "status": "draft-editorial"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "personalidades-q1",
+          "question": "Quem popularizou o baião nacionalmente?",
+          "options": [
+            "Luiz Gonzaga",
+            "Mestre Vitalino",
+            "Ariano Suassuna",
+            "Antônio Conselheiro"
+          ],
+          "correctIndex": 0,
+          "feedback": "Luiz Gonzaga foi figura central na divulgação do baião."
+        },
+        {
+          "id": "personalidades-q2",
+          "question": "Qual artista se destacou com figuras de barro?",
+          "options": [
+            "Rachel de Queiroz",
+            "Mestre Vitalino",
+            "Patativa do Assaré",
+            "João Grilo"
+          ],
+          "correctIndex": 1,
+          "feedback": "Mestre Vitalino representava cenas do cotidiano em cerâmica."
+        },
+        {
+          "id": "personalidades-q3",
+          "question": "Quem escreveu O Quinze?",
+          "options": [
+            "Rachel de Queiroz",
+            "Maria Bonita",
+            "Patativa do Assaré",
+            "Zélia Suassuna"
+          ],
+          "correctIndex": 0,
+          "feedback": "O romance aborda experiências relacionadas à seca de 1915."
+        }
+      ]
+    },
+    {
+      "id": "linha-do-tempo",
+      "title": "Linha do Tempo",
+      "subtitle": "A história em marcos.",
+      "cover": "/assets/xilogravuras/linha-do-tempo.webp",
+      "slides": [
+        {
+          "id": "linha-do-tempo-01",
+          "title": "Histórias antes de Ariano",
+          "body": "O Nordeste já reunia tradições de cantoria, teatro, festas e folhetos populares antes de Ariano Suassuna nascer.",
+          "curiosity": "As manifestações culturais não têm um único criador.",
+          "visualKey": "tradicoes",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "linha-do-tempo-02",
+          "title": "Canudos, 1896–1897",
+          "body": "A Guerra de Canudos ocorreu no sertão baiano e revela conflitos sociais e políticos do período republicano.",
+          "curiosity": "Este é um contexto histórico regional, não uma inspiração direta comprovada para toda obra de Ariano.",
+          "visualKey": "canudos",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "linha-do-tempo-03",
+          "title": "Ariano nasce, 1927",
+          "body": "Ariano Suassuna nasceu na Paraíba. Sua vida e seu contato com expressões populares ajudaram a formar sua visão artística.",
+          "curiosity": "Sua trajetória liga diferentes cidades e experiências nordestinas.",
+          "visualKey": "nascimento",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "linha-do-tempo-04",
+          "title": "O teatro ganha força, 1955",
+          "body": "Ariano escreveu Auto da Compadecida em 1955. A peça mistura humor, tradição popular e questões humanas.",
+          "curiosity": "A primeira encenação ocorreu em 1956.",
+          "visualKey": "auto",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "linha-do-tempo-05",
+          "title": "Armorial e Pedra do Reino",
+          "body": "O Movimento Armorial foi lançado em 1970. Em 1971, Ariano publicou o Romance d’A Pedra do Reino, rico em imaginação e referências sertanejas.",
+          "curiosity": "São marcos diferentes: um movimento artístico e um romance.",
+          "visualKey": "pedra-do-reino",
+          "status": "draft-editorial"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "linha-do-tempo-q1",
+          "question": "Em que ano o Movimento Armorial foi lançado?",
+          "options": [
+            "1927",
+            "1955",
+            "1970",
+            "2014"
+          ],
+          "correctIndex": 2,
+          "feedback": "O lançamento oficial ocorreu em 18 de outubro de 1970."
+        },
+        {
+          "id": "linha-do-tempo-q2",
+          "question": "Em que ano foi escrita Auto da Compadecida?",
+          "options": [
+            "1955",
+            "1971",
+            "1897",
+            "2000"
+          ],
+          "correctIndex": 0,
+          "feedback": "A obra foi escrita em 1955."
+        },
+        {
+          "id": "linha-do-tempo-q3",
+          "question": "Onde ocorreu a Guerra de Canudos?",
+          "options": [
+            "Sertão baiano",
+            "Litoral paulista",
+            "Amazônia",
+            "Pantanal"
+          ],
+          "correctIndex": 0,
+          "feedback": "Canudos ficava no interior da Bahia."
+        }
+      ]
+    },
+    {
+      "id": "culinaria",
+      "title": "Culinária Nordestina",
+      "subtitle": "Sabores e memórias.",
+      "cover": "/assets/xilogravuras/culinaria.webp",
+      "slides": [
+        {
+          "id": "culinaria-01",
+          "title": "Comida também conta histórias",
+          "body": "Pratos e ingredientes revelam encontros entre tradições indígenas, africanas e europeias, com diferenças importantes entre estados e localidades.",
+          "curiosity": "Não existe uma única culinária nordestina.",
+          "visualKey": "mesa",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "culinaria-02",
+          "title": "O milho é protagonista",
+          "body": "Cuscuz e preparações com milho aparecem no cotidiano e nas festas, com receitas que mudam de família para família.",
+          "curiosity": "Festas juninas costumam reunir diferentes comidas de milho.",
+          "visualKey": "milho",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "culinaria-03",
+          "title": "Raízes e resistência",
+          "body": "Macaxeira, mandioca ou aipim são nomes regionais associados a variedades e usos da mandioca, ingrediente importante em muitas mesas brasileiras.",
+          "curiosity": "Um ingrediente pode receber nomes diferentes.",
+          "visualKey": "macaxeira",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "culinaria-04",
+          "title": "Dois ingredientes, muitos sabores",
+          "body": "O baião de dois costuma combinar arroz e feijão e pode ganhar diferentes complementos, conforme a região e a receita.",
+          "curiosity": "Comida tradicional também se reinventa.",
+          "visualKey": "baiao",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "culinaria-05",
+          "title": "Frutos do semiárido",
+          "body": "O umbuzeiro é uma árvore adaptada ao semiárido. Seus frutos aparecem em doces, bebidas e outras preparações.",
+          "curiosity": "O umbu é associado à biodiversidade da Caatinga.",
+          "visualKey": "umbu",
+          "status": "draft-editorial"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "culinaria-q1",
+          "question": "Qual prato costuma combinar arroz e feijão?",
+          "options": [
+            "Baião de dois",
+            "Pamonha",
+            "Rapadura",
+            "Tapioca"
+          ],
+          "correctIndex": 0,
+          "feedback": "O baião de dois tem variações regionais."
+        },
+        {
+          "id": "culinaria-q2",
+          "question": "Qual fruto se associa à Caatinga?",
+          "options": [
+            "Umbu",
+            "Maçã europeia",
+            "Mirtilo",
+            "Cereja"
+          ],
+          "correctIndex": 0,
+          "feedback": "O umbuzeiro é uma espécie adaptada ao semiárido."
+        },
+        {
+          "id": "culinaria-q3",
+          "question": "Qual afirmação é verdadeira?",
+          "options": [
+            "Todas as receitas são iguais",
+            "Há diversidade culinária no Nordeste",
+            "Milho não é consumido",
+            "Não há alimentos da Caatinga"
+          ],
+          "correctIndex": 1,
+          "feedback": "A culinária nordestina muda entre estados e comunidades."
+        }
+      ]
+    },
+    {
+      "id": "ariano",
+      "title": "Vida e Obras de Ariano Suassuna",
+      "subtitle": "O palco, o livro e a imaginação.",
+      "cover": "/assets/xilogravuras/ariano.webp",
+      "slides": [
+        {
+          "id": "ariano-01",
+          "title": "Quem foi Ariano?",
+          "body": "Nascido em 1927, na Paraíba, Ariano Suassuna foi escritor, dramaturgo, professor e defensor da valorização das culturas populares brasileiras.",
+          "curiosity": "Ele integrou a Academia Brasileira de Letras.",
+          "visualKey": "retrato",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "ariano-02",
+          "title": "Auto da Compadecida",
+          "body": "Escrita em 1955, a peça apresenta personagens como João Grilo e Chicó e combina humor, religiosidade e crítica social.",
+          "curiosity": "Personagens astutos podem revelar injustiças e contradições.",
+          "visualKey": "auto",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "ariano-03",
+          "title": "O Santo e a Porca",
+          "body": "Na peça de 1957, a avareza e a relação das pessoas com o dinheiro são tratadas por meio da comédia.",
+          "curiosity": "O riso também pode funcionar como crítica.",
+          "visualKey": "porca",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "ariano-04",
+          "title": "A Pedra do Reino",
+          "body": "Publicado em 1971, o romance constrói um universo narrativo de fantasia, memória, referências populares e imaginação sertaneja.",
+          "curiosity": "A obra mistura diferentes tradições e formas narrativas.",
+          "visualKey": "pedra",
+          "status": "draft-editorial"
+        },
+        {
+          "id": "ariano-05",
+          "title": "O Movimento Armorial",
+          "body": "Lançado em 1970, o movimento buscou criar uma arte brasileira erudita ligada às raízes populares, envolvendo música, literatura e artes visuais.",
+          "curiosity": "Cordel e xilogravura estão entre suas referências.",
+          "visualKey": "armorial",
+          "status": "draft-editorial"
+        }
+      ],
+      "quiz": [
+        {
+          "id": "ariano-q1",
+          "question": "Qual personagem aparece em Auto da Compadecida?",
+          "options": [
+            "João Grilo",
+            "Dom Casmurro",
+            "Macunaíma",
+            "Iracema"
+          ],
+          "correctIndex": 0,
+          "feedback": "João Grilo é um personagem central da peça."
+        },
+        {
+          "id": "ariano-q2",
+          "question": "Qual obra foi publicada em 1971?",
+          "options": [
+            "O Quinze",
+            "Romance d’A Pedra do Reino",
+            "O Santo e a Porca",
+            "Uma Mulher Vestida de Sol"
+          ],
+          "correctIndex": 1,
+          "feedback": "O romance foi publicado em 1971."
+        },
+        {
+          "id": "ariano-q3",
+          "question": "Qual é uma característica do teatro de Ariano?",
+          "options": [
+            "Apenas histórias espaciais",
+            "Humor e referências populares",
+            "Ausência de personagens",
+            "Textos sem diálogo"
+          ],
+          "correctIndex": 1,
+          "feedback": "O teatro de Ariano incorpora humor, crítica e tradições populares."
+        }
+      ]
+    }
+  ]
+}

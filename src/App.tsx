@@ -1,0 +1,127 @@
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react';
+import { Link, Navigate, Outlet, Route, Routes, useLocation, useNavigate, useParams } from 'react-router-dom';
+import { ArrowDown, ArrowLeft, ArrowRight, BookOpen, Check, CheckCircle2, Compass, Expand, Home as HomeIcon, Info, Leaf, Maximize, RotateCcw, Settings2, Sparkles, Trophy, WifiOff, X, XCircle } from 'lucide-react';
+import { motion, MotionConfig } from 'motion/react';
+import { useRegisterSW } from 'virtual:pwa-register/react';
+import { findTheme, literature, sources, themes } from './content';
+import { allowedQuote, slideIndex, type Theme } from './domain/content';
+import { answerQuestion, quizScore } from './domain/quiz';
+import { useSession } from './app-state';
+import { scoreRepository } from './services/scores';
+import { Artwork } from './components/Artwork';
+import { Sources } from './components/Sources';
+import { ClimateExperience, TimelineExperience } from './components/Experiences';
+
+function useTheme() { return findTheme(useParams().id); }
+function themeStyle(theme: Theme): CSSProperties { return { '--accent': theme.color, '--tint': theme.tint } as CSSProperties; }
+function PwaStatus() {
+  const [online, setOnline] = useState(navigator.onLine);
+  const [error, setError] = useState(false);
+  const [cached, setCached] = useState(false);
+  useEffect(() => { let active = true; if ('serviceWorker' in navigator && 'caches' in window) { void navigator.serviceWorker.ready.then(async () => { const essential = ['/index.html', ...themes.map(t => t.cover)]; const matches = await Promise.all(essential.map(url => caches.match(url, { ignoreSearch: true }))); if (active && matches.every(Boolean)) setCached(true); }).catch(() => { if (active) setError(true); }); } return () => { active = false; }; }, []);
+  const { offlineReady: [ready], needRefresh: [update], updateServiceWorker } = useRegisterSW({ onRegisterError: () => setError(true) });
+  const location = useLocation();
+  useEffect(() => { const on = () => setOnline(true); const off = () => setOnline(false); window.addEventListener('online', on); window.addEventListener('offline', off); return () => { window.removeEventListener('online', on); window.removeEventListener('offline', off); }; }, []);
+  const offlineAvailable = ready || cached;
+  return <><span className={`connection ${offlineAvailable ? 'ready' : ''}`} role="status">{!online ? <WifiOff size={17} aria-hidden="true"/> : offlineAvailable ? <CheckCircle2 size={17} aria-hidden="true"/> : <span className="status-dot"/>}{offlineAvailable ? online ? 'Pronto para usar offline' : 'Você está offline · museu disponível' : error || !('serviceWorker' in navigator) ? 'Offline indisponível neste navegador' : online ? 'Preparando acesso offline…' : 'Sem rede · offline ainda não preparado'}</span>{update && location.pathname === '/' && <div className="update-banner" role="status"><span>Uma nova versão do museu está disponível.</span><button className="text-button" onClick={() => void updateServiceWorker(true)}>Atualizar agora <RotateCcw size={18} aria-hidden="true"/></button></div>}</>;
+}
+function IdleTimer() {
+  const { kioskMinutes, reset } = useSession();
+  const navigate = useNavigate();
+  const [remaining, setRemaining] = useState<number | null>(null);
+  const activity = useRef(Date.now());
+  const resetRef = useRef(reset);
+  useEffect(() => { resetRef.current = reset; }, [reset]);
+  useEffect(() => {
+    activity.current = Date.now();
+    if (!kioskMinutes) return;
+    const touch = () => { activity.current = Date.now(); setRemaining(null); };
+    const events = ['pointerdown', 'keydown', 'wheel'] as const;
+    events.forEach(e => window.addEventListener(e, touch));
+    const interval = window.setInterval(() => {
+      const elapsed = (Date.now() - activity.current) / 1000;
+      if (elapsed >= kioskMinutes * 60 + 30) { resetRef.current(); navigate('/boas-vindas'); activity.current = Date.now(); setRemaining(null); }
+      else if (elapsed >= kioskMinutes * 60) setRemaining(Math.ceil(kioskMinutes * 60 + 30 - elapsed));
+    }, 1000);
+    return () => { clearInterval(interval); events.forEach(e => window.removeEventListener(e, touch)); };
+  }, [kioskMinutes, navigate]);
+  return kioskMinutes > 0 && remaining !== null ? <aside className="idle-warning" role="alert"><p>O museu voltará às boas-vindas em {remaining}s por inatividade.</p><button className="button primary" onClick={() => { activity.current = Date.now(); setRemaining(null); }}>Continuar explorando</button></aside> : null;
+}
+function DisplaySettings() {
+  const dialog = useRef<HTMLDialogElement>(null);
+  const { reducedMotion, setReducedMotion, kioskMinutes, setKioskMinutes, reset } = useSession();
+  const navigate = useNavigate();
+  const [fullscreenNotice, setFullscreenNotice] = useState('');
+  async function fullscreen() {
+    try { if (document.fullscreenElement) await document.exitFullscreen(); else if (document.documentElement.requestFullscreen) await document.documentElement.requestFullscreen(); else throw new Error(); }
+    catch { setFullscreenNotice('Tela cheia indisponível. No computador, use F11 ou configure o modo quiosque do navegador.'); }
+  }
+  return <><button className="icon-button" aria-label="Opções de exibição" onClick={() => dialog.current?.showModal()}><Settings2 aria-hidden="true"/></button><dialog ref={dialog} className="settings-dialog" aria-labelledby="settings-title"><div className="dialog-top"><h2 id="settings-title">Do seu jeito</h2><button className="icon-button" aria-label="Fechar opções" onClick={() => dialog.current?.close()}><X aria-hidden="true"/></button></div><p>Uma experiência confortável para explorar.</p><button className="button secondary" onClick={() => void fullscreen()}><Maximize aria-hidden="true"/>Alternar tela cheia</button>{fullscreenNotice && <p role="status">{fullscreenNotice}</p>}<label className="toggle-row"><span>Reduzir animações</span><input type="checkbox" checked={reducedMotion} onChange={e => setReducedMotion(e.target.checked)}/></label><label className="select-row">Retorno por inatividade<select value={kioskMinutes} onChange={e => setKioskMinutes(Number(e.target.value))}><option value="0">Desativado</option><option value="3">3 minutos · modo quiosque</option><option value="5">5 minutos · modo quiosque</option><option value="10">10 minutos · modo quiosque</option></select></label><p className="small-note">Um aviso de 30 segundos aparece antes de encerrar a sessão.</p><button className="button secondary" onClick={() => { reset(); dialog.current?.close(); navigate('/boas-vindas'); }}><RotateCcw aria-hidden="true"/>Reiniciar visita</button><p className="small-note">Reiniciar limpa o progresso e as pontuações desta visita.</p></dialog></>;
+}
+function Layout() {
+  const location = useLocation();
+  const { reducedMotion } = useSession();
+  const titleRef = useRef<HTMLElement>(null);
+  useEffect(() => { const heading = titleRef.current?.querySelector<HTMLElement>('h1'); heading?.focus({ preventScroll: true }); window.scrollTo(0, 0); }, [location.pathname]);
+  return <MotionConfig reducedMotion={reducedMotion ? 'always' : 'user'}><div className={reducedMotion ? 'app reduce-motion' : 'app'}><a className="skip-link" href="#main">Pular para o conteúdo</a><header className="site-header"><Link to="/" className="brand" aria-label="FLIC 2026 — Início"><span className="brand-symbol"><BookOpen size={29} strokeWidth={1.7} aria-hidden="true"/></span><span className="brand-name">FLIC<span>2026</span></span></Link><span className="header-caption">UM ENCONTRO COM A CULTURA DO SERTÃO</span><nav aria-label="Navegação principal"><Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} to="/"><Compass size={20} aria-hidden="true"/>Explorar</Link><Link className={`nav-link ${location.pathname === '/sobre' ? 'active' : ''}`} to="/sobre"><Info size={20} aria-hidden="true"/>Sobre a exposição</Link><DisplaySettings/></nav></header><main id="main" ref={titleRef}><Outlet/></main><footer className="site-footer"><span><span className="footer-flower">✳</span> Cultura que se encontra. Histórias que ficam.</span><PwaStatus/><span className="footer-edition">MUSEU INTERATIVO · FLIC 2026</span></footer><IdleTimer/></div></MotionConfig>;
+}
+function Home() {
+  const { answers } = useSession();
+  const complete = themes.filter(t => quizScore(t.quiz, answers[t.id] ?? {}).complete).length;
+  return <div className="home-page page-width"><section className="home-intro"><div><div className="eyebrow"><span className="little-line"/>EXPOSIÇÃO INTERATIVA</div><h1 tabIndex={-1}>Ariano Suassuna <span className="title-connect">e o</span> <em>Sertão.</em></h1><p>Um território de histórias, cores e descobertas.<br className="desktop-break"/> Escolha um caminho e deixe a curiosidade guiar você.</p></div><div className="intro-seal" aria-hidden="true"><SunStamp/><span>TOQUE. DESCUBRA.<br/>ENCANTE-SE.</span></div></section><div className="section-heading"><h2><span className="tiny-star">✳</span> Por onde vamos começar?</h2><span>{complete ? `${complete} de 6 temas explorados` : '6 temas · infinitas descobertas'} <ArrowDown size={17} aria-hidden="true"/></span></div><section className="theme-grid" aria-label="Escolha um dos seis temas">{themes.map((theme, i) => { const score = quizScore(theme.quiz, answers[theme.id] ?? {}); return <Link className="theme-card" key={theme.id} to={`/tema/${theme.id}`} style={themeStyle(theme)}><div className="card-image"><Artwork src={theme.cover} alt={theme.alt}/><span className="card-number">0{i + 1}</span>{score.complete && <span className="card-complete"><Check size={16} aria-hidden="true"/>Explorado</span>}</div><div className="card-content"><span className="card-category">{theme.category}</span><h3>{theme.title}</h3><p>{theme.subtitle}</p><span className="card-cta">Explorar tema <span className="round-arrow"><ArrowRight size={23} aria-hidden="true"/></span></span></div></Link>; })}</section><div className="home-note"><BookOpen size={20} aria-hidden="true"/><span>Leia, explore e teste suas descobertas. Cada tema tem um quiz no final.</span><span className="note-divider"/><span>Sem pressa. No seu ritmo.</span></div></div>;
+}
+function SunStamp() { return <svg viewBox="0 0 100 100" fill="none"><g stroke="currentColor" strokeWidth="2.3">{Array.from({length: 16}, (_, i) => <path key={i} d="M50 6v15" transform={`rotate(${i * 22.5} 50 50)`}/>)}<circle cx="50" cy="50" r="22"/><path d="M40 53q10 11 20 0M40 43h2m16 0h2" strokeLinecap="round"/></g></svg>; }
+function Welcome() { return <section className="welcome page-width"><div><span className="eyebrow">BEM-VINDO À FLIC 2026</span><h1 tabIndex={-1}>O sertão tem<br/>muito para <em>contar.</em></h1><p>Entre no universo de Ariano Suassuna e descubra a natureza, a arte e as histórias de um território vivo.</p><Link className="button primary" to="/">Toque para explorar <ArrowRight aria-hidden="true"/></Link></div><Artwork src={themes[5].cover} alt={themes[5].alt}/></section>; }
+function PageTop({ children, back = '/', label = 'Voltar aos temas' }: { children: ReactNode; back?: string; label?: string }) { return <div className="page-top"><Link className="back-link" to={back}><ArrowLeft size={22} aria-hidden="true"/>{label}</Link><span>{children}</span></div>; }
+function ThemeViewer() {
+  const theme = useTheme();
+  const { positions, setPosition } = useSession();
+  const touch = useRef<{ x: number; y: number } | null>(null);
+  if (!theme) return <NotFound/>;
+  const index = positions[theme.id] ?? 0;
+  const slide = theme.slides[index];
+  const related = literature.filter(l => l.moduleIds.includes(theme.rawId));
+  function go(direction: number) { setPosition(theme!.id, slideIndex(index, direction, theme!.slides.length)); }
+  return <div className="module-page page-width" style={themeStyle(theme)}><PageTop><span className="theme-tag">{theme.category}</span> {theme.title}</PageTop><section className="slide-layout" aria-label={`${index + 1} de 5`} onTouchStart={e => { const t = e.changedTouches[0]; touch.current = { x: t.clientX, y: t.clientY }; }} onTouchEnd={e => { if (!touch.current) return; const t = e.changedTouches[0]; const dx = t.clientX - touch.current.x; const dy = t.clientY - touch.current.y; touch.current = null; if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.5 && !(e.target as HTMLElement).closest('a,button,input,select,summary')) go(dx < 0 ? 1 : -1); }}>
+    <motion.div className="slide-copy" key={slide.id} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.22 }}><span className="eyebrow">DESCOBERTA {String(index + 1).padStart(2, '0')}</span><h1 tabIndex={-1}>{slide.title}</h1><p className="slide-body">{slide.body}</p><aside className="curiosity"><Sparkles size={25} aria-hidden="true"/><div><strong>Você sabia?</strong><p>{slide.curiosity}</p></div></aside><Sources ids={slide.sources}/></motion.div>
+    <div className="slide-art"><Artwork src={theme.cover} alt={theme.alt}/><span className="art-caption">Ilustração em estilo xilogravura · arte gerada por IA</span></div></section>
+    <div className="module-extras">{theme.rawId === 'clima' && <Link className="experience-link" to={`/tema/${theme.id}/caatinga`}><Leaf aria-hidden="true"/><span>Da seca ao verde<small>Explore o ciclo da Caatinga</small></span><ArrowRight aria-hidden="true"/></Link>}{theme.rawId === 'linha-do-tempo' && <Link className="experience-link" to={`/tema/${theme.id}/marcos`}><Expand aria-hidden="true"/><span>Viaje pela linha do tempo<small>De 1896 a 2014</small></span><ArrowRight aria-hidden="true"/></Link>}{related.length > 0 && <details className="literature-links"><summary><BookOpen size={22} aria-hidden="true"/>Uma pausa para a literatura <span>{related.length} painéis</span></summary><div>{related.map(l => <Link key={l.id} to={`/tema/${theme.id}/leitura/${l.id}`}>{l.workTitle}<ArrowRight size={20} aria-hidden="true"/></Link>)}</div></details>}</div>
+    <nav className="carousel-nav" aria-label="Navegação dos slides"><button className="button secondary" disabled={index === 0} onClick={() => go(-1)}><ArrowLeft aria-hidden="true"/>Anterior</button><div className="slide-progress"><span aria-live="polite">{index + 1} de {theme.slides.length}</span><div className="progress-dots">{theme.slides.map((s, i) => <button key={s.id} aria-label={`Ir para slide ${i + 1}: ${s.title}`} aria-current={i === index ? 'step' : undefined} onClick={() => setPosition(theme.id, i)}><span/></button>)}</div><progress value={index + 1} max={5} aria-label="Progresso do tema"/></div>{index === 4 ? <Link className="button primary" to={`/tema/${theme.id}/quiz`}>Começar quiz <ArrowRight aria-hidden="true"/></Link> : <button className="button primary" onClick={() => go(1)}>Próximo<ArrowRight aria-hidden="true"/></button>}</nav></div>;
+}
+function LiteraryPanel() {
+  const theme = useTheme();
+  const { work } = useParams();
+  const panel = literature.find(l => l.id === work && theme && l.moduleIds.includes(theme.rawId));
+  if (!theme || !panel) return <NotFound/>;
+  const quote = allowedQuote(panel);
+  return <div className="literary-page page-width" style={themeStyle(theme)}><PageTop back={`/tema/${theme.id}`} label="Retornar ao post">ESTAÇÃO DE LEITURA</PageTop><article className="literary-panel"><div className="literary-book"><BookOpen size={66} strokeWidth={1} aria-hidden="true"/><span>{panel.genre} · {panel.year}</span><h1 tabIndex={-1}>{panel.workTitle}</h1><p>{panel.author}</p><span className="rights-tag">{quote ? 'Trecho aprovado' : 'Trecho literal não liberado'}</span></div><div className="literary-copy"><span className="eyebrow">{quote ? 'LEITURA COMENTADA' : 'PARÁFRASE EDUCATIVA — NÃO É CITAÇÃO DA OBRA'}</span>{quote ? <><blockquote>{quote}</blockquote><p>{panel.edition}, p. {panel.page}. {panel.authorization}</p></> : <p className="literary-paraphrase">{panel.placeholderParaphrase}</p>}<h2>O que isso revela?</h2><p>{panel.context}</p><h2>Conexão com o sertão</h2><p>{panel.connectionToTheme}</p><div className="interpretive-question"><Sparkles aria-hidden="true"/><div><strong>Para pensar</strong><p>{panel.question}</p></div></div><Sources ids={panel.sources}/><details className="sources"><summary>Sobre este painel</summary><p>Comentário pedagógico original em revisão. A transcrição da obra permanece oculta até a conferência de edição, página, fonte, direitos e aprovação editorial explícita.</p></details></div></article><Link className="button secondary" to={`/tema/${theme.id}`}><ArrowLeft aria-hidden="true"/>Retornar ao post</Link></div>;
+}
+function SpecialExperience({ kind }: { kind: 'climate' | 'timeline' }) {
+  const theme = useTheme() ?? themes[kind === 'climate' ? 0 : 3];
+  return <div className="special-page page-width" style={themeStyle(theme)}><PageTop back={`/tema/${theme.id}`} label="Retornar ao post">EXPLORE COM UM TOQUE</PageTop><span className="eyebrow">{theme.category}</span><h1 tabIndex={-1}>{kind === 'climate' ? 'Da seca ao verde.' : 'O tempo também conta histórias.'}</h1><p className="page-description">{kind === 'climate' ? 'Escolha uma fase e veja a paisagem se transformar.' : 'Toque em um marco para conhecer seu contexto.'}</p>{kind === 'climate' ? <ClimateExperience/> : <TimelineExperience/>}</div>;
+}
+function Quiz() {
+  const theme = useTheme();
+  const { answers: allAnswers, setAnswers } = useSession();
+  const [questionIndex, setQuestionIndex] = useState(0);
+  const navigate = useNavigate();
+  if (!theme) return <NotFound/>;
+  const answers = allAnswers[theme.id] ?? {};
+  const score = quizScore(theme.quiz, answers);
+  const question = theme.quiz[questionIndex];
+  const selected = answers[question.id];
+  const answered = selected !== undefined;
+  return <div className="quiz-page page-width" style={themeStyle(theme)}><PageTop back={`/tema/${theme.id}`} label="Voltar ao conteúdo">{theme.title}</PageTop><div className="quiz-heading"><span className="eyebrow"><Sparkles size={19} aria-hidden="true"/>HORA DE DESCOBRIR O QUE FICOU</span><span className="quiz-count">Pergunta {questionIndex + 1} de {theme.quiz.length}</span></div><progress className="quiz-progress" value={questionIndex + 1} max={theme.quiz.length} aria-label="Progresso do quiz"/><section className="quiz-content"><h1 tabIndex={-1} key={question.id}>{question.question}</h1><p className="quiz-hint">Toque em uma alternativa. Aprender também é tentar.</p><div className="answer-grid" role="group" aria-label="Alternativas">{question.options.map((option, i) => <button key={option} disabled={answered} className={`answer ${answered && i === question.correctIndex ? 'correct' : ''} ${answered && selected === i && i !== question.correctIndex ? 'incorrect' : ''}`} onClick={() => setAnswers(theme.id, answerQuestion(answers, question, i))}><span className="answer-letter">{'ABCD'[i]}</span><span>{option}</span>{answered && i === question.correctIndex && <CheckCircle2 aria-label="Resposta correta"/>}{answered && selected === i && i !== question.correctIndex && <XCircle aria-label="Sua resposta"/>}</button>)}</div>{answered && <div className={`quiz-feedback ${selected === question.correctIndex ? 'is-correct' : ''}`} role="status">{selected === question.correctIndex ? <CheckCircle2 aria-hidden="true"/> : <Info aria-hidden="true"/>}<div><strong>{selected === question.correctIndex ? 'Isso mesmo! +100 pontos' : 'Uma nova descoberta!'}</strong><p>{selected !== question.correctIndex && <>Resposta correta: <strong>{question.options[question.correctIndex]}</strong>. </>}{question.feedback}</p></div></div>}<Sources ids={question.sources}/></section><div className="quiz-bottom"><span>{score.points} pontos nesta tentativa</span><button className="button primary" disabled={!answered} onClick={() => { if (questionIndex < theme.quiz.length - 1) { setQuestionIndex(i => i + 1); window.scrollTo(0, 0); } else { scoreRepository.save({ themeId: theme.id, ...score }); navigate(`/tema/${theme.id}/resultado`); } }}>{questionIndex === theme.quiz.length - 1 ? 'Ver resultado' : 'Próxima pergunta'}<ArrowRight aria-hidden="true"/></button></div></div>;
+}
+function Result() {
+  const theme = useTheme();
+  const { answers, setAnswers } = useSession();
+  if (!theme) return <NotFound/>;
+  const score = quizScore(theme.quiz, answers[theme.id] ?? {});
+  if (!score.complete) return <Navigate replace to={`/tema/${theme.id}/quiz`}/>;
+  const next = themes[(themes.indexOf(theme) + 1) % themes.length];
+  return <div className="result-page page-width" style={themeStyle(theme)}><PageTop>{theme.title}</PageTop><section className="result-card"><span className="result-icon"><Trophy size={55} strokeWidth={1.5} aria-hidden="true"/></span><span className="eyebrow">MAIS UM CAMINHO EXPLORADO</span><h1 tabIndex={-1}>{score.correct === score.total ? 'Você descobriu muito!' : 'Toda descoberta conta.'}</h1><p>O sertão sempre tem uma nova história esperando por você.</p><div className="score-display"><strong>{score.points}<span>pontos</span></strong><span className="score-divider"/><strong>{score.correct}/{score.total}<span>acertos</span></strong></div><details className="answer-review"><summary>Rever perguntas e explicações</summary>{theme.quiz.map(q => <div key={q.id}><strong>{answers[theme.id][q.id] === q.correctIndex ? '✓ Acertou' : '↗ Para aprender'} · {q.question}</strong><p>Resposta correta: {q.options[q.correctIndex]}. {q.feedback}</p></div>)}</details><div className="result-actions"><Link className="button primary" to={`/tema/${next.id}`}>Explorar outro tema<ArrowRight aria-hidden="true"/></Link><Link className="button secondary" onClick={() => setAnswers(theme.id, {})} to={`/tema/${theme.id}/quiz`}><RotateCcw aria-hidden="true"/>Refazer quiz</Link><Link className="text-button" to="/"><HomeIcon size={20} aria-hidden="true"/>Voltar aos temas</Link></div></section></div>;
+}
+function About() { return <div className="about-page page-width"><PageTop>FLIC 2026</PageTop><span className="eyebrow">SOBRE A EXPOSIÇÃO</span><h1 tabIndex={-1}>Um sertão de muitas histórias.</h1><p className="about-lead">Um museu interativo sobre natureza, tradições, sabores e literatura, em diálogo com a vida e a obra de Ariano Suassuna.</p><div className="about-grid"><section><h2>Uma experiência para descobrir</h2><p>Seis percursos, 30 posts e 18 perguntas. Explore no seu ritmo, sem cadastro, sem áudio obrigatório e sem coleta de dados pessoais.</p><p>Nordeste, sertão e semiárido não são sinônimos. A exposição valoriza as diferenças entre ambientes e comunidades.</p><h2>Arte e créditos</h2><p>As seis ilustrações fornecidas no pacote FLIC 2026 são artes geradas por IA, inspiradas na linguagem da xilogravura. Não são gravuras históricas, fotografias nem retratos documentais.</p><p>Autoria editorial e identificação da ferramenta de geração: pendentes de confirmação pela organização. Licenças e adequação cultural das imagens aguardam revisão editorial.</p></section><section><h2>Literatura com contexto</h2><p>Os painéis apresentam comentários pedagógicos originais, identificados como paráfrases. Citações literais sem conferência de edição, página, direitos e aprovação editorial permanecem ocultas.</p><h2>Fontes para conhecer mais</h2><ul className="source-list">{sources.map(s => <li key={s.id}><a href={s.url} target="_blank" rel="noreferrer">{s.label}<span aria-hidden="true"> ↗</span></a></li>)}</ul><p className="editorial-notice"><Info size={21} aria-hidden="true"/>Conteúdos em rascunho pedagógico. Datas, fatos, imagens e fontes específicas de natureza, história, culinária e personalidades precisam de validação pelo responsável antes da feira.</p></section></div><section className="offline-guide"><Leaf aria-hidden="true"/><div><h2>Preparado para ir com você</h2><p>Abra com internet e aguarde o aviso “Pronto para usar offline”. Depois, os seis temas e os quizzes ficam disponíveis neste navegador sem rede. Se o cache for apagado, será necessário preparar novamente.</p><p>Para o totem: use as opções de exibição para ativar tela cheia, reduzir animações e configurar o retorno por inatividade. Faça um ensaio no monitor definitivo antes da feira.</p></div></section></div>; }
+function NotFound() { return <section className="not-found page-width"><span className="eyebrow">VAMOS ENCONTRAR UM CAMINHO</span><h1 tabIndex={-1}>Esta página não está no percurso.</h1><p>Os seis temas estão esperando por você na entrada do museu.</p><Link className="button primary" to="/">Voltar aos temas<ArrowRight aria-hidden="true"/></Link></section>; }
+export default function App() { return <Routes><Route element={<Layout/>}><Route index element={<Home/>}/><Route path="boas-vindas" element={<Welcome/>}/><Route path="sobre" element={<About/>}/><Route path="tema/:id" element={<ThemeViewer/>}/><Route path="tema/:id/quiz" element={<Quiz/>}/><Route path="tema/:id/resultado" element={<Result/>}/><Route path="tema/:id/leitura/:work" element={<LiteraryPanel/>}/><Route path="tema/:id/caatinga" element={<SpecialExperience kind="climate"/>}/><Route path="tema/:id/marcos" element={<SpecialExperience kind="timeline"/>}/><Route path="linha-do-tempo" element={<SpecialExperience kind="timeline"/>}/><Route path="*" element={<NotFound/>}/></Route></Routes>; }

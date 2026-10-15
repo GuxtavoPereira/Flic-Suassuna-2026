@@ -1,0 +1,20 @@
+{
+    "notice":  "Citações breves destinadas a estudo e comentário crítico. Confirmar pontuação e edição impressa antes da publicação; citar autor e origem. Não atribuir textos interpretativos ao autor.",
+    "excerpts":  [
+                     {
+                         "id":  "auto-chico-01",
+                         "author":  "Ariano Suassuna",
+                         "work":  "Auto da Compadecida",
+                         "character":  "Chicó",
+                         "source":  "https://fflch.usp.br/63266",
+                         "verification":  "confirmed-in-secondary-source; check-against-edition",
+                         "context":  "Bordão de Chicó, personagem que conta histórias extraordinárias.",
+                         "pedagogicalCommentary":  "A frase ajuda a explorar a oralidade, o humor e as histórias inventivas presentes no teatro de Ariano.",
+                         "question":  "Por que a repetição dessa frase torna Chicó tão memorável?",
+                         "moduleIds":  [
+                                           "cultura",
+                                           "ariano"
+                                       ]
+                     }
+                 ]
+}
