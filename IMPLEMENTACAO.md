@@ -29,3 +29,8 @@ As seis xilogravuras foram fornecidas como arte gerada por IA. Atribuições, li
 Use as opções de exibição para tela cheia, redução de movimento e retorno à entrada por inatividade (3, 5 ou 10 minutos, com aviso de 30 segundos). Reiniciar visita limpa progresso e resultados anônimos da sessão. O botão Início mantém pontuações durante a visita.
 
 Antes da feira: ensaiar com o monitor touch definitivo, distância de leitura, iluminação, acesso sem rede e sessão prolongada. Não considerar testes automatizados equivalentes à validação presencial.
+## Ranking local — atualização
+
+No resultado de qualquer quiz ou na Home após responder perguntas, escolha **Encerrar visita e ver ranking**. O resumo reúne os acertos das perguntas únicas respondidas na visita, em até 18 questões. Refazer substitui as respostas desse tema. A participação é opcional, com primeiro nome ou apelido e escolha explícita de exibição. O registro é único por visita; novas submissões não duplicam a pontuação.
+
+O ranking salva até 1000 visitas recentes no localStorage deste navegador, funciona offline e continua ao iniciar a próxima visita. Não é compartilhado entre dispositivos; apagar os dados do navegador o remove. Nas opções de exibição há uma ação de limpeza com confirmação para a organização. Falhas ou bloqueio de armazenamento são mostrados sem impedir o museu.
