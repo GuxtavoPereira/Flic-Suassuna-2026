@@ -43,3 +43,22 @@ test('responsivo: 1920, 4K, tablet e celular sem overflow', async ({ page }) => 
 test('acessibilidade automatizada nas telas principais', async ({ page }) => {
   for (const path of ['/', '/tema/ariano', '/tema/ariano/quiz', '/tema/ariano/leitura/auto', '/tema/clima-vegetacao/caatinga', '/linha-do-tempo', '/sobre']) { await page.goto(path); await page.evaluate(() => document.fonts.ready); const results = await new AxeBuilder({ page }).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze(); expect(results.violations, JSON.stringify(results.violations.map(v => ({ id: v.id, nodes: v.nodes.map(n => n.target) })))).toEqual([]); }
 });
+test('modo quiosque avisa antes de reiniciar e permite continuar a leitura', async ({ page }) => {
+  await page.clock.install();
+  await page.goto('/tema/cultura');
+  await page.getByRole('button', { name: 'Opções de exibição' }).click();
+  await page.getByRole('checkbox', { name: 'Reduzir animações' }).check();
+  await page.getByLabel('Retorno por inatividade').selectOption('3');
+  await page.getByRole('button', { name: 'Fechar opções' }).click();
+  await expect(page.locator('.app')).toHaveClass(/reduce-motion/);
+  await page.clock.fastForward(181000);
+  await expect(page.getByRole('alert')).toContainText('inatividade');
+  await page.getByRole('button', { name: 'Continuar explorando' }).click();
+  await expect(page.getByRole('alert')).toHaveCount(0);
+  await expect(page).toHaveURL(/tema\/cultura$/);
+  await page.clock.fastForward(181000);
+  await expect(page.getByRole('alert')).toBeVisible();
+  await page.clock.fastForward(31000);
+  await expect(page).toHaveURL(/boas-vindas$/);
+  await expect(page.getByRole('link', { name: 'Toque para explorar' })).toBeVisible();
+});
