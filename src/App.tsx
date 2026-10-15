@@ -29,7 +29,7 @@ function IdleTimer() {
   const { kioskMinutes, reset } = useSession();
   const navigate = useNavigate();
   const [remaining, setRemaining] = useState<number | null>(null);
-  const activity = useRef(Date.now());
+  const activity = useRef(0);
   const resetRef = useRef(reset);
   useEffect(() => { resetRef.current = reset; }, [reset]);
   useEffect(() => {
