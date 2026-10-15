@@ -12,12 +12,12 @@ test('seis percursos completos: 30 slides e 18 respostas corretas', async ({ pag
     for (const [i, s] of m.slides.entries()) { await expect(page.getByRole('heading', { level: 1 })).toHaveText(s.title); await expect(page.locator('.slide-progress')).toContainText(`${i + 1} de 5`); if (i < 4) await page.getByRole('button', { name: 'Próximo', exact: true }).click(); }
     await page.getByRole('link', { name: 'Começar quiz' }).click();
     for (const [i, q] of m.quiz.entries()) { await expect(page.getByRole('heading', { level: 1 })).toHaveText(q.question); await page.locator('.answer').nth(q.correctIndex).tap(); await expect(page.locator('.answer:disabled')).toHaveCount(4); await expect(page.getByRole('status').filter({ hasText: 'Isso mesmo!' })).toBeVisible(); await page.getByRole('button', { name: i === 2 ? 'Ver resultado' : 'Próxima pergunta' }).click(); }
-    await expect(page.locator('.score-display')).toContainText('300'); await expect(page.locator('.score-display')).toContainText('3/3'); await page.getByRole('link', { name: 'Voltar aos temas' }).click();
+    await expect(page.locator('.score-display')).toContainText('300'); await expect(page.locator('.score-display')).toContainText('3/3'); await page.getByRole('link', { name: 'Voltar aos temas' }).first().click();
   }
   expect(errors).toEqual([]); await expect(page.locator('.card-complete')).toHaveCount(6); await noOverflow(page);
 });
 test('erro, pontuação parcial, voltar e refazer', async ({ page }) => {
-  await page.goto('/tema/clima-vegetacao'); await page.getByRole('button', { name: 'Próximo', exact: true }).click(); await page.getByRole('link', { name: 'Voltar aos temas' }).click(); await page.locator('.theme-card').first().click(); await expect(page.locator('.slide-progress')).toContainText('2 de 5');
+  await page.goto('/tema/clima-vegetacao'); await page.getByRole('button', { name: 'Próximo', exact: true }).click(); await page.getByRole('link', { name: 'Voltar aos temas' }).first().click(); await page.locator('.theme-card').first().click(); await expect(page.locator('.slide-progress')).toContainText('2 de 5');
   await page.goto('/tema/clima-vegetacao/quiz');
   for (let i = 0; i < 3; i++) { await page.locator('.answer').nth(i === 0 ? 1 : content.modules[0].quiz[i].correctIndex).click(); if (!i) await expect(page.getByRole('status').filter({ hasText: 'Resposta correta: Caatinga' })).toBeVisible(); await page.getByRole('button', { name: i === 2 ? 'Ver resultado' : 'Próxima pergunta' }).click(); }
   await expect(page.locator('.score-display')).toContainText('200'); await page.getByRole('link', { name: 'Refazer quiz' }).click(); await expect(page.locator('.answer:not(:disabled)')).toHaveCount(4); await expect(page.locator('.quiz-bottom')).toContainText('0 pontos');
