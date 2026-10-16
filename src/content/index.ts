@@ -1,4 +1,5 @@
 import raw from './modules.json';
+import editorialSources from './editorial-sources.json';
 import excerptData from './excerpts.json';
 import poolData from './pools.json';
 import topicAssets from './topic-assets.json';
@@ -8,6 +9,7 @@ export { default as suppliedAssets } from './supplied-assets.json';
 import { poolSchema } from './pool-schema';
 import { contentSchema, type LiterarySlide, type Theme, type RawModuleId } from '../domain/content';
 export const sources = [
+  ...editorialSources,
   { id: 'caatinga', label: 'ICMBio · Caatinga', url: 'https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/caatinga' },
   { id: 'embrapa', label: 'Embrapa · Cactáceas da Caatinga', url: 'https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1153737/1/Mandacaru-Da-Racao-a-Medicina-2023.pdf' },
   { id: 'embrapa-umbu', label: 'Embrapa · Umbuzeiro', url: 'https://www.infoteca.cnptia.embrapa.br/handle/doc/85742' },
@@ -48,7 +50,7 @@ export const themes: Theme[] = modules.map(m => {
   const postPool = pool.posts.filter(p => p.themeId === id).map(p => {
     const asset = suppliedAssets.find(a => a.postId === p.id) ?? imageAssets.find(a => a.id === p.assetId);
     if (!asset) throw new Error(`Imagem sem metadados: ${p.id} (${p.assetId})`);
-    return { ...p, image: asset.image, alt: asset.alt, sourceMetadata: asset, source: sourceIds[m.id] ?? [], imageCredit: asset.credit, imageLicense: asset.licenseNote, postType: p.type, editorialStatus: p.status, quizEligible: true, sources: sourceIds[m.id] ?? [] };
+    return { ...p, image: asset.image, alt: asset.alt, sourceMetadata: asset, imageCredit: asset.credit, imageLicense: asset.licenseNote, sources: p.source };
   });
   const questionPool = pool.questions.filter(q => q.themeId === id).map(q => ({ ...q, sources: sourceIds[m.id] }));
   return { ...m, ...metadata[m.id]!, quizEnabled: !['musica-audiovisual', 'festas-religiosidade'].includes(id), postsPerVisit: id === 'clima-vegetacao' ? 12 : id === 'musica-audiovisual' ? 10 : id === 'festas-religiosidade' ? 11 : 8, rawId: m.id, id, slides: postPool.filter(p => m.slides.some(s => s.id === p.id)), quiz: m.quiz.map((q, i) => ({ ...q, themeId: id, topicId: postPool[Math.min(i + 1, 4)].topicId, difficulty: i + 1, tags: ['legado'], sources: sourceIds[m.id] })), postPool, questionPool };

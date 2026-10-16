@@ -19,3 +19,6 @@ Fase 0: este diagnóstico; checklist de origem preservado em CHECKLIST-EVOLUCAO.
 
 ### Fase 1 — estrutura implementada, aceite visual pendente
 Arquivos: src/App.tsx, src/styles/main.css, src/domain/content.ts, src/domain/rotation.ts, src/services/visit-session.ts, src/content/index.ts, index.html, vite.config.ts. Título/metadados atualizados, oito cards e rotas, contagens variáveis e migração v2→v3 implementados. TypeScript/build passaram. Conteúdo dos novos percursos será incorporado na fase 2 antes de exposição externa; não marcar fase concluída enquanto os novos percursos não estiverem preenchidos/testados e sem conferência visual. Ranking original preservado.
+
+### Fase 2 — conteúdo estruturado e navegável
+Arquivos: src/content/pools.json, editorial-sources.json, pool-schema.ts, index.ts; domain/content.ts, rotation.ts e testes. Pool ampliado a 90 posts (16/10/11/10/10/10/11/12), fontes individuais, elegibilidade editorial, posts obrigatórios e complementos rotativos com fallback. Mostra 12 no clima, 10 em Música, 11 em Festas e 8 nos demais. Lint, 49 testes e servidor offline aprovados; tipos/build aprovados. Fotografias novas ainda em pesquisa para a fase 7: os novos conteúdos ainda não estão liberados editorialmente. Testes adicionais de cobertura e migração incluídos; aceite visual e curadoria pendentes. Nenhuma caixa global marcada como pronta.

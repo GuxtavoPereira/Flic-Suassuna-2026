@@ -11,7 +11,7 @@ export const contentSchema = z.object({ project: z.string(), version: z.string()
 });
 export type QuizQuestion = z.infer<typeof questionSchema> & { sources: string[]; themeId: string; topicId: string; difficulty: number; tags: string[]; optionOrder?: number[]; postIds?: string[] };
 export interface SourceMetadata { sourceName: string; sourceUrl: string; credit: string; caption: string; licenseNote: string; assetType: string; relatedWork?: string }
-export type EducationalSlide = z.infer<typeof moduleSchema>['slides'][number] & { type: 'educational'; sources: string[]; themeId: string; topicId: string; text: string; image: string; alt: string; tags: string[]; sourceMetadata: SourceMetadata; introductory: boolean; order: number; source: string[]; imageCredit: string; imageLicense: string; postType: string; editorialStatus: string; quizEligible: boolean; experience?: string };
+export type EducationalSlide = z.infer<typeof moduleSchema>['slides'][number] & { type: 'educational'; sources: string[]; themeId: string; topicId: string; text: string; image: string; alt: string; tags: string[]; sourceMetadata: SourceMetadata; introductory: boolean; order: number; source: string[]; imageCredit: string; imageLicense: string; postType: string; editorialStatus: string; quizEligible: boolean; required: boolean; experience?: string };
 export interface LiterarySlide {
   type: 'literary'; id: string; workTitle: string; year: number; genre: string;
   author: string; context: string; connectionToTheme: string; placeholderParaphrase: string; question: string;

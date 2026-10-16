@@ -29,8 +29,8 @@ export function selectQuestions(questions: QuizQuestion[], posts: EducationalSli
   return shuffled(picked, random).map(q => shuffleQuestion(q, random));
 }
 export function createRound(theme: Theme, history: RecentContent, practice = false, random = Math.random): ThemeRound {
-  const mandatory = preferFresh(theme.postPool.filter(p => p.introductory), history.posts, random).slice(0, 1);
-  const optional = preferFresh(theme.postPool.filter(p => !p.introductory), history.posts, random);
+  const mandatory = [...preferFresh(theme.postPool.filter(p => p.introductory), history.posts, random).slice(0, 1), ...theme.postPool.filter(p => p.required && !p.introductory)];
+  const optional = preferFresh(theme.postPool.filter(p => !p.introductory && !p.required), history.posts, random);
   const selected = [...mandatory];
   for (const post of optional) { if (selected.length >= theme.postsPerVisit) break; if (!selected.some(p => p.topicId === post.topicId)) selected.push(post); }
   // A small pool may repeat a topic, never a post. This finite fallback keeps every available discovery reachable.

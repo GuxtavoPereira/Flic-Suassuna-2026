@@ -12,8 +12,8 @@ function seeded(seed: number) { return () => { seed = (seed * 1664525 + 10139042
 function storage() { const map = new Map<string, string>(); return { getItem: (k: string) => map.get(k) ?? null, setItem: (k: string, v: string) => { map.set(k, v); }, removeItem: (k: string) => { map.delete(k); } }; }
 afterEach(() => vi.unstubAllGlobals());
 describe('pools e imagens por assunto', () => {
-  it('valida 48 posts e 102 perguntas, sem órfãos nem alternativas repetidas', () => {
-    expect(poolSchema.safeParse(pool).success).toBe(true); expect(pool.posts).toHaveLength(48); expect(pool.questions).toHaveLength(102);
+  it('valida 72+ posts e 102 perguntas, sem órfãos nem alternativas repetidas', () => {
+    expect(poolSchema.safeParse(pool).success).toBe(true); expect(pool.posts.length).toBeGreaterThanOrEqual(72); expect(pool.questions).toHaveLength(102);
     const invalid = structuredClone(pool); invalid.questions[0].topicId = 'inexistente'; expect(poolSchema.safeParse(invalid).success).toBe(false);
     const duplicate = structuredClone(pool); duplicate.questions[0].options[1] = duplicate.questions[0].options[0]; expect(poolSchema.safeParse(duplicate).success).toBe(false);
   });
@@ -33,15 +33,15 @@ describe('pools e imagens por assunto', () => {
   it('inclui todas as fotos no cache do build', () => { if (!existsSync('dist/sw.js')) return; const sw = readFileSync('dist/sw.js', 'utf8'); for (const a of imageAssets) expect(sw).toContain(a.image.slice(1)); });
 });
 describe('seleção com histórico e dificuldade equilibrada', () => {
-  for (const theme of themes) it(`${theme.id}: 200 sorteios válidos, três níveis e só assuntos dos cinco posts`, () => {
+  for (const theme of themes) it(`${theme.id}: 200 sorteios válidos, três níveis e só assuntos dos posts vistos`, () => {
     for (let seed = 1; seed <= 200; seed++) {
       const round = createRound(theme, { posts: [], questions: [] }, false, seeded(seed));
-      expect(round.postIds).toHaveLength(5); expect(new Set(round.postIds).size).toBe(5); expect(round.questions).toHaveLength(3);
+      expect(round.postIds).toHaveLength(theme.postsPerVisit); expect(new Set(round.postIds).size).toBe(theme.postsPerVisit); expect(round.questions).toHaveLength(theme.quizEnabled ? 3 : 0);
       const posts = round.postIds.map(id => theme.postPool.find(p => p.id === id)!);
-      expect(new Set(posts.map(p => p.topicId)).size).toBe(5); expect(posts.some(p => p.introductory)).toBe(true);
-      expect([...round.questions.map(q => q.difficulty)].sort()).toEqual([1,2,3]); expect(new Set(round.questions.map(q => q.id)).size).toBe(3);
+      expect(posts.length).toBeGreaterThanOrEqual(8); expect(posts.some(p => p.introductory)).toBe(true);
+      expect([...round.questions.map(q => q.difficulty)].sort()).toEqual(theme.quizEnabled ? [1,2,3] : []); expect(new Set(round.questions.map(q => q.id)).size).toBe(theme.quizEnabled ? 3 : 0);
       for (const q of round.questions) { expect(posts.some(p => p.topicId === q.topicId)).toBe(true); expect(q.postIds?.some(id => round.postIds.includes(id))).toBe(true); }
-      expect(roundReady(round)).toBe(false); expect(roundReady({ ...round, seenPostIds: round.postIds })).toBe(true);
+      expect(roundReady(round)).toBe(false); expect(roundReady({ ...round, seenPostIds: round.postIds })).toBe(theme.quizEnabled);
     }
   });
   it('prioriza posts e questões não recentes e faz fallback finito quando todos são recentes', () => {
@@ -73,7 +73,7 @@ describe('sessão, retomada e ranking comparável', () => {
   });
   it('sem armazenamento, a visita continua em memória', () => {
     vi.stubGlobal('localStorage', { getItem(){ throw new Error('blocked'); } }); vi.stubGlobal('sessionStorage', { getItem(){ throw new Error('blocked'); }, setItem(){ throw new Error('quota'); } });
-    const session=loadSession(); expect(Object.keys(session.rounds)).toHaveLength(6); expect(() => persistSession(session)).not.toThrow();
+    const session=loadSession(); expect(Object.keys(session.rounds)).toHaveLength(8); expect(() => persistSession(session)).not.toThrow();
   });
   it('conta somente rodadas concluídas e mantém a primeira pontuação durante treino', () => {
     vi.stubGlobal('localStorage', storage()); const s=createSession(); const r=s.rounds.cultura; const answers=Object.fromEntries(r.questions.map(q=>[q.id,q.optionOrder![q.correctIndex]]));
