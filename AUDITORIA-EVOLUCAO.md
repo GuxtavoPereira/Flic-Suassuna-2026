@@ -16,3 +16,6 @@ Conservar IDs originais, aliases e URLs; adicionar musica-audiovisual e festas-r
 
 ## Registro por fase
 Fase 0: este diagnóstico; checklist de origem preservado em CHECKLIST-EVOLUCAO.md; issue criada. Validação de código aprovada; revisão visual integral continua pendente e não será declarada por inferência.
+
+### Fase 1 — estrutura implementada, aceite visual pendente
+Arquivos: src/App.tsx, src/styles/main.css, src/domain/content.ts, src/domain/rotation.ts, src/services/visit-session.ts, src/content/index.ts, index.html, vite.config.ts. Título/metadados atualizados, oito cards e rotas, contagens variáveis e migração v2→v3 implementados. TypeScript/build passaram. Conteúdo dos novos percursos será incorporado na fase 2 antes de exposição externa; não marcar fase concluída enquanto os novos percursos não estiverem preenchidos/testados e sem conferência visual. Ranking original preservado.

@@ -1,5 +1,5 @@
 import type { EducationalSlide, QuizQuestion, Theme } from './content';
-export const POSTS_PER_VISIT = 5;
+export const POSTS_PER_VISIT = 8;
 export const QUESTIONS_PER_QUIZ = 3;
 export interface RecentContent { posts: string[]; questions: string[] }
 export interface ThemeRound { postIds: string[]; seenPostIds: string[]; questions: QuizQuestion[]; practice: boolean; rankingAnswers?: Record<string, number> }
@@ -32,9 +32,11 @@ export function createRound(theme: Theme, history: RecentContent, practice = fal
   const mandatory = preferFresh(theme.postPool.filter(p => p.introductory), history.posts, random).slice(0, 1);
   const optional = preferFresh(theme.postPool.filter(p => !p.introductory), history.posts, random);
   const selected = [...mandatory];
-  for (const post of optional) { if (selected.length >= POSTS_PER_VISIT) break; if (!selected.some(p => p.topicId === post.topicId)) selected.push(post); }
+  for (const post of optional) { if (selected.length >= theme.postsPerVisit) break; if (!selected.some(p => p.topicId === post.topicId)) selected.push(post); }
+  // A small pool may repeat a topic, never a post. This finite fallback keeps every available discovery reachable.
+  for (const post of optional) { if (selected.length >= theme.postsPerVisit) break; if (!selected.some(p => p.id === post.id)) selected.push(post); }
   selected.sort((a, b) => a.order - b.order);
-  return { postIds: selected.map(p => p.id), seenPostIds: [], questions: selectQuestions(theme.questionPool, selected, history.questions, random), practice };
+  return { postIds: selected.map(p => p.id), seenPostIds: [], questions: theme.quizEnabled ? selectQuestions(theme.questionPool, selected, history.questions, random) : [], practice };
 }
 export function roundReady(round: ThemeRound) { return round.questions.length === QUESTIONS_PER_QUIZ && round.postIds.every(id => round.seenPostIds.includes(id)); }
 export function remember(history: RecentContent, posts: string[], questions: string[]): RecentContent {
