@@ -3,5 +3,5 @@ import { copyFileSync, existsSync, mkdirSync, readdirSync } from 'node:fs';
 const destination='dist/review';
 if(existsSync('test-results')){
   mkdirSync(destination,{recursive:true});
-  for(const name of readdirSync('test-results'))if(/^(home-|module-|maps-|cistern-|video-qr-|dynamic-quiz-|visit-end-|ranking-).*\.png$/.test(name))copyFileSync(`test-results/${name}`,`${destination}/${name}`);
+  for(const name of readdirSync('test-results'))if(/^(home-|module-|maps-|cistern-|video-qr-|dynamic-quiz-|visit-end-|ranking-|subregions-|selected-state-|site-qr-).*\.png$/.test(name))copyFileSync(`test-results/${name}`,`${destination}/${name}`);
 }

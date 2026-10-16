@@ -68,6 +68,21 @@
       "status": "verified-points-only",
       "limitations": "PENDENTE: polígonos georreferenciados com metodologia e licença verificadas para as quatro sub-regiões didáticas. Não desenhar limites aproximados como se fossem oficiais.",
       "bytes": 2068
+    },
+    {
+      "id": "sub-regioes-didaticas-svg",
+      "file": "subregions.json",
+      "sourceName": "Raphael Lorenzeto de Abreu — Brazil Region Nordeste Subregions.svg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brazil_Region_Nordeste_Subregions.svg",
+      "dataDate": "2006-04-29; licença conferida em2026-10-16",
+      "method": "Extraídos apenas os quatro polígonos temáticos e contornos estaduais; coordenadas SVG divididas por100, precisão de0,01unidade, nova paleta e interação. Sem georreferenciamento nem limites inventados. Correspondência conferida pela numeração original: fil4=Meio-Norte, fil5=Sertão, fil7=Agreste, fil6=Zona da Mata.",
+      "geometryType": "SVG didático sem georreferenciamento",
+      "featureCount": 4,
+      "uiLabel": "Quatro sub-regiões coloridas",
+      "status": "verified-licensed-schematic",
+      "limitations": "Faixas didáticas aproximadas, sem classificação municipal oficial ou medições.",
+      "licenseNote": "CC BY 2.5 selecionada entre as licenças oferecidas pelo autor. Atribuição e alterações informadas na interface.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5/"
     }
   ],
   "subregionsReference": {

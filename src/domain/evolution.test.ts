@@ -6,6 +6,8 @@ import states from '../content/maps/states.json';
 import semiarido from '../content/maps/semiarido.json';
 import caatinga from '../content/maps/caatinga.json';
 import localities from '../content/maps/localities.json';
+import subregions from '../content/maps/subregions.json';
+import site from '../content/site-links.json';
 import { createSession, loadSession, persistSession, SESSION_KEY } from '../services/visit-session';
 import { createRound } from './rotation';
 import { summarizeVisit } from './visit';
@@ -44,4 +46,9 @@ describe('evolução editorial',()=>{
     persistSession(migrated);expect(JSON.parse(sessionStorage.getItem(SESSION_KEY)!).version).toBe(3);
     expect(loadSession()).toEqual(migrated);
   });
+  it('usa quatro áreas vetoriais licenciadas e um QR local para o endereço público',()=>{
+    expect(subregions.regions.map(r=>r.id)).toEqual(['meio-norte','sertao','agreste','zona-mata']);expect(new Set(subregions.regions.map(r=>r.fill)).size).toBe(4);expect(subregions.stateBorders).toHaveLength(9);expect(subregions.source.license).toBe('CC BY 2.5');expect(subregions.source.creator).toBe('Raphael Lorenzeto de Abreu');expect(subregions.coordinateSystem).toContain('not georeferenced');expect(subregions.regions.every(r=>r.d.startsWith('M')&&r.d.length>100)).toBe(true);
+    expect(site.publicUrl).toBe('https://flic2026-sertao-guxtavopereira.vercel.app/');expect(existsSync('public'+site.qrImage)).toBe(true);
+  });
+
 });

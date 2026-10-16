@@ -22,3 +22,7 @@ Cisterna: esquema autoral sem escala ao lado de foto real e explicação de fina
 Audiovisual: botão abre diálogo com QR local e retorno inequívoco. O totem não navega para YouTube; assistir no celular requer rede. Nenhum áudio inicia automaticamente. Offline mantém resumo e identificação; miniatura oficial do filme continua pendente.
 
 PWA: precache de textos compilados, mapas, imagens e fontes; indicador de preparação; atualização oferecida apenas na Home. Ensaiar na resolução/iluminação/distância reais antes da feira; layout automatizado não substitui esse aceite.
+
+## Ajuste para o display interativo
+
+Home horizontal com grade4×2 a partir de1200px. Mapas com áreas grandes, botões de seleção equivalentes e indicação por cor/contorno/nome; a seleção de um estado amplia o Nordeste. Quatro sub-regiões em faixas vetoriais licenciadas, numeradas1–4, com cores laranja/amarelo/lilás/verde e painel sincronizado. Camadas oficiais ficam em Brasil e Nordeste. Botão global Ver no celular abre diálogo nativo com QR local, URL pública e aviso de conexão no celular; fechar retorna à mesma visita.

@@ -27,3 +27,5 @@ Histórico anônimo limita120IDs por tipo. Primeira rodada concluída de um tema
 GeoJSON oficial local em `src/content/maps/`, com fontes, vintages, simplificações e limites em metadata.json. Não converter figura didática sem método em polígono oficial. Pontos são centroides municipais oficiais, não limites ou sedes precisas.
 
 `videos.json` registra referência externa de Calango; a interface usa sinopse/ficha locais e QR para o celular. Uma nova referência precisa de URL/canal/título/data verificáveis, direitos documentados para qualquer imagem baixada e teste do fluxo offline. Não incluir mídia protegida no precache por existir publicamente na web.
+
+`maps/subregions.json` guarda quatro paths SVG e nove contornos estaduais extraídos da obra de Raphael Lorenzeto de Abreu (2006), CC BY2.5. Coordenadas de desenho, sem georreferenciamento. Metadados preservam URL, autoria, hash do original e modificações. Não converter esse desenho em limites oficiais. `site-links.json` centraliza o endereço público e o QR local exibido no cabeçalho.

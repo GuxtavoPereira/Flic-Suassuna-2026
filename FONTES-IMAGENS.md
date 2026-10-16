@@ -340,3 +340,9 @@ O Santo e a Porca e Uma Mulher Vestida de Sol usam retratos históricos contextu
 ## Novas artes fornecidas — lotes 1 e 2
 
 Registro histórico: 14 imagens geradas por IA foram fornecidas em uma edição anterior. Nesta edição permanecem arquivadas e não substituem fotografias factuais nos posts. A procedência e os arquivos originais constam dos manifestos locais em `public/images/fornecidas/lote-1/manifest.json` e `lote-2/manifest.json`. Não foi declarada licença Creative Commons nem identificação da ferramenta/autoria nos pacotes. As legendas identificam a natureza ilustrativa, sem atribuir às artes status documental ou oficial. Os créditos e licenças dos registros reais acima continuam válidos; eles não foram convertidos em créditos das novas artes. Ver LOTES-IMAGENS.md.
+
+## Mapa das quatro sub-regiões e QR do site
+
+Brazil Region Nordeste Subregions.svg, Raphael Lorenzeto de Abreu,29/04/2006. Arquivo original: https://commons.wikimedia.org/wiki/File:Brazil_Region_Nordeste_Subregions.svg . Licença selecionada: CC BY2.5, https://creativecommons.org/licenses/by/2.5/ . Extraídos os quatro polígonos e nove contornos estaduais; cores, coordenadas SVG e interação adaptadas. Correspondência conferida pela numeração original (1Meio-Norte,2Sertão,3Agreste,4Zona da Mata). Não é dado georreferenciado nem nova fronteira oficial. Fonte e alterações também aparecem na interface e em maps/subregions.json.
+
+O QR do site codifica exclusivamente https://flic2026-sertao-guxtavopereira.vercel.app/ . Gerado localmente com o codificador QR do ReportLab; nenhuma requisição externa é necessária para exibi-lo.

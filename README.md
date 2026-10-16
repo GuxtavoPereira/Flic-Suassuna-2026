@@ -6,6 +6,8 @@ Versão pública: https://flic2026-sertao-guxtavopereira.vercel.app — oito per
 
 São **8 percursos, 90 posts e 102 perguntas** no pool. A visita apresenta 12 posts de Clima, 10 de Música, 11 de Festas e 8 em cada um dos outros temas. Seis temas-base têm três perguntas por rodada, exclusivamente dos posts apresentados. Música e Festas são percursos livres sem pontuação. O ranking conserva o máximo de 18 acertos e os registros anteriores.
 
+A Home usa quatro colunas e duas linhas em displays horizontais. O cabeçalho oferece “Ver no celular”, com QR local para o endereço público. O mapa das quatro sub-regiões usa áreas vetoriais coloridas e numeradas; estados oficiais respondem a toque/teclado, com preenchimento amarelo, contorno e seleção sincronizada aos botões.
+
 A capa de Festas e Religiosidade mostra a capela da Fazenda Acauã, Aparecida/PB: fotografia real de Rogerio121402, 2015, CC BY-SA 4.0. As seis xilogravuras originais continuam nas seis capas-base. Posts factuais e painéis de obras usam fotografias ou registros identificados; obras sem reprodução autorizada usam contexto explicitamente descrito.
 
 ## Executar e validar

@@ -1,6 +1,6 @@
 # Pendências reais da edição de revisão
 
-- **Cartografia:** estados, Caatinga2019 e semiárido2022 têm bases oficiais locais; faltam polígonos das quatro sub-regiões didáticas com metodologia georreferenciada validada. A interface usa pontos oficiais e painéis, sem inventar fronteiras. O semiárido não é rotulado como limite legal vigente2026.
+- **Cartografia:** estados, Caatinga2019 e semiárido2022 têm bases oficiais locais; faltam polígonos das quatro sub-regiões didáticas com metodologia georreferenciada validada. A interface agora usa quatro áreas vetoriais de uma fonte didática licenciada e painéis sincronizados, com limites aproximados explicitados. A lacuna restante é de georreferenciamento/metodologia oficial, não de falta de cores. O semiárido não é rotulado como limite legal vigente2026.
 - **Direitos cartográficos:** licença MMD registrada para as malhas; bioma tem fonte/copyright IBGE identificados no serviço Ibama, sem presumir que a licença específica da MMD se estenda a todo produto temático.
 - **Literatura:** nenhuma citação literal foi liberada; faltam edição/página/autorização/aprovação dos trechos pendentes. Capas/encenações autorizadas de O Santo e a Porca e Uma Mulher Vestida de Sol ainda não obtidas; retratos de contexto são identificados.
 - **Audiovisual:** falta permissão de miniatura/frame/cartaz de Calango Lengo. Usa ficha tipográfica autoral. oEmbed confirma URL/título/canal; catálogos confirmam2008/FernandoMiller; reprodução completa e titularidade jurídica do canal não verificadas. Não existe cópia de vídeo/música no cache.

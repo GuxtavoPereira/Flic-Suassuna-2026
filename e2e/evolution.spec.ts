@@ -63,3 +63,22 @@ test('atualização PWA aguarda a Home e conserva a visita',async({page})=>{
     expect(await page.evaluate(()=>JSON.parse(sessionStorage.getItem('flic-visit-v2')!).visitId)).toBe(visit);
   }finally{writeFileSync('dist/sw.js',original);}
 });
+
+test('display horizontal: oito cards em quatro colunas e QR local para o site', async ({page,context}) => {
+  for (const [width,height] of [[1920,1080],[1366,768]]) {
+    await page.setViewportSize({width,height});await page.goto('/');await page.evaluate(()=>document.fonts.ready);
+    const boxes=await page.locator('.theme-card').evaluateAll(cards=>cards.map(c=>{const r=c.getBoundingClientRect();return {top:r.top,bottom:r.bottom};}));
+    expect(boxes).toHaveLength(8);expect(new Set(boxes.slice(0,4).map(b=>Math.round(b.top))).size).toBe(1);expect(new Set(boxes.slice(4).map(b=>Math.round(b.top))).size).toBe(1);expect(boxes[4].top).toBeGreaterThan(boxes[0].top);expect(Math.max(...boxes.map(b=>b.bottom))).toBeLessThanOrEqual(height);
+    await page.screenshot({path:`test-results/home-horizontal-${width}.png`,fullPage:true});
+  }
+  await page.setViewportSize({width:1920,height:1080});await page.goto('/');await expect(page.getByRole('status').filter({hasText:'Pronto para usar offline'})).toBeVisible({timeout:30000});await page.reload();await context.setOffline(true);
+  await page.getByRole('button',{name:'Ver site no celular',exact:true}).click();const dialog=page.getByRole('dialog',{name:'Leve o sertão com você'});await expect(dialog).toBeVisible();await expect(dialog).toContainText('https://flic2026-sertao-guxtavopereira.vercel.app/');await expect(dialog).toContainText('celular precisa de internet');expect(await dialog.locator('img').evaluate((im:HTMLImageElement)=>im.complete&&im.naturalWidth>0)).toBe(true);await page.screenshot({path:'test-results/site-qr-1920.png',fullPage:true});await page.getByRole('button',{name:'Fechar QR code',exact:true}).click();await expect(dialog).not.toBeVisible();await expect(page).toHaveURL('/');
+});
+test('mapas touch: seleção do estado no desenho e quatro sub-regiões coloridas', async ({page}) => {
+  await page.goto('/tema/clima-vegetacao/mapas');await page.getByRole('button',{name:'Paraíba',exact:true}).click();await expect(page.locator('[data-state="PB"]')).toHaveAttribute('aria-pressed','true');await expect(page.locator('.map-selection-status')).toContainText('Paraíba · PB');await expect(page.locator('.state-selection path')).toHaveCount(2);
+  await page.getByRole('button',{name:'Selecionar estado Ceará',exact:true}).tap();await expect(page.locator('[data-state="CE"]')).toHaveAttribute('aria-pressed','true');await expect(page.locator('[data-state="PB"]')).toHaveAttribute('aria-pressed','false');await expect(page.locator('.map-state-list button').filter({hasText:'Ceará'})).toHaveAttribute('aria-pressed','true');
+  await page.getByRole('button',{name:'Selecionar estado Pernambuco',exact:true}).focus();await page.keyboard.press('Enter');await expect(page.locator('.map-selection-status')).toContainText('Pernambuco · PE');await page.screenshot({path:'test-results/selected-state-1920.png',fullPage:true});
+  await page.getByRole('button',{name:'Quatro sub-regiões',exact:true}).click();await expect(page.locator('[data-subregion]')).toHaveCount(4);expect(new Set(await page.locator('[data-subregion]').evaluateAll(paths=>paths.map(p=>p.getAttribute('fill')))).size).toBe(4);
+  for(const name of ['1. Meio-Norte','2. Sertão','3. Agreste','4. Zona da Mata']) {await page.getByRole('button',{name,exact:true}).tap();await expect(page.locator('.region-panel h3')).toHaveText(name.slice(3));}
+  await page.getByRole('button',{name:'Selecionar Sertão: Salgueiro',exact:true}).tap();await expect(page.locator('[data-subregion="sertao"]')).toHaveAttribute('aria-pressed','true');await expect(page.locator('.subregion-selection path')).toHaveCount(2);await page.screenshot({path:'test-results/subregions-1920.png',fullPage:true});
+});
