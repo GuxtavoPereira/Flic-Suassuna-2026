@@ -46,6 +46,7 @@ test('mapas e novos percursos: responsividade e acessibilidade',async({page})=>{
     for(const path of ['/','/tema/clima-vegetacao/mapas','/tema/festas-religiosidade','/tema/musica-audiovisual']){
       await page.goto(path);await page.evaluate(()=>document.fonts.ready);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),path).toBe(true);
       const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();expect(result.violations,JSON.stringify(result.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})))).toEqual([]);
+      if(path.includes('festas-')||path.includes('musica-'))await page.screenshot({path:`test-results/${path.includes('festas-')?'festas':'musica'}-${width}.png`,fullPage:true});
     }
   }
 });
