@@ -159,5 +159,12 @@
     "url": "https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2022/amostra-religioes",
     "verifiedAt": "2026-10-16",
     "status": "referência consultada; curadoria pedagógica pendente"
+  },
+  {
+    "id": "ufpe-acervo",
+    "label": "UFPE · Acervo e patrimônio: Ariano Suassuna",
+    "url": "https://ead.ufpe.br/observatorio-covid-19/sociedade/quarentenarte/acervo-e-patrimonio",
+    "verifiedAt": "2026-10-16",
+    "status": "dados bibliográficos conferidos; curadoria pedagógica pendente"
   }
 ]

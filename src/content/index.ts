@@ -20,7 +20,7 @@ export const sources = [
   { id: 'rachel-bio', label: 'Academia Brasileira de Letras · Rachel de Queiroz', url: 'https://www.academia.org.br/academicos/rachel-de-queiroz/biografia' },
   { id: 'gonzaga-bio', label: 'Fundação Joaquim Nabuco · Luiz Gonzaga', url: 'https://pesquisaescolar.fundaj.gov.br/pt-br/artigo/luiz-gonzaga/' },
   { id: 'vitalino-bio', label: 'Fundação Joaquim Nabuco · Vitalino Pereira', url: 'https://pesquisaescolar.fundaj.gov.br/pt-br/artigo/vitalino/' },
-  { id: 'patativa-bio', label: 'Secretaria da Cultura do Ceará · Patativa do Assaré', url: 'https://www.ce.gov.br/secult/patativa-do-assare/' },
+  { id: 'patativa-bio', label: 'Secretaria da Cultura do Ceará · Patativa do Assaré', url: 'https://www.ce.gov.br/secult/2025/03/05/116-anos-de-patativa-do-assare-o-eterno-canto-do-sertao/' },
   { id: 'fundaj-comida', label: 'Fundação Joaquim Nabuco · Culinária nordestina', url: 'https://pesquisaescolar.fundaj.gov.br/pt-br/artigo/culinaria-nordestina-no-brasil/' },
   { id: 'canudos', label: 'Fundação Joaquim Nabuco · Canudos', url: 'https://pesquisaescolar.fundaj.gov.br/pt-br/artigo/guerra-de-canudos/' },
   { id: 'abl-bio', label: 'Academia Brasileira de Letras · Biografia', url: 'https://www.academia.org.br/academicos/ariano-suassuna/biografia' },
@@ -67,7 +67,7 @@ export const literature: LiterarySlide[] = [
   { type: 'literary', id: 'armorial', workTitle: 'Movimento Armorial', year: 1970, genre: 'Movimento artístico', author: 'Contexto da atuação de Ariano Suassuna', context: 'Arte popular e erudita. Este painel aborda um movimento, não uma obra específica.', placeholderParaphrase: 'Painel de síntese autoral sobre a proposta do movimento, sem atribuir frase inventada a Ariano.', connectionToTheme: 'Cordel, música, literatura e artes visuais dialogam na proposta armorial.', question: 'Que encontros você percebe entre a arte popular e outras formas de arte?', permissionStatus: 'pending', sources: ['fundaj'], moduleIds: ['cultura', 'ariano'] },
 ];
 export const timeline = [
-  { year: '1896–1897', title: 'Guerra de Canudos', description: themes[3].slides[1].body, relation: 'Contexto histórico regional · sem influência direta presumida', sources: [] as string[] },
+  { year: '1896–1897', title: 'Guerra de Canudos', description: themes[3].slides[1].body, relation: 'Contexto histórico regional · sem influência direta presumida', sources: ['canudos'] as string[] },
   { year: '1927', title: 'Nasce Ariano Suassuna', description: themes[3].slides[2].body, relation: 'Trajetória biográfica', sources: ['abl-bio'] },
   { year: '1955', title: 'Auto da Compadecida', description: themes[3].slides[3].body, relation: 'Escrita da obra · primeira encenação em 1956', sources: ['abl-obras'] },
   { year: '1970', title: 'Movimento Armorial', description: themes[1].slides[4].body, relation: 'Lançamento do movimento em Recife', sources: ['fundaj'] },
