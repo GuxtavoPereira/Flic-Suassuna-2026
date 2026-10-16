@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "test:offline": "node --test offline/servidor.test.mjs"
+    "test:offline": "node --test offline/servidor.test.mjs",
+    "typecheck": "tsc -b",
+    "validate:content": "node scripts/audit-content.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

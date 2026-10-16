@@ -4,12 +4,13 @@ import content from '../src/content/modules.json' with { type: 'json' };
 import { answerQuiz, readTheme } from './helpers';
 import topicAssets from '../src/content/topic-assets.json' with { type: 'json' };
 import documentaryAssets from '../src/content/documentary-assets.json' with { type: 'json' };
+import evolutionAssets from '../src/content/evolution-assets.json' with { type: 'json' };
 import suppliedAssets from '../src/content/supplied-assets.json' with { type: 'json' };
 const slug = (id: string) => id === 'clima' ? 'clima-vegetacao' : id;
 async function noOverflow(page: Page) { expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true); }
-test('seis percursos completos: 30 slides e 18 respostas corretas', async ({ page }) => {
+test('seis percursos completos: 52+ posts e 18 respostas corretas', async ({ page }) => {
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
-  await page.goto('/'); await expect(page.locator('.theme-card')).toHaveCount(6);
+  await page.goto('/'); await expect(page.locator('.theme-card')).toHaveCount(8);
   await page.screenshot({ path: 'test-results/home-1920.png', fullPage: true });
   for (const m of content.modules) {
     await page.locator(`a.theme-card[href="/tema/${slug(m.id)}"]`).click();
@@ -20,34 +21,34 @@ test('seis percursos completos: 30 slides e 18 respostas corretas', async ({ pag
   expect(errors).toEqual([]); await expect(page.locator('.card-complete')).toHaveCount(6); await noOverflow(page);
 });
 test('erro, pontuação parcial, voltar e refazer', async ({ page }) => {
-  await page.goto('/tema/clima-vegetacao'); await page.getByRole('button', { name: 'Próximo', exact: true }).click(); await page.getByRole('link', { name: 'Voltar aos temas' }).first().click(); await page.locator('.theme-card').first().click(); await expect(page.locator('.slide-progress')).toContainText('2 de 5');
+  await page.goto('/tema/clima-vegetacao'); await page.getByRole('button', { name: 'Próximo', exact: true }).click(); await page.getByRole('link', { name: 'Voltar aos temas' }).first().click(); await page.locator('.theme-card').first().click(); await expect(page.locator('.slide-progress')).toContainText('2 de 12');
   await page.goto('/tema/clima-vegetacao');
   await page.getByRole('button', { name: 'Anterior', exact: true }).click();
   await readTheme(page, 'clima-vegetacao', false); await answerQuiz(page, true);
   await expect(page.locator('.score-display')).toContainText('200');
   await page.getByRole('link', { name: 'Nova rodada de treino' }).click();
-  await expect(page.locator('.slide-progress')).toContainText('1 de 5');
+  await expect(page.locator('.slide-progress')).toContainText('1 de 12');
   await readTheme(page, 'clima-vegetacao', false); await expect(page.locator('.answer:not(:disabled)')).toHaveCount(4);
   await expect(page.locator('.quiz-bottom')).toContainText('0 pontos');
 });
 test('painéis literários, fontes e retorno preservado', async ({ page }) => {
-  await page.goto('/tema/ariano'); await page.getByRole('button', { name: 'Próximo', exact: true }).click(); await page.locator('.literature-links summary').click(); await page.getByRole('link', { name: 'Auto da Compadecida' }).click(); await expect(page.getByText('PARÁFRASE EDUCATIVA — NÃO É CITAÇÃO DA OBRA')).toBeVisible(); await expect(page.locator('blockquote')).toHaveCount(0); await expect(page.getByText('Não sei, só sei que foi assim.')).toHaveCount(0); await page.getByRole('link', { name: 'Retornar ao post' }).first().click(); await expect(page.locator('.slide-progress')).toContainText('2 de 5');
+  await page.goto('/tema/ariano'); await page.getByRole('button', { name: 'Próximo', exact: true }).click(); await page.locator('.literature-links summary').click(); await page.getByRole('link', { name: 'Auto da Compadecida' }).click(); await expect(page.getByText('PARÁFRASE EDUCATIVA — NÃO É CITAÇÃO DA OBRA')).toBeVisible(); await expect(page.locator('blockquote')).toHaveCount(0); await expect(page.getByText('Não sei, só sei que foi assim.')).toHaveCount(0); await page.getByRole('link', { name: 'Retornar ao post' }).first().click(); await expect(page.locator('.slide-progress')).toContainText('2 de 8');
 });
 test('quatro fases e seis marcos com controle manual', async ({ page }) => {
   await page.goto('/tema/clima-vegetacao/caatinga'); for (const name of ['Seca', 'Nuvens', 'Chuva', 'Renascimento']) { const b = page.getByRole('button', { name, exact: true }); await b.tap(); await expect(b).toHaveAttribute('aria-pressed', 'true'); await expect(page.locator('.landscape-label')).toContainText(name); }
   await page.goto('/linha-do-tempo'); const buttons = page.locator('.timeline-rail button'); await expect(buttons).toHaveCount(6); for (let i = 0; i < 6; i++) { await buttons.nth(i).click(); await expect(buttons.nth(i)).toHaveAttribute('aria-pressed', 'true'); } await expect(page.locator('.timeline-event')).toContainText('2014');
 });
 test('touch swipe e teclado', async ({ page }) => {
-  await page.goto('/tema/cultura'); const section = page.locator('.slide-layout'); await section.dispatchEvent('touchstart', { changedTouches: [{ identifier: 0, clientX: 850, clientY: 300 }] }); await section.dispatchEvent('touchend', { changedTouches: [{ identifier: 0, clientX: 300, clientY: 310 }] }); await expect(page.locator('.slide-progress')).toContainText('2 de 5'); const previous = page.getByRole('button', { name: 'Anterior', exact: true }); await previous.focus(); await page.keyboard.press('Enter'); await expect(page.locator('.slide-progress')).toContainText('1 de 5'); await page.getByRole('button', { name: 'Opções de exibição' }).click(); await expect(page.getByRole('dialog')).toBeVisible(); await page.keyboard.press('Escape'); await expect(page.getByRole('dialog')).not.toBeVisible();
+  await page.goto('/tema/cultura'); const section = page.locator('.slide-layout'); await section.dispatchEvent('touchstart', { changedTouches: [{ identifier: 0, clientX: 850, clientY: 300 }] }); await section.dispatchEvent('touchend', { changedTouches: [{ identifier: 0, clientX: 300, clientY: 310 }] }); await expect(page.locator('.slide-progress')).toContainText('2 de 8'); const previous = page.getByRole('button', { name: 'Anterior', exact: true }); await previous.focus(); await page.keyboard.press('Enter'); await expect(page.locator('.slide-progress')).toContainText('1 de 8'); await page.getByRole('button', { name: 'Opções de exibição' }).click(); await expect(page.getByRole('dialog')).toBeVisible(); await page.keyboard.press('Escape'); await expect(page.getByRole('dialog')).not.toBeVisible();
 });
 test('offline real: precache, fechar página, reabrir rota interna e quiz sem rede', async ({ page, context }) => {
   await page.goto('/'); await expect(page.getByRole('status').filter({ hasText: 'Pronto para usar offline' })).toBeVisible({ timeout: 30000 }); await page.evaluate(async () => { await navigator.serviceWorker.ready; }); await page.reload(); await context.setOffline(true); await page.close(); const offline = await context.newPage(); await offline.goto('/tema/ariano'); await expect(offline.getByRole('heading', { level: 1 })).toBeVisible();
   for (const m of content.modules) { await offline.goto(`/tema/${slug(m.id)}`); await expect(offline.locator('.slide-art img')).toBeVisible(); expect(await offline.locator('.slide-art img').evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBe(true); }
-  const decoded = await offline.evaluate(async paths => Promise.all(paths.map(async path => { const response=await fetch(path); const bitmap=await createImageBitmap(await response.blob()); const valid=bitmap.width>0&&bitmap.height>0;bitmap.close();return valid; })), [...topicAssets,...documentaryAssets,...suppliedAssets].map(a=>a.image));expect(decoded.every(Boolean)).toBe(true);
+  const decoded = await offline.evaluate(async paths => Promise.all(paths.map(async path => { const response=await fetch(path); const bitmap=await createImageBitmap(await response.blob()); const valid=bitmap.width>0&&bitmap.height>0;bitmap.close();return valid; })), [...topicAssets,...documentaryAssets,...suppliedAssets,...evolutionAssets].filter(a=>a.image.endsWith('.webp')).map(a=>a.image));expect(decoded.every(Boolean)).toBe(true);
   await readTheme(offline, 'cultura'); await answerQuiz(offline); await expect(offline.locator('.score-display')).toContainText('300'); await context.setOffline(false);
 });
 test('responsivo: 1920, 4K, tablet e celular sem overflow', async ({ page }) => {
-  for (const [width, height] of [[1920,1080],[3840,2160],[1024,768],[390,844]]) { await page.setViewportSize({ width, height }); await page.goto('/'); await expect(page.locator('.theme-card')).toHaveCount(6); await noOverflow(page); await page.screenshot({ path: `test-results/home-${width}.png`, fullPage: true }); await page.goto('/tema/ariano'); await noOverflow(page); await page.screenshot({ path: `test-results/module-${width}.png`, fullPage: true }); }
+  for (const [width, height] of [[1920,1080],[3840,2160],[1024,768],[390,844]]) { await page.setViewportSize({ width, height }); await page.goto('/'); await expect(page.locator('.theme-card')).toHaveCount(8); await noOverflow(page); await page.screenshot({ path: `test-results/home-${width}.png`, fullPage: true }); await page.goto('/tema/ariano'); await noOverflow(page); await page.screenshot({ path: `test-results/module-${width}.png`, fullPage: true }); }
 });
 test('acessibilidade automatizada nas telas principais', async ({ page }) => {
   for (const path of ['/', '/tema/ariano', '/tema/ariano/quiz', '/tema/ariano/leitura/auto', '/tema/clima-vegetacao/caatinga', '/linha-do-tempo', '/sobre']) { await page.goto(path); await page.evaluate(() => document.fonts.ready); const results = await new AxeBuilder({ page }).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze(); expect(results.violations, JSON.stringify(results.violations.map(v => ({ id: v.id, nodes: v.nodes.map(n => n.target) })))).toEqual([]); }

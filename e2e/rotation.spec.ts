@@ -12,7 +12,7 @@ test('nova visita muda os posts; treino muda conteúdos sem melhorar ranking', a
   await readTheme(page,'culinaria'); await answerQuiz(page,true); await expect(page.locator('.score-display')).toContainText('2/3');
   const before=await page.evaluate(()=>JSON.parse(sessionStorage.getItem('flic-visit-v2')!).rounds.culinaria);
   await page.getByRole('link',{name:'Nova rodada de treino'}).click();
-  await expect(page.locator('.slide-progress')).toContainText('1 de 5');
+  await expect(page.locator('.slide-progress')).toContainText('1 de 8');
   await readTheme(page,'culinaria',false);await answerQuiz(page);
   await expect(page.locator('.score-display')).toContainText('3/3');await expect(page.getByText('Resultado de treino.')).toBeVisible();
   await page.getByRole('link',{name:'Encerrar visita e ver ranking'}).click();await expect(page.locator('.visit-stats dd').first()).toContainText('2');
@@ -23,10 +23,8 @@ test('nova visita muda os posts; treino muda conteúdos sem melhorar ranking', a
   expect(await page.evaluate(()=>JSON.parse(sessionStorage.getItem('flic-visit-v2')!).visitId)).toBeTruthy();
 });
 test('créditos de imagens, fallback e registro documental sem citações liberadas', async ({ page }) => {
-  await page.goto('/tema/ariano/leitura/santo');await expect(page.locator('.literary-book .post-image figcaption')).toContainText('gerada por IA');
-  await page.locator('.literary-book .image-credit summary').click();await expect(page.locator('.literary-book .image-credit a')).toHaveAttribute('href',/images\/fornecidas\/lote-1\/creditos.html#ariano-03/);
-  await page.locator('.documentary-reference > summary').click();await expect(page.locator('.documentary-reference figcaption')).toContainText('Retrato contextual');
-  await page.locator('.documentary-reference .image-credit summary').click();await expect(page.locator('.documentary-reference .image-credit a')).toHaveAttribute('href',/commons.wikimedia.org/);
+  await page.goto('/tema/ariano/leitura/santo');await expect(page.locator('.literary-book .post-image figcaption')).toContainText('Retrato contextual');
+  await page.locator('.literary-book .image-credit summary').click();await expect(page.locator('.literary-book .image-credit a').first()).toHaveAttribute('href',/commons.wikimedia.org/);
   await expect(page.locator('blockquote')).toHaveCount(0);
   await page.route('**/images/topics/**',route=>route.abort());await page.goto('/tema/culinaria');await expect(page.locator('.artwork-fallback')).toBeVisible();
   await page.getByRole('button',{name:'Próximo',exact:true}).click();await expect(page.locator('h1')).toBeVisible();
@@ -47,10 +45,9 @@ test('quiz dinâmico acessível em display e celular', async ({ page }) => {
   }
 });
 
-test('lotes fornecidos: post e painel usam suas artes com origem explícita', async ({ page }) => {
-  await page.goto('/tema/clima-vegetacao');await expect(page.locator('.slide-art img')).toHaveAttribute('src','/images/fornecidas/lote-1/clima-01.webp');
-  await page.goto('/tema/cultura');await expect(page.locator('.slide-art img')).toHaveAttribute('src','/images/fornecidas/lote-2/cultura-01.webp');
-  await page.goto('/tema/cultura/leitura/pedra');await expect(page.locator('.literary-book img')).toHaveAttribute('src','/images/fornecidas/lote-1/ariano-04.webp');
-  await expect(page.locator('.literary-book figcaption')).toContainText('gerada por IA');
-  await page.locator('.documentary-reference > summary').click();await expect(page.locator('.documentary-reference img')).toHaveAttribute('src','/images/documentary/pedra-do-reino-local.webp');
+test('fotos reais prevalecem nos posts e painéis de obras', async ({ page }) => {
+  await page.goto('/tema/clima-vegetacao');await expect(page.locator('.slide-art img')).not.toHaveAttribute('src',/fornecidas/);
+  await page.goto('/tema/cultura');await expect(page.locator('.slide-art img')).toHaveAttribute('src','/images/topics/repente.webp');
+  await page.goto('/tema/cultura/leitura/pedra');await expect(page.locator('.literary-book img')).toHaveAttribute('src','/images/documentary/pedra-do-reino-local.webp');
+  await expect(page.locator('.literary-book figcaption')).not.toContainText('gerada por IA');
 });
