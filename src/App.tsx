@@ -15,6 +15,7 @@ import { VisitEnd, Leaderboard, LeaderboardSettings } from './components/Leaderb
 import { summarizeVisit } from './domain/visit';
 import { roundReady } from './domain/rotation';
 import { recordRecent } from './services/visit-session';
+import { VideoReference } from './components/VideoReference';
 import { EconomyContext } from './components/EconomyContext';
 import { MapExplorer } from './components/MapExplorer';
 import { PostImage } from './components/PostImage';
@@ -96,6 +97,7 @@ function ThemeViewer() {
   return <div className="module-page page-width" style={themeStyle(theme)}><PageTop><span className="theme-tag">{theme.category}</span> {theme.title}</PageTop><section className="slide-layout" aria-label={`Post ${index + 1} de ${slides.length}`} onTouchStart={e => { const t = e.changedTouches[0]; touch.current = { x: t.clientX, y: t.clientY }; }} onTouchEnd={e => { if (!touch.current) return; const t = e.changedTouches[0]; const dx = t.clientX - touch.current.x; const dy = t.clientY - touch.current.y; touch.current = null; if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.5 && !(e.target as HTMLElement).closest('a,button,input,select,summary,svg')) go(dx < 0 ? 1 : -1); }}>
     <motion.div className="slide-copy" key={slide.id} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.22 }}><span className="eyebrow">DESCOBERTA {String(index + 1).padStart(2, '0')}</span><h1 tabIndex={-1}>{slide.title}</h1><p className="slide-body">{slide.body}</p><aside className="curiosity"><Sparkles size={25} aria-hidden="true"/><div><strong>Você sabia?</strong><p>{slide.curiosity}</p></div></aside><Sources ids={slide.sources}/></motion.div>
     <div className="slide-art"><PostImage image={slide.image} alt={slide.alt} metadata={slide.sourceMetadata}/></div></section>
+    {slide.experience === 'video' && <VideoReference/>}
     {['economy', 'cistern'].includes(slide.experience ?? '') && <EconomyContext postId={slide.id} cistern={slide.experience === 'cistern'}/>}
     {slide.experience === 'maps' && <MapExplorer initialMode={slide.id === 'clima-10' ? 'subregioes' : 'brasil'}/>}
     {slide.id === 'festas-12' && <section className="economy-context"><h2>Diversidade e respeito</h2><p>Estas fotografias mostram exemplos identificados de tradições distintas. Elas não representam todas as crenças nem substituem os registros de práticas indígenas e de outras comunidades.</p><div className="context-photos">{['diversidade-evangelica-sertao'].map(id=>{const a=imageAssets.find(a=>a.id===id);return a?<PostImage key={id} image={a.image} alt={a.alt} metadata={a}/>:null;})}</div></section>}
