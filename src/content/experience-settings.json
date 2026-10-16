@@ -1,0 +1,50 @@
+[
+  {
+    "id": "clima-vegetacao",
+    "quizEnabled": true,
+    "rankingEligible": true,
+    "postsPerVisit": 12
+  },
+  {
+    "id": "cultura",
+    "quizEnabled": true,
+    "rankingEligible": true,
+    "postsPerVisit": 8
+  },
+  {
+    "id": "personalidades",
+    "quizEnabled": true,
+    "rankingEligible": true,
+    "postsPerVisit": 8
+  },
+  {
+    "id": "linha-do-tempo",
+    "quizEnabled": true,
+    "rankingEligible": true,
+    "postsPerVisit": 8
+  },
+  {
+    "id": "culinaria",
+    "quizEnabled": true,
+    "rankingEligible": true,
+    "postsPerVisit": 8
+  },
+  {
+    "id": "ariano",
+    "quizEnabled": true,
+    "rankingEligible": true,
+    "postsPerVisit": 8
+  },
+  {
+    "id": "musica-audiovisual",
+    "quizEnabled": false,
+    "rankingEligible": false,
+    "postsPerVisit": 10
+  },
+  {
+    "id": "festas-religiosidade",
+    "quizEnabled": false,
+    "rankingEligible": false,
+    "postsPerVisit": 11
+  }
+]

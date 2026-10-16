@@ -14,7 +14,7 @@ afterEach(()=>vi.unstubAllGlobals());
 describe('evolução editorial',()=>{
   it('oferece oito percursos preenchidos, cobertura mínima e fontes rastreáveis',()=>{
     expect(themes).toHaveLength(8);
-    expect(themes.filter(t=>t.quizEnabled)).toHaveLength(6);
+    expect(themes.filter(t=>t.quizEnabled)).toHaveLength(6);expect(themes.filter(t=>t.rankingEligible)).toHaveLength(6);
     expect(themes.flatMap(t=>t.postPool).length).toBeGreaterThanOrEqual(72);
     for(const t of themes){
       expect(t.postPool.length).toBeGreaterThanOrEqual(t.id==='clima-vegetacao'?12:['musica-audiovisual','festas-religiosidade'].includes(t.id)?10:8);
@@ -27,7 +27,7 @@ describe('evolução editorial',()=>{
   it('não atribui pontos nem perguntas aos percursos livres',()=>{
     const rounds=Object.fromEntries(themes.map(t=>[t.id,createRound(t,{posts:[],questions:[]})]));
     for(const t of themes.filter(t=>!t.quizEnabled))expect(rounds[t.id].questions).toEqual([]);
-    expect(summarizeVisit({},rounds)).toEqual({correct:0,answered:0,total:18,completedThemes:0});
+    rounds['musica-audiovisual'].rankingAnswers={'inventada':0};expect(summarizeVisit({},rounds)).toEqual({correct:0,answered:0,total:18,completedThemes:0});
   });
   it('migra visita v2 conservando respostas, visita e temas já pontuados',()=>{
     vi.stubGlobal('localStorage',storage());vi.stubGlobal('sessionStorage',storage());

@@ -18,8 +18,9 @@ export function shuffleQuestion(question: QuizQuestion, random: () => number = M
   return { ...question, options: optionOrder.map(i => question.options[i]), correctIndex: optionOrder.indexOf(question.correctIndex), optionOrder };
 }
 export function selectQuestions(questions: QuizQuestion[], posts: EducationalSlide[], recent: string[] = [], random = Math.random): QuizQuestion[] {
-  const topics = new Set(posts.map(p => p.topicId));
-  const candidates = preferFresh(questions.filter(q => topics.has(q.topicId) && q.postIds?.some(id => posts.some(p => p.id === id))), recent, random);
+  const eligiblePosts = posts.filter(p => p.quizEligible);
+  const topics = new Set(eligiblePosts.map(p => p.topicId));
+  const candidates = preferFresh(questions.filter(q => topics.has(q.topicId) && q.postIds?.some(id => eligiblePosts.some(p => p.id === id))), recent, random);
   const picked: QuizQuestion[] = [];
   for (const difficulty of [1, 2, 3]) {
     const q = candidates.find(q => q.difficulty === difficulty && !picked.some(p => p.id === q.id));

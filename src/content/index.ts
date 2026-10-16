@@ -1,3 +1,4 @@
+import experienceSettings from './experience-settings.json';
 import raw from './modules.json';
 import editorialSources from './editorial-sources.json';
 import excerptData from './excerpts.json';
@@ -54,7 +55,7 @@ export const themes: Theme[] = modules.map(m => {
     return { ...p, image: asset.image, alt: asset.alt, sourceMetadata: { ...asset, caption: [p.imageContext, asset.caption].filter(Boolean).join(' ') }, imageCredit: asset.credit, imageLicense: asset.licenseNote, sources: p.source };
   });
   const questionPool = pool.questions.filter(q => q.themeId === id).map(q => ({ ...q, sources: sourceIds[m.id] }));
-  return { ...m, ...metadata[m.id]!, quizEnabled: !['musica-audiovisual', 'festas-religiosidade'].includes(id), postsPerVisit: id === 'clima-vegetacao' ? 12 : id === 'musica-audiovisual' ? 10 : id === 'festas-religiosidade' ? 11 : 8, rawId: m.id, id, slides: postPool.filter(p => m.slides.some(s => s.id === p.id)), quiz: m.quiz.map((q, i) => ({ ...q, themeId: id, topicId: postPool[Math.min(i + 1, 4)].topicId, difficulty: i + 1, tags: ['legado'], sources: sourceIds[m.id] })), postPool, questionPool };
+  return { ...m, ...metadata[m.id]!, ...experienceSettings.find(t => t.id === id)!, rawId: m.id, id, slides: postPool.filter(p => m.slides.some(s => s.id === p.id)), quiz: m.quiz.map((q, i) => ({ ...q, themeId: id, topicId: postPool[Math.min(i + 1, 4)].topicId, difficulty: i + 1, tags: ['legado'], sources: sourceIds[m.id] })), postPool, questionPool };
 });
 const aliases: Record<string, string> = { clima: 'clima-vegetacao', 'cultura-sertao': 'cultura', 'figuras-influentes': 'personalidades', 'culinaria-nordestina': 'culinaria', 'ariano-vida-obras': 'ariano' };
 export function findTheme(id: string | undefined) { return themes.find(t => t.id === (aliases[id ?? ''] ?? id)); }

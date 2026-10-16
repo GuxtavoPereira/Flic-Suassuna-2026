@@ -19,7 +19,7 @@ export interface LiterarySlide {
   authorization?: string; editorialVerified?: boolean; sources: string[]; moduleIds: RawModuleId[];
 }
 export type Slide = EducationalSlide | LiterarySlide;
-export interface Theme { quizEnabled: boolean; postsPerVisit: number; id: ThemeId; rawId: RawModuleId; title: string; subtitle: string; cover: string; alt: string; category: string; color: string; tint: string; slides: EducationalSlide[]; quiz: QuizQuestion[]; postPool: EducationalSlide[]; questionPool: QuizQuestion[] }
+export interface Theme { rankingEligible: boolean; quizEnabled: boolean; postsPerVisit: number; id: ThemeId; rawId: RawModuleId; title: string; subtitle: string; cover: string; alt: string; category: string; color: string; tint: string; slides: EducationalSlide[]; quiz: QuizQuestion[]; postPool: EducationalSlide[]; questionPool: QuizQuestion[] }
 export function allowedQuote(slide: LiterarySlide): string | undefined {
   if (slide.permissionStatus !== 'approved' || !slide.editorialVerified || !slide.quoteText?.trim() || !slide.edition?.trim() || !slide.page?.trim() || !slide.authorization?.trim() || !slide.sources.length) return undefined;
   return slide.quoteText;
