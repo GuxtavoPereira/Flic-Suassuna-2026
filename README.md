@@ -20,7 +20,7 @@ Node.js 22/24. Instalação: `npm ci`. Desenvolvimento: `npm run dev`.
 | `npm run build` | Tipos, Vite e precache PWA |
 | `npm run test:e2e` | Navegação, teclado/toque, axe, offline, QR e atualização PWA |
 
-A CI do PR executa verificações e E2E sem publicar. O build da Vercel desta branch exige `VERCEL_ENV=preview` e falha antes de publicar em produção. Não mesclar/promover sem nova ordem explícita. Resultados reais e limitações estão em [AUDITORIA-EVOLUCAO.md](AUDITORIA-EVOLUCAO.md), [CHECKLIST-EVOLUCAO.md](CHECKLIST-EVOLUCAO.md) e [PENDENCIAS-CURADORIA.md](PENDENCIAS-CURADORIA.md).
+A CI do PR executa verificações e E2E sem publicar. O build da Vercel verifica explicitamente `VERCEL_ENV=preview` ou `production`. O proprietário autorizou a publicação desta evolução no endereço público em 16/10/2026. Resultados reais e limitações estão em [AUDITORIA-EVOLUCAO.md](AUDITORIA-EVOLUCAO.md), [CHECKLIST-EVOLUCAO.md](CHECKLIST-EVOLUCAO.md) e [PENDENCIAS-CURADORIA.md](PENDENCIAS-CURADORIA.md).
 
 ## Onde editar
 

@@ -4,7 +4,7 @@ Um projeto Vercel existente: `flic2026-sertao`. SPA React19/TypeScript/Vite, Rea
 
 Estado: SessionProvider, sessão versionada, histórico e repositório de ranking local. Módulos novos não modificam o total competitivo. Camadas principais: src/content (validação/normalização), domain (seleção/quiz/direitos/resumo), services (persistência), components (mapas/cisterna/vídeo/imagens/ranking) e App (rotas/telas).
 
-`vercel.json` conserva rewrites da SPA e exceções para assets, imagens, ícones, fontes de revisão, SW e manifesto. Header do SW impede cache HTTP indevido. A branch atual exige ambiente Preview antes de build/testes; produção deve falhar. Preview isolado está sujeito à autorização operacional da integração. O alias público anterior não deve ser reassociado nesta entrega.
+`vercel.json` conserva rewrites da SPA e exceções para assets, imagens, ícones, fontes de revisão, SW e manifesto. Header do SW impede cache HTTP indevido. O destino do build precisa ser explicitamente Preview ou Production. Em16/10/2026 o proprietário autorizou atualizar o site público com esta evolução; a trava anterior exclusiva de Preview foi substituída após essa ordem.
 
 A CI GitHub do PR roda lint/tipos/validação/unitários/servidor/build/E2E e guarda evidências sem deploy. O Chromium de teste vem da dependência do projeto; nada é instalado no PC do visitante.
 

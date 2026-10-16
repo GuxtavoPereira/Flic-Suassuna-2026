@@ -10,4 +10,4 @@ Não inventar fotografias, fronteiras, datas, URLs, atribuições ou permissões
 
 Validar lint, tipos, conteúdo, unitários, servidor offline, build e E2E apropriados. Reconstruir dist quando mudarem imagens/fontes antes dos testes de precache. Testes automatizados não comprovam leitura no display físico ou aprovação pedagógica.
 
-Esta branch é somente de revisão: `require-preview.mjs` impede build Vercel fora de Preview. Não publicar/promover em produção nem remover a trava sem nova ordem explícita. Atualizar checklist apenas após evidência; registrar pendências reais.
+O proprietário autorizou explicitamente a publicação desta evolução em produção em 16/10/2026. `require-deployment-target.mjs` aceita apenas Preview ou Production e rejeita destino ausente/desconhecido. Futuras publicações devem respeitar a autorização da sessão. Atualizar checklist apenas após evidência; registrar pendências reais.

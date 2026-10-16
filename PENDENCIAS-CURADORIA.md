@@ -8,6 +8,6 @@
 - **Capela solicitada:** resolvida: Fazenda Acauã, Aparecida/PB, Rogerio121402,2015, CC BY-SA4.0. Representa patrimônio católico, sem representar todas as crenças.
 - **Curadoria pedagógica:** textos continuam review-pending; conferência final por educador e calibração de dificuldade com11–15anos não substituídas por testes.
 - **Display:** ensaio no Windows real, toque, iluminação e leitura a1,5m pendentes. Runtime Windows não executado em Linux.
-- **Vercel:** preview isolado bloqueado por revisão automática. Staging associaria o endereço atual e foi cancelado antes de publicar; target=preview foi recusado pela API; chamada sem target foi bloqueada mesmo com trava de build. Site anterior preservado. Não há URL nova implantada para apresentar.
+- **Vercel:** a autorização posterior de16/10/2026 liberou a publicação no endereço público. Preview805a1cd em construção; produção será verificada antes de declarar a URL atualizada.
 
 Não marcar a entrega inteira como concluída enquanto esses aceites estiverem pendentes.

@@ -71,3 +71,9 @@ Comandos aprovados: lint, typecheck, validate:content (90 posts/8 temas), npm te
 Conferência visual final de capturas: Home1920/celular, mapa1920 (marcador sem sobreposição), cisterna, QR, quiz, ranking móvel, Festas1920/390 e Música1024. Grade de oito cards preservada; rolagem vertical disponível. Modo celular do ranking usa região de tabela com rolagem horizontal acessível; não transborda a página. Sem alegar teste manual no Windows/display.
 
 Pacote preliminar conferido por CRC, SHA256 de154arquivos e comparação byte a byte dos134arquivos de dist; capela incluída e runtime oficial com hash esperado. Reconstruir e repetir essa verificação após a atualização final deste checklist. As pendências permanecem abertas e nenhuma URL de preview foi inventada.
+
+
+### Nova autorização — publicação pública em 16/10/2026
+Após a entrega offline, o proprietário solicitou acesso online e autorizou expressamente: “Pode alterar o site publico para a nossa nova versão para que outras pessoas consigam acessar também”. Esta ordem substitui a restrição anterior de Preview. Preview isolado dpl_7XovEmqNvPtRgyzDFe1iaVhjVcio criado a partir de805a1cd, sem reassociar o endereço estável.
+
+Guard renomeado para require-deployment-target.mjs e limitado a preview/production; destinos ausentes/desconhecidos continuam bloqueados. Nenhum componente, conteúdo, chave de ranking, precache ou arquivo de aplicação foi alterado para liberar a publicação. Produção usará target=production explícito, com os mesmos gates de lint/unitários/servidor/build/E2E antes de entrar no ar.
