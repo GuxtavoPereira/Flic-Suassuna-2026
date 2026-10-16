@@ -20,7 +20,7 @@ Edite `src/content/pools.json` (fonte de verdade). Os dados originais de `module
 
 Posts: `id`, `themeId`, `topicId`, `title`, `text`/`body`, `curiosity`, `assetId`, `tags`, `type`, `introductory`, `order`, `status`. A normalização resolve `assetId` em `image`, `alt` e `sourceMetadata` dos catálogos `topic-assets.json`/`documentary-assets.json`.
 
-Perguntas: `id`, `themeId`, `topicId`, **`postIds`**, `question`, quatro `options` distintas, `correctIndex` (0–3), `feedback`, `difficulty` (1–3), `tags`. `postIds` restringe a pergunta ao post que realmente ensina a resposta, mesmo que dois posts tenham o mesmo assunto. A interface resolve a resposta canônica após embaralhar as alternativas. O schema bloqueia IDs repetidos, referências órfãs, alternativas duplicadas e níveis inválidos.
+Perguntas: `id`, `themeId`, `topicId`, **`postIds`**, `question`, quatro `options` distintas, `correctIndex` (0–3), `feedback`, `difficulty` (1–3), `tags`. `postIds` restringe a pergunta ao post que realmente ensina a resposta, mesmo que dois posts tenham o mesmo assunto. A interface resolve a resposta canônica após embaralhar as alternativas. Se mudar alternativas ou resposta correta de uma pergunta existente, atribua um novo ID e revise a versão de conteúdo/sessão, evitando reinterpretar respostas de uma visita em andamento. O schema bloqueia IDs repetidos, referências órfãs, alternativas duplicadas e níveis inválidos.
 
 Para acrescentar conteúdo: crie o post, associe a uma imagem local com fonte/licença, escreva perguntas que o texto responda e execute os testes. Introduções alternativas sobre o mesmo tópico podem ter `introductory: true`; somente uma será escolhida. `order` preserva a sequência pedagógica ou cronológica.
 

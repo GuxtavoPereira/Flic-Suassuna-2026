@@ -238,7 +238,7 @@
 - [x] Testar carrosséis em diferentes resoluções.
 - [x] Testar imagens ausentes e erros de carregamento.
 - [x] Testar o funcionamento offline.
-- [ ] Executar testes de ponta a ponta. **Aguardando build remoto desta atualização.**
+- [x] Executar testes de ponta a ponta. **20 testes aprovados no build remoto.**
 - [x] Executar verificação de tipos.
 - [x] Executar lint.
 - [x] Executar build de produção.
@@ -270,7 +270,7 @@
 - [x] Atualizar o README.
 - [x] Registrar fontes e créditos das imagens.
 - [x] Documentar limitações conhecidas.
-- [ ] Executar a validação final. **Aguardando E2E remoto.**
+- [x] Executar a validação final. **Lint, tipos, build, 46 testes unitários, servidor local e 20 E2E aprovados.**
 - [x] Preparar o projeto para publicação na Vercel.
 
 ### Definição de pronto
@@ -312,7 +312,7 @@ Uma funcionalidade só deverá ser considerada concluída quando:
 
 **Direitos pendentes:** transcrições literais não conferidas permanecem ocultas. Não foram liberadas citações. Santo e Sol não receberam capas/cenas sem licença; retratos reais contextuais são rotulados. Alguns registros de personalidades são homenagens/esculturas, identificados como tal.
 
-**Validação:** lint, tipos, 46 testes unitários e teste do servidor local aprovados na preparação; build de produção gerado. E2E atualizado será executado no build remoto antes da publicação. Ensaios com alunos e no Windows/display definitivo permanecem pendentes e não são substituídos por testes automatizados. Os níveis de dificuldade são editoriais, sem calibração empírica ainda.
+**Validação:** lint, tipos, 46 testes unitários e teste do servidor local aprovados na preparação; build de produção gerado. Os 20 E2E passaram no build remoto publicado (commit `e747bec`), incluindo treino sem alterar a pontuação, imagens offline e primeira abertura local sem requisições externas. Ensaios com alunos e no Windows/display definitivo permanecem pendentes e não são substituídos por testes automatizados. Os níveis de dificuldade são editoriais, sem calibração empírica ainda.
 
 **Pacote offline:** Windows 10/11 x64; execução local desde a primeira abertura sem internet, com runtime oficial portátil incluído. O executável Windows não foi executado no ambiente Linux de preparação. O guia de operação acompanha o pacote.
 
