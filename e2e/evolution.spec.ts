@@ -12,7 +12,7 @@ async function findPost(page:Page,id:string,title:string){
   throw Error(`Post obrigatório não encontrado: ${title}`);
 }
 test('oito temas, título correto e percursos livres sem aumentar ranking',async({page})=>{
-  await page.goto('/');await expect(page).toHaveTitle('O Sertão de Ariano Suassuna | FLIC 2026');await expect(page.locator('.home-intro h1')).toHaveText('O Sertão de Ariano Suassuna');await expect(page.locator('.theme-card')).toHaveCount(8);
+  await page.goto('/');await expect(page).toHaveTitle('O Sertão de Ariano Suassuna | FLIC 2026');await expect(page.locator('.home-intro h1')).toHaveText('O Sertão de Ariano Suassuna');await expect(page.locator('.theme-card')).toHaveCount(8);await expect(page.locator('a[href="/tema/festas-religiosidade"] .card-image img')).toHaveAttribute('src','/images/evolution/chapel.webp');
   for(const [id,total] of [['musica-audiovisual',10],['festas-religiosidade',11]] as const){
     await page.goto(`/tema/${id}`);
     for(let i=1;i<=total;i++){await expect(page.locator('.slide-progress')).toContainText(`Post ${i} de ${total}`);if(i<total)await page.getByRole('button',{name:'Próximo',exact:true}).click();}

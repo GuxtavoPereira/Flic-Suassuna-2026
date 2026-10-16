@@ -38,11 +38,11 @@ const metadata: Partial<Record<RawModuleId, { category: string; color: string; t
   ariano: { category: 'LITERATURA', color: '#66517B', tint: '#EDE8F1', alt: 'Composição ilustrada com máscaras de teatro, livro aberto, aves, cactos e sol.', sources: ['abl-bio', 'abl-obras', 'fundaj'] },
 };
 metadata['musica-audiovisual'] = { category: 'MÚSICA E TELAS', color: '#365E73', tint: '#E7EDF0', alt: 'Sanfona fotografada: um dos instrumentos das matrizes do forró.', sources: ['forro'] };
-metadata['festas-religiosidade'] = { category: 'CELEBRAÇÕES', color: '#88601E', tint: '#F7EEDB', alt: 'Festa junina fotografada, uma entre muitas celebrações regionais.', sources: ['forro'] };
+metadata['festas-religiosidade'] = { category: 'CELEBRAÇÕES', color: '#88601E', tint: '#F7EEDB', alt: 'Capela tradicional da Fazenda Acauã, Aparecida, Paraíba, em fotografia real em preto e branco.', sources: ['forro'] };
 const parsed = contentSchema.parse(raw);
 const modules = [...parsed.modules,
   { id: 'musica-audiovisual' as const, title: 'Música e Audiovisual Nordestino', subtitle: 'Sons, artistas e histórias nas telas.', cover: '/images/topics/sanfona.webp', slides: [], quiz: [] },
-  { id: 'festas-religiosidade' as const, title: 'Festas e Religiosidade', subtitle: 'Celebrações, encontros e diversidade.', cover: '/images/topics/festa-junina.webp', slides: [], quiz: [] },
+  { id: 'festas-religiosidade' as const, title: 'Festas e Religiosidade', subtitle: 'Celebrações, encontros e diversidade.', cover: '/images/evolution/chapel.webp', slides: [], quiz: [] },
 ];
 export const imageAssets = [...topicAssets, ...documentaryAssets, ...evolutionAssets, ...suppliedAssets];
 const pool = poolSchema.parse(poolData);

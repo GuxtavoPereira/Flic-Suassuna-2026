@@ -791,5 +791,37 @@
     "subject": "Zabumba vista por cima durante sua execução, em fotografia de 2006.",
     "license": "CC BY 2.0, licença Flickr revisada no Commons. Arquivo convertido para WebP sem ampliar a resolução original de 480×360. Recomendado como imagem de apoio, sem exibição ampliada além da nitidez disponível.",
     "creator": "Robson Sena / Blog do Santinha / Wikimedia Commons"
+  },
+  {
+    "id": "chapel",
+    "image": "/images/evolution/chapel.webp",
+    "alt": "Fotografia em preto e branco da capela católica e do sobrado da Fazenda Acauã, com fachada branca e telhado de telhas.",
+    "caption": "Capela e sobrado da Fazenda Acauã, em Aparecida, no sertão da Paraíba. Fotografia de 6 de junho de 2015.",
+    "credit": "Rogerio121402",
+    "creator": "Rogerio121402",
+    "sourceName": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capela_e_Sobrado_da_Fazenda_Acau%C3%A3.jpg",
+    "licenseNote": "CC BY-SA 4.0 · Versão reduzida e convertida para WebP, sem recorte. O preto e branco está na fotografia de origem.",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "assetType": "photograph",
+    "width": 1280,
+    "height": 848,
+    "place": "Fazenda Acauã, Aparecida, Paraíba, Brasil",
+    "date": "2015-06-06",
+    "usagePermission": "Fotografia disponibilizada pelo autor sob CC BY-SA 4.0 na página individual do arquivo. Reutilização e adaptação permitidas com atribuição, vínculo à fonte/licença e indicação das alterações. A imagem derivada conserva a mesma licença.",
+    "editorialStatus": "reviewed-license-verified",
+    "verifiedAt": "2026-10-16",
+    "sourceFile": "File:Capela e Sobrado da Fazenda Acauã.jpg",
+    "editorialNote": "Arquitetura católica tradicional de local identificado no Nordeste. Pode ilustrar uma tradição católica, sem representar todas as crenças. Não apresentar como Capela do Socorro, como registro de Juazeiro, nem como fotografia de romaria ou festa em andamento.",
+    "licenseEvidence": {
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:Capela_e_Sobrado_da_Fazenda_Acau%C3%A3.jpg",
+      "licenseDeclaration": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "copyrightTag": "cc-by-sa-4.0",
+      "verifiedBy": "Leitura da página individual e metadados Commons API imageinfo/extmetadata; inspeção visual do WebP."
+    },
+    "assetPath": "/images/evolution/chapel.webp",
+    "subject": "Capela e sobrado da Fazenda Acauã, em Aparecida, no sertão da Paraíba. Fotografia de 6 de junho de 2015.",
+    "license": "CC BY-SA 4.0 · Versão reduzida e convertida para WebP, sem recorte. O preto e branco está na fotografia de origem."
   }
 ]

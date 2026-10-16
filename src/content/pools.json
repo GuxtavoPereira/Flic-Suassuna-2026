@@ -2343,7 +2343,7 @@
       "curiosity": "Festa, arte e devoção podem se relacionar sem serem uma única coisa.",
       "visualKey": "padroeiro",
       "status": "draft-editorial",
-      "assetId": "fogueira",
+      "assetId": "chapel",
       "tags": [
         "padroeiro"
       ],
@@ -2356,8 +2356,8 @@
       "postType": "educational",
       "editorialStatus": "review-pending",
       "quizEligible": false,
-      "required": false,
-      "imageContext": "Imagem de contexto junino: não representa o bumba meu boi citado no exemplo maranhense."
+      "required": true,
+      "imageContext": "Arquitetura católica tradicional do sertão paraibano. A foto não mostra uma festa em andamento e não representa todas as crenças."
     },
     {
       "id": "festas-12",
