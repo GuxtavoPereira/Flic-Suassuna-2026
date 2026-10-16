@@ -17,8 +17,8 @@ with tempfile.TemporaryDirectory(prefix='flic-package-') as tmp:
  shutil.copytree(root/'dist',d/'museu');(d/'runtime').mkdir()
  for name in ['node.exe','LICENSE.txt']:shutil.copy2(runtime/name,d/'runtime'/name)
  for name in ['INICIAR-MUSEU.cmd','LEIA-ME.txt','servidor.mjs']:shutil.copy2(root/'offline'/name,d/name)
- for name in ['FONTES-IMAGENS.md','CHECKLIST-IMPLEMENTACAO.md','LOTES-IMAGENS.md']:shutil.copy2(root/name,d/name)
- (d/'VERSAO.json').write_text(json.dumps({'app':'FLIC2026','contentVersion':2,'runtime':'Node.js 22.23.3 Windows x64','runtimeSource':'https://nodejs.org/dist/v22.23.3/win-x64/node.exe','runtimeSha256':actual,'visualBatches':batches,'artworkManifests':[f'museu/images/fornecidas/lote-{batch}/manifest.json' for batch in batches]},indent=2))
+ for name in ['README.md','AGENTS.md','ARQUITETURA_VERCEL.md','AUDITORIA-EVOLUCAO.md','IMPLEMENTACAO.md','FONTES-IMAGENS.md','CHECKLIST-IMPLEMENTACAO.md','CHECKLIST-EVOLUCAO.md','LOTES-IMAGENS.md','IMAGENS-POR-POST.md','PENDENCIAS-CURADORIA.md','TELAS_E_UX.md','MODELO-CONTEUDO.md','LITERATURA_E_DIREITOS.md']:shutil.copy2(root/name,d/name)
+ (d/'VERSAO.json').write_text(json.dumps({'app':'FLIC2026','title':'O Sertão de Ariano Suassuna','contentVersion':3,'themes':8,'postPool':90,'imageManifest':'museu/content/image-manifest.json','runtime':'Node.js 22.23.3 Windows x64','runtimeSource':'https://nodejs.org/dist/v22.23.3/win-x64/node.exe','runtimeSha256':actual,'visualBatches':batches,'artworkManifests':[f'museu/images/fornecidas/lote-{batch}/manifest.json' for batch in batches]},indent=2))
  hashes={str(p.relative_to(d)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(d.rglob('*')) if p.is_file()}
  (d/'CHECKSUMS.json').write_text(json.dumps(hashes,indent=2))
  output.parent.mkdir(parents=True,exist_ok=True)
