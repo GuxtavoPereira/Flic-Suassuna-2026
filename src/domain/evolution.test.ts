@@ -1,5 +1,6 @@
 import { describe, expect, it, vi, afterEach } from 'vitest';
 import { themes, sources } from '../content';
+import { existsSync } from 'node:fs';
 import video from '../content/videos.json';
 import states from '../content/maps/states.json';
 import semiarido from '../content/maps/semiarido.json';
@@ -22,6 +23,7 @@ describe('evolução editorial',()=>{
   });
   it('preserva recortes cartográficos distintos e quatro localidades oficiais',()=>{expect(states.features).toHaveLength(27);expect(states.features.filter(f=>f.properties.isNordeste)).toHaveLength(9);expect(semiarido.features).toHaveLength(1477);expect(caatinga.features).toHaveLength(1);expect(localities).toHaveLength(4);expect(localities.map(l=>l.locality)).toEqual(['Teresina','Salgueiro','Caruaru','Recife']);});
   it('registra apenas link audiovisual verificado e não baixa vídeo protegido',()=>{expect(video.url).toBe('https://www.youtube.com/watch?v=hj1fyV3pvSM');expect(video.channel).toBe('BAGUM SABOA animações');expect(video.year).toBe(2008);expect(video.director).toBe('Fernando Miller');expect(video.requiresNetwork).toBe(true);expect(video.externalPlaybackOnly).toBe(true);expect(video.licenseNote).toContain('Não baixar');});
+  it('troca as representações factuais por fotos e identifica registros de contexto',()=>{for(const p of themes[0].postPool)expect(p.sourceMetadata.assetType).not.toMatch(/IA|sintétic/i);expect(themes[2].postPool.find(p=>p.id==='personalidades-11')?.image).toContain('anastacia');expect(existsSync('public/content/image-manifest.json')).toBe(true);});
   it('não atribui pontos nem perguntas aos percursos livres',()=>{
     const rounds=Object.fromEntries(themes.map(t=>[t.id,createRound(t,{posts:[],questions:[]})]));
     for(const t of themes.filter(t=>!t.quizEnabled))expect(rounds[t.id].questions).toEqual([]);

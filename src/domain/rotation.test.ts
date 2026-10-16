@@ -21,11 +21,11 @@ describe('pools e imagens por assunto', () => {
     for (const p of themes.flatMap(t => t.postPool)) { expect(existsSync(`public${p.image}`), p.id).toBe(true); expect(p.alt.length).toBeGreaterThan(20); expect(p.sourceMetadata.sourceUrl).toMatch(/^(https:\/\/|\/images\/fornecidas\/)/); expect(p.sourceMetadata.licenseNote).not.toBe(''); expect(p.text).toBe(p.body); }
     for (const a of imageAssets) expect(existsSync(`public${a.image}`)).toBe(true);
   });
-  it('associa cada arte fornecida ao post e declara a origem ilustrativa', () => {
+  it('preserva procedência das artes, sem usá-las como registro factual', () => {
     expect(suppliedAssets).toHaveLength(14);
     for (const a of suppliedAssets) {
       const post = themes.flatMap(t => t.postPool).find(p => p.id === a.postId);
-      expect(post?.image).toBe(a.image); expect(a.assetType).toBe('ilustração gerada por IA');
+      expect(post?.image).not.toBe(a.image); expect(a.assetType).toBe('ilustração gerada por IA');
       expect(a.credit).toContain('gerada por IA'); expect(a.sourceUrl).toContain(`/lote-${a.batch}/creditos.html#${a.postId}`);
       expect(existsSync(`public${a.sourceUrl.split('#')[0]}`)).toBe(true);
     }

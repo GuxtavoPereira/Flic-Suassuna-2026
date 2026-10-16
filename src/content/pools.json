@@ -1406,7 +1406,8 @@
       "editorialStatus": "review-pending",
       "quizEligible": true,
       "required": true,
-      "experience": "economy"
+      "experience": "economy",
+      "imageContext": "A foto identifica um cultivo; não comprova o regime de propriedade familiar da roça."
     },
     {
       "id": "clima-13",
@@ -1513,7 +1514,8 @@
       "editorialStatus": "review-pending",
       "quizEligible": true,
       "required": true,
-      "experience": "economy"
+      "experience": "economy",
+      "imageContext": "A fotografia documenta comércio/artesanato; os serviços citados no texto não estão todos representados."
     },
     {
       "id": "cultura-09",
@@ -1628,7 +1630,7 @@
       "curiosity": "Intérprete e compositor podem ser pessoas diferentes; os créditos registram essas contribuições.",
       "visualKey": "anastacia",
       "status": "draft-editorial",
-      "assetId": "dominguinhos",
+      "assetId": "anastacia",
       "tags": [
         "anastacia"
       ],
@@ -1920,7 +1922,8 @@
       "postType": "educational",
       "editorialStatus": "review-pending",
       "quizEligible": false,
-      "required": false
+      "required": false,
+      "imageContext": "O registro mostra Dominguinhos; não é um retrato de Anastácia."
     },
     {
       "id": "musica-06",
@@ -2022,7 +2025,8 @@
       "postType": "educational",
       "editorialStatus": "review-pending",
       "quizEligible": false,
-      "required": false
+      "required": false,
+      "imageContext": "Documento de contexto do teatro: não é imagem da minissérie de 1999."
     },
     {
       "id": "musica-10",
@@ -2048,7 +2052,8 @@
       "postType": "educational",
       "editorialStatus": "review-pending",
       "quizEligible": false,
-      "required": false
+      "required": false,
+      "imageContext": "Paisagem de referência cultural: não é cena de Calango Lengo nem de uma adaptação audiovisual."
     },
     {
       "id": "musica-11",
@@ -2299,7 +2304,8 @@
       "postType": "educational",
       "editorialStatus": "review-pending",
       "quizEligible": false,
-      "required": false
+      "required": false,
+      "imageContext": "Paisagem após chuvas: não é registro de uma procissão ou previsão meteorológica."
     },
     {
       "id": "festas-10",
@@ -2350,7 +2356,8 @@
       "postType": "educational",
       "editorialStatus": "review-pending",
       "quizEligible": false,
-      "required": false
+      "required": false,
+      "imageContext": "Imagem de contexto junino: não representa o bumba meu boi citado no exemplo maranhense."
     },
     {
       "id": "festas-12",
