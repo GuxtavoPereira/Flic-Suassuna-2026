@@ -20,3 +20,7 @@ Recebidas em 16/10/2026 e conferidas visualmente. Cada arte mantém o arquivo We
 ## Próximos lotes
 
 Adicione o WebP local e um registro no catálogo com `postId` (e `panelId`, quando aplicável), alt, legenda e procedência. A normalização associa a imagem sem mudar o pool ou a sessão. Todas as artes e manifestos entram no precache e no pacote offline.
+
+## Validação
+
+Lint, tipos, build, 47 testes unitários, teste do servidor local e 21 E2E aprovados. Os testes incluem a correspondência das artes aos posts e painéis, documentação preservada, decodificação de todas as imagens offline, acessibilidade e diferentes resoluções. O ensaio no display Windows da escola continua pendente.

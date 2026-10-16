@@ -326,6 +326,6 @@ Uma funcionalidade só deverá ser considerada concluída quando:
 - [x] Preservar perguntas, conteúdo, sessões e ranking.
 - [x] Incluir artes e manifestos locais no cache offline.
 - [x] Lint, tipos, build e 47 testes unitários aprovados localmente.
-- [ ] Concluir a bateria E2E remota e atualizar o pacote Windows desta edição.
+- [x] Concluir a bateria E2E remota e atualizar o pacote Windows desta edição. **47 testes unitários, servidor local e 21 E2E aprovados; build publicado no commit f636efe.**
 - [ ] Receber e conferir o lote 3.
 - [ ] Confirmar destino da alternativa de ariano-04 antes de usá-la em outra obra.
