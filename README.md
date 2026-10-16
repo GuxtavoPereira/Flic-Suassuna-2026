@@ -1,36 +1,57 @@
 # Ariano Suassuna e o Sertão — FLIC 2026
 
-Museu interativo com seis temas, 30 slides, 18 questões, estações literárias, linha do tempo e ciclo da Caatinga. Tema claro, fontes locais e navegação por toque, clique e teclado. Sem login, API, analytics ou banco obrigatório.
+Museu touch com seis temas, **48 posts e 102 perguntas no pool**. A cada visita são selecionados cinco posts por tema e três perguntas ligadas aos posts efetivamente apresentados. As seis xilogravuras originais continuam nos cards da Home; os posts incluem 29 fotografias/registros locais com crédito e licença. Tema claro, fontes locais, PWA e ranking local opcional.
 
-## Executar
+## Executar e validar
 
-Node.js 22 ou 24. Instale com `npm install`, depois `npm run dev`.
+Node.js 22/24. `npm ci`, `npm run dev`.
 
-- `npm run lint`: ESLint e regras de hooks.
-- `npm test`: contratos, quiz, navegação e publicação literária.
-- `npm run build`: TypeScript strict, Vite e precache PWA em `dist/`.
-- `npx playwright install chromium` e `npm run test:e2e`: percursos completos, toque, teclado, direitos, responsividade, acessibilidade e rede desligada.
-- `npm run preview`: servir o build local.
+- `npm run lint`: código e regras de hooks.
+- `npm test`: conteúdo, contratos, seleção, embaralhamento, histórico, sessões e ranking.
+- `npm run test:offline`: servidor local do pacote Windows.
+- `npm run build`: tipos strict, Vite e precache em `dist/`.
+- `npm run test:e2e`: percursos, toque, teclado, direitos, rede desligada, responsividade e acessibilidade.
 
-Na Vercel, os testes usam Chromium serverless, sem instalar navegador no computador do visitante. O preset é Vite e o diretório de saída é `dist`.
+Na Vercel, o build só publica se lint, testes, tipos, build e E2E passarem. O Chromium de testes roda no build remoto; nenhum navegador é instalado no computador do visitante.
 
-## Offline
+## Como adicionar posts e perguntas
 
-Abra via HTTPS ou localhost com rede e aguarde “Pronto para usar offline”. A aplicação precacheia fontes, imagens e código. As atualizações exigem uma ação na Home para não interromper quizzes. Apagar o cache exige novo preparo online. Não use `file://`.
+Edite `src/content/pools.json` (fonte de verdade). Os dados originais de `modules.json` foram preservados como referência editorial; não são o pool ativo.
 
-## Conteúdo e direitos
+Posts: `id`, `themeId`, `topicId`, `title`, `text`/`body`, `curiosity`, `assetId`, `tags`, `type`, `introductory`, `order`, `status`. A normalização resolve `assetId` em `image`, `alt` e `sourceMetadata` dos catálogos `topic-assets.json`/`documentary-assets.json`.
 
-`src/content/modules.json` preserva os textos fornecidos. A normalização aceita os aliases de temas presentes na documentação. O JSON literário usado no frontend contém apenas contexto e comentários; transcrições pendentes são excluídas do bundle. Os cinco painéis usam paráfrases identificadas. Citações só são renderizadas com aprovação explícita, edição, página, autorização, fonte e revisão editorial.
+Perguntas: `id`, `themeId`, `topicId`, **`postIds`**, `question`, quatro `options` distintas, `correctIndex` (0–3), `feedback`, `difficulty` (1–3), `tags`. `postIds` restringe a pergunta ao post que realmente ensina a resposta, mesmo que dois posts tenham o mesmo assunto. A interface resolve a resposta canônica após embaralhar as alternativas. O schema bloqueia IDs repetidos, referências órfãs, alternativas duplicadas e níveis inválidos.
 
-As seis xilogravuras foram fornecidas como arte gerada por IA. Atribuições, licenças, dados históricos e fontes ambientais, culinárias e de personalidades aguardam revisão pela curadoria antes da exposição. Nenhum texto pendente é apresentado como fala do autor.
+Para acrescentar conteúdo: crie o post, associe a uma imagem local com fonte/licença, escreva perguntas que o texto responda e execute os testes. Introduções alternativas sobre o mesmo tópico podem ter `introductory: true`; somente uma será escolhida. `order` preserva a sequência pedagógica ou cronológica.
 
-## Operação
+## Rotação e sessão
 
-Use as opções de exibição para tela cheia, redução de movimento e retorno à entrada por inatividade (3, 5 ou 10 minutos, com aviso de 30 segundos). Reiniciar visita limpa progresso e resultados anônimos da sessão. O botão Início mantém pontuações durante a visita.
+`domain/rotation.ts` seleciona uma introdução e complementos sem repetir assunto na mesma rodada. Prioriza conteúdos ainda não vistos, depois os menos recentes, com fallback finito quando todos já apareceram. O histórico é local, anônimo e limitado a 120 IDs de cada tipo.
 
-Antes da feira: ensaiar com o monitor touch definitivo, distância de leitura, iluminação, acesso sem rede e sessão prolongada. Não considerar testes automatizados equivalentes à validação presencial.
-## Ranking local — atualização
+A seleção fica fixa durante a visita, inclusive em retornos e recargas. `sessionStorage` guarda IDs, ordem das alternativas, posições e respostas com versão/validação. Sessões antigas incompatíveis recomeçam; ranking e preferências ficam preservados. Sem armazenamento, o museu continua em memória, com aviso se o ranking não puder ser salvo.
 
-No resultado de qualquer quiz ou na Home após responder perguntas, escolha **Encerrar visita e ver ranking**. O resumo reúne os acertos das perguntas únicas respondidas na visita, em até 18 questões. Refazer substitui as respostas desse tema. A participação é opcional, com primeiro nome ou apelido e escolha explícita de exibição. O registro é único por visita; novas submissões não duplicam a pontuação.
+O quiz é liberado depois que os cinco posts foram exibidos. São três perguntas sem duplicação: uma de reconhecimento, uma de compreensão e uma de interpretação. Pool insuficiente ou desequilibrado não produz uma rodada competitiva menor. A ordem das perguntas e alternativas varia. Esses níveis são editoriais e ainda precisam de calibração com o público.
 
-O ranking salva até 1000 visitas recentes no localStorage deste navegador, funciona offline e continua ao iniciar a próxima visita. Não é compartilhado entre dispositivos; apagar os dados do navegador o remove. Nas opções de exibição há uma ação de limpeza com confirmação para a organização. Falhas ou bloqueio de armazenamento são mostrados sem impedir o museu.
+## Ranking e tentativas
+
+A primeira rodada **concluída** de cada tema vale 100 pontos por acerto, até três acertos por tema. Uma rodada de treino sorteia novos posts/perguntas e não altera a pontuação inicial. Quizzes parciais não entram no ranking. Não há limite artificial de tempo para leitura.
+
+O ranking separa categorias de 1 a 6 temas concluídos, comparando 3, 6, 9, 12, 15 ou 18 respostas. Mesmo número de acertos compartilha posição. Resultados antigos continuam em **Edição anterior**, sem misturar regras ou apagar dados. Participação opcional com primeiro nome/apelido (2–24 caracteres) e escolha explícita de exibição; um registro por visita e até mil registros recentes.
+
+Não há identidade verificada, anti-fraude de servidor ou garantia contra pessoas que reiniciem visitas deliberadamente. Repetir apelidos não identifica a mesma pessoa de modo confiável. O ranking é uma atividade educativa local, não uma competição autenticada. Não foram adicionados Supabase nem serviços remotos; interfaces de repositório isolam a persistência para eventual trabalho futuro.
+
+## Offline no display Windows
+
+O pacote **FLIC2026-Offline-Windows.zip** inclui o build completo, fontes, imagens, iniciador, servidor e runtime oficial portátil Node.js 22.23.3 x64. No Windows 10/11 x64 do display: extrair o ZIP, abrir `INICIAR-MUSEU.cmd` e usar `http://127.0.0.1:4173/` no Edge/Chrome. Funciona desde a primeira abertura sem rede e sem acessar Vercel. Não instala dependências, exige login nem pede privilégios administrativos. O servidor só escuta no próprio computador. Ver `offline/LEIA-ME.txt`.
+
+O runtime Windows é distribuído no ZIP de entrega, não no Git nem no bundle Vercel. SHA-256 conferido contra `https://nodejs.org/dist/v22.23.3/SHASUMS256.txt`. O Windows do display ainda precisa de ensaio presencial; o ambiente de preparação é Linux.
+
+No site publicado, aguarde “Pronto para usar offline” antes de desligar a rede. As atualizações PWA só são oferecidas na Home. Todas as imagens e fontes ficam no precache. Links para fontes externas precisam de internet; os conteúdos não. O ranking local e o da Vercel são separados por endereço/perfil de navegador.
+
+## Conteúdo, direitos e limites
+
+[FONTES-IMAGENS.md](FONTES-IMAGENS.md) registra créditos/licenças e tipos documentais. Retratos, monumentos, documentos e locais são identificados; não se confundem com capas ou cenas. Não foram encontradas capas/encenações de O Santo e a Porca e Uma Mulher Vestida de Sol com reutilização confirmada; foram usados retratos contextuais reais do autor. Fontes primárias pedagógicas ficam nos posts.
+
+Os cinco painéis literários preservam a regra de direitos: paráfrases educativas identificadas; trechos literais só com aprovação, revisão, edição, página, autorização e fonte. Nenhuma citação pendente foi liberada. Nordeste, sertão e semiárido não são tratados como sinônimos.
+
+O repositório disponível não continha `AGENTS.md` nem `ARQUITETURA_VERCEL.md`; foram consideradas as regras originais já fornecidas e a arquitetura efetivamente implementada. Ver [CHECKLIST-IMPLEMENTACAO.md](CHECKLIST-IMPLEMENTACAO.md) para auditoria e pendências. Antes da feira, realizar revisão pedagógica, calibração das perguntas com alunos e ensaio no display definitivo. Testes automatizados não equivalem a validação presencial.

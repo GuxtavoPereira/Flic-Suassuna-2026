@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { summarizeVisit, type VisitSummary } from '../domain/visit';
 import type { Answers } from '../domain/quiz';
+import type { Rounds } from '../domain/rotation';
 export const LEADERBOARD_KEY = 'flic-leaderboard-v1';
 export const LEADERBOARD_EVENT = 'flic-leaderboard-change';
 export const MAX_ENTRIES = 1000;
@@ -8,7 +9,7 @@ const displayNameSchema = z.string().trim().min(2).max(24).regex(/^[\p{L}\p{N}][
 const entrySchema = z.object({
   id: z.string().uuid(), displayName: displayNameSchema, correct: z.number().int().min(0).max(18),
   answered: z.number().int().min(1).max(18), total: z.literal(18), completedThemes: z.number().int().min(0).max(6),
-  createdAt: z.string().datetime(),
+  createdAt: z.string().datetime(), rulesVersion: z.literal(2).optional(),
 }).strict().refine(e => e.correct <= e.answered && e.completedThemes * 3 <= e.answered);
 const dataSchema = z.object({ version: z.literal(1), entries: z.array(entrySchema).max(MAX_ENTRIES) }).strict();
 export type LeaderboardEntry = z.infer<typeof entrySchema>;
@@ -27,7 +28,7 @@ export function rankEntries(entries: LeaderboardEntry[]): RankedEntry[] {
 }
 export interface LeaderboardRepository {
   load(): LeaderboardState;
-  save(visitId: string, name: string, answers: Record<string, Answers>): SaveResult;
+  save(visitId: string, name: string, answers: Record<string, Answers>, rounds?: Rounds): SaveResult;
   clear(): boolean;
 }
 export class BrowserLeaderboardRepository implements LeaderboardRepository {
@@ -39,16 +40,16 @@ export class BrowserLeaderboardRepository implements LeaderboardRepository {
     try { const data = dataSchema.safeParse(JSON.parse(raw)); return data.success ? { status: 'ok', entries: data.data.entries } : { status: 'corrupt', entries: [] }; }
     catch { return { status: 'corrupt', entries: [] }; }
   }
-  save(visitId: string, name: string, answers: Record<string, Answers>): SaveResult {
+  save(visitId: string, name: string, answers: Record<string, Answers>, rounds?: Rounds): SaveResult {
     const stored = this.load();
     if (stored.status !== 'ok') return { ok: false, error: stored.status === 'corrupt' ? 'corrupt' : 'storage' };
     const existing = stored.entries.find(entry => entry.id === visitId);
     if (existing) return { ok: true, entry: existing, alreadySaved: true };
     const displayName = normalizeDisplayName(name);
     if (!displayNameSchema.safeParse(displayName).success) return { ok: false, error: 'name' };
-    const summary: VisitSummary = summarizeVisit(answers);
+    const summary: VisitSummary = summarizeVisit(answers, rounds);
     if (!summary.answered) return { ok: false, error: 'empty' };
-    const parsed = entrySchema.safeParse({ id: visitId, displayName, ...summary, createdAt: this.now().toISOString() });
+    const parsed = entrySchema.safeParse({ id: visitId, displayName, ...summary, ...(rounds ? { rulesVersion: 2 } : {}), createdAt: this.now().toISOString() });
     if (!parsed.success) return { ok: false, error: 'visit' };
     const entries = [...stored.entries, parsed.data].slice(-MAX_ENTRIES);
     try { this.getStorage().setItem(LEADERBOARD_KEY, JSON.stringify({ version: 1, entries })); }

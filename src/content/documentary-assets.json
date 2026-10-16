@@ -1,0 +1,80 @@
+[
+  {
+    "id": "ariano",
+    "relatedWork": "Vida de Ariano Suassuna",
+    "image": "/images/documentary/ariano-retrato.webp",
+    "alt": "Fotografia de Ariano Suassuna sentado durante encontro em Mossoró, em 2009.",
+    "caption": "Ariano Suassuna em Mossoró, 2009. Retrato documental do escritor.",
+    "credit": "Allan Patrick / Wikimedia Commons",
+    "sourceName": "Allan Patrick — Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ariano_Suassuna_em_Mossoró_(3796986624).jpg",
+    "licenseNote": "CC BY-SA 2.0. Imagem redimensionada e convertida para WebP; mantida sob a mesma licença.",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "assetType": "retrato documental"
+  },
+  {
+    "id": "auto",
+    "relatedWork": "Auto da Compadecida",
+    "image": "/images/documentary/auto-documento.webp",
+    "alt": "Requerimento datilografado de 1978 para encenar Auto da Compadecida, preservado pelo Arquivo Nacional.",
+    "caption": "Documento de 1978 sobre pedido de encenação de Auto da Compadecida. Registro de arquivo, não uma capa nem uma cena da peça.",
+    "credit": "Domínio público / Acervo Arquivo Nacional, Fundo Serviço de Censura de Diversões Públicas (RJ)",
+    "sourceName": "Arquivo Nacional — Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Censura_ao_teatro_AN_239.jpg",
+    "licenseNote": "Domínio público, conforme ficha do acervo. Digitalização redimensionada e convertida para WebP. A condição do documento não altera os direitos autorais do texto teatral.",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-Arquivo_Nacional",
+    "assetType": "documento de arquivo"
+  },
+  {
+    "id": "santo",
+    "relatedWork": "O Santo e a Porca",
+    "image": "/images/documentary/ariano-arquivo-1971.webp",
+    "alt": "Retrato histórico de Ariano Suassuna, fotografado em 1971, do Fundo Correio da Manhã.",
+    "caption": "Ariano Suassuna em 1971, autor de O Santo e a Porca. Retrato contextual: não é uma cena, personagem ou capa da obra.",
+    "credit": "Domínio público / Acervo Arquivo Nacional, Fundo Correio da Manhã; fotógrafo não identificado",
+    "sourceName": "Arquivo Nacional — Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ariano_Suassuna,_1971.tif",
+    "licenseNote": "Domínio público, conforme ficha do acervo. Imagem redimensionada e convertida para WebP. Não foi encontrada uma capa ou foto de encenação desta obra com licença de reutilização confirmada.",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-Arquivo_Nacional",
+    "assetType": "retrato contextual"
+  },
+  {
+    "id": "pedra",
+    "relatedWork": "Romance d’A Pedra do Reino e o Príncipe do Sangue do Vai-e-Volta",
+    "image": "/images/documentary/pedra-do-reino-local.webp",
+    "alt": "Formações rochosas e vegetação do Sítio Histórico da Pedra do Reino, em São José do Belmonte, Pernambuco.",
+    "caption": "Sítio Histórico da Pedra do Reino, em São José do Belmonte (PE), 2019. Lugar ligado às referências históricas do romance, não uma capa ou cena de adaptação.",
+    "credit": "Jackson Carvalho / Wikimedia Commons",
+    "sourceName": "Jackson Carvalho — Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sítio_Histórico_da_Pedra_do_Reino_10.jpg",
+    "licenseNote": "CC BY-SA 4.0. Fotografia redimensionada e convertida para WebP; mantida sob a mesma licença.",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "assetType": "fotografia de local histórico"
+  },
+  {
+    "id": "sol",
+    "relatedWork": "Uma Mulher Vestida de Sol",
+    "image": "/images/documentary/ariano-arquivo-1964.webp",
+    "alt": "Retrato histórico em preto e branco de Ariano Suassuna, em 1964, preservado no Fundo Correio da Manhã.",
+    "caption": "Ariano Suassuna em 1964, autor de Uma Mulher Vestida de Sol. Retrato contextual: não representa a protagonista, a encenação ou a capa da peça.",
+    "credit": "Domínio público / Acervo Arquivo Nacional, Fundo Correio da Manhã; fotógrafo não identificado",
+    "sourceName": "Arquivo Nacional — Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ariano_Suassuna_(1964).tif",
+    "licenseNote": "Domínio público, conforme ficha do acervo. Imagem redimensionada e convertida para WebP. Não foi encontrada uma capa ou foto de encenação desta obra com licença de reutilização confirmada.",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-Arquivo_Nacional",
+    "assetType": "retrato contextual"
+  },
+  {
+    "id": "armorial",
+    "relatedWork": "Movimento Armorial",
+    "image": "/images/documentary/armorial-nobrega.webp",
+    "alt": "Antônio Nóbrega cantando e tocando violino na II Conferência Nacional de Cultura, em 2010.",
+    "caption": "Antônio Nóbrega na II Conferência Nacional de Cultura, 2010. Registro de um artista ligado ao Quinteto Armorial, não fotografia do lançamento do movimento em 1970.",
+    "credit": "Pedro França / Ministério da Cultura / Wikimedia Commons",
+    "sourceName": "Ministério da Cultura — Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antônio_Nóbrega,_2010.jpg",
+    "licenseNote": "CC BY 2.0, conforme publicação do Ministério da Cultura e revisão no Commons. Fotografia redimensionada e convertida para WebP.",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "assetType": "fotografia documental de apresentação"
+  }
+]

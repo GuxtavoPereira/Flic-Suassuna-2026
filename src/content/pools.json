@@ -1,0 +1,3013 @@
+{
+  "version": 2,
+  "posts": [
+    {
+      "id": "clima-01",
+      "title": "O sertão é só seca?",
+      "body": "Muitas áreas do sertão têm clima semiárido: faz calor e as chuvas são irregulares. Mas também há rios, serras, plantações e vida.",
+      "curiosity": "Semiárido não significa ausência total de chuva.",
+      "visualKey": "sol-e-nuvens",
+      "status": "draft-editorial",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:semiarido",
+      "assetId": "caatinga-seca",
+      "tags": [
+        "semiarido"
+      ],
+      "type": "educational",
+      "text": "Muitas áreas do sertão têm clima semiárido: faz calor e as chuvas são irregulares. Mas também há rios, serras, plantações e vida.",
+      "introductory": true,
+      "order": 0
+    },
+    {
+      "id": "clima-02",
+      "title": "A Caatinga é especial",
+      "body": "A Caatinga é um bioma exclusivamente brasileiro. Suas plantas e seus animais desenvolveram maneiras de enfrentar longos períodos secos.",
+      "curiosity": "Uma parte da vegetação perde folhas para reduzir a perda de água.",
+      "visualKey": "caatinga",
+      "status": "draft-editorial",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:caatinga",
+      "assetId": "caatinga-seca",
+      "tags": [
+        "caatinga"
+      ],
+      "type": "educational",
+      "text": "A Caatinga é um bioma exclusivamente brasileiro. Suas plantas e seus animais desenvolveram maneiras de enfrentar longos períodos secos.",
+      "introductory": false,
+      "order": 1
+    },
+    {
+      "id": "clima-03",
+      "title": "Quando a chuva chega",
+      "body": "Depois das chuvas, muitas plantas brotam, florescem e deixam a paisagem mais verde. A transformação pode ser rápida, mas varia de lugar para lugar.",
+      "curiosity": "A aparência seca não significa que a vegetação esteja morta.",
+      "visualKey": "chuva",
+      "status": "draft-editorial",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:chuva",
+      "assetId": "caatinga-verde",
+      "tags": [
+        "chuva"
+      ],
+      "type": "educational",
+      "text": "Depois das chuvas, muitas plantas brotam, florescem e deixam a paisagem mais verde. A transformação pode ser rápida, mas varia de lugar para lugar.",
+      "introductory": false,
+      "order": 2
+    },
+    {
+      "id": "clima-04",
+      "title": "Plantas resistentes",
+      "body": "Mandacarus e xique-xiques armazenam água em seus tecidos e possuem espinhos. Outras plantas têm raízes, folhas ou ciclos de vida adaptados à escassez de água.",
+      "curiosity": "Nem todas as espécies da Caatinga são cactos.",
+      "visualKey": "mandacaru",
+      "status": "draft-editorial",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:mandacaru",
+      "assetId": "mandacaru",
+      "tags": [
+        "mandacaru"
+      ],
+      "type": "educational",
+      "text": "Mandacarus e xique-xiques armazenam água em seus tecidos e possuem espinhos. Outras plantas têm raízes, folhas ou ciclos de vida adaptados à escassez de água.",
+      "introductory": false,
+      "order": 3
+    },
+    {
+      "id": "clima-05",
+      "title": "O sertão tem muitas paisagens",
+      "body": "O relevo reúne depressões, planaltos e serras. O Nordeste também possui outros ambientes, como o litoral e a Zona da Mata, além do sertão.",
+      "curiosity": "Nordeste e sertão não são sinônimos.",
+      "visualKey": "relevo",
+      "status": "draft-editorial",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:relevo",
+      "assetId": "serra",
+      "tags": [
+        "relevo"
+      ],
+      "type": "educational",
+      "text": "O relevo reúne depressões, planaltos e serras. O Nordeste também possui outros ambientes, como o litoral e a Zona da Mata, além do sertão.",
+      "introductory": false,
+      "order": 4
+    },
+    {
+      "id": "clima-06",
+      "title": "Umbuzeiro: árvore da Caatinga",
+      "body": "O umbuzeiro é uma árvore da Caatinga adaptada às chuvas irregulares. Produz o umbu, fruto usado em doces e bebidas. Conhecer e conservar a árvore também ajuda a valorizar os saberes das comunidades.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "umbuzeiro",
+      "status": "draft-editorial",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:umbuzeiro",
+      "assetId": "umbuzeiro",
+      "tags": [
+        "umbuzeiro"
+      ],
+      "type": "educational",
+      "text": "O umbuzeiro é uma árvore da Caatinga adaptada às chuvas irregulares. Produz o umbu, fruto usado em doces e bebidas. Conhecer e conservar a árvore também ajuda a valorizar os saberes das comunidades.",
+      "introductory": false,
+      "order": 5
+    },
+    {
+      "id": "clima-07",
+      "title": "Xique-xique, outro cacto",
+      "body": "O xique-xique é um cacto da Caatinga. Seus ramos têm espinhos e tecidos que armazenam água. Ele e o mandacaru são plantas diferentes, embora compartilhem adaptações à vida em períodos secos.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "xique-xique",
+      "status": "draft-editorial",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:xique-xique",
+      "assetId": "xique-xique",
+      "tags": [
+        "xique-xique"
+      ],
+      "type": "educational",
+      "text": "O xique-xique é um cacto da Caatinga. Seus ramos têm espinhos e tecidos que armazenam água. Ele e o mandacaru são plantas diferentes, embora compartilhem adaptações à vida em períodos secos.",
+      "introductory": false,
+      "order": 6
+    },
+    {
+      "id": "clima-08",
+      "title": "Folhas que economizam água",
+      "body": "Na estação seca, muitas plantas da Caatinga perdem folhas, o que reduz a perda de água. Essa estratégia ajuda a atravessar a estiagem. A aparência sem folhas não significa que toda a vegetação morreu.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "seca",
+      "status": "draft-editorial",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:seca",
+      "assetId": "caatinga-seca",
+      "tags": [
+        "seca"
+      ],
+      "type": "educational",
+      "text": "Na estação seca, muitas plantas da Caatinga perdem folhas, o que reduz a perda de água. Essa estratégia ajuda a atravessar a estiagem. A aparência sem folhas não significa que toda a vegetação morreu.",
+      "introductory": false,
+      "order": 7
+    },
+    {
+      "id": "cultura-01",
+      "title": "Histórias que viajam",
+      "body": "A oralidade preserva histórias, causos e saberes transmitidos entre gerações. Cada comunidade contribui com suas próprias versões e lembranças.",
+      "curiosity": "Contar histórias também é preservar memória.",
+      "visualKey": "oralidade",
+      "status": "draft-editorial",
+      "themeId": "cultura",
+      "topicId": "cultura:oralidade",
+      "assetId": "repente",
+      "tags": [
+        "oralidade"
+      ],
+      "type": "educational",
+      "text": "A oralidade preserva histórias, causos e saberes transmitidos entre gerações. Cada comunidade contribui com suas próprias versões e lembranças.",
+      "introductory": true,
+      "order": 0
+    },
+    {
+      "id": "cultura-02",
+      "title": "Cordel e xilogravura",
+      "body": "Muitos folhetos de cordel apresentam poemas narrativos e capas ilustradas por gravuras. A xilogravura usa uma matriz de madeira entalhada para imprimir imagens.",
+      "curiosity": "Nem todo cordel tem xilogravura; os formatos variam.",
+      "visualKey": "cordel",
+      "status": "draft-editorial",
+      "themeId": "cultura",
+      "topicId": "cultura:cordel",
+      "assetId": "cordel",
+      "tags": [
+        "cordel"
+      ],
+      "type": "educational",
+      "text": "Muitos folhetos de cordel apresentam poemas narrativos e capas ilustradas por gravuras. A xilogravura usa uma matriz de madeira entalhada para imprimir imagens.",
+      "introductory": false,
+      "order": 1
+    },
+    {
+      "id": "cultura-03",
+      "title": "O som do sertão",
+      "body": "Cantorias, repente, baião, forró e xote fazem parte de diferentes tradições nordestinas. Instrumentos e estilos mudam conforme o lugar.",
+      "curiosity": "No repente, versos podem ser criados no momento.",
+      "visualKey": "musica",
+      "status": "draft-editorial",
+      "themeId": "cultura",
+      "topicId": "cultura:musica",
+      "assetId": "forro",
+      "tags": [
+        "musica"
+      ],
+      "type": "educational",
+      "text": "Cantorias, repente, baião, forró e xote fazem parte de diferentes tradições nordestinas. Instrumentos e estilos mudam conforme o lugar.",
+      "introductory": false,
+      "order": 2
+    },
+    {
+      "id": "cultura-04",
+      "title": "A festa reúne pessoas",
+      "body": "Festas juninas, quadrilhas e celebrações locais movimentam comidas, músicas e encontros comunitários.",
+      "curiosity": "A cultura regional é diversa e está sempre mudando.",
+      "visualKey": "festa",
+      "status": "draft-editorial",
+      "themeId": "cultura",
+      "topicId": "cultura:festa",
+      "assetId": "festa-junina",
+      "tags": [
+        "festa"
+      ],
+      "type": "educational",
+      "text": "Festas juninas, quadrilhas e celebrações locais movimentam comidas, músicas e encontros comunitários.",
+      "introductory": false,
+      "order": 3
+    },
+    {
+      "id": "cultura-05",
+      "title": "A arte de muitas raízes",
+      "body": "Ariano Suassuna valorizou manifestações populares como a literatura de cordel e o teatro. Essa inspiração foi essencial ao Movimento Armorial.",
+      "curiosity": "O Movimento Armorial foi lançado em Recife em 1970.",
+      "visualKey": "armorial",
+      "status": "draft-editorial",
+      "themeId": "cultura",
+      "topicId": "cultura:armorial",
+      "assetId": "armorial",
+      "tags": [
+        "armorial"
+      ],
+      "type": "educational",
+      "text": "Ariano Suassuna valorizou manifestações populares como a literatura de cordel e o teatro. Essa inspiração foi essencial ao Movimento Armorial.",
+      "introductory": false,
+      "order": 4
+    },
+    {
+      "id": "cultura-06",
+      "title": "Da madeira ao papel",
+      "body": "Na xilogravura, o artista entalha uma matriz de madeira. A superfície recebe tinta e transfere a imagem para o papel. A matriz permite fazer impressões; cada impressão não é uma fotografia da madeira.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "xilogravura",
+      "status": "draft-editorial",
+      "themeId": "cultura",
+      "topicId": "cultura:xilogravura",
+      "assetId": "xilogravura",
+      "tags": [
+        "xilogravura"
+      ],
+      "type": "educational",
+      "text": "Na xilogravura, o artista entalha uma matriz de madeira. A superfície recebe tinta e transfere a imagem para o papel. A matriz permite fazer impressões; cada impressão não é uma fotografia da madeira.",
+      "introductory": false,
+      "order": 5
+    },
+    {
+      "id": "cultura-07",
+      "title": "Sanfona, zabumba e triângulo",
+      "body": "Sanfona, zabumba e triângulo formam um conjunto conhecido nas matrizes tradicionais do forró. A sanfona usa um fole; a zabumba é um tambor; o triângulo é um instrumento de percussão. Há muitas outras formações musicais.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "instrumentos",
+      "status": "draft-editorial",
+      "themeId": "cultura",
+      "topicId": "cultura:instrumentos",
+      "assetId": "sanfona",
+      "tags": [
+        "instrumentos"
+      ],
+      "type": "educational",
+      "text": "Sanfona, zabumba e triângulo formam um conjunto conhecido nas matrizes tradicionais do forró. A sanfona usa um fole; a zabumba é um tambor; o triângulo é um instrumento de percussão. Há muitas outras formações musicais.",
+      "introductory": false,
+      "order": 6
+    },
+    {
+      "id": "cultura-08",
+      "title": "Versos criados no encontro",
+      "body": "No repente, cantadores criam versos no momento, muitas vezes em desafios de cantoria. Eles usam domínio da língua, ritmo, memória e imaginação. Improvisar não significa criar sem conhecimento ou prática.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "repente",
+      "status": "draft-editorial",
+      "themeId": "cultura",
+      "topicId": "cultura:repente",
+      "assetId": "repente",
+      "tags": [
+        "repente"
+      ],
+      "type": "educational",
+      "text": "No repente, cantadores criam versos no momento, muitas vezes em desafios de cantoria. Eles usam domínio da língua, ritmo, memória e imaginação. Improvisar não significa criar sem conhecimento ou prática.",
+      "introductory": false,
+      "order": 7
+    },
+    {
+      "id": "personalidades-01",
+      "title": "A voz de Luiz Gonzaga",
+      "body": "Nascido em Exu, Pernambuco, Luiz Gonzaga popularizou o baião e levou referências do Nordeste para diferentes públicos.",
+      "curiosity": "Seu repertório inclui temas da seca, da saudade e das festas.",
+      "visualKey": "luiz-gonzaga",
+      "status": "draft-editorial",
+      "themeId": "personalidades",
+      "topicId": "personalidades:gonzaga",
+      "assetId": "luiz-gonzaga",
+      "tags": [
+        "gonzaga"
+      ],
+      "type": "educational",
+      "text": "Nascido em Exu, Pernambuco, Luiz Gonzaga popularizou o baião e levou referências do Nordeste para diferentes públicos.",
+      "introductory": true,
+      "order": 0
+    },
+    {
+      "id": "personalidades-02",
+      "title": "A poesia de Patativa",
+      "body": "Patativa do Assaré, poeta cearense, retratou experiências e desigualdades sociais com uma voz marcante da poesia popular.",
+      "curiosity": "Poesia também é uma forma de interpretar a história.",
+      "visualKey": "patativa",
+      "status": "draft-editorial",
+      "themeId": "personalidades",
+      "topicId": "personalidades:patativa",
+      "assetId": "patativa",
+      "tags": [
+        "patativa"
+      ],
+      "type": "educational",
+      "text": "Patativa do Assaré, poeta cearense, retratou experiências e desigualdades sociais com uma voz marcante da poesia popular.",
+      "introductory": false,
+      "order": 1
+    },
+    {
+      "id": "personalidades-03",
+      "title": "Rachel de Queiroz",
+      "body": "A escritora cearense publicou O Quinze, romance que aborda os efeitos da seca de 1915 sobre personagens e famílias.",
+      "curiosity": "A literatura pode mostrar diferentes perspectivas de um mesmo problema.",
+      "visualKey": "rachel",
+      "status": "draft-editorial",
+      "themeId": "personalidades",
+      "topicId": "personalidades:rachel",
+      "assetId": "rachel",
+      "tags": [
+        "rachel"
+      ],
+      "type": "educational",
+      "text": "A escritora cearense publicou O Quinze, romance que aborda os efeitos da seca de 1915 sobre personagens e famílias.",
+      "introductory": false,
+      "order": 2
+    },
+    {
+      "id": "personalidades-04",
+      "title": "Mestre Vitalino",
+      "body": "O artista de Caruaru ficou conhecido pelas figuras de barro que representam cenas e personagens do cotidiano popular.",
+      "curiosity": "Arte também registra modos de vida.",
+      "visualKey": "vitalino",
+      "status": "draft-editorial",
+      "themeId": "personalidades",
+      "topicId": "personalidades:vitalino",
+      "assetId": "mestre-vitalino",
+      "tags": [
+        "vitalino"
+      ],
+      "type": "educational",
+      "text": "O artista de Caruaru ficou conhecido pelas figuras de barro que representam cenas e personagens do cotidiano popular.",
+      "introductory": false,
+      "order": 3
+    },
+    {
+      "id": "personalidades-05",
+      "title": "Muitas histórias, muitas vozes",
+      "body": "Antônio Conselheiro, Lampião e Maria Bonita integram episódios complexos da história regional. É preciso conhecer o contexto sem romantizar a violência.",
+      "curiosity": "Personalidades são diferentes entre si: nem todas representam as mesmas ideias.",
+      "visualKey": "historia",
+      "status": "draft-editorial",
+      "themeId": "personalidades",
+      "topicId": "personalidades:contexto-historico",
+      "assetId": "canudos",
+      "tags": [
+        "contexto-historico"
+      ],
+      "type": "educational",
+      "text": "Antônio Conselheiro, Lampião e Maria Bonita integram episódios complexos da história regional. É preciso conhecer o contexto sem romantizar a violência.",
+      "introductory": false,
+      "order": 4
+    },
+    {
+      "id": "personalidades-06",
+      "title": "Ariano e a cultura popular",
+      "body": "Ariano Suassuna escreveu peças e romances e atuou como professor. Defendeu a valorização das culturas populares brasileiras. Estudar sua trajetória é conhecer um artista, sem tratar sua visão como a única voz do Nordeste.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "ariano-pessoa",
+      "status": "draft-editorial",
+      "themeId": "personalidades",
+      "topicId": "personalidades:ariano-pessoa",
+      "assetId": "ariano",
+      "tags": [
+        "ariano-pessoa"
+      ],
+      "type": "educational",
+      "text": "Ariano Suassuna escreveu peças e romances e atuou como professor. Defendeu a valorização das culturas populares brasileiras. Estudar sua trajetória é conhecer um artista, sem tratar sua visão como a única voz do Nordeste.",
+      "introductory": false,
+      "order": 5
+    },
+    {
+      "id": "personalidades-07",
+      "title": "Um ritmo que encontra públicos",
+      "body": "Luiz Gonzaga ajudou a popularizar o baião e ficou associado à sanfona. A circulação de suas músicas levou referências nordestinas a novos públicos. Essa presença não apaga a diversidade de outros artistas e tradições.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "gonzaga",
+      "status": "draft-editorial",
+      "themeId": "personalidades",
+      "topicId": "personalidades:gonzaga",
+      "assetId": "sanfona",
+      "tags": [
+        "gonzaga"
+      ],
+      "type": "educational",
+      "text": "Luiz Gonzaga ajudou a popularizar o baião e ficou associado à sanfona. A circulação de suas músicas levou referências nordestinas a novos públicos. Essa presença não apaga a diversidade de outros artistas e tradições.",
+      "introductory": true,
+      "order": 6
+    },
+    {
+      "id": "personalidades-08",
+      "title": "Cotidiano que vira arte",
+      "body": "As figuras de barro de Mestre Vitalino representam cenas do cotidiano. Uma obra de arte seleciona e interpreta o que mostra; não é um retrato completo de todas as pessoas de uma região.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "vitalino",
+      "status": "draft-editorial",
+      "themeId": "personalidades",
+      "topicId": "personalidades:vitalino",
+      "assetId": "mestre-vitalino",
+      "tags": [
+        "vitalino"
+      ],
+      "type": "educational",
+      "text": "As figuras de barro de Mestre Vitalino representam cenas do cotidiano. Uma obra de arte seleciona e interpreta o que mostra; não é um retrato completo de todas as pessoas de uma região.",
+      "introductory": false,
+      "order": 7
+    },
+    {
+      "id": "linha-do-tempo-01",
+      "title": "Histórias antes de Ariano",
+      "body": "O Nordeste já reunia tradições de cantoria, teatro, festas e folhetos populares antes de Ariano Suassuna nascer.",
+      "curiosity": "As manifestações culturais não têm um único criador.",
+      "visualKey": "tradicoes",
+      "status": "draft-editorial",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:tradicoes",
+      "assetId": "cordel",
+      "tags": [
+        "tradicoes"
+      ],
+      "type": "educational",
+      "text": "O Nordeste já reunia tradições de cantoria, teatro, festas e folhetos populares antes de Ariano Suassuna nascer.",
+      "introductory": true,
+      "order": 0
+    },
+    {
+      "id": "linha-do-tempo-02",
+      "title": "Canudos, 1896–1897",
+      "body": "A Guerra de Canudos ocorreu no sertão baiano e revela conflitos sociais e políticos do período republicano.",
+      "curiosity": "Este é um contexto histórico regional, não uma inspiração direta comprovada para toda obra de Ariano.",
+      "visualKey": "canudos",
+      "status": "draft-editorial",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:canudos",
+      "assetId": "canudos",
+      "tags": [
+        "canudos"
+      ],
+      "type": "educational",
+      "text": "A Guerra de Canudos ocorreu no sertão baiano e revela conflitos sociais e políticos do período republicano.",
+      "introductory": false,
+      "order": 1
+    },
+    {
+      "id": "linha-do-tempo-03",
+      "title": "Ariano nasce, 1927",
+      "body": "Ariano Suassuna nasceu na Paraíba. Sua vida e seu contato com expressões populares ajudaram a formar sua visão artística.",
+      "curiosity": "Sua trajetória liga diferentes cidades e experiências nordestinas.",
+      "visualKey": "nascimento",
+      "status": "draft-editorial",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:nascimento",
+      "assetId": "ariano",
+      "tags": [
+        "nascimento"
+      ],
+      "type": "educational",
+      "text": "Ariano Suassuna nasceu na Paraíba. Sua vida e seu contato com expressões populares ajudaram a formar sua visão artística.",
+      "introductory": false,
+      "order": 2
+    },
+    {
+      "id": "linha-do-tempo-04",
+      "title": "O teatro ganha força, 1955",
+      "body": "Ariano escreveu Auto da Compadecida em 1955. A peça mistura humor, tradição popular e questões humanas.",
+      "curiosity": "A primeira encenação ocorreu em 1956.",
+      "visualKey": "auto",
+      "status": "draft-editorial",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:auto",
+      "assetId": "auto",
+      "tags": [
+        "auto"
+      ],
+      "type": "educational",
+      "text": "Ariano escreveu Auto da Compadecida em 1955. A peça mistura humor, tradição popular e questões humanas.",
+      "introductory": false,
+      "order": 3
+    },
+    {
+      "id": "linha-do-tempo-05",
+      "title": "Armorial e Pedra do Reino",
+      "body": "O Movimento Armorial foi lançado em 1970. Em 1971, Ariano publicou o Romance d’A Pedra do Reino, rico em imaginação e referências sertanejas.",
+      "curiosity": "São marcos diferentes: um movimento artístico e um romance.",
+      "visualKey": "pedra-do-reino",
+      "status": "draft-editorial",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:armorial-pedra",
+      "assetId": "pedra",
+      "tags": [
+        "armorial-pedra"
+      ],
+      "type": "educational",
+      "text": "O Movimento Armorial foi lançado em 1970. Em 1971, Ariano publicou o Romance d’A Pedra do Reino, rico em imaginação e referências sertanejas.",
+      "introductory": false,
+      "order": 4
+    },
+    {
+      "id": "linha-do-tempo-06",
+      "title": "1947: a primeira peça",
+      "body": "Em 1947, Ariano escreveu Uma Mulher Vestida de Sol, sua primeira peça. Ela pertence ao teatro. É um marco de sua trajetória anterior à escrita de Auto da Compadecida, em 1955.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "sol",
+      "status": "draft-editorial",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:sol",
+      "assetId": "sol",
+      "tags": [
+        "sol"
+      ],
+      "type": "educational",
+      "text": "Em 1947, Ariano escreveu Uma Mulher Vestida de Sol, sua primeira peça. Ela pertence ao teatro. É um marco de sua trajetória anterior à escrita de Auto da Compadecida, em 1955.",
+      "introductory": false,
+      "order": 5
+    },
+    {
+      "id": "linha-do-tempo-07",
+      "title": "1957: humor e dinheiro",
+      "body": "O Santo e a Porca é uma comédia de 1957. A peça aborda avareza e apego ao dinheiro. Ela é um marco teatral diferente de A Pedra do Reino, romance publicado em 1971.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "santo",
+      "status": "draft-editorial",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:santo",
+      "assetId": "santo",
+      "tags": [
+        "santo"
+      ],
+      "type": "educational",
+      "text": "O Santo e a Porca é uma comédia de 1957. A peça aborda avareza e apego ao dinheiro. Ela é um marco teatral diferente de A Pedra do Reino, romance publicado em 1971.",
+      "introductory": false,
+      "order": 6
+    },
+    {
+      "id": "linha-do-tempo-08",
+      "title": "2014: uma obra que continua a circular",
+      "body": "Ariano Suassuna faleceu em 2014. Suas peças, romances e propostas artísticas continuam sendo estudados. Montagens e adaptações são novas leituras e devem ser identificadas, sem confundi-las com a obra original.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "legado",
+      "status": "draft-editorial",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:legado",
+      "assetId": "ariano",
+      "tags": [
+        "legado"
+      ],
+      "type": "educational",
+      "text": "Ariano Suassuna faleceu em 2014. Suas peças, romances e propostas artísticas continuam sendo estudados. Montagens e adaptações são novas leituras e devem ser identificadas, sem confundi-las com a obra original.",
+      "introductory": false,
+      "order": 7
+    },
+    {
+      "id": "culinaria-01",
+      "title": "Comida também conta histórias",
+      "body": "Pratos e ingredientes revelam encontros entre tradições indígenas, africanas e europeias, com diferenças importantes entre estados e localidades.",
+      "curiosity": "Não existe uma única culinária nordestina.",
+      "visualKey": "mesa",
+      "status": "draft-editorial",
+      "themeId": "culinaria",
+      "topicId": "culinaria:diversidade",
+      "assetId": "cuscuz",
+      "tags": [
+        "diversidade"
+      ],
+      "type": "educational",
+      "text": "Pratos e ingredientes revelam encontros entre tradições indígenas, africanas e europeias, com diferenças importantes entre estados e localidades.",
+      "introductory": true,
+      "order": 0
+    },
+    {
+      "id": "culinaria-02",
+      "title": "O milho é protagonista",
+      "body": "Cuscuz e preparações com milho aparecem no cotidiano e nas festas, com receitas que mudam de família para família.",
+      "curiosity": "Festas juninas costumam reunir diferentes comidas de milho.",
+      "visualKey": "milho",
+      "status": "draft-editorial",
+      "themeId": "culinaria",
+      "topicId": "culinaria:cuscuz",
+      "assetId": "cuscuz",
+      "tags": [
+        "cuscuz"
+      ],
+      "type": "educational",
+      "text": "Cuscuz e preparações com milho aparecem no cotidiano e nas festas, com receitas que mudam de família para família.",
+      "introductory": false,
+      "order": 1
+    },
+    {
+      "id": "culinaria-03",
+      "title": "Raízes e resistência",
+      "body": "Macaxeira, mandioca ou aipim são nomes regionais associados a variedades e usos da mandioca, ingrediente importante em muitas mesas brasileiras.",
+      "curiosity": "Um ingrediente pode receber nomes diferentes.",
+      "visualKey": "macaxeira",
+      "status": "draft-editorial",
+      "themeId": "culinaria",
+      "topicId": "culinaria:mandioca",
+      "assetId": "mandioca",
+      "tags": [
+        "mandioca"
+      ],
+      "type": "educational",
+      "text": "Macaxeira, mandioca ou aipim são nomes regionais associados a variedades e usos da mandioca, ingrediente importante em muitas mesas brasileiras.",
+      "introductory": false,
+      "order": 2
+    },
+    {
+      "id": "culinaria-04",
+      "title": "Dois ingredientes, muitos sabores",
+      "body": "O baião de dois costuma combinar arroz e feijão e pode ganhar diferentes complementos, conforme a região e a receita.",
+      "curiosity": "Comida tradicional também se reinventa.",
+      "visualKey": "baiao",
+      "status": "draft-editorial",
+      "themeId": "culinaria",
+      "topicId": "culinaria:baiao",
+      "assetId": "baiao-de-dois",
+      "tags": [
+        "baiao"
+      ],
+      "type": "educational",
+      "text": "O baião de dois costuma combinar arroz e feijão e pode ganhar diferentes complementos, conforme a região e a receita.",
+      "introductory": false,
+      "order": 3
+    },
+    {
+      "id": "culinaria-05",
+      "title": "Frutos do semiárido",
+      "body": "O umbuzeiro é uma árvore adaptada ao semiárido. Seus frutos aparecem em doces, bebidas e outras preparações.",
+      "curiosity": "O umbu é associado à biodiversidade da Caatinga.",
+      "visualKey": "umbu",
+      "status": "draft-editorial",
+      "themeId": "culinaria",
+      "topicId": "culinaria:umbu",
+      "assetId": "umbu",
+      "tags": [
+        "umbu"
+      ],
+      "type": "educational",
+      "text": "O umbuzeiro é uma árvore adaptada ao semiárido. Seus frutos aparecem em doces, bebidas e outras preparações.",
+      "introductory": false,
+      "order": 4
+    },
+    {
+      "id": "culinaria-06",
+      "title": "Carne de sol: modos de preparar",
+      "body": "A carne de sol é uma preparação de carne salgada presente em tradições culinárias nordestinas. Não é sinônimo de toda carne seca ou de charque. Receitas e acompanhamentos variam. A imagem mostra uma etapa real de preparação, não ensina a conservar carne em casa.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "carne-sol",
+      "status": "draft-editorial",
+      "themeId": "culinaria",
+      "topicId": "culinaria:carne-sol",
+      "assetId": "carne-de-sol",
+      "tags": [
+        "carne-sol"
+      ],
+      "type": "educational",
+      "text": "A carne de sol é uma preparação de carne salgada presente em tradições culinárias nordestinas. Não é sinônimo de toda carne seca ou de charque. Receitas e acompanhamentos variam. A imagem mostra uma etapa real de preparação, não ensina a conservar carne em casa.",
+      "introductory": false,
+      "order": 5
+    },
+    {
+      "id": "culinaria-07",
+      "title": "Rapadura: da cana ao doce",
+      "body": "A rapadura é um doce feito a partir do caldo da cana-de-açúcar concentrado. É encontrada em diferentes lugares do Brasil, inclusive em tradições nordestinas. Formatos e modos de fazer variam.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "rapadura",
+      "status": "draft-editorial",
+      "themeId": "culinaria",
+      "topicId": "culinaria:rapadura",
+      "assetId": "rapadura",
+      "tags": [
+        "rapadura"
+      ],
+      "type": "educational",
+      "text": "A rapadura é um doce feito a partir do caldo da cana-de-açúcar concentrado. É encontrada em diferentes lugares do Brasil, inclusive em tradições nordestinas. Formatos e modos de fazer variam.",
+      "introductory": false,
+      "order": 6
+    },
+    {
+      "id": "culinaria-08",
+      "title": "Uma árvore, muitos sabores",
+      "body": "O umbuzeiro produz o umbu. O fruto pode ser consumido e usado em doces e bebidas. Os saberes culinários ligados a ele aproximam a biodiversidade da Caatinga e a vida das comunidades.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "umbu",
+      "status": "draft-editorial",
+      "themeId": "culinaria",
+      "topicId": "culinaria:umbu",
+      "assetId": "umbuzeiro",
+      "tags": [
+        "umbu"
+      ],
+      "type": "educational",
+      "text": "O umbuzeiro produz o umbu. O fruto pode ser consumido e usado em doces e bebidas. Os saberes culinários ligados a ele aproximam a biodiversidade da Caatinga e a vida das comunidades.",
+      "introductory": false,
+      "order": 7
+    },
+    {
+      "id": "ariano-01",
+      "title": "Quem foi Ariano?",
+      "body": "Nascido em 1927, na Paraíba, Ariano Suassuna foi escritor, dramaturgo, professor e defensor da valorização das culturas populares brasileiras.",
+      "curiosity": "Ele integrou a Academia Brasileira de Letras.",
+      "visualKey": "retrato",
+      "status": "draft-editorial",
+      "themeId": "ariano",
+      "topicId": "ariano:biografia",
+      "assetId": "ariano",
+      "tags": [
+        "biografia"
+      ],
+      "type": "educational",
+      "text": "Nascido em 1927, na Paraíba, Ariano Suassuna foi escritor, dramaturgo, professor e defensor da valorização das culturas populares brasileiras.",
+      "introductory": true,
+      "order": 0
+    },
+    {
+      "id": "ariano-02",
+      "title": "Auto da Compadecida",
+      "body": "Escrita em 1955, a peça apresenta personagens como João Grilo e Chicó e combina humor, religiosidade e crítica social.",
+      "curiosity": "Personagens astutos podem revelar injustiças e contradições.",
+      "visualKey": "auto",
+      "status": "draft-editorial",
+      "themeId": "ariano",
+      "topicId": "ariano:auto",
+      "assetId": "auto",
+      "tags": [
+        "auto"
+      ],
+      "type": "educational",
+      "text": "Escrita em 1955, a peça apresenta personagens como João Grilo e Chicó e combina humor, religiosidade e crítica social.",
+      "introductory": false,
+      "order": 1
+    },
+    {
+      "id": "ariano-03",
+      "title": "O Santo e a Porca",
+      "body": "Na peça de 1957, a avareza e a relação das pessoas com o dinheiro são tratadas por meio da comédia.",
+      "curiosity": "O riso também pode funcionar como crítica.",
+      "visualKey": "porca",
+      "status": "draft-editorial",
+      "themeId": "ariano",
+      "topicId": "ariano:santo",
+      "assetId": "santo",
+      "tags": [
+        "santo"
+      ],
+      "type": "educational",
+      "text": "Na peça de 1957, a avareza e a relação das pessoas com o dinheiro são tratadas por meio da comédia.",
+      "introductory": false,
+      "order": 2
+    },
+    {
+      "id": "ariano-04",
+      "title": "A Pedra do Reino",
+      "body": "Publicado em 1971, o romance constrói um universo narrativo de fantasia, memória, referências populares e imaginação sertaneja.",
+      "curiosity": "A obra mistura diferentes tradições e formas narrativas.",
+      "visualKey": "pedra",
+      "status": "draft-editorial",
+      "themeId": "ariano",
+      "topicId": "ariano:pedra",
+      "assetId": "pedra",
+      "tags": [
+        "pedra"
+      ],
+      "type": "educational",
+      "text": "Publicado em 1971, o romance constrói um universo narrativo de fantasia, memória, referências populares e imaginação sertaneja.",
+      "introductory": false,
+      "order": 3
+    },
+    {
+      "id": "ariano-05",
+      "title": "O Movimento Armorial",
+      "body": "Lançado em 1970, o movimento buscou criar uma arte brasileira erudita ligada às raízes populares, envolvendo música, literatura e artes visuais.",
+      "curiosity": "Cordel e xilogravura estão entre suas referências.",
+      "visualKey": "armorial",
+      "status": "draft-editorial",
+      "themeId": "ariano",
+      "topicId": "ariano:armorial",
+      "assetId": "armorial",
+      "tags": [
+        "armorial"
+      ],
+      "type": "educational",
+      "text": "Lançado em 1970, o movimento buscou criar uma arte brasileira erudita ligada às raízes populares, envolvendo música, literatura e artes visuais.",
+      "introductory": false,
+      "order": 4
+    },
+    {
+      "id": "ariano-06",
+      "title": "Uma Mulher Vestida de Sol",
+      "body": "Escrita em 1947, Uma Mulher Vestida de Sol é a primeira peça de Ariano. O drama aborda conflitos, relações de poder e disputas entre famílias. Teatro não se resume à comédia: a trajetória do autor também inclui o drama.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "sol",
+      "status": "draft-editorial",
+      "themeId": "ariano",
+      "topicId": "ariano:sol",
+      "assetId": "sol",
+      "tags": [
+        "sol"
+      ],
+      "type": "educational",
+      "text": "Escrita em 1947, Uma Mulher Vestida de Sol é a primeira peça de Ariano. O drama aborda conflitos, relações de poder e disputas entre famílias. Teatro não se resume à comédia: a trajetória do autor também inclui o drama.",
+      "introductory": false,
+      "order": 5
+    },
+    {
+      "id": "ariano-07",
+      "title": "O escritor também ensinava",
+      "body": "Além de escrever, Ariano Suassuna atuou como professor. Sua defesa das culturas populares aparece em sua trajetória artística e educativa. Conhecer o autor não exige atribuir a ele frases sem fonte: é possível estudar suas ideias com registros verificáveis.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "biografia",
+      "status": "draft-editorial",
+      "themeId": "ariano",
+      "topicId": "ariano:biografia",
+      "assetId": "ariano",
+      "tags": [
+        "biografia"
+      ],
+      "type": "educational",
+      "text": "Além de escrever, Ariano Suassuna atuou como professor. Sua defesa das culturas populares aparece em sua trajetória artística e educativa. Conhecer o autor não exige atribuir a ele frases sem fonte: é possível estudar suas ideias com registros verificáveis.",
+      "introductory": true,
+      "order": 6
+    },
+    {
+      "id": "ariano-08",
+      "title": "Armorial: mais de uma linguagem",
+      "body": "O Movimento Armorial foi lançado em Recife em 1970. A proposta aproxima raízes populares de uma criação erudita brasileira, reunindo música, literatura e artes visuais. Não é o título de uma peça nem de um romance.",
+      "curiosity": "Observe a imagem e relacione suas descobertas ao texto.",
+      "visualKey": "armorial",
+      "status": "draft-editorial",
+      "themeId": "ariano",
+      "topicId": "ariano:armorial",
+      "assetId": "armorial",
+      "tags": [
+        "armorial"
+      ],
+      "type": "educational",
+      "text": "O Movimento Armorial foi lançado em Recife em 1970. A proposta aproxima raízes populares de uma criação erudita brasileira, reunindo música, literatura e artes visuais. Não é o título de uma peça nem de um romance.",
+      "introductory": false,
+      "order": 7
+    }
+  ],
+  "questions": [
+    {
+      "id": "clima-01-pool-q1",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:semiarido",
+      "question": "Como são as chuvas no semiárido?",
+      "options": [
+        "Irregulares",
+        "Diárias o ano inteiro",
+        "Sempre em forma de neve",
+        "Inexistentes"
+      ],
+      "correctIndex": 0,
+      "feedback": "Irregulares. Muitas áreas do sertão têm clima semiárido: faz calor e as chuvas são irregulares. Mas também há rios, serras, plantações e vida.",
+      "difficulty": 1,
+      "tags": [
+        "semiarido"
+      ],
+      "postIds": [
+        "clima-01"
+      ]
+    },
+    {
+      "id": "clima-01-pool-q2",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:semiarido",
+      "question": "Um ano chuvoso prova que o sertão não tem clima semiárido?",
+      "options": [
+        "Não: a chuva pode variar entre períodos",
+        "Sim: basta chover uma vez",
+        "Sim: todo clima muda em um dia",
+        "Não: nunca chove lá"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: a chuva pode variar entre períodos. Muitas áreas do sertão têm clima semiárido: faz calor e as chuvas são irregulares. Mas também há rios, serras, plantações e vida.",
+      "difficulty": 2,
+      "tags": [
+        "semiarido"
+      ],
+      "postIds": [
+        "clima-01"
+      ]
+    },
+    {
+      "id": "clima-01-pool-q3",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:semiarido",
+      "question": "Qual conclusão respeita as informações do post sobre o semiárido?",
+      "options": [
+        "Há calor, chuva irregular e diversidade de paisagens e vida",
+        "Todo o Nordeste tem exatamente o mesmo clima",
+        "Chuva irregular significa ausência total de chuva",
+        "Só há vida onde chove diariamente"
+      ],
+      "correctIndex": 0,
+      "feedback": "Há calor, chuva irregular e diversidade de paisagens e vida.",
+      "difficulty": 3,
+      "tags": [
+        "semiarido"
+      ],
+      "postIds": [
+        "clima-01"
+      ]
+    },
+    {
+      "id": "clima-02-pool-q1",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:caatinga",
+      "question": "Em qual país a Caatinga ocorre naturalmente?",
+      "options": [
+        "Brasil",
+        "Portugal",
+        "Egito",
+        "México"
+      ],
+      "correctIndex": 0,
+      "feedback": "Brasil. A Caatinga é um bioma exclusivamente brasileiro. Suas plantas e seus animais desenvolveram maneiras de enfrentar longos períodos secos.",
+      "difficulty": 1,
+      "tags": [
+        "caatinga"
+      ],
+      "postIds": [
+        "clima-02"
+      ]
+    },
+    {
+      "id": "clima-02-pool-q2",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:caatinga",
+      "question": "Uma paisagem seca significa ausência de vida?",
+      "options": [
+        "Não: há espécies adaptadas aos períodos secos",
+        "Sim: só há vida em florestas úmidas",
+        "Sim: nenhuma planta resiste",
+        "Não: todas as plantas são iguais"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: há espécies adaptadas aos períodos secos. A Caatinga é um bioma exclusivamente brasileiro. Suas plantas e seus animais desenvolveram maneiras de enfrentar longos períodos secos.",
+      "difficulty": 3,
+      "tags": [
+        "caatinga"
+      ],
+      "postIds": [
+        "clima-02"
+      ]
+    },
+    {
+      "id": "clima-03-pool-q1",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:chuva",
+      "question": "O que pode acontecer à vegetação depois da chuva?",
+      "options": [
+        "Brotar e florescer",
+        "Virar uma floresta de neve",
+        "Deixar de crescer para sempre",
+        "Perder toda a vida"
+      ],
+      "correctIndex": 0,
+      "feedback": "Brotar e florescer. Depois das chuvas, muitas plantas brotam, florescem e deixam a paisagem mais verde. A transformação pode ser rápida, mas varia de lugar para lugar.",
+      "difficulty": 1,
+      "tags": [
+        "chuva"
+      ],
+      "postIds": [
+        "clima-03"
+      ]
+    },
+    {
+      "id": "clima-03-pool-q2",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:chuva",
+      "question": "Duas áreas da Caatinga precisam ficar verdes no mesmo dia?",
+      "options": [
+        "Não: a resposta varia de lugar para lugar",
+        "Sim: todas as espécies são iguais",
+        "Sim: o solo não interfere",
+        "Não: a chuva não afeta plantas"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: a resposta varia de lugar para lugar. Depois das chuvas, muitas plantas brotam, florescem e deixam a paisagem mais verde. A transformação pode ser rápida, mas varia de lugar para lugar.",
+      "difficulty": 2,
+      "tags": [
+        "chuva"
+      ],
+      "postIds": [
+        "clima-03"
+      ]
+    },
+    {
+      "id": "clima-04-pool-q1",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:mandacaru",
+      "question": "O que mandacarus podem armazenar em seus tecidos?",
+      "options": [
+        "Água",
+        "Gelo permanente",
+        "Sal de cozinha",
+        "Petróleo"
+      ],
+      "correctIndex": 0,
+      "feedback": "Água. Mandacarus e xique-xiques armazenam água em seus tecidos e possuem espinhos. Outras plantas têm raízes, folhas ou ciclos de vida adaptados à escassez de água.",
+      "difficulty": 1,
+      "tags": [
+        "mandacaru"
+      ],
+      "postIds": [
+        "clima-04"
+      ]
+    },
+    {
+      "id": "clima-04-pool-q2",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:mandacaru",
+      "question": "Por que estudar espinhos e tecidos dos cactos?",
+      "options": [
+        "Para entender adaptações à escassez de água",
+        "Para provar que nunca precisam de água",
+        "Para concluir que não são plantas",
+        "Para afirmar que todos são a mesma espécie"
+      ],
+      "correctIndex": 0,
+      "feedback": "Para entender adaptações à escassez de água. Mandacarus e xique-xiques armazenam água em seus tecidos e possuem espinhos. Outras plantas têm raízes, folhas ou ciclos de vida adaptados à escassez de água.",
+      "difficulty": 3,
+      "tags": [
+        "mandacaru"
+      ],
+      "postIds": [
+        "clima-04"
+      ]
+    },
+    {
+      "id": "clima-05-pool-q1",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:relevo",
+      "question": "Qual paisagem também existe no sertão?",
+      "options": [
+        "Serras",
+        "Geleiras permanentes",
+        "Somente praias",
+        "Apenas dunas"
+      ],
+      "correctIndex": 0,
+      "feedback": "Serras. O relevo reúne depressões, planaltos e serras. O Nordeste também possui outros ambientes, como o litoral e a Zona da Mata, além do sertão.",
+      "difficulty": 1,
+      "tags": [
+        "relevo"
+      ],
+      "postIds": [
+        "clima-05"
+      ]
+    },
+    {
+      "id": "clima-05-pool-q2",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:relevo",
+      "question": "Nordeste e sertão são palavras de mesmo significado?",
+      "options": [
+        "Não: o Nordeste reúne diferentes ambientes",
+        "Sim: toda a região é sertão",
+        "Sim: não existe litoral no Nordeste",
+        "Não: o sertão fica fora do Brasil"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: o Nordeste reúne diferentes ambientes. O relevo reúne depressões, planaltos e serras. O Nordeste também possui outros ambientes, como o litoral e a Zona da Mata, além do sertão.",
+      "difficulty": 2,
+      "tags": [
+        "relevo"
+      ],
+      "postIds": [
+        "clima-05"
+      ]
+    },
+    {
+      "id": "clima-06-pool-q1",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:umbuzeiro",
+      "question": "Qual fruto vem do umbuzeiro?",
+      "options": [
+        "Umbu",
+        "Caju",
+        "Maçã",
+        "Coco"
+      ],
+      "correctIndex": 0,
+      "feedback": "Umbu. O umbuzeiro é uma árvore da Caatinga adaptada às chuvas irregulares. Produz o umbu, fruto usado em doces e bebidas. Conhecer e conservar a árvore também ajuda a valorizar os saberes das comunidades.",
+      "difficulty": 1,
+      "tags": [
+        "umbuzeiro"
+      ],
+      "postIds": [
+        "clima-06"
+      ]
+    },
+    {
+      "id": "clima-06-pool-q2",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:umbuzeiro",
+      "question": "Valorizar o umbu envolve o quê?",
+      "options": [
+        "Cuidar da árvore e dos saberes ligados ao fruto",
+        "Retirar todas as árvores",
+        "Ignorar as comunidades",
+        "Trocar todas as espécies por uma só"
+      ],
+      "correctIndex": 0,
+      "feedback": "Cuidar da árvore e dos saberes ligados ao fruto. O umbuzeiro é uma árvore da Caatinga adaptada às chuvas irregulares. Produz o umbu, fruto usado em doces e bebidas. Conhecer e conservar a árvore também ajuda a valorizar os saberes das comunidades.",
+      "difficulty": 3,
+      "tags": [
+        "umbuzeiro"
+      ],
+      "postIds": [
+        "clima-06"
+      ]
+    },
+    {
+      "id": "clima-07-pool-q1",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:xique-xique",
+      "question": "Qual planta também é um cacto da Caatinga?",
+      "options": [
+        "Xique-xique",
+        "Macieira",
+        "Pinheiro",
+        "Bananeira"
+      ],
+      "correctIndex": 0,
+      "feedback": "Xique-xique. O xique-xique é um cacto da Caatinga. Seus ramos têm espinhos e tecidos que armazenam água. Ele e o mandacaru são plantas diferentes, embora compartilhem adaptações à vida em períodos secos.",
+      "difficulty": 1,
+      "tags": [
+        "xique-xique"
+      ],
+      "postIds": [
+        "clima-07"
+      ]
+    },
+    {
+      "id": "clima-07-pool-q2",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:xique-xique",
+      "question": "Ter espinhos torna mandacaru e xique-xique a mesma planta?",
+      "options": [
+        "Não: plantas diferentes podem ter adaptações parecidas",
+        "Sim: todos os cactos são a mesma espécie",
+        "Sim: espinhos são nomes de espécies",
+        "Não: nenhum dos dois é cacto"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: plantas diferentes podem ter adaptações parecidas. O xique-xique é um cacto da Caatinga. Seus ramos têm espinhos e tecidos que armazenam água. Ele e o mandacaru são plantas diferentes, embora compartilhem adaptações à vida em períodos secos.",
+      "difficulty": 2,
+      "tags": [
+        "xique-xique"
+      ],
+      "postIds": [
+        "clima-07"
+      ]
+    },
+    {
+      "id": "clima-08-pool-q1",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:seca",
+      "question": "O que muitas plantas perdem na estação seca?",
+      "options": [
+        "Folhas",
+        "Todas as raízes",
+        "O solo",
+        "Os espinhos de todos os cactos"
+      ],
+      "correctIndex": 0,
+      "feedback": "Folhas. Na estação seca, muitas plantas da Caatinga perdem folhas, o que reduz a perda de água. Essa estratégia ajuda a atravessar a estiagem. A aparência sem folhas não significa que toda a vegetação morreu.",
+      "difficulty": 1,
+      "tags": [
+        "seca"
+      ],
+      "postIds": [
+        "clima-08"
+      ]
+    },
+    {
+      "id": "clima-08-pool-q2",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:seca",
+      "question": "Uma árvore sem folhas na Caatinga deve ser considerada morta automaticamente?",
+      "options": [
+        "Não: perder folhas pode ser uma adaptação",
+        "Sim: folhas nunca voltam",
+        "Sim: não existe estação seca",
+        "Não: árvores não são seres vivos"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: perder folhas pode ser uma adaptação. Na estação seca, muitas plantas da Caatinga perdem folhas, o que reduz a perda de água. Essa estratégia ajuda a atravessar a estiagem. A aparência sem folhas não significa que toda a vegetação morreu.",
+      "difficulty": 3,
+      "tags": [
+        "seca"
+      ],
+      "postIds": [
+        "clima-08"
+      ]
+    },
+    {
+      "id": "cultura-01-pool-q1",
+      "themeId": "cultura",
+      "topicId": "cultura:oralidade",
+      "question": "O que a oralidade transmite entre gerações?",
+      "options": [
+        "Histórias e saberes",
+        "Somente mapas digitais",
+        "Apenas receitas escritas",
+        "Nenhuma memória"
+      ],
+      "correctIndex": 0,
+      "feedback": "Histórias e saberes. A oralidade preserva histórias, causos e saberes transmitidos entre gerações. Cada comunidade contribui com suas próprias versões e lembranças.",
+      "difficulty": 1,
+      "tags": [
+        "oralidade"
+      ],
+      "postIds": [
+        "cultura-01"
+      ]
+    },
+    {
+      "id": "cultura-01-pool-q2",
+      "themeId": "cultura",
+      "topicId": "cultura:oralidade",
+      "question": "Versões diferentes de um causo significam necessariamente que a tradição desapareceu?",
+      "options": [
+        "Não: comunidades recriam histórias e memórias",
+        "Sim: só uma versão pode existir",
+        "Sim: histórias nunca mudam",
+        "Não: memória dispensa pessoas"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: comunidades recriam histórias e memórias. A oralidade preserva histórias, causos e saberes transmitidos entre gerações. Cada comunidade contribui com suas próprias versões e lembranças.",
+      "difficulty": 2,
+      "tags": [
+        "oralidade"
+      ],
+      "postIds": [
+        "cultura-01"
+      ]
+    },
+    {
+      "id": "cultura-01-pool-q3",
+      "themeId": "cultura",
+      "topicId": "cultura:oralidade",
+      "question": "Qual atitude ajuda a conhecer uma tradição oral?",
+      "options": [
+        "Ouvir diferentes comunidades e reconhecer suas versões",
+        "Exigir uma versão única e apagar as outras",
+        "Aceitar somente narrativas impressas",
+        "Concluir que memória não envolve pessoas"
+      ],
+      "correctIndex": 0,
+      "feedback": "Ouvir diferentes comunidades e reconhecer suas versões.",
+      "difficulty": 3,
+      "tags": [
+        "oralidade"
+      ],
+      "postIds": [
+        "cultura-01"
+      ]
+    },
+    {
+      "id": "cultura-02-pool-q1",
+      "themeId": "cultura",
+      "topicId": "cultura:cordel",
+      "question": "Como são muitos textos de cordel?",
+      "options": [
+        "Poemas narrativos em folhetos",
+        "Somente fotografias sem texto",
+        "Manuais de motores",
+        "Receitas sem versos"
+      ],
+      "correctIndex": 0,
+      "feedback": "Poemas narrativos em folhetos. Muitos folhetos de cordel apresentam poemas narrativos e capas ilustradas por gravuras. A xilogravura usa uma matriz de madeira entalhada para imprimir imagens.",
+      "difficulty": 1,
+      "tags": [
+        "cordel"
+      ],
+      "postIds": [
+        "cultura-02"
+      ]
+    },
+    {
+      "id": "cultura-02-pool-q2",
+      "themeId": "cultura",
+      "topicId": "cultura:cordel",
+      "question": "Todo cordel precisa ter capa em xilogravura?",
+      "options": [
+        "Não: os formatos e as capas variam",
+        "Sim: sem exceções",
+        "Sim: só existe um formato de cordel",
+        "Não: cordel não pode ter imagens"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: os formatos e as capas variam. Muitos folhetos de cordel apresentam poemas narrativos e capas ilustradas por gravuras. A xilogravura usa uma matriz de madeira entalhada para imprimir imagens.",
+      "difficulty": 3,
+      "tags": [
+        "cordel"
+      ],
+      "postIds": [
+        "cultura-02"
+      ]
+    },
+    {
+      "id": "cultura-03-pool-q1",
+      "themeId": "cultura",
+      "topicId": "cultura:musica",
+      "question": "Qual tradição envolve versos improvisados?",
+      "options": [
+        "Repente",
+        "Relevo",
+        "Mandioca",
+        "Cerâmica"
+      ],
+      "correctIndex": 0,
+      "feedback": "Repente. Cantorias, repente, baião, forró e xote fazem parte de diferentes tradições nordestinas. Instrumentos e estilos mudam conforme o lugar.",
+      "difficulty": 1,
+      "tags": [
+        "musica"
+      ],
+      "postIds": [
+        "cultura-03"
+      ]
+    },
+    {
+      "id": "cultura-03-pool-q2",
+      "themeId": "cultura",
+      "topicId": "cultura:musica",
+      "question": "Um único ritmo representa todas as tradições musicais nordestinas?",
+      "options": [
+        "Não: há diversidade de ritmos e práticas",
+        "Sim: não há variação regional",
+        "Sim: só existe um instrumento",
+        "Não: a região não tem música"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: há diversidade de ritmos e práticas. Cantorias, repente, baião, forró e xote fazem parte de diferentes tradições nordestinas. Instrumentos e estilos mudam conforme o lugar.",
+      "difficulty": 2,
+      "tags": [
+        "musica"
+      ],
+      "postIds": [
+        "cultura-03"
+      ]
+    },
+    {
+      "id": "cultura-04-pool-q1",
+      "themeId": "cultura",
+      "topicId": "cultura:festa",
+      "question": "Que prática aparece em festas juninas?",
+      "options": [
+        "Quadrilhas",
+        "Esqui na neve",
+        "Regatas polares",
+        "Colheita de gelo"
+      ],
+      "correctIndex": 0,
+      "feedback": "Quadrilhas. Festas juninas, quadrilhas e celebrações locais movimentam comidas, músicas e encontros comunitários.",
+      "difficulty": 1,
+      "tags": [
+        "festa"
+      ],
+      "postIds": [
+        "cultura-04"
+      ]
+    },
+    {
+      "id": "cultura-04-pool-q2",
+      "themeId": "cultura",
+      "topicId": "cultura:festa",
+      "question": "Uma festa pode preservar saberes ao mesmo tempo que muda?",
+      "options": [
+        "Sim: tradições são recriadas por comunidades",
+        "Não: cultura nunca muda",
+        "Não: festas não envolvem pessoas",
+        "Sim: todas as festas se tornam iguais"
+      ],
+      "correctIndex": 0,
+      "feedback": "Sim: tradições são recriadas por comunidades. Festas juninas, quadrilhas e celebrações locais movimentam comidas, músicas e encontros comunitários.",
+      "difficulty": 3,
+      "tags": [
+        "festa"
+      ],
+      "postIds": [
+        "cultura-04"
+      ]
+    },
+    {
+      "id": "cultura-05-pool-q1",
+      "themeId": "cultura",
+      "topicId": "cultura:armorial",
+      "question": "Qual movimento valorizou raízes populares na criação artística?",
+      "options": [
+        "Armorial",
+        "Concretismo apenas digital",
+        "Nenhum movimento",
+        "Futurismo italiano"
+      ],
+      "correctIndex": 0,
+      "feedback": "Armorial. Ariano Suassuna valorizou manifestações populares como a literatura de cordel e o teatro. Essa inspiração foi essencial ao Movimento Armorial.",
+      "difficulty": 1,
+      "tags": [
+        "armorial"
+      ],
+      "postIds": [
+        "cultura-05"
+      ]
+    },
+    {
+      "id": "cultura-05-pool-q2",
+      "themeId": "cultura",
+      "topicId": "cultura:armorial",
+      "question": "Cordel e teatro poderiam dialogar com outras artes?",
+      "options": [
+        "Sim: esse diálogo integra a proposta armorial",
+        "Não: cada arte deve ficar isolada",
+        "Não: cordel não é expressão cultural",
+        "Sim: por isso todas as artes são idênticas"
+      ],
+      "correctIndex": 0,
+      "feedback": "Sim: esse diálogo integra a proposta armorial. Ariano Suassuna valorizou manifestações populares como a literatura de cordel e o teatro. Essa inspiração foi essencial ao Movimento Armorial.",
+      "difficulty": 2,
+      "tags": [
+        "armorial"
+      ],
+      "postIds": [
+        "cultura-05"
+      ]
+    },
+    {
+      "id": "cultura-06-pool-q1",
+      "themeId": "cultura",
+      "topicId": "cultura:xilogravura",
+      "question": "Qual material é entalhado na xilogravura?",
+      "options": [
+        "Madeira",
+        "Gelo",
+        "Vidro de celular",
+        "Tecido de algodão"
+      ],
+      "correctIndex": 0,
+      "feedback": "Madeira. Na xilogravura, o artista entalha uma matriz de madeira. A superfície recebe tinta e transfere a imagem para o papel. A matriz permite fazer impressões; cada impressão não é uma fotografia da madeira.",
+      "difficulty": 1,
+      "tags": [
+        "xilogravura"
+      ],
+      "postIds": [
+        "cultura-06"
+      ]
+    },
+    {
+      "id": "cultura-06-pool-q2",
+      "themeId": "cultura",
+      "topicId": "cultura:xilogravura",
+      "question": "Para que serve a matriz entalhada?",
+      "options": [
+        "Transferir uma imagem por impressão",
+        "Tocar uma melodia",
+        "Medir a chuva",
+        "Fotografar uma pessoa"
+      ],
+      "correctIndex": 0,
+      "feedback": "Transferir uma imagem por impressão. Na xilogravura, o artista entalha uma matriz de madeira. A superfície recebe tinta e transfere a imagem para o papel. A matriz permite fazer impressões; cada impressão não é uma fotografia da madeira.",
+      "difficulty": 3,
+      "tags": [
+        "xilogravura"
+      ],
+      "postIds": [
+        "cultura-06"
+      ]
+    },
+    {
+      "id": "cultura-07-pool-q1",
+      "themeId": "cultura",
+      "topicId": "cultura:instrumentos",
+      "question": "Qual instrumento usa um fole?",
+      "options": [
+        "Sanfona",
+        "Zabumba",
+        "Triângulo",
+        "Pandeiro"
+      ],
+      "correctIndex": 0,
+      "feedback": "Sanfona. Sanfona, zabumba e triângulo formam um conjunto conhecido nas matrizes tradicionais do forró. A sanfona usa um fole; a zabumba é um tambor; o triângulo é um instrumento de percussão. Há muitas outras formações musicais.",
+      "difficulty": 1,
+      "tags": [
+        "instrumentos"
+      ],
+      "postIds": [
+        "cultura-07"
+      ]
+    },
+    {
+      "id": "cultura-07-pool-q2",
+      "themeId": "cultura",
+      "topicId": "cultura:instrumentos",
+      "question": "É correto dizer que só existe uma formação possível no forró?",
+      "options": [
+        "Não: há outras formações e práticas musicais",
+        "Sim: outros instrumentos são proibidos",
+        "Sim: a tradição nunca varia",
+        "Não: o forró não usa instrumentos"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: há outras formações e práticas musicais. Sanfona, zabumba e triângulo formam um conjunto conhecido nas matrizes tradicionais do forró. A sanfona usa um fole; a zabumba é um tambor; o triângulo é um instrumento de percussão. Há muitas outras formações musicais.",
+      "difficulty": 2,
+      "tags": [
+        "instrumentos"
+      ],
+      "postIds": [
+        "cultura-07"
+      ]
+    },
+    {
+      "id": "cultura-08-pool-q1",
+      "themeId": "cultura",
+      "topicId": "cultura:repente",
+      "question": "Quando são criados os versos improvisados do repente?",
+      "options": [
+        "Durante a cantoria",
+        "Somente depois de impressos",
+        "Apenas por computadores",
+        "Nunca são criados"
+      ],
+      "correctIndex": 0,
+      "feedback": "Durante a cantoria. No repente, cantadores criam versos no momento, muitas vezes em desafios de cantoria. Eles usam domínio da língua, ritmo, memória e imaginação. Improvisar não significa criar sem conhecimento ou prática.",
+      "difficulty": 1,
+      "tags": [
+        "repente"
+      ],
+      "postIds": [
+        "cultura-08"
+      ]
+    },
+    {
+      "id": "cultura-08-pool-q2",
+      "themeId": "cultura",
+      "topicId": "cultura:repente",
+      "question": "O que ajuda um repentista a improvisar?",
+      "options": [
+        "Prática, ritmo, memória e domínio da língua",
+        "Somente sorte, sem prática",
+        "Evitar ouvir os outros",
+        "Repetir sempre uma receita"
+      ],
+      "correctIndex": 0,
+      "feedback": "Prática, ritmo, memória e domínio da língua. No repente, cantadores criam versos no momento, muitas vezes em desafios de cantoria. Eles usam domínio da língua, ritmo, memória e imaginação. Improvisar não significa criar sem conhecimento ou prática.",
+      "difficulty": 3,
+      "tags": [
+        "repente"
+      ],
+      "postIds": [
+        "cultura-08"
+      ]
+    },
+    {
+      "id": "personalidades-01-pool-q1",
+      "themeId": "personalidades",
+      "topicId": "personalidades:gonzaga",
+      "question": "Quem ajudou a divulgar o baião para muitos públicos?",
+      "options": [
+        "Luiz Gonzaga",
+        "Mestre Vitalino",
+        "Rachel de Queiroz",
+        "João Grilo"
+      ],
+      "correctIndex": 0,
+      "feedback": "Luiz Gonzaga. Nascido em Exu, Pernambuco, Luiz Gonzaga popularizou o baião e levou referências do Nordeste para diferentes públicos.",
+      "difficulty": 1,
+      "tags": [
+        "gonzaga"
+      ],
+      "postIds": [
+        "personalidades-01"
+      ]
+    },
+    {
+      "id": "personalidades-01-pool-q2",
+      "themeId": "personalidades",
+      "topicId": "personalidades:gonzaga",
+      "question": "Ouvir Gonzaga pode ajudar a conhecer quais temas?",
+      "options": [
+        "Seca, saudade e festas em seu repertório",
+        "Somente viagens espaciais",
+        "Apenas esportes de inverno",
+        "Nenhum tema regional"
+      ],
+      "correctIndex": 0,
+      "feedback": "Seca, saudade e festas em seu repertório. Nascido em Exu, Pernambuco, Luiz Gonzaga popularizou o baião e levou referências do Nordeste para diferentes públicos.",
+      "difficulty": 2,
+      "tags": [
+        "gonzaga"
+      ],
+      "postIds": [
+        "personalidades-01"
+      ]
+    },
+    {
+      "id": "personalidades-01-pool-q3",
+      "themeId": "personalidades",
+      "topicId": "personalidades:gonzaga",
+      "question": "Uma música de Gonzaga descreve automaticamente a vida de toda pessoa nordestina?",
+      "options": [
+        "Não: o repertório aborda temas, mas as experiências são diversas",
+        "Sim: todos têm a mesma história",
+        "Sim: uma canção equivale a um censo completo",
+        "Não: canções não podem ter temas regionais"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: o repertório aborda temas, mas as experiências são diversas.",
+      "difficulty": 3,
+      "tags": [
+        "gonzaga"
+      ],
+      "postIds": [
+        "personalidades-01"
+      ]
+    },
+    {
+      "id": "personalidades-02-pool-q1",
+      "themeId": "personalidades",
+      "topicId": "personalidades:patativa",
+      "question": "Patativa do Assaré se destacou em qual expressão?",
+      "options": [
+        "Poesia popular",
+        "Escultura em gelo",
+        "Astronomia",
+        "Pintura digital"
+      ],
+      "correctIndex": 0,
+      "feedback": "Poesia popular. Patativa do Assaré, poeta cearense, retratou experiências e desigualdades sociais com uma voz marcante da poesia popular.",
+      "difficulty": 1,
+      "tags": [
+        "patativa"
+      ],
+      "postIds": [
+        "personalidades-02"
+      ]
+    },
+    {
+      "id": "personalidades-02-pool-q2",
+      "themeId": "personalidades",
+      "topicId": "personalidades:patativa",
+      "question": "Como a poesia de Patativa ajuda a olhar a sociedade?",
+      "options": [
+        "Retratando experiências e desigualdades",
+        "Provando que todos vivem do mesmo modo",
+        "Eliminando qualquer interpretação",
+        "Substituindo toda pesquisa histórica"
+      ],
+      "correctIndex": 0,
+      "feedback": "Retratando experiências e desigualdades. Patativa do Assaré, poeta cearense, retratou experiências e desigualdades sociais com uma voz marcante da poesia popular.",
+      "difficulty": 3,
+      "tags": [
+        "patativa"
+      ],
+      "postIds": [
+        "personalidades-02"
+      ]
+    },
+    {
+      "id": "personalidades-03-pool-q1",
+      "themeId": "personalidades",
+      "topicId": "personalidades:rachel",
+      "question": "Quem escreveu O Quinze?",
+      "options": [
+        "Rachel de Queiroz",
+        "Ariano Suassuna",
+        "Luiz Gonzaga",
+        "Mestre Vitalino"
+      ],
+      "correctIndex": 0,
+      "feedback": "Rachel de Queiroz. A escritora cearense publicou O Quinze, romance que aborda os efeitos da seca de 1915 sobre personagens e famílias.",
+      "difficulty": 1,
+      "tags": [
+        "rachel"
+      ],
+      "postIds": [
+        "personalidades-03"
+      ]
+    },
+    {
+      "id": "personalidades-03-pool-q2",
+      "themeId": "personalidades",
+      "topicId": "personalidades:rachel",
+      "question": "O que um romance como O Quinze pode oferecer?",
+      "options": [
+        "Perspectivas sobre experiências da seca",
+        "Uma fotografia de cada fato histórico",
+        "A prova de que ficção e documento são iguais",
+        "Somente uma lista de receitas"
+      ],
+      "correctIndex": 0,
+      "feedback": "Perspectivas sobre experiências da seca. A escritora cearense publicou O Quinze, romance que aborda os efeitos da seca de 1915 sobre personagens e famílias.",
+      "difficulty": 2,
+      "tags": [
+        "rachel"
+      ],
+      "postIds": [
+        "personalidades-03"
+      ]
+    },
+    {
+      "id": "personalidades-04-pool-q1",
+      "themeId": "personalidades",
+      "topicId": "personalidades:vitalino",
+      "question": "Qual material tornou Mestre Vitalino conhecido?",
+      "options": [
+        "Barro",
+        "Gelo",
+        "Aço espacial",
+        "Vidro de celular"
+      ],
+      "correctIndex": 0,
+      "feedback": "Barro. O artista de Caruaru ficou conhecido pelas figuras de barro que representam cenas e personagens do cotidiano popular.",
+      "difficulty": 1,
+      "tags": [
+        "vitalino"
+      ],
+      "postIds": [
+        "personalidades-04"
+      ]
+    },
+    {
+      "id": "personalidades-04-pool-q2",
+      "themeId": "personalidades",
+      "topicId": "personalidades:vitalino",
+      "question": "Por que observar suas figuras de barro?",
+      "options": [
+        "Elas representam cenas e personagens do cotidiano",
+        "São fotografias de todas as pessoas da região",
+        "Provam que toda arte é feita de barro",
+        "Não têm relação com modos de vida"
+      ],
+      "correctIndex": 0,
+      "feedback": "Elas representam cenas e personagens do cotidiano. O artista de Caruaru ficou conhecido pelas figuras de barro que representam cenas e personagens do cotidiano popular.",
+      "difficulty": 3,
+      "tags": [
+        "vitalino"
+      ],
+      "postIds": [
+        "personalidades-04"
+      ]
+    },
+    {
+      "id": "personalidades-05-pool-q1",
+      "themeId": "personalidades",
+      "topicId": "personalidades:contexto-historico",
+      "question": "Qual cuidado o post propõe ao estudar episódios violentos?",
+      "options": [
+        "Conhecer o contexto sem romantizar a violência",
+        "Tratar toda violência como aventura",
+        "Ignorar datas e lugares",
+        "Transformar todas as pessoas em heróis"
+      ],
+      "correctIndex": 0,
+      "feedback": "Conhecer o contexto sem romantizar a violência. Antônio Conselheiro, Lampião e Maria Bonita integram episódios complexos da história regional. É preciso conhecer o contexto sem romantizar a violência.",
+      "difficulty": 1,
+      "tags": [
+        "contexto-historico"
+      ],
+      "postIds": [
+        "personalidades-05"
+      ]
+    },
+    {
+      "id": "personalidades-05-pool-q2",
+      "themeId": "personalidades",
+      "topicId": "personalidades:contexto-historico",
+      "question": "Conselheiro, Lampião e Maria Bonita representam as mesmas ideias?",
+      "options": [
+        "Não: trajetórias e contextos são diferentes",
+        "Sim: viveram exatamente a mesma história",
+        "Sim: toda pessoa de uma região pensa igual",
+        "Não: ninguém tem contexto histórico"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: trajetórias e contextos são diferentes. Antônio Conselheiro, Lampião e Maria Bonita integram episódios complexos da história regional. É preciso conhecer o contexto sem romantizar a violência.",
+      "difficulty": 2,
+      "tags": [
+        "contexto-historico"
+      ],
+      "postIds": [
+        "personalidades-05"
+      ]
+    },
+    {
+      "id": "personalidades-06-pool-q1",
+      "themeId": "personalidades",
+      "topicId": "personalidades:ariano-pessoa",
+      "question": "Além de escritor, Ariano atuou como quê?",
+      "options": [
+        "Professor",
+        "Piloto espacial",
+        "Imperador",
+        "Navegador do século XVI"
+      ],
+      "correctIndex": 0,
+      "feedback": "Professor. Ariano Suassuna escreveu peças e romances e atuou como professor. Defendeu a valorização das culturas populares brasileiras. Estudar sua trajetória é conhecer um artista, sem tratar sua visão como a única voz do Nordeste.",
+      "difficulty": 1,
+      "tags": [
+        "ariano-pessoa"
+      ],
+      "postIds": [
+        "personalidades-06"
+      ]
+    },
+    {
+      "id": "personalidades-06-pool-q2",
+      "themeId": "personalidades",
+      "topicId": "personalidades:ariano-pessoa",
+      "question": "Sua trajetória representa sozinha todas as vozes do Nordeste?",
+      "options": [
+        "Não: há muitas trajetórias e expressões culturais",
+        "Sim: só existe uma visão regional",
+        "Sim: todos escreveram as mesmas obras",
+        "Não: ele não teve atuação cultural"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: há muitas trajetórias e expressões culturais. Ariano Suassuna escreveu peças e romances e atuou como professor. Defendeu a valorização das culturas populares brasileiras. Estudar sua trajetória é conhecer um artista, sem tratar sua visão como a única voz do Nordeste.",
+      "difficulty": 3,
+      "tags": [
+        "ariano-pessoa"
+      ],
+      "postIds": [
+        "personalidades-06"
+      ]
+    },
+    {
+      "id": "personalidades-07-pool-q1",
+      "themeId": "personalidades",
+      "topicId": "personalidades:gonzaga",
+      "question": "A qual instrumento Luiz Gonzaga ficou associado?",
+      "options": [
+        "Sanfona",
+        "Harpa apenas",
+        "Órgão de igreja apenas",
+        "Oboé apenas"
+      ],
+      "correctIndex": 0,
+      "feedback": "Sanfona. Luiz Gonzaga ajudou a popularizar o baião e ficou associado à sanfona. A circulação de suas músicas levou referências nordestinas a novos públicos. Essa presença não apaga a diversidade de outros artistas e tradições.",
+      "difficulty": 1,
+      "tags": [
+        "gonzaga"
+      ],
+      "postIds": [
+        "personalidades-07"
+      ]
+    },
+    {
+      "id": "personalidades-07-pool-q2",
+      "themeId": "personalidades",
+      "topicId": "personalidades:gonzaga",
+      "question": "Divulgar um ritmo faz desaparecer as outras tradições?",
+      "options": [
+        "Não: popularização e diversidade podem coexistir",
+        "Sim: só cabe uma tradição na cultura",
+        "Sim: outras músicas deixam de existir",
+        "Não: ritmos não circulam"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: popularização e diversidade podem coexistir. Luiz Gonzaga ajudou a popularizar o baião e ficou associado à sanfona. A circulação de suas músicas levou referências nordestinas a novos públicos. Essa presença não apaga a diversidade de outros artistas e tradições.",
+      "difficulty": 2,
+      "tags": [
+        "gonzaga"
+      ],
+      "postIds": [
+        "personalidades-07"
+      ]
+    },
+    {
+      "id": "personalidades-08-pool-q1",
+      "themeId": "personalidades",
+      "topicId": "personalidades:vitalino",
+      "question": "Que cenas aparecem nas figuras de Vitalino?",
+      "options": [
+        "Cenas do cotidiano",
+        "Somente planetas",
+        "Apenas máquinas do futuro",
+        "Somente mapas oceânicos"
+      ],
+      "correctIndex": 0,
+      "feedback": "Cenas do cotidiano. As figuras de barro de Mestre Vitalino representam cenas do cotidiano. Uma obra de arte seleciona e interpreta o que mostra; não é um retrato completo de todas as pessoas de uma região.",
+      "difficulty": 1,
+      "tags": [
+        "vitalino"
+      ],
+      "postIds": [
+        "personalidades-08"
+      ]
+    },
+    {
+      "id": "personalidades-08-pool-q2",
+      "themeId": "personalidades",
+      "topicId": "personalidades:vitalino",
+      "question": "Uma figura de barro pode ser tomada como retrato de toda a região?",
+      "options": [
+        "Não: a arte seleciona e interpreta cenas",
+        "Sim: uma cena descreve todas as pessoas",
+        "Sim: arte e estatística são idênticas",
+        "Não: arte não permite observar nada"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: a arte seleciona e interpreta cenas. As figuras de barro de Mestre Vitalino representam cenas do cotidiano. Uma obra de arte seleciona e interpreta o que mostra; não é um retrato completo de todas as pessoas de uma região.",
+      "difficulty": 3,
+      "tags": [
+        "vitalino"
+      ],
+      "postIds": [
+        "personalidades-08"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-01-pool-q1",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:tradicoes",
+      "question": "As tradições populares nordestinas começaram apenas com Ariano?",
+      "options": [
+        "Não: já existiam antes de seu nascimento",
+        "Sim: ele criou todas sozinho",
+        "Sim: começaram em 2014",
+        "Não existiam tradições"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: já existiam antes de seu nascimento. O Nordeste já reunia tradições de cantoria, teatro, festas e folhetos populares antes de Ariano Suassuna nascer.",
+      "difficulty": 1,
+      "tags": [
+        "tradicoes"
+      ],
+      "postIds": [
+        "linha-do-tempo-01"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-01-pool-q2",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:tradicoes",
+      "question": "Por que não atribuir toda a cultura a um único artista?",
+      "options": [
+        "Porque muitas comunidades constroem essas tradições",
+        "Porque artistas não participam da cultura",
+        "Porque tradições surgem sem pessoas",
+        "Porque toda cultura tem o mesmo criador"
+      ],
+      "correctIndex": 0,
+      "feedback": "Porque muitas comunidades constroem essas tradições. O Nordeste já reunia tradições de cantoria, teatro, festas e folhetos populares antes de Ariano Suassuna nascer.",
+      "difficulty": 2,
+      "tags": [
+        "tradicoes"
+      ],
+      "postIds": [
+        "linha-do-tempo-01"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-01-pool-q3",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:tradicoes",
+      "question": "Qual leitura da relação entre Ariano e as tradições é mais cuidadosa?",
+      "options": [
+        "Ele dialogou com manifestações construídas por muitas pessoas antes dele",
+        "Ele criou todas as manifestações sozinho",
+        "Nenhuma tradição existia antes de 1927",
+        "As comunidades só copiaram sua obra"
+      ],
+      "correctIndex": 0,
+      "feedback": "Ele dialogou com manifestações construídas por muitas pessoas antes dele.",
+      "difficulty": 3,
+      "tags": [
+        "tradicoes"
+      ],
+      "postIds": [
+        "linha-do-tempo-01"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-02-pool-q1",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:canudos",
+      "question": "Em qual estado ocorreu a Guerra de Canudos?",
+      "options": [
+        "Bahia",
+        "Paraná",
+        "Amazonas",
+        "São Paulo"
+      ],
+      "correctIndex": 0,
+      "feedback": "Bahia. A Guerra de Canudos ocorreu no sertão baiano e revela conflitos sociais e políticos do período republicano.",
+      "difficulty": 1,
+      "tags": [
+        "canudos"
+      ],
+      "postIds": [
+        "linha-do-tempo-02"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-02-pool-q2",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:canudos",
+      "question": "Canudos prova uma influência direta em toda obra de Ariano?",
+      "options": [
+        "Não: uma relação específica exige comprovação",
+        "Sim: basta pertencer à mesma região",
+        "Sim: todo contexto é influência direta",
+        "Não: a história não pode ser estudada"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: uma relação específica exige comprovação. A Guerra de Canudos ocorreu no sertão baiano e revela conflitos sociais e políticos do período republicano.",
+      "difficulty": 3,
+      "tags": [
+        "canudos"
+      ],
+      "postIds": [
+        "linha-do-tempo-02"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-03-pool-q1",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:nascimento",
+      "question": "Em qual estado Ariano nasceu?",
+      "options": [
+        "Paraíba",
+        "São Paulo",
+        "Acre",
+        "Santa Catarina"
+      ],
+      "correctIndex": 0,
+      "feedback": "Paraíba. Ariano Suassuna nasceu na Paraíba. Sua vida e seu contato com expressões populares ajudaram a formar sua visão artística.",
+      "difficulty": 1,
+      "tags": [
+        "nascimento"
+      ],
+      "postIds": [
+        "linha-do-tempo-03"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-03-pool-q2",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:nascimento",
+      "question": "A vida de um artista pode reunir experiências de lugares diferentes?",
+      "options": [
+        "Sim: a trajetória de Ariano liga diferentes experiências",
+        "Não: uma pessoa conhece só sua cidade natal",
+        "Não: a cultura não circula",
+        "Sim: por isso todos têm trajetórias iguais"
+      ],
+      "correctIndex": 0,
+      "feedback": "Sim: a trajetória de Ariano liga diferentes experiências. Ariano Suassuna nasceu na Paraíba. Sua vida e seu contato com expressões populares ajudaram a formar sua visão artística.",
+      "difficulty": 2,
+      "tags": [
+        "nascimento"
+      ],
+      "postIds": [
+        "linha-do-tempo-03"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-04-pool-q1",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:auto",
+      "question": "Em que ano Ariano escreveu Auto da Compadecida?",
+      "options": [
+        "1955",
+        "1927",
+        "1971",
+        "2014"
+      ],
+      "correctIndex": 0,
+      "feedback": "1955. Ariano escreveu Auto da Compadecida em 1955. A peça mistura humor, tradição popular e questões humanas.",
+      "difficulty": 1,
+      "tags": [
+        "auto"
+      ],
+      "postIds": [
+        "linha-do-tempo-04"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-04-pool-q2",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:auto",
+      "question": "Escrita em 1955 e encenada em 1956: são o mesmo acontecimento?",
+      "options": [
+        "Não: escrever e encenar são marcos diferentes",
+        "Sim: não há diferença entre texto e palco",
+        "Sim: uma peça só existe em filme",
+        "Não: as datas impedem que seja teatro"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: escrever e encenar são marcos diferentes. Ariano escreveu Auto da Compadecida em 1955. A peça mistura humor, tradição popular e questões humanas.",
+      "difficulty": 3,
+      "tags": [
+        "auto"
+      ],
+      "postIds": [
+        "linha-do-tempo-04"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-05-pool-q1",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:armorial-pedra",
+      "question": "Qual marco corresponde a 1971?",
+      "options": [
+        "Publicação do Romance d’A Pedra do Reino",
+        "Nascimento de Ariano",
+        "Guerra de Canudos",
+        "Lançamento do Armorial"
+      ],
+      "correctIndex": 0,
+      "feedback": "Publicação do Romance d’A Pedra do Reino. O Movimento Armorial foi lançado em 1970. Em 1971, Ariano publicou o Romance d’A Pedra do Reino, rico em imaginação e referências sertanejas.",
+      "difficulty": 1,
+      "tags": [
+        "armorial-pedra"
+      ],
+      "postIds": [
+        "linha-do-tempo-05"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-05-pool-q2",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:armorial-pedra",
+      "question": "Armorial e Pedra do Reino são o mesmo tipo de criação?",
+      "options": [
+        "Não: um é movimento artístico e o outro é romance",
+        "Sim: ambos são apenas filmes",
+        "Sim: ambos são pratos tradicionais",
+        "Não: nenhum envolve arte"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: um é movimento artístico e o outro é romance. O Movimento Armorial foi lançado em 1970. Em 1971, Ariano publicou o Romance d’A Pedra do Reino, rico em imaginação e referências sertanejas.",
+      "difficulty": 2,
+      "tags": [
+        "armorial-pedra"
+      ],
+      "postIds": [
+        "linha-do-tempo-05"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-06-pool-q1",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:sol",
+      "question": "Qual peça foi escrita em 1947?",
+      "options": [
+        "Uma Mulher Vestida de Sol",
+        "Auto da Compadecida",
+        "O Santo e a Porca",
+        "O Quinze"
+      ],
+      "correctIndex": 0,
+      "feedback": "Uma Mulher Vestida de Sol. Em 1947, Ariano escreveu Uma Mulher Vestida de Sol, sua primeira peça. Ela pertence ao teatro. É um marco de sua trajetória anterior à escrita de Auto da Compadecida, em 1955.",
+      "difficulty": 1,
+      "tags": [
+        "sol"
+      ],
+      "postIds": [
+        "linha-do-tempo-06"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-06-pool-q2",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:sol",
+      "question": "Qual veio antes na trajetória apresentada?",
+      "options": [
+        "Uma Mulher Vestida de Sol, antes de Auto da Compadecida",
+        "Auto da Compadecida, antes de 1947",
+        "As duas foram escritas em 2014",
+        "Nenhuma das duas é teatro"
+      ],
+      "correctIndex": 0,
+      "feedback": "Uma Mulher Vestida de Sol, antes de Auto da Compadecida. Em 1947, Ariano escreveu Uma Mulher Vestida de Sol, sua primeira peça. Ela pertence ao teatro. É um marco de sua trajetória anterior à escrita de Auto da Compadecida, em 1955.",
+      "difficulty": 3,
+      "tags": [
+        "sol"
+      ],
+      "postIds": [
+        "linha-do-tempo-06"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-07-pool-q1",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:santo",
+      "question": "Qual peça de 1957 aborda a avareza?",
+      "options": [
+        "O Santo e a Porca",
+        "O Quinze",
+        "A Pedra do Reino",
+        "Uma Mulher Vestida de Sol"
+      ],
+      "correctIndex": 0,
+      "feedback": "O Santo e a Porca. O Santo e a Porca é uma comédia de 1957. A peça aborda avareza e apego ao dinheiro. Ela é um marco teatral diferente de A Pedra do Reino, romance publicado em 1971.",
+      "difficulty": 1,
+      "tags": [
+        "santo"
+      ],
+      "postIds": [
+        "linha-do-tempo-07"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-07-pool-q2",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:santo",
+      "question": "Como distinguir esses marcos da trajetória?",
+      "options": [
+        "O Santo e a Porca é comédia; A Pedra do Reino é romance",
+        "Ambos são somente movimentos artísticos",
+        "Ambos são biografias fotográficas",
+        "Nenhum é obra literária"
+      ],
+      "correctIndex": 0,
+      "feedback": "O Santo e a Porca é comédia; A Pedra do Reino é romance. O Santo e a Porca é uma comédia de 1957. A peça aborda avareza e apego ao dinheiro. Ela é um marco teatral diferente de A Pedra do Reino, romance publicado em 1971.",
+      "difficulty": 2,
+      "tags": [
+        "santo"
+      ],
+      "postIds": [
+        "linha-do-tempo-07"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-08-pool-q1",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:legado",
+      "question": "Em que ano Ariano faleceu?",
+      "options": [
+        "2014",
+        "1927",
+        "1947",
+        "1955"
+      ],
+      "correctIndex": 0,
+      "feedback": "2014. Ariano Suassuna faleceu em 2014. Suas peças, romances e propostas artísticas continuam sendo estudados. Montagens e adaptações são novas leituras e devem ser identificadas, sem confundi-las com a obra original.",
+      "difficulty": 1,
+      "tags": [
+        "legado"
+      ],
+      "postIds": [
+        "linha-do-tempo-08"
+      ]
+    },
+    {
+      "id": "linha-do-tempo-08-pool-q2",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:legado",
+      "question": "Uma adaptação atual deve ser identificada como o quê?",
+      "options": [
+        "Uma nova leitura de uma obra, com seus próprios créditos",
+        "A própria edição original em todos os detalhes",
+        "Uma fotografia da escrita do livro",
+        "Uma fala inédita do autor automaticamente"
+      ],
+      "correctIndex": 0,
+      "feedback": "Uma nova leitura de uma obra, com seus próprios créditos. Ariano Suassuna faleceu em 2014. Suas peças, romances e propostas artísticas continuam sendo estudados. Montagens e adaptações são novas leituras e devem ser identificadas, sem confundi-las com a obra original.",
+      "difficulty": 3,
+      "tags": [
+        "legado"
+      ],
+      "postIds": [
+        "linha-do-tempo-08"
+      ]
+    },
+    {
+      "id": "culinaria-01-pool-q1",
+      "themeId": "culinaria",
+      "topicId": "culinaria:diversidade",
+      "question": "Existe uma única culinária igual em todo o Nordeste?",
+      "options": [
+        "Não: há diferenças entre lugares e comunidades",
+        "Sim: todas as receitas são idênticas",
+        "Sim: há só um ingrediente",
+        "Não existe culinária na região"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: há diferenças entre lugares e comunidades. Pratos e ingredientes revelam encontros entre tradições indígenas, africanas e europeias, com diferenças importantes entre estados e localidades.",
+      "difficulty": 1,
+      "tags": [
+        "diversidade"
+      ],
+      "postIds": [
+        "culinaria-01"
+      ]
+    },
+    {
+      "id": "culinaria-01-pool-q2",
+      "themeId": "culinaria",
+      "topicId": "culinaria:diversidade",
+      "question": "Duas famílias preparam um prato de maneiras diferentes. Isso indica o quê?",
+      "options": [
+        "Diversidade de práticas e memórias culinárias",
+        "Que uma delas não tem cultura",
+        "Que tradições não podem mudar",
+        "Que só existe uma receita no mundo"
+      ],
+      "correctIndex": 0,
+      "feedback": "Diversidade de práticas e memórias culinárias. Pratos e ingredientes revelam encontros entre tradições indígenas, africanas e europeias, com diferenças importantes entre estados e localidades.",
+      "difficulty": 2,
+      "tags": [
+        "diversidade"
+      ],
+      "postIds": [
+        "culinaria-01"
+      ]
+    },
+    {
+      "id": "culinaria-01-pool-q3",
+      "themeId": "culinaria",
+      "topicId": "culinaria:diversidade",
+      "question": "Uma receita pode reunir tradições de origens diferentes?",
+      "options": [
+        "Sim: encontros culturais ajudam a formar práticas alimentares",
+        "Não: cada receita só pode ter uma origem",
+        "Não: alimentos não circulam entre comunidades",
+        "Sim: por isso não há diferenças regionais"
+      ],
+      "correctIndex": 0,
+      "feedback": "Sim: encontros culturais ajudam a formar práticas alimentares.",
+      "difficulty": 3,
+      "tags": [
+        "diversidade"
+      ],
+      "postIds": [
+        "culinaria-01"
+      ]
+    },
+    {
+      "id": "culinaria-02-pool-q1",
+      "themeId": "culinaria",
+      "topicId": "culinaria:cuscuz",
+      "question": "Qual ingrediente aparece no cuscuz nordestino apresentado?",
+      "options": [
+        "Milho",
+        "Maçã",
+        "Trigo apenas",
+        "Cacau"
+      ],
+      "correctIndex": 0,
+      "feedback": "Milho. Cuscuz e preparações com milho aparecem no cotidiano e nas festas, com receitas que mudam de família para família.",
+      "difficulty": 1,
+      "tags": [
+        "cuscuz"
+      ],
+      "postIds": [
+        "culinaria-02"
+      ]
+    },
+    {
+      "id": "culinaria-02-pool-q2",
+      "themeId": "culinaria",
+      "topicId": "culinaria:cuscuz",
+      "question": "Um cuscuz preparado em outra família pode ser diferente?",
+      "options": [
+        "Sim: receitas e acompanhamentos variam",
+        "Não: existe uma única forma permitida",
+        "Não: milho não tem usos culinários",
+        "Sim: então deixa de ter história"
+      ],
+      "correctIndex": 0,
+      "feedback": "Sim: receitas e acompanhamentos variam. Cuscuz e preparações com milho aparecem no cotidiano e nas festas, com receitas que mudam de família para família.",
+      "difficulty": 3,
+      "tags": [
+        "cuscuz"
+      ],
+      "postIds": [
+        "culinaria-02"
+      ]
+    },
+    {
+      "id": "culinaria-03-pool-q1",
+      "themeId": "culinaria",
+      "topicId": "culinaria:mandioca",
+      "question": "Qual nome também é associado à mandioca?",
+      "options": [
+        "Macaxeira",
+        "Umbu",
+        "Rapadura",
+        "Arroz"
+      ],
+      "correctIndex": 0,
+      "feedback": "Macaxeira. Macaxeira, mandioca ou aipim são nomes regionais associados a variedades e usos da mandioca, ingrediente importante em muitas mesas brasileiras.",
+      "difficulty": 1,
+      "tags": [
+        "mandioca"
+      ],
+      "postIds": [
+        "culinaria-03"
+      ]
+    },
+    {
+      "id": "culinaria-03-pool-q2",
+      "themeId": "culinaria",
+      "topicId": "culinaria:mandioca",
+      "question": "Por que prestar atenção aos nomes regionais de um alimento?",
+      "options": [
+        "Porque nomes e usos variam entre lugares",
+        "Porque cada nome elimina a história do alimento",
+        "Porque só um nome pode ser usado no Brasil",
+        "Porque nomes não têm relação com comunidades"
+      ],
+      "correctIndex": 0,
+      "feedback": "Porque nomes e usos variam entre lugares. Macaxeira, mandioca ou aipim são nomes regionais associados a variedades e usos da mandioca, ingrediente importante em muitas mesas brasileiras.",
+      "difficulty": 2,
+      "tags": [
+        "mandioca"
+      ],
+      "postIds": [
+        "culinaria-03"
+      ]
+    },
+    {
+      "id": "culinaria-04-pool-q1",
+      "themeId": "culinaria",
+      "topicId": "culinaria:baiao",
+      "question": "Quais ingredientes costumam compor o baião de dois?",
+      "options": [
+        "Arroz e feijão",
+        "Maçã e chocolate",
+        "Somente farinha de trigo",
+        "Coco e gelo"
+      ],
+      "correctIndex": 0,
+      "feedback": "Arroz e feijão. O baião de dois costuma combinar arroz e feijão e pode ganhar diferentes complementos, conforme a região e a receita.",
+      "difficulty": 1,
+      "tags": [
+        "baiao"
+      ],
+      "postIds": [
+        "culinaria-04"
+      ]
+    },
+    {
+      "id": "culinaria-04-pool-q2",
+      "themeId": "culinaria",
+      "topicId": "culinaria:baiao",
+      "question": "Adicionar complementos transforma toda receita na única versão correta?",
+      "options": [
+        "Não: o prato possui variações regionais",
+        "Sim: todas as famílias usam os mesmos complementos",
+        "Sim: tradição nunca muda",
+        "Não: arroz não aparece no prato"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: o prato possui variações regionais. O baião de dois costuma combinar arroz e feijão e pode ganhar diferentes complementos, conforme a região e a receita.",
+      "difficulty": 3,
+      "tags": [
+        "baiao"
+      ],
+      "postIds": [
+        "culinaria-04"
+      ]
+    },
+    {
+      "id": "culinaria-05-pool-q1",
+      "themeId": "culinaria",
+      "topicId": "culinaria:umbu",
+      "question": "De qual árvore vem o umbu?",
+      "options": [
+        "Umbuzeiro",
+        "Macieira",
+        "Coqueiro",
+        "Pinheiro"
+      ],
+      "correctIndex": 0,
+      "feedback": "Umbuzeiro. O umbuzeiro é uma árvore adaptada ao semiárido. Seus frutos aparecem em doces, bebidas e outras preparações.",
+      "difficulty": 1,
+      "tags": [
+        "umbu"
+      ],
+      "postIds": [
+        "culinaria-05"
+      ]
+    },
+    {
+      "id": "culinaria-05-pool-q2",
+      "themeId": "culinaria",
+      "topicId": "culinaria:umbu",
+      "question": "O uso do umbu em doces e bebidas mostra qual relação?",
+      "options": [
+        "Entre biodiversidade e práticas alimentares",
+        "Entre neve e agricultura polar",
+        "A inexistência de alimentos da Caatinga",
+        "Que todo fruto é o mesmo"
+      ],
+      "correctIndex": 0,
+      "feedback": "Entre biodiversidade e práticas alimentares. O umbuzeiro é uma árvore adaptada ao semiárido. Seus frutos aparecem em doces, bebidas e outras preparações.",
+      "difficulty": 2,
+      "tags": [
+        "umbu"
+      ],
+      "postIds": [
+        "culinaria-05"
+      ]
+    },
+    {
+      "id": "culinaria-06-pool-q1",
+      "themeId": "culinaria",
+      "topicId": "culinaria:carne-sol",
+      "question": "Qual processo está associado à carne de sol?",
+      "options": [
+        "Salga da carne",
+        "Congelamento em neve natural",
+        "Transformação de milho",
+        "Fermentação de frutas"
+      ],
+      "correctIndex": 0,
+      "feedback": "Salga da carne. A carne de sol é uma preparação de carne salgada presente em tradições culinárias nordestinas. Não é sinônimo de toda carne seca ou de charque. Receitas e acompanhamentos variam. A imagem mostra uma preparação servida, não ensina a conservar carne em casa.",
+      "difficulty": 1,
+      "tags": [
+        "carne-sol"
+      ],
+      "postIds": [
+        "culinaria-06"
+      ]
+    },
+    {
+      "id": "culinaria-06-pool-q2",
+      "themeId": "culinaria",
+      "topicId": "culinaria:carne-sol",
+      "question": "O nome carne de sol vale para qualquer tipo de carne seca?",
+      "options": [
+        "Não: há preparações e denominações diferentes",
+        "Sim: todos os processos são idênticos",
+        "Sim: são sempre pratos de milho",
+        "Não: nenhum prato leva carne"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: há preparações e denominações diferentes. A carne de sol é uma preparação de carne salgada presente em tradições culinárias nordestinas. Não é sinônimo de toda carne seca ou de charque. Receitas e acompanhamentos variam. A imagem mostra uma preparação servida, não ensina a conservar carne em casa.",
+      "difficulty": 3,
+      "tags": [
+        "carne-sol"
+      ],
+      "postIds": [
+        "culinaria-06"
+      ]
+    },
+    {
+      "id": "culinaria-07-pool-q1",
+      "themeId": "culinaria",
+      "topicId": "culinaria:rapadura",
+      "question": "De qual planta vem a matéria-prima da rapadura?",
+      "options": [
+        "Cana-de-açúcar",
+        "Umbuzeiro",
+        "Mandacaru",
+        "Mandioca"
+      ],
+      "correctIndex": 0,
+      "feedback": "Cana-de-açúcar. A rapadura é um doce feito a partir do caldo da cana-de-açúcar concentrado. É encontrada em diferentes lugares do Brasil, inclusive em tradições nordestinas. Formatos e modos de fazer variam.",
+      "difficulty": 1,
+      "tags": [
+        "rapadura"
+      ],
+      "postIds": [
+        "culinaria-07"
+      ]
+    },
+    {
+      "id": "culinaria-07-pool-q2",
+      "themeId": "culinaria",
+      "topicId": "culinaria:rapadura",
+      "question": "Ser comum em tradições nordestinas significa existir só no Nordeste?",
+      "options": [
+        "Não: a rapadura aparece também em outros lugares",
+        "Sim: alimentos não circulam",
+        "Sim: só existe uma forma de produzir",
+        "Não: ela não é um alimento"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: a rapadura aparece também em outros lugares. A rapadura é um doce feito a partir do caldo da cana-de-açúcar concentrado. É encontrada em diferentes lugares do Brasil, inclusive em tradições nordestinas. Formatos e modos de fazer variam.",
+      "difficulty": 2,
+      "tags": [
+        "rapadura"
+      ],
+      "postIds": [
+        "culinaria-07"
+      ]
+    },
+    {
+      "id": "culinaria-08-pool-q1",
+      "themeId": "culinaria",
+      "topicId": "culinaria:umbu",
+      "question": "Qual é a relação entre umbu e umbuzeiro?",
+      "options": [
+        "O umbu é o fruto do umbuzeiro",
+        "Umbu é o nome de um tambor",
+        "Umbuzeiro é um prato de arroz",
+        "Não há relação"
+      ],
+      "correctIndex": 0,
+      "feedback": "O umbu é o fruto do umbuzeiro. O umbuzeiro produz o umbu. O fruto pode ser consumido e usado em doces e bebidas. Os saberes culinários ligados a ele aproximam a biodiversidade da Caatinga e a vida das comunidades.",
+      "difficulty": 1,
+      "tags": [
+        "umbu"
+      ],
+      "postIds": [
+        "culinaria-08"
+      ]
+    },
+    {
+      "id": "culinaria-08-pool-q2",
+      "themeId": "culinaria",
+      "topicId": "culinaria:umbu",
+      "question": "Conhecer a origem do umbu ajuda a perceber o quê?",
+      "options": [
+        "A ligação entre natureza e cultura alimentar",
+        "Que a comida não tem relação com plantas",
+        "Que todas as receitas são idênticas",
+        "Que a Caatinga não produz frutos"
+      ],
+      "correctIndex": 0,
+      "feedback": "A ligação entre natureza e cultura alimentar. O umbuzeiro produz o umbu. O fruto pode ser consumido e usado em doces e bebidas. Os saberes culinários ligados a ele aproximam a biodiversidade da Caatinga e a vida das comunidades.",
+      "difficulty": 3,
+      "tags": [
+        "umbu"
+      ],
+      "postIds": [
+        "culinaria-08"
+      ]
+    },
+    {
+      "id": "ariano-01-pool-q1",
+      "themeId": "ariano",
+      "topicId": "ariano:biografia",
+      "question": "Onde Ariano nasceu em 1927?",
+      "options": [
+        "Paraíba",
+        "Paraná",
+        "Acre",
+        "Santa Catarina"
+      ],
+      "correctIndex": 0,
+      "feedback": "Paraíba. Nascido em 1927, na Paraíba, Ariano Suassuna foi escritor, dramaturgo, professor e defensor da valorização das culturas populares brasileiras.",
+      "difficulty": 1,
+      "tags": [
+        "biografia"
+      ],
+      "postIds": [
+        "ariano-01"
+      ]
+    },
+    {
+      "id": "ariano-01-pool-q2",
+      "themeId": "ariano",
+      "topicId": "ariano:biografia",
+      "question": "Qual descrição corresponde à sua atuação?",
+      "options": [
+        "Escritor, dramaturgo, professor e defensor das culturas populares",
+        "Somente personagem de filme",
+        "Criador de todos os ritmos nordestinos",
+        "Autor exclusivo de manuais de culinária"
+      ],
+      "correctIndex": 0,
+      "feedback": "Escritor, dramaturgo, professor e defensor das culturas populares. Nascido em 1927, na Paraíba, Ariano Suassuna foi escritor, dramaturgo, professor e defensor da valorização das culturas populares brasileiras.",
+      "difficulty": 2,
+      "tags": [
+        "biografia"
+      ],
+      "postIds": [
+        "ariano-01"
+      ]
+    },
+    {
+      "id": "ariano-01-pool-q3",
+      "themeId": "ariano",
+      "topicId": "ariano:biografia",
+      "question": "Por que consultar fontes ao apresentar sua trajetória?",
+      "options": [
+        "Para distinguir fatos biográficos de frases ou imagens inventadas",
+        "Para atribuir qualquer frase ao autor",
+        "Para confundir ator e escritor",
+        "Para tratar toda ficção como biografia"
+      ],
+      "correctIndex": 0,
+      "feedback": "Para distinguir fatos biográficos de frases ou imagens inventadas.",
+      "difficulty": 3,
+      "tags": [
+        "biografia"
+      ],
+      "postIds": [
+        "ariano-01"
+      ]
+    },
+    {
+      "id": "ariano-02-pool-q1",
+      "themeId": "ariano",
+      "topicId": "ariano:auto",
+      "question": "Qual personagem integra Auto da Compadecida?",
+      "options": [
+        "João Grilo",
+        "Dom Casmurro",
+        "Iracema",
+        "Macunaíma"
+      ],
+      "correctIndex": 0,
+      "feedback": "João Grilo. Escrita em 1955, a peça apresenta personagens como João Grilo e Chicó e combina humor, religiosidade e crítica social.",
+      "difficulty": 1,
+      "tags": [
+        "auto"
+      ],
+      "postIds": [
+        "ariano-02"
+      ]
+    },
+    {
+      "id": "ariano-02-pool-q2",
+      "themeId": "ariano",
+      "topicId": "ariano:auto",
+      "question": "O humor nessa peça impede a presença de crítica social?",
+      "options": [
+        "Não: humor e crítica social podem coexistir",
+        "Sim: uma comédia não pode discutir nada",
+        "Sim: a peça não possui personagens",
+        "Não: a peça é apenas uma receita"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: humor e crítica social podem coexistir. Escrita em 1955, a peça apresenta personagens como João Grilo e Chicó e combina humor, religiosidade e crítica social.",
+      "difficulty": 3,
+      "tags": [
+        "auto"
+      ],
+      "postIds": [
+        "ariano-02"
+      ]
+    },
+    {
+      "id": "ariano-03-pool-q1",
+      "themeId": "ariano",
+      "topicId": "ariano:santo",
+      "question": "Qual tema é abordado em O Santo e a Porca?",
+      "options": [
+        "Avareza e apego ao dinheiro",
+        "Viagens espaciais",
+        "Formação de geleiras",
+        "Receitas de milho"
+      ],
+      "correctIndex": 0,
+      "feedback": "Avareza e apego ao dinheiro. Na peça de 1957, a avareza e a relação das pessoas com o dinheiro são tratadas por meio da comédia.",
+      "difficulty": 1,
+      "tags": [
+        "santo"
+      ],
+      "postIds": [
+        "ariano-03"
+      ]
+    },
+    {
+      "id": "ariano-03-pool-q2",
+      "themeId": "ariano",
+      "topicId": "ariano:santo",
+      "question": "Como uma comédia pode tratar a avareza?",
+      "options": [
+        "Usando o riso para questionar o apego ao dinheiro",
+        "Impedindo qualquer reflexão",
+        "Eliminando conflitos e personagens",
+        "Tornando a peça um livro de receitas"
+      ],
+      "correctIndex": 0,
+      "feedback": "Usando o riso para questionar o apego ao dinheiro. Na peça de 1957, a avareza e a relação das pessoas com o dinheiro são tratadas por meio da comédia.",
+      "difficulty": 2,
+      "tags": [
+        "santo"
+      ],
+      "postIds": [
+        "ariano-03"
+      ]
+    },
+    {
+      "id": "ariano-04-pool-q1",
+      "themeId": "ariano",
+      "topicId": "ariano:pedra",
+      "question": "Qual é o gênero de Romance d’A Pedra do Reino?",
+      "options": [
+        "Romance",
+        "Receita",
+        "Noticiário de televisão",
+        "Movimento musical"
+      ],
+      "correctIndex": 0,
+      "feedback": "Romance. Publicado em 1971, o romance constrói um universo narrativo de fantasia, memória, referências populares e imaginação sertaneja.",
+      "difficulty": 1,
+      "tags": [
+        "pedra"
+      ],
+      "postIds": [
+        "ariano-04"
+      ]
+    },
+    {
+      "id": "ariano-04-pool-q2",
+      "themeId": "ariano",
+      "topicId": "ariano:pedra",
+      "question": "Fantasia e memória no romance significam que ele é um registro fotográfico dos fatos?",
+      "options": [
+        "Não: trata-se de uma construção literária",
+        "Sim: ficção e fotografia documental são idênticas",
+        "Sim: todo narrador descreve só fatos comprovados",
+        "Não: romances não possuem narradores"
+      ],
+      "correctIndex": 0,
+      "feedback": "Não: trata-se de uma construção literária. Publicado em 1971, o romance constrói um universo narrativo de fantasia, memória, referências populares e imaginação sertaneja.",
+      "difficulty": 3,
+      "tags": [
+        "pedra"
+      ],
+      "postIds": [
+        "ariano-04"
+      ]
+    },
+    {
+      "id": "ariano-05-pool-q1",
+      "themeId": "ariano",
+      "topicId": "ariano:armorial",
+      "question": "Qual encontro a proposta armorial busca?",
+      "options": [
+        "Arte erudita e raízes populares",
+        "Somente publicidade e vendas",
+        "Apenas cinema estrangeiro",
+        "Exclusão das tradições populares"
+      ],
+      "correctIndex": 0,
+      "feedback": "Arte erudita e raízes populares. Lançado em 1970, o movimento buscou criar uma arte brasileira erudita ligada às raízes populares, envolvendo música, literatura e artes visuais.",
+      "difficulty": 1,
+      "tags": [
+        "armorial"
+      ],
+      "postIds": [
+        "ariano-05"
+      ]
+    },
+    {
+      "id": "ariano-05-pool-q2",
+      "themeId": "ariano",
+      "topicId": "ariano:armorial",
+      "question": "Por que música e artes visuais cabem no mesmo movimento?",
+      "options": [
+        "A proposta envolve diálogo entre diferentes artes",
+        "Porque todas usam os mesmos instrumentos",
+        "Porque movimento artístico é sempre um filme",
+        "Porque a literatura fica proibida"
+      ],
+      "correctIndex": 0,
+      "feedback": "A proposta envolve diálogo entre diferentes artes. Lançado em 1970, o movimento buscou criar uma arte brasileira erudita ligada às raízes populares, envolvendo música, literatura e artes visuais.",
+      "difficulty": 2,
+      "tags": [
+        "armorial"
+      ],
+      "postIds": [
+        "ariano-05"
+      ]
+    },
+    {
+      "id": "ariano-06-pool-q1",
+      "themeId": "ariano",
+      "topicId": "ariano:sol",
+      "question": "Qual gênero pertence a Uma Mulher Vestida de Sol?",
+      "options": [
+        "Teatro",
+        "Manual culinário",
+        "Atlas geográfico",
+        "Movimento musical"
+      ],
+      "correctIndex": 0,
+      "feedback": "Teatro. Escrita em 1947, Uma Mulher Vestida de Sol é a primeira peça de Ariano. O drama aborda conflitos, relações de poder e disputas entre famílias. Teatro não se resume à comédia: a trajetória do autor também inclui o drama.",
+      "difficulty": 1,
+      "tags": [
+        "sol"
+      ],
+      "postIds": [
+        "ariano-06"
+      ]
+    },
+    {
+      "id": "ariano-06-pool-q2",
+      "themeId": "ariano",
+      "topicId": "ariano:sol",
+      "question": "O que essa peça mostra sobre a trajetória teatral de Ariano?",
+      "options": [
+        "Ela também inclui o drama, além da comédia",
+        "Todas as peças são o mesmo gênero de comédia",
+        "Ele nunca escreveu teatro",
+        "Toda obra se resume à adaptação para TV"
+      ],
+      "correctIndex": 0,
+      "feedback": "Ela também inclui o drama, além da comédia. Escrita em 1947, Uma Mulher Vestida de Sol é a primeira peça de Ariano. O drama aborda conflitos, relações de poder e disputas entre famílias. Teatro não se resume à comédia: a trajetória do autor também inclui o drama.",
+      "difficulty": 3,
+      "tags": [
+        "sol"
+      ],
+      "postIds": [
+        "ariano-06"
+      ]
+    },
+    {
+      "id": "ariano-07-pool-q1",
+      "themeId": "ariano",
+      "topicId": "ariano:biografia",
+      "question": "Qual outra atividade fez parte da vida de Ariano?",
+      "options": [
+        "Ensino",
+        "Exploração lunar",
+        "Governo imperial",
+        "Navegação no século XVI"
+      ],
+      "correctIndex": 0,
+      "feedback": "Ensino. Além de escrever, Ariano Suassuna atuou como professor. Sua defesa das culturas populares aparece em sua trajetória artística e educativa. Conhecer o autor não exige atribuir a ele frases sem fonte: é possível estudar suas ideias com registros verificáveis.",
+      "difficulty": 1,
+      "tags": [
+        "biografia"
+      ],
+      "postIds": [
+        "ariano-07"
+      ]
+    },
+    {
+      "id": "ariano-07-pool-q2",
+      "themeId": "ariano",
+      "topicId": "ariano:biografia",
+      "question": "Como apresentar uma ideia do autor com responsabilidade?",
+      "options": [
+        "Consultar registros e identificar a fonte",
+        "Inventar uma frase que pareça dele",
+        "Confundir um ator com o escritor",
+        "Tratar uma ilustração como foto histórica"
+      ],
+      "correctIndex": 0,
+      "feedback": "Consultar registros e identificar a fonte. Além de escrever, Ariano Suassuna atuou como professor. Sua defesa das culturas populares aparece em sua trajetória artística e educativa. Conhecer o autor não exige atribuir a ele frases sem fonte: é possível estudar suas ideias com registros verificáveis.",
+      "difficulty": 2,
+      "tags": [
+        "biografia"
+      ],
+      "postIds": [
+        "ariano-07"
+      ]
+    },
+    {
+      "id": "ariano-08-pool-q1",
+      "themeId": "ariano",
+      "topicId": "ariano:armorial",
+      "question": "Em qual cidade o Armorial foi lançado?",
+      "options": [
+        "Recife",
+        "Curitiba",
+        "Manaus",
+        "Lisboa"
+      ],
+      "correctIndex": 0,
+      "feedback": "Recife. O Movimento Armorial foi lançado em Recife em 1970. A proposta aproxima raízes populares de uma criação erudita brasileira, reunindo música, literatura e artes visuais. Não é o título de uma peça nem de um romance.",
+      "difficulty": 1,
+      "tags": [
+        "armorial"
+      ],
+      "postIds": [
+        "ariano-08"
+      ]
+    },
+    {
+      "id": "ariano-08-pool-q2",
+      "themeId": "ariano",
+      "topicId": "ariano:armorial",
+      "question": "Um painel sobre o Armorial deve identificá-lo como o quê?",
+      "options": [
+        "Movimento artístico, não uma obra literária única",
+        "Uma adaptação de Auto da Compadecida",
+        "Uma receita tradicional",
+        "Um personagem de O Santo e a Porca"
+      ],
+      "correctIndex": 0,
+      "feedback": "Movimento artístico, não uma obra literária única. O Movimento Armorial foi lançado em Recife em 1970. A proposta aproxima raízes populares de uma criação erudita brasileira, reunindo música, literatura e artes visuais. Não é o título de uma peça nem de um romance.",
+      "difficulty": 3,
+      "tags": [
+        "armorial"
+      ],
+      "postIds": [
+        "ariano-08"
+      ]
+    }
+  ]
+}

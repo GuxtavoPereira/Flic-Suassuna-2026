@@ -1,10 +1,10 @@
 {
   "framework": "vite",
-  "buildCommand": "npm run lint && npm test && npm run build && npm test && npm run test:e2e",
+  "buildCommand": "npm run lint && npm test && npm run test:offline && npm run build && npm test && npm run test:e2e",
   "outputDirectory": "dist",
   "rewrites": [
     {
-      "source": "/((?!api(?:/|$)|assets/|icons/|sw\\.js|workbox-|manifest\\.webmanifest).*)",
+      "source": "/((?!api(?:/|$)|assets/|images/|icons/|sw\\.js|workbox-|manifest\\.webmanifest).*)",
       "destination": "/index.html"
     }
   ],

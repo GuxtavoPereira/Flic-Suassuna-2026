@@ -1,8 +1,24 @@
 import raw from './modules.json';
 import excerptData from './excerpts.json';
+import poolData from './pools.json';
+import topicAssets from './topic-assets.json';
+import documentaryAssets from './documentary-assets.json';
+import { poolSchema } from './pool-schema';
 import { contentSchema, type LiterarySlide, type Theme, type RawModuleId } from '../domain/content';
 export const sources = [
-  { id: 'abl-bio', label: 'Academia Brasileira de Letras · Biografia', url: 'https://www2.academia.org.br/node/227/biografia' },
+  { id: 'caatinga', label: 'ICMBio · Caatinga', url: 'https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/caatinga' },
+  { id: 'embrapa', label: 'Embrapa · Cactáceas da Caatinga', url: 'https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1153737/1/Mandacaru-Da-Racao-a-Medicina-2023.pdf' },
+  { id: 'embrapa-umbu', label: 'Embrapa · Umbuzeiro', url: 'https://www.infoteca.cnptia.embrapa.br/handle/doc/85742' },
+  { id: 'embrapa-rapadura', label: 'Fundação Joaquim Nabuco · Culinária e rapadura', url: 'https://pesquisaescolar.fundaj.gov.br/pt-br/artigo/culinaria-nordestina-no-brasil/' },
+  { id: 'cordel', label: 'Iphan · Literatura de cordel', url: 'https://bcr.iphan.gov.br/bens-culturais/literatura-de-cordel/' },
+  { id: 'forro', label: 'Iphan · Matrizes tradicionais do forró', url: 'https://www.gov.br/iphan/pt-br/assuntos/forro-do-mundo/sobre-o-forro' },
+  { id: 'rachel-bio', label: 'Academia Brasileira de Letras · Rachel de Queiroz', url: 'https://www.academia.org.br/academicos/rachel-de-queiroz/biografia' },
+  { id: 'gonzaga-bio', label: 'Fundação Joaquim Nabuco · Luiz Gonzaga', url: 'https://pesquisaescolar.fundaj.gov.br/pt-br/artigo/luiz-gonzaga/' },
+  { id: 'vitalino-bio', label: 'Fundação Joaquim Nabuco · Vitalino Pereira', url: 'https://pesquisaescolar.fundaj.gov.br/pt-br/artigo/vitalino/' },
+  { id: 'patativa-bio', label: 'Secretaria da Cultura do Ceará · Patativa do Assaré', url: 'https://www.ce.gov.br/secult/patativa-do-assare/' },
+  { id: 'fundaj-comida', label: 'Fundação Joaquim Nabuco · Culinária nordestina', url: 'https://pesquisaescolar.fundaj.gov.br/pt-br/artigo/culinaria-nordestina-no-brasil/' },
+  { id: 'canudos', label: 'Fundação Joaquim Nabuco · Canudos', url: 'https://pesquisaescolar.fundaj.gov.br/pt-br/artigo/guerra-de-canudos/' },
+  { id: 'abl-bio', label: 'Academia Brasileira de Letras · Biografia', url: 'https://www.academia.org.br/academicos/ariano-suassuna/biografia' },
   { id: 'abl-obras', label: 'Academia Brasileira de Letras · Bibliografia', url: 'https://www.academia.org.br/academicos/ariano-suassuna/bibliografia' },
   { id: 'fundaj', label: 'Fundação Joaquim Nabuco · Movimento Armorial', url: 'https://pesquisaescolar.fundaj.gov.br/pt-br/artigo/movimento-armorial/' },
   { id: 'usp', label: 'Universidade de São Paulo · Referência de curadoria', url: 'https://fflch.usp.br/63266' },
@@ -16,7 +32,19 @@ const metadata: Record<RawModuleId, { category: string; color: string; tint: str
   ariano: { category: 'LITERATURA', color: '#66517B', tint: '#EDE8F1', alt: 'Composição ilustrada com máscaras de teatro, livro aberto, aves, cactos e sol.', sources: ['abl-bio', 'abl-obras', 'fundaj'] },
 };
 const parsed = contentSchema.parse(raw);
-export const themes: Theme[] = parsed.modules.map(m => ({ ...m, ...metadata[m.id], rawId: m.id, id: m.id === 'clima' ? 'clima-vegetacao' : m.id, slides: m.slides.map(s => ({ ...s, type: 'educational', sources: metadata[m.id].sources })), quiz: m.quiz.map(q => ({ ...q, sources: metadata[m.id].sources })) }));
+export const imageAssets = [...topicAssets, ...documentaryAssets];
+const pool = poolSchema.parse(poolData);
+const sourceIds: Record<string, string[]> = { clima: ['caatinga', 'embrapa'], cultura: ['cordel', 'forro', 'fundaj'], personalidades: ['gonzaga-bio', 'vitalino-bio', 'patativa-bio', 'abl-bio', 'rachel-bio', 'canudos'], 'linha-do-tempo': ['abl-bio', 'abl-obras', 'fundaj', 'canudos'], culinaria: ['fundaj-comida', 'embrapa-umbu', 'embrapa-rapadura'], ariano: ['abl-bio', 'abl-obras', 'fundaj'] };
+export const themes: Theme[] = parsed.modules.map(m => {
+  const id = m.id === 'clima' ? 'clima-vegetacao' : m.id;
+  const postPool = pool.posts.filter(p => p.themeId === id).map(p => {
+    const asset = imageAssets.find(a => a.id === p.assetId);
+    if (!asset) throw new Error(`Imagem sem metadados: ${p.id} (${p.assetId})`);
+    return { ...p, image: asset.image, alt: asset.alt, sourceMetadata: asset, sources: sourceIds[m.id] };
+  });
+  const questionPool = pool.questions.filter(q => q.themeId === id).map(q => ({ ...q, sources: sourceIds[m.id] }));
+  return { ...m, ...metadata[m.id], rawId: m.id, id, slides: postPool.filter(p => m.slides.some(s => s.id === p.id)), quiz: m.quiz.map((q, i) => ({ ...q, themeId: id, topicId: postPool[Math.min(i + 1, 4)].topicId, difficulty: i + 1, tags: ['legado'], sources: sourceIds[m.id] })), postPool, questionPool };
+});
 const aliases: Record<string, string> = { clima: 'clima-vegetacao', 'cultura-sertao': 'cultura', 'figuras-influentes': 'personalidades', 'culinaria-nordestina': 'culinaria', 'ariano-vida-obras': 'ariano' };
 export function findTheme(id: string | undefined) { return themes.find(t => t.id === (aliases[id ?? ''] ?? id)); }
 const firstExcerpt = excerptData.excerpts[0];

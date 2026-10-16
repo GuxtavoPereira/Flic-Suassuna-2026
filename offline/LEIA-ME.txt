@@ -1,0 +1,48 @@
+FLIC 2026 — MUSEU OFFLINE PARA DISPLAY COM WINDOWS
+
+Windows 10/11 de 64 bits, com Edge ou Chrome atualizado.
+Este pacote inclui o runtime oficial Node.js; não requer instalação de Node,
+NPM, Python, internet, cadastro ou acesso à Vercel no display.
+
+1. Em qualquer computador com internet, baixe o ZIP completo.
+2. Copie para um pendrive e transfira para uma pasta do computador do display
+   (ex.: F:\FLIC2026, se essa unidade existir).
+3. Clique com o botão direito no ZIP > Extrair tudo. Não execute de dentro do ZIP.
+4. Abra INICIAR-MUSEU.cmd. Mantenha a janela do museu aberta.
+5. O navegador abre http://127.0.0.1:4173/.
+6. Nas opções do site, ative tela cheia e o retorno por inatividade desejado.
+7. Desconecte a rede e confirme os seis temas, imagens, quizzes e ranking.
+   É possível abrir o pacote pela primeira vez já sem rede.
+
+Para fechar: feche o navegador e a janela do museu (ou pressione Ctrl+C).
+Para reabrir: use sempre o mesmo iniciador, endereço e perfil do navegador.
+Não abra museu/index.html diretamente: file:// não suporta os recursos do app.
+Não é necessário liberar portas no firewall: o serviço só aceita conexões locais.
+
+RANKING E PROGRESSO
+O ranking e o histórico recente ficam no perfil do navegador deste display.
+Não são enviados para a internet. Eles não vêm preenchidos neste pacote.
+Apagar os dados do navegador ou usar sessão anônima pode remover os resultados.
+O ranking do endereço Vercel é separado do ranking deste endereço local.
+A visita em andamento é retomada ao recarregar a aba; fechar a aba encerra sua
+sessão de leitura, preservando ranking e histórico de conteúdos recentes.
+Não há identidade verificada: apelidos iguais podem pertencer a pessoas diferentes.
+
+ATUALIZAÇÕES
+Atualizações são manuais: baixe um novo pacote em outro computador, encerre o
+museu, substitua os arquivos na pasta local e use o mesmo endereço/perfil.
+O PWA pode oferecer uma atualização na Home; aceite antes da próxima visita.
+Nunca substitua os arquivos durante a visita de um aluno.
+
+FONTES E DIREITOS
+Veja FONTES-IMAGENS.md. As legendas e licenças também estão nos próprios posts.
+Links para fontes externas só abrem com internet; o museu não depende deles.
+O texto literal das obras permanece protegido e oculto quando não aprovado.
+Este pacote contém software Node.js, com licenças em runtime/LICENSE.txt.
+
+ENSAIO NO DISPLAY
+A aplicação e o servidor foram testados automaticamente. O executável Windows
+não pode ser executado no ambiente Linux de preparação. A instalação final,
+o navegador, o toque e o áudio/monitor definitivo precisam de ensaio no local.
+Se o Windows escolar bloquear programas ou scripts, peça à equipe de TI para
+avaliar/liberar o pacote. O iniciador não altera as políticas da escola.

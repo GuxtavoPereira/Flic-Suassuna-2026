@@ -1,8 +1,8 @@
 import { test, expect, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import { answerQuiz, readTheme } from './helpers';
 async function finishQuiz(page: Page) {
-  await page.goto('/tema/clima-vegetacao/quiz');
-  for (let i = 0; i < 3; i++) { await page.locator('.answer').nth(i).tap(); await page.getByRole('button', { name: i === 2 ? 'Ver resultado' : 'Próxima pergunta' }).click(); }
+  await readTheme(page, 'clima-vegetacao'); await answerQuiz(page);
   await expect(page.locator('.score-display')).toContainText('3/3');
 }
 async function registerVisit(page: Page, name: string) {
