@@ -7,7 +7,7 @@
 **Prioridade:** `P0` bloqueante; `P1` importante; `P2` aprimoramento.  
 **Premissa de escopo:** **8 cards na Home** = 6 atuais + 2 novos (*Música e Audiovisual* e *Festas e Religiosidade*). **8 posts no mínimo por card**; alguns terão mais. Economia/convivência com a seca será uma seção reforçada no módulo de Clima, com referências cruzadas em Cultura e Culinária, sem criar um nono card nesta etapa.
 
-**Registro de validação — 16/10/2026:** execução por fases documentada em AUDITORIA-EVOLUCAO.md. Evidências de CI e inspeção visual de capturas em telas 1920/3840/1024/390 px; não equivalem ao ensaio no equipamento escolar. Caixas incompletas permanecem abertas. Produção preservada; pacote portátil Windows preparado com o mesmo build validado.
+**Registro de validação — 16/10/2026:** execução por fases documentada em AUDITORIA-EVOLUCAO.md. Evidências de CI e inspeção visual de capturas em telas 1920/3840/1024/390 px; não equivalem ao ensaio no equipamento escolar. Caixas incompletas permanecem abertas. Publicação em produção autorizada posteriormente pelo proprietário e validada em https://flic2026-sertao-guxtavopereira.vercel.app; pacote portátil Windows preparado com o mesmo build validado.
 
 ---
 
@@ -173,7 +173,7 @@
 - [x] Entregar tabela `postId → imagem → fonte → licença/status`, inclusive pendências.
 - [x] Registrar quais vídeos do YouTube são externos, quais verificações foram feitas e os comportamentos quando offline.
 - [x] Listar novos componentes, rotas e arquivos, e como adicionar posts, mapas, imagens ou links sem alterar a UI.
-- [ ] **PENDENTE:** Preparar preview de Vercel para revisão; **não publicar em produção sem ordem explícita**. — Preview isolado bloqueado pela revisão automática; nenhuma URL nova publicada.
+- [x] Disponibilizar versão online para revisão em https://flic2026-sertao-guxtavopereira.vercel.app. **Escopo atualizado por ordem explícita do proprietário em16/10/2026:** publicação no endereço público autorizada; acesso sem login verificado. O Preview separado foi cancelado para priorizar a produção.
 - [x] Apresentar ao final: tarefas concluídas, testes executados, conteúdos ainda sujeitos a curadoria, licenças pendentes e URL de preview **somente se realmente implantado**.
 
 ### Definição de pronto (DoD)

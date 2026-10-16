@@ -2,6 +2,8 @@
 
 **FLIC 2026** · exposição touch, tema claro, textos/fontes/imagens locais e ranking opcional neste navegador.
 
+Versão pública: https://flic2026-sertao-guxtavopereira.vercel.app — oito percursos/90 posts, publicada por autorização expressa do proprietário em16/10/2026.
+
 São **8 percursos, 90 posts e 102 perguntas** no pool. A visita apresenta 12 posts de Clima, 10 de Música, 11 de Festas e 8 em cada um dos outros temas. Seis temas-base têm três perguntas por rodada, exclusivamente dos posts apresentados. Música e Festas são percursos livres sem pontuação. O ranking conserva o máximo de 18 acertos e os registros anteriores.
 
 A capa de Festas e Religiosidade mostra a capela da Fazenda Acauã, Aparecida/PB: fotografia real de Rogerio121402, 2015, CC BY-SA 4.0. As seis xilogravuras originais continuam nas seis capas-base. Posts factuais e painéis de obras usam fotografias ou registros identificados; obras sem reprodução autorizada usam contexto explicitamente descrito.

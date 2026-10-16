@@ -6,4 +6,4 @@ Os checklists das edições anteriores continuam no histórico Git, inclusive o 
 
 Edição atual: **O Sertão de Ariano Suassuna · FLIC2026**, oito percursos/90posts, quantidades variáveis, seis quizzes competitivos, mapas locais, fotos reais e capela tradicional paraibana. A aprovação pedagógica, pendências de direitos/cartografia e o ensaio físico não são marcados como concluídos por testes automáticos.
 
-A versão pública anterior está preservada. Preview isolado ainda depende de resolver o bloqueio operacional da Vercel; não há nova URL implantada nesta etapa. Não publicar em produção sem nova ordem explícita.
+O proprietário autorizou posteriormente a publicação em produção. A nova versão está acessível em https://flic2026-sertao-guxtavopereira.vercel.app, sem login. Os limites editoriais/cartográficos e o ensaio físico permanecem abertos no checklist vigente.

@@ -77,3 +77,13 @@ Pacote preliminar conferido por CRC, SHA256 de154arquivos e comparação byte a 
 Após a entrega offline, o proprietário solicitou acesso online e autorizou expressamente: “Pode alterar o site publico para a nossa nova versão para que outras pessoas consigam acessar também”. Esta ordem substitui a restrição anterior de Preview. Preview isolado dpl_7XovEmqNvPtRgyzDFe1iaVhjVcio criado a partir de805a1cd, sem reassociar o endereço estável.
 
 Guard renomeado para require-deployment-target.mjs e limitado a preview/production; destinos ausentes/desconhecidos continuam bloqueados. Nenhum componente, conteúdo, chave de ranking, precache ou arquivo de aplicação foi alterado para liberar a publicação. Produção usará target=production explícito, com os mesmos gates de lint/unitários/servidor/build/E2E antes de entrar no ar.
+
+
+### Publicação pública confirmada
+Deployment dpl_4LdHgvLZkBW71D6ZNNESJPxs6C6g, target production explícito, commit ad79d56f330b9416e2aa5899c578f825885f2fff. A autorização do proprietário resolveu a restrição anterior; o Preview separado foi cancelado para priorizar a fila de produção. O endereço estável foi conferido pela API e por HTTP sem cookies/autenticação.
+
+URL: https://flic2026-sertao-guxtavopereira.vercel.app
+
+GitHub CI38957146380 aprovou todos os gates do commit de publicação. A Vercel também executou lint,55unitários, servidor, build e27E2E antes da liberação. Conferência HTTP: título novo, manifesto de90posts, manifesto PWA, seis rotas internas, assets JS/CSS/imagens idênticos ao build validado, QR local e SW com capela e cabeçalho de atualização sem cache. Os detalhes estão no registro local public-release-validation.json.
+
+Nenhum componente/conteúdo foi alterado para a publicação: guard de destino e documentação foram as únicas mudanças após os testes anteriores. A versão offline continua com os mesmos134arquivos do site; documentação do ZIP sincronizada com a publicação. O ranking permanece local e a migração preserva dados compatíveis. Pendências pedagógicas, de cartografia e imagens autorizadas continuam abertas.
