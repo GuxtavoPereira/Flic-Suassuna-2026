@@ -1,6 +1,6 @@
 # Ariano Suassuna e o Sertão — FLIC 2026
 
-Museu touch com seis temas, **48 posts e 102 perguntas no pool**. A cada visita são selecionados cinco posts por tema e três perguntas ligadas aos posts efetivamente apresentados. As seis xilogravuras originais continuam nos cards da Home; os posts incluem 29 fotografias/registros locais com crédito e licença. Tema claro, fontes locais, PWA e ranking local opcional.
+Museu touch com seis temas, **48 posts e 102 perguntas no pool**. A cada visita são selecionados cinco posts por tema e três perguntas ligadas aos posts efetivamente apresentados. As seis xilogravuras originais continuam nos cards da Home; os posts combinam fotografias/registros locais com as artes fornecidas nos lotes 1 e 2, sempre com crédito e identificação de origem. Tema claro, fontes locais, PWA e ranking local opcional.
 
 ## Executar e validar
 
@@ -55,3 +55,7 @@ No site publicado, aguarde “Pronto para usar offline” antes de desligar a re
 Os cinco painéis literários preservam a regra de direitos: paráfrases educativas identificadas; trechos literais só com aprovação, revisão, edição, página, autorização e fonte. Nenhuma citação pendente foi liberada. Nordeste, sertão e semiárido não são tratados como sinônimos.
 
 O repositório disponível não continha `AGENTS.md` nem `ARQUITETURA_VERCEL.md`; foram consideradas as regras originais já fornecidas e a arquitetura efetivamente implementada. Ver [CHECKLIST-IMPLEMENTACAO.md](CHECKLIST-IMPLEMENTACAO.md) para auditoria e pendências. Antes da feira, realizar revisão pedagógica, calibração das perguntas com alunos e ensaio no display definitivo. Testes automatizados não equivalem a validação presencial.
+
+## Lotes visuais 1 e 2 — 16/10/2026
+
+14 artes individuais substituem as imagens principais dos posts com IDs correspondentes. O catálogo `src/content/supplied-assets.json` relaciona post e painel à imagem; manifestos locais registram a procedência. Artes geradas por IA são identificadas e não são apresentadas como fotografias documentais, capas ou montagens oficiais. Os registros reais das obras permanecem em **Registro documental de contexto**. A alternativa de `ariano-04` fica reservada, e o lote 3 aguarda envio. Ver [LOTES-IMAGENS.md](LOTES-IMAGENS.md).

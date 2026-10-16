@@ -324,3 +324,7 @@ Antônio Nóbrega na II Conferência Nacional de Cultura, 2010. Registro de um a
 ## Limitações editoriais
 
 O Santo e a Porca e Uma Mulher Vestida de Sol usam retratos históricos contextuais do autor, sem representar capas, personagens ou cenas. Patativa e Mestre Vitalino aparecem em registros de homenagens públicas, identificados nas legendas. Nenhuma imagem gerada foi apresentada como registro documental. A ficha do documento de Auto da Compadecida é domínio público; os direitos do texto teatral continuam protegidos.
+
+## Novas artes fornecidas — lotes 1 e 2
+
+14 imagens geradas por IA foram fornecidas para substituir as imagens principais dos posts correspondentes. A procedência e os arquivos originais constam dos manifestos locais em `public/images/fornecidas/lote-1/manifest.json` e `lote-2/manifest.json`. Não foi declarada licença Creative Commons nem identificação da ferramenta/autoria nos pacotes. As legendas identificam a natureza ilustrativa, sem atribuir às artes status documental ou oficial. Os créditos e licenças dos registros reais acima continuam válidos; eles não foram convertidos em créditos das novas artes. Ver LOTES-IMAGENS.md.

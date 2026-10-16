@@ -317,3 +317,15 @@ Uma funcionalidade só deverá ser considerada concluída quando:
 **Pacote offline:** Windows 10/11 x64; execução local desde a primeira abertura sem internet, com runtime oficial portátil incluído. O executável Windows não foi executado no ambiente Linux de preparação. O guia de operação acompanha o pacote.
 
 **Prioridade principal:** tornar as visitas variadas, educativas e visualmente fiéis ao tema, preservando a estabilidade da aplicação para uso na FLIC 2026.
+
+## Atualização visual — lotes 1 e 2 (16/10/2026)
+
+- [x] Conferir manifestos e inspecionar as artes.
+- [x] Associar as 14 imagens aos posts pelos IDs fornecidos.
+- [x] Identificar geração por IA e manter registros documentais com créditos próprios.
+- [x] Preservar perguntas, conteúdo, sessões e ranking.
+- [x] Incluir artes e manifestos locais no cache offline.
+- [x] Lint, tipos, build e 47 testes unitários aprovados localmente.
+- [ ] Concluir a bateria E2E remota e atualizar o pacote Windows desta edição.
+- [ ] Receber e conferir o lote 3.
+- [ ] Confirmar destino da alternativa de ariano-04 antes de usá-la em outra obra.

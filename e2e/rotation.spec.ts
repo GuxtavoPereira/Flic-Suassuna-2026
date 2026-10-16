@@ -23,8 +23,10 @@ test('nova visita muda os posts; treino muda conteúdos sem melhorar ranking', a
   expect(await page.evaluate(()=>JSON.parse(sessionStorage.getItem('flic-visit-v2')!).visitId)).toBeTruthy();
 });
 test('créditos de imagens, fallback e registro documental sem citações liberadas', async ({ page }) => {
-  await page.goto('/tema/ariano/leitura/santo');await expect(page.locator('.post-image figcaption')).toContainText('Retrato contextual');
-  await page.locator('.image-credit summary').click();await expect(page.locator('.image-credit a')).toHaveAttribute('href',/commons.wikimedia.org/);
+  await page.goto('/tema/ariano/leitura/santo');await expect(page.locator('.literary-book .post-image figcaption')).toContainText('gerada por IA');
+  await page.locator('.literary-book .image-credit summary').click();await expect(page.locator('.literary-book .image-credit a')).toHaveAttribute('href',/images\/fornecidas\/lote-1\/creditos.html#ariano-03/);
+  await page.locator('.documentary-reference > summary').click();await expect(page.locator('.documentary-reference figcaption')).toContainText('Retrato contextual');
+  await page.locator('.documentary-reference .image-credit summary').click();await expect(page.locator('.documentary-reference .image-credit a')).toHaveAttribute('href',/commons.wikimedia.org/);
   await expect(page.locator('blockquote')).toHaveCount(0);
   await page.route('**/images/topics/**',route=>route.abort());await page.goto('/tema/culinaria');await expect(page.locator('.artwork-fallback')).toBeVisible();
   await page.getByRole('button',{name:'Próximo',exact:true}).click();await expect(page.locator('h1')).toBeVisible();
@@ -43,4 +45,12 @@ test('quiz dinâmico acessível em display e celular', async ({ page }) => {
     const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();expect(result.violations).toEqual([]);
     await page.screenshot({path:`test-results/dynamic-quiz-${width}.png`,fullPage:true});
   }
+});
+
+test('lotes fornecidos: post e painel usam suas artes com origem explícita', async ({ page }) => {
+  await page.goto('/tema/clima-vegetacao');await expect(page.locator('.slide-art img')).toHaveAttribute('src','/images/fornecidas/lote-1/clima-01.webp');
+  await page.goto('/tema/cultura');await expect(page.locator('.slide-art img')).toHaveAttribute('src','/images/fornecidas/lote-2/cultura-01.webp');
+  await page.goto('/tema/cultura/leitura/pedra');await expect(page.locator('.literary-book img')).toHaveAttribute('src','/images/fornecidas/lote-1/ariano-04.webp');
+  await expect(page.locator('.literary-book figcaption')).toContainText('gerada por IA');
+  await page.locator('.documentary-reference > summary').click();await expect(page.locator('.documentary-reference img')).toHaveAttribute('src','/images/documentary/pedra-do-reino-local.webp');
 });

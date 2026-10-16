@@ -1,0 +1,52 @@
+[
+  {
+    "postId": "cultura-01",
+    "file": "cultura-01.webp",
+    "sourceType": "AI-generated illustrative artwork",
+    "original": "woodcut_storytelling_at_sunset.png",
+    "note": "Não é fotografia histórica nem reprodução oficial.",
+    "batch": 2,
+    "status": "aplicada",
+    "publicFile": "/images/fornecidas/lote-2/cultura-01.webp"
+  },
+  {
+    "postId": "cultura-02",
+    "file": "cultura-02.webp",
+    "sourceType": "AI-generated illustrative artwork",
+    "original": "cordel_pamphlets_over_a_rustic_village.png",
+    "note": "Não é fotografia histórica nem reprodução oficial.",
+    "batch": 2,
+    "status": "aplicada",
+    "publicFile": "/images/fornecidas/lote-2/cultura-02.webp"
+  },
+  {
+    "postId": "cultura-03",
+    "file": "cultura-03.webp",
+    "sourceType": "AI-generated illustrative artwork",
+    "original": "folk_forró_trio_in_the_sertão.png",
+    "note": "Não é fotografia histórica nem reprodução oficial.",
+    "batch": 2,
+    "status": "aplicada",
+    "publicFile": "/images/fornecidas/lote-2/cultura-03.webp"
+  },
+  {
+    "postId": "cultura-04",
+    "file": "cultura-04.webp",
+    "sourceType": "AI-generated illustrative artwork",
+    "original": "festa_junina_woodcut_dance_celebration.png",
+    "note": "Não é fotografia histórica nem reprodução oficial.",
+    "batch": 2,
+    "status": "aplicada",
+    "publicFile": "/images/fornecidas/lote-2/cultura-04.webp"
+  },
+  {
+    "postId": "cultura-05",
+    "file": "cultura-05.webp",
+    "sourceType": "AI-generated illustrative artwork",
+    "original": "folkwoodcut_symphony_of_the_sertão.png",
+    "note": "Não é fotografia histórica nem reprodução oficial.",
+    "batch": 2,
+    "status": "aplicada",
+    "publicFile": "/images/fornecidas/lote-2/cultura-05.webp"
+  }
+]

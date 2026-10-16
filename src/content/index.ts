@@ -3,6 +3,8 @@ import excerptData from './excerpts.json';
 import poolData from './pools.json';
 import topicAssets from './topic-assets.json';
 import documentaryAssets from './documentary-assets.json';
+import suppliedAssets from './supplied-assets.json';
+export { default as suppliedAssets } from './supplied-assets.json';
 import { poolSchema } from './pool-schema';
 import { contentSchema, type LiterarySlide, type Theme, type RawModuleId } from '../domain/content';
 export const sources = [
@@ -32,13 +34,13 @@ const metadata: Record<RawModuleId, { category: string; color: string; tint: str
   ariano: { category: 'LITERATURA', color: '#66517B', tint: '#EDE8F1', alt: 'Composição ilustrada com máscaras de teatro, livro aberto, aves, cactos e sol.', sources: ['abl-bio', 'abl-obras', 'fundaj'] },
 };
 const parsed = contentSchema.parse(raw);
-export const imageAssets = [...topicAssets, ...documentaryAssets];
+export const imageAssets = [...topicAssets, ...documentaryAssets, ...suppliedAssets];
 const pool = poolSchema.parse(poolData);
 const sourceIds: Record<string, string[]> = { clima: ['caatinga', 'embrapa'], cultura: ['cordel', 'forro', 'fundaj'], personalidades: ['gonzaga-bio', 'vitalino-bio', 'patativa-bio', 'abl-bio', 'rachel-bio', 'canudos'], 'linha-do-tempo': ['abl-bio', 'abl-obras', 'fundaj', 'canudos'], culinaria: ['fundaj-comida', 'embrapa-umbu', 'embrapa-rapadura'], ariano: ['abl-bio', 'abl-obras', 'fundaj'] };
 export const themes: Theme[] = parsed.modules.map(m => {
   const id = m.id === 'clima' ? 'clima-vegetacao' : m.id;
   const postPool = pool.posts.filter(p => p.themeId === id).map(p => {
-    const asset = imageAssets.find(a => a.id === p.assetId);
+    const asset = suppliedAssets.find(a => a.postId === p.id) ?? imageAssets.find(a => a.id === p.assetId);
     if (!asset) throw new Error(`Imagem sem metadados: ${p.id} (${p.assetId})`);
     return { ...p, image: asset.image, alt: asset.alt, sourceMetadata: asset, sources: sourceIds[m.id] };
   });

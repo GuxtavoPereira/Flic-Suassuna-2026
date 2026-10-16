@@ -1,6 +1,6 @@
 import { describe, expect, it, vi, afterEach } from 'vitest';
 import { existsSync, readFileSync } from 'node:fs';
-import { imageAssets, themes } from '../content';
+import { imageAssets, suppliedAssets, themes } from '../content';
 import pool from '../content/pools.json';
 import { poolSchema } from '../content/pool-schema';
 import { createRound, remember, roundReady, selectQuestions, shuffleQuestion, shuffled } from './rotation';
@@ -18,8 +18,17 @@ describe('pools e imagens por assunto', () => {
     const duplicate = structuredClone(pool); duplicate.questions[0].options[1] = duplicate.questions[0].options[0]; expect(poolSchema.safeParse(duplicate).success).toBe(false);
   });
   it('todos os posts têm imagem local, texto alternativo, fonte e licença', () => {
-    for (const p of themes.flatMap(t => t.postPool)) { expect(existsSync(`public${p.image}`), p.id).toBe(true); expect(p.alt.length).toBeGreaterThan(20); expect(p.sourceMetadata.sourceUrl).toMatch(/^https:\/\//); expect(p.sourceMetadata.licenseNote).not.toBe(''); expect(p.text).toBe(p.body); }
+    for (const p of themes.flatMap(t => t.postPool)) { expect(existsSync(`public${p.image}`), p.id).toBe(true); expect(p.alt.length).toBeGreaterThan(20); expect(p.sourceMetadata.sourceUrl).toMatch(/^(https:\/\/|\/images\/fornecidas\/)/); expect(p.sourceMetadata.licenseNote).not.toBe(''); expect(p.text).toBe(p.body); }
     for (const a of imageAssets) expect(existsSync(`public${a.image}`)).toBe(true);
+  });
+  it('associa cada arte fornecida ao post e declara a origem ilustrativa', () => {
+    expect(suppliedAssets).toHaveLength(14);
+    for (const a of suppliedAssets) {
+      const post = themes.flatMap(t => t.postPool).find(p => p.id === a.postId);
+      expect(post?.image).toBe(a.image); expect(a.assetType).toBe('ilustração gerada por IA');
+      expect(a.credit).toContain('gerada por IA'); expect(a.sourceUrl).toContain(`/lote-${a.batch}/creditos.html#${a.postId}`);
+      expect(existsSync(`public${a.sourceUrl.split('#')[0]}`)).toBe(true);
+    }
   });
   it('inclui todas as fotos no cache do build', () => { if (!existsSync('dist/sw.js')) return; const sw = readFileSync('dist/sw.js', 'utf8'); for (const a of imageAssets) expect(sw).toContain(a.image.slice(1)); });
 });

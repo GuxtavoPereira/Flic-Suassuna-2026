@@ -4,6 +4,7 @@ import content from '../src/content/modules.json' with { type: 'json' };
 import { answerQuiz, readTheme } from './helpers';
 import topicAssets from '../src/content/topic-assets.json' with { type: 'json' };
 import documentaryAssets from '../src/content/documentary-assets.json' with { type: 'json' };
+import suppliedAssets from '../src/content/supplied-assets.json' with { type: 'json' };
 const slug = (id: string) => id === 'clima' ? 'clima-vegetacao' : id;
 async function noOverflow(page: Page) { expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true); }
 test('seis percursos completos: 30 slides e 18 respostas corretas', async ({ page }) => {
@@ -42,7 +43,7 @@ test('touch swipe e teclado', async ({ page }) => {
 test('offline real: precache, fechar página, reabrir rota interna e quiz sem rede', async ({ page, context }) => {
   await page.goto('/'); await expect(page.getByRole('status').filter({ hasText: 'Pronto para usar offline' })).toBeVisible({ timeout: 30000 }); await page.evaluate(async () => { await navigator.serviceWorker.ready; }); await page.reload(); await context.setOffline(true); await page.close(); const offline = await context.newPage(); await offline.goto('/tema/ariano'); await expect(offline.getByRole('heading', { level: 1 })).toBeVisible();
   for (const m of content.modules) { await offline.goto(`/tema/${slug(m.id)}`); await expect(offline.locator('.slide-art img')).toBeVisible(); expect(await offline.locator('.slide-art img').evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBe(true); }
-  const decoded = await offline.evaluate(async paths => Promise.all(paths.map(async path => { const response=await fetch(path); const bitmap=await createImageBitmap(await response.blob()); const valid=bitmap.width>0&&bitmap.height>0;bitmap.close();return valid; })), [...topicAssets,...documentaryAssets].map(a=>a.image));expect(decoded.every(Boolean)).toBe(true);
+  const decoded = await offline.evaluate(async paths => Promise.all(paths.map(async path => { const response=await fetch(path); const bitmap=await createImageBitmap(await response.blob()); const valid=bitmap.width>0&&bitmap.height>0;bitmap.close();return valid; })), [...topicAssets,...documentaryAssets,...suppliedAssets].map(a=>a.image));expect(decoded.every(Boolean)).toBe(true);
   await readTheme(offline, 'cultura'); await answerQuiz(offline); await expect(offline.locator('.score-display')).toContainText('300'); await context.setOffline(false);
 });
 test('responsivo: 1920, 4K, tablet e celular sem overflow', async ({ page }) => {
