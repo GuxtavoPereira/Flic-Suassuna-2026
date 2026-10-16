@@ -1,0 +1,35 @@
+name: Validar exposição offline
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+permissions:
+  contents: read
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run lint && npm run typecheck && npm run validate:content && npm test && npm run test:offline && npm run build && npm test
+      - name: Testar navegação, acessibilidade e offline
+        run: npm run test:e2e
+        env:
+          VERCEL: '1'
+          CI: '1'
+      - name: Guardar evidências de teste
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: flic-validacao
+          path: |
+            test-results/
+            playwright-report/
+          retention-days: 7
