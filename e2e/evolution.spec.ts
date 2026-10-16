@@ -29,15 +29,15 @@ test('mapas: camadas distintas, quatro painéis, toque e teclado sem rede',async
   await page.getByRole('button',{name:'Quatro sub-regiões',exact:true}).click();
   for(const name of ['1. Meio-Norte','2. Sertão','3. Agreste','4. Zona da Mata']){const b=page.getByRole('button',{name,exact:true});await b.focus();await page.keyboard.press('Enter');await expect(b).toHaveAttribute('aria-pressed','true');await expect(page.locator('.region-panel')).toContainText(name.slice(3));}
   await page.getByRole('button',{name:'Selecionar Sertão: Salgueiro'}).tap();await expect(page.locator('.region-panel')).toContainText('Salgueiro');
-  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:'test-results/maps-1920.png',fullPage:true});
 });
 test('cisterna: diagrama, foto real e referências cruzadas',async({page})=>{
-  await findPost(page,'clima-vegetacao','Chuva guardada para depois');await expect(page.locator('.slide-art img')).toHaveAttribute('src','/images/evolution/cisterna.webp');await expect(page.locator('.cistern-diagram')).toBeVisible();await expect(page.locator('.economy-context')).toContainText('Consumo humano e produção');await page.getByRole('link',{name:'Alimentos e cotidiano',exact:true}).click();await expect(page).toHaveURL(/tema\/culinaria$/);
+  await findPost(page,'clima-vegetacao','Chuva guardada para depois');await expect(page.locator('.slide-art img')).toHaveAttribute('src','/images/evolution/cisterna.webp');await expect(page.locator('.cistern-diagram')).toBeVisible();await page.screenshot({path:'test-results/cistern-1920.png',fullPage:true});await expect(page.locator('.economy-context')).toContainText('Consumo humano e produção');await page.getByRole('link',{name:'Alimentos e cotidiano',exact:true}).click();await expect(page).toHaveURL(/tema\/culinaria$/);
 });
 test('audiovisual offline usa QR local e preserva a exposição no totem',async({page,context})=>{
   await page.goto('/');await expect(page.getByRole('status').filter({hasText:'Pronto para usar offline'})).toBeVisible({timeout:30000});await page.reload();await context.setOffline(true);
   await findPost(page,'musica-audiovisual','Calango Lengo: animação e imaginação');await expect(page.locator('.video-reference')).toContainText('totem está offline');await expect(page.locator('.slide-art figcaption')).toContainText('Não é cartaz');
-  await page.getByRole('button',{name:'Assistir no YouTube · pelo celular'}).click();await expect(page.locator('.video-qr')).toBeVisible();await expect(page.locator('.video-dialog')).toContainText('hj1fyV3pvSM');await expect(page.locator('video,iframe,a[href*="youtube.com"]')).toHaveCount(0);
+  await page.getByRole('button',{name:'Assistir no YouTube · pelo celular'}).click();await expect(page.locator('.video-qr')).toBeVisible();await page.screenshot({path:'test-results/video-qr-1920.png',fullPage:true});await expect(page.locator('.video-dialog')).toContainText('hj1fyV3pvSM');await expect(page.locator('video,iframe,a[href*="youtube.com"]')).toHaveCount(0);
   await page.getByRole('button',{name:'Voltar à exposição',exact:true}).click();await expect(page.getByRole('dialog')).not.toBeVisible();await expect(page.locator('.slide-copy h1')).toHaveText('Calango Lengo: animação e imaginação');
 });
 test('mapas e novos percursos: responsividade e acessibilidade',async({page})=>{
@@ -58,7 +58,7 @@ test('atualização PWA aguarda a Home e conserva a visita',async({page})=>{
     await page.evaluate(async()=>{const r=await navigator.serviceWorker.ready;await r.update();});
     await page.waitForFunction(async()=>Boolean((await navigator.serviceWorker.getRegistration())?.waiting));
     await expect(page.locator('.update-banner')).toHaveCount(0);await expect(page).toHaveURL(/tema\/cultura$/);
-    await page.getByRole('link',{name:'Voltar aos temas',exact:true}).first().click();await expect(page.locator('.update-banner')).toBeVisible();await page.getByRole('button',{name:/Atualizar agora/}).click();await expect(page.locator('.theme-card')).toHaveCount(8);
+    await page.getByRole('link',{name:'Voltar aos temas',exact:true}).first().click();await expect(page.locator('.update-banner')).toBeVisible();await Promise.all([page.waitForEvent('load'),page.getByRole('button',{name:/Atualizar agora/}).click()]);await expect(page.locator('.theme-card')).toHaveCount(8);
     expect(await page.evaluate(()=>JSON.parse(sessionStorage.getItem('flic-visit-v2')!).visitId)).toBe(visit);
   }finally{writeFileSync('dist/sw.js',original);}
 });
