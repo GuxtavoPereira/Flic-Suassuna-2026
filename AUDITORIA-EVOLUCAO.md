@@ -49,3 +49,6 @@ Arquivos: e2e/helpers.ts, museum/rotation/leaderboard.spec.ts e novo evolution.s
 
 ### Ajuste solicitado durante a validação — capela
 Capela/sobrado Fazenda Acauã, Aparecida/PB, foto2015 Rogerio121402, CC BY-SA4.0, fonte Commons individual. Substitui a capa de Festas e Religiosidade e ilustra o post obrigatório festas-11; origem P&B preservada, sem confundir com Juazeiro ou festa em andamento. Créditos das fotos de capa acessíveis na Home. Arquivos: catálogo evolution-assets, pools/index, App/estilos, foto local, manifesto/tabela e teste E2E da capa.
+
+### Proteção da entrega de revisão
+O target legado staging planejava reassociar o alias estável; tentativa dpl_GSWL5TgYJTNduTAUo4gP3A5tR3H9 cancelada antes da publicação e alias antigo confirmado. API rejeitou target=preview. Documentação oficial REST informa preview como target ausente. Revisão automática bloqueou chamada ausente por risco de produção. Acrescentado require-preview.mjs: build falha antes de publicar se VERCEL_ENV não for exatamente preview. Mantém um único projeto e não altera main. Não remover a trava sem ordem de produção.

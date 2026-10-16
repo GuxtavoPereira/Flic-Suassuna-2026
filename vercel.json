@@ -1,6 +1,6 @@
 {
   "framework": "vite",
-  "buildCommand": "npm run lint && npm test && npm run test:offline && npm run build && npm test && npm run test:e2e && node scripts/export-qa.mjs",
+  "buildCommand": "node scripts/require-preview.mjs && npm run lint && npm test && npm run test:offline && npm run build && npm test && npm run test:e2e && node scripts/export-qa.mjs",
   "outputDirectory": "dist",
   "rewrites": [
     {
