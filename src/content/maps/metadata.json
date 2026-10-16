@@ -1,0 +1,86 @@
+{
+  "verifiedAt": "2026-10-16",
+  "coordinateReference": "Longitude/latitude. Consulta IBAMA reprojetada para EPSG:4326; APIs IBGE fornecem coordenadas geográficas.",
+  "layers": [
+    {
+      "id": "brasil-estados",
+      "file": "brasil-estados-enriched.geojson",
+      "sourceName": "IBGE — API de Malhas v3 e API de Localidades",
+      "sourceUrl": "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application%2Fvnd.geo%2Bjson&qualidade=minima&intrarregiao=UF",
+      "metadataUrl": "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR/metadados",
+      "additionalSourceUrl": "https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome",
+      "dataDate": "Snapshot consultado em 2026-10-16. Período da consulta original não fixado; não rotular como malha de 2022.",
+      "method": "Malha simplificada mínima oficial com 27 UFs. Nomes, siglas e regiões associados pela API de Localidades; o Nordeste tem regionId 2 e nove UFs. Nenhuma coordenada ou fronteira desenhada manualmente.",
+      "geometryType": "FeatureCollection com Polygon/MultiPolygon",
+      "featureCount": 27,
+      "uiLabel": "Brasil e Nordeste — IBGE",
+      "status": "verified-official-source",
+      "limitations": "Malha simplificada para aplicação educativa; não usar para medições cadastrais. Nordeste político-administrativo difere de Sertão, Semiárido e Caatinga.",
+      "bytes": 101161,
+      "licenseNote": "Malha oficial derivada da MMD. O manual técnico e legal da MMD informa licença compatível com CC BY 4.0. Atribuir IBGE e informar a simplificação.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseSourceUrl": "https://www.ibge.gov.br/biblioteca/visualizacao/livros/liv102152.pdf"
+    },
+    {
+      "id": "caatinga",
+      "file": "caatinga-ibge2019.geojson",
+      "sourceName": "IBGE 2019 — Biomas 1:250.000, disponibilizado pelo IBAMA/Pamgia",
+      "sourceUrl": "https://pamgia.ibama.gov.br/server/rest/services/01_Publicacoes_Bases/biomas_ibge_250k_2019/FeatureServer/2",
+      "dataDate": "2019",
+      "method": "Consulta bioma='Caatinga', outSR=4326, maxAllowableOffset=0.02 grau e geometryPrecision=3. Simplificação executada pelo serviço ArcGIS oficial.",
+      "geometryType": "FeatureCollection com MultiPolygon",
+      "featureCount": 1,
+      "uiLabel": "Caatinga — IBGE 2019",
+      "status": "verified-official-source",
+      "limitations": "Limite de bioma, diferente de clima, Semiárido e Sertão. Simplificação de aproximadamente 0,02° para tela; não utilizar para calcular áreas.",
+      "bytes": 21817,
+      "licenseNote": "Origem e copyright IBGE (2019) identificados no serviço oficial do IBAMA. Não atribuir automaticamente licença específica de fotografia ou da MMD a este produto temático."
+    },
+    {
+      "id": "semiarido",
+      "file": "semiarido-ibge2022.geojson",
+      "sourceName": "IBGE — Semiárido Brasileiro, Situação 2022, e API de Malhas municipais de 2022",
+      "sourceUrl": "https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/semiarido_brasileiro/Situacao_2022/lista_municipios_Semiarido_2022.xlsx",
+      "geometrySourceUrl": "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application%2Fvnd.geo%2Bjson&qualidade=minima&intrarregiao=municipio&periodo=2022",
+      "contextSourceUrl": "https://www.ibge.gov.br/geociencias/todos-os-produtos-geociencias/15974-semiarido-brasileiro.html",
+      "dataDate": "Situação 2022",
+      "method": "Códigos CD_MUN extraídos da lista oficial IBGE. Seleção pelo atributo codarea na malha municipal oficial com periodo=2022. Correspondência completa de 1.477/1.477 municípios; zero códigos ausentes. Arquivo preserva polígonos municipais: pintar todos com uma cor, sem afirmar que houve cálculo de união geométrica.",
+      "geometryType": "FeatureCollection com Polygon/MultiPolygon municipais",
+      "featureCount": 1477,
+      "uiLabel": "Semiárido — recorte IBGE 2022",
+      "status": "verified-official-historical-cut",
+      "limitations": "Não declarar limite vigente em 2026. A página do IBGE descreve decisões de transição envolvendo 50 municípios após 2025. Este produto explicita o recorte de 2022 e diferencia Semiárido, Caatinga e Sertão.",
+      "bytes": 860582,
+      "licenseNote": "Geometria oficial derivada da MMD; manual técnico e legal da MMD informa licença compatível com CC BY 4.0. Crédito: IBGE; seleção municipal conforme lista oficial de 2022.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseSourceUrl": "https://www.ibge.gov.br/biblioteca/visualizacao/livros/liv102152.pdf"
+    },
+    {
+      "id": "sub-regioes-localidades",
+      "file": "localidades.json",
+      "sourceName": "IBGE API de Malhas v3 — metadados de Teresina, Salgueiro, Caruaru e Recife",
+      "sourceUrl": "https://servicodados.ibge.gov.br/api/docs/malhas?versao=3",
+      "dataDate": "Metadados consultados em 2026-10-16",
+      "method": "Quatro centroides municipais oficiais localizam exemplos de Meio-Norte, Sertão, Agreste e Zona da Mata. Não representam sedes urbanas exatas, centros, extensão ou fronteiras das sub-regiões.",
+      "geometryType": "Quatro pontos de longitude/latitude",
+      "featureCount": 4,
+      "uiLabel": "Quatro sub-regiões — exemplos de localidades",
+      "status": "verified-points-only",
+      "limitations": "PENDENTE: polígonos georreferenciados com metodologia e licença verificadas para as quatro sub-regiões didáticas. Não desenhar limites aproximados como se fossem oficiais.",
+      "bytes": 2068
+    }
+  ],
+  "subregionsReference": {
+    "sourceName": "Ministério da Agricultura — Avaliação Ambiental e Social AgroNordeste, consulta pública de 2021",
+    "sourceUrl": "https://www.gov.br/agricultura/pt-br/acesso-a-informacao/participacao-social/consultas-publicas/2021/agronordesteBID/aas-agronordeste-preliminar-final.pdf",
+    "pages": "Páginas 96–97 do PDF, paginação impressa 92–93; Figura 13: Nordeste — Sub-regiões",
+    "researchOnlyFiles": [
+      "agronordeste2021.pdf",
+      "agronordeste-subregioes-reference.png",
+      "agronordeste-subregioes-map-reference.png"
+    ],
+    "usagePermission": "PENDENTE. Documento oficial contém mapa raster, mas não fornece licença específica da figura, origem da arte nem georreferenciamento. Os arquivos de referência não devem entrar no app até esclarecer esse ponto.",
+    "methodologyNotice": "Meio-Norte, Sertão, Agreste e Zona da Mata constituem uma regionalização didática tradicional. Seus limites dependem da metodologia e não correspondem às divisões administrativas atuais do IBGE nem necessariamente aos biomas."
+  },
+  "dataUseNotice": "Preservar fonte, data do recorte e transformações. Atribuir IBGE e, para a camada Caatinga, citar a disponibilização pelo IBAMA. O manual da MMD prevê licença compatível com CC BY 4.0 para as malhas e seus derivados; isso não deve ser estendido automaticamente à figura raster de terceiros no relatório MAPA."
+}

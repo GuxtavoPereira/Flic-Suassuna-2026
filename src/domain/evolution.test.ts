@@ -1,5 +1,9 @@
 import { describe, expect, it, vi, afterEach } from 'vitest';
 import { themes, sources } from '../content';
+import states from '../content/maps/states.json';
+import semiarido from '../content/maps/semiarido.json';
+import caatinga from '../content/maps/caatinga.json';
+import localities from '../content/maps/localities.json';
 import { createSession, loadSession, persistSession, SESSION_KEY } from '../services/visit-session';
 import { createRound } from './rotation';
 import { summarizeVisit } from './visit';
@@ -15,6 +19,7 @@ describe('evolução editorial',()=>{
       for(const p of t.postPool){expect(p.sources.length,p.id).toBeGreaterThan(0);expect(p.sources.every(id=>sources.some(s=>s.id===id)),p.id).toBe(true);expect(p.imageCredit).not.toBe('');expect(p.imageLicense).not.toBe('');expect(p.editorialStatus).toBe('review-pending');}
     }
   });
+  it('preserva recortes cartográficos distintos e quatro localidades oficiais',()=>{expect(states.features).toHaveLength(27);expect(states.features.filter(f=>f.properties.isNordeste)).toHaveLength(9);expect(semiarido.features).toHaveLength(1477);expect(caatinga.features).toHaveLength(1);expect(localities).toHaveLength(4);expect(localities.map(l=>l.locality)).toEqual(['Teresina','Salgueiro','Caruaru','Recife']);});
   it('não atribui pontos nem perguntas aos percursos livres',()=>{
     const rounds=Object.fromEntries(themes.map(t=>[t.id,createRound(t,{posts:[],questions:[]})]));
     for(const t of themes.filter(t=>!t.quizEnabled))expect(rounds[t.id].questions).toEqual([]);
