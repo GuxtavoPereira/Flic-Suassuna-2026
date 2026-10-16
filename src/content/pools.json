@@ -1577,7 +1577,7 @@
       "curiosity": "Estudar um personagem histórico permite conhecer perspectivas diferentes sem julgar a fé das pessoas.",
       "visualKey": "padre-cicero",
       "status": "draft-editorial",
-      "assetId": "ariano",
+      "assetId": "padre-cicero",
       "tags": [
         "padre-cicero"
       ],
@@ -2085,7 +2085,7 @@
       "curiosity": "As tradições juninas mudaram com encontros entre diferentes culturas.",
       "visualKey": "sao-joao",
       "status": "draft-editorial",
-      "assetId": "festa-junina",
+      "assetId": "sao-joao",
       "tags": [
         "sao-joao"
       ],
@@ -2110,7 +2110,7 @@
       "curiosity": "As formas de dançar e brincar não são iguais em todos os lugares.",
       "visualKey": "quadrilha",
       "status": "draft-editorial",
-      "assetId": "festa-junina",
+      "assetId": "quadrilha",
       "tags": [
         "quadrilha"
       ],
@@ -2135,7 +2135,7 @@
       "curiosity": "Participar de uma festa cultural não significa que todas as pessoas compartilhem a mesma religião.",
       "visualKey": "sao-pedro",
       "status": "draft-editorial",
-      "assetId": "festa-junina",
+      "assetId": "sao-pedro-patrimonio",
       "tags": [
         "sao-pedro"
       ],
@@ -2160,7 +2160,7 @@
       "curiosity": "O patrimônio cultural inclui os sentidos que comunidades atribuem aos lugares.",
       "visualKey": "romarias",
       "status": "draft-editorial",
-      "assetId": "cordel",
+      "assetId": "romaria",
       "tags": [
         "romarias"
       ],
@@ -2185,7 +2185,7 @@
       "curiosity": "Aqui estudamos história e cultura: crenças não são avaliadas como certas ou erradas.",
       "visualKey": "padre-cicero",
       "status": "draft-editorial",
-      "assetId": "ariano",
+      "assetId": "padre-cicero",
       "tags": [
         "padre-cicero"
       ],
@@ -2211,7 +2211,7 @@
       "curiosity": "Nossa Senhora das Dores é uma devoção local importante; não deve ser confundida com Aparecida.",
       "visualKey": "dores",
       "status": "draft-editorial",
-      "assetId": "cordel",
+      "assetId": "dores",
       "tags": [
         "dores"
       ],
@@ -2236,7 +2236,7 @@
       "curiosity": "Uma fotografia precisa indicar de qual romaria e local está tratando.",
       "visualKey": "candeias",
       "status": "draft-editorial",
-      "assetId": "cordel",
+      "assetId": "candeias",
       "tags": [
         "candeias"
       ],
@@ -2261,7 +2261,7 @@
       "curiosity": "Uma devoção de alcance nacional convive com festas e padroeiras de histórias locais.",
       "visualKey": "aparecida",
       "status": "draft-editorial",
-      "assetId": "cordel",
+      "assetId": "aparecida-basilica",
       "tags": [
         "aparecida"
       ],
@@ -2311,7 +2311,7 @@
       "curiosity": "No Cariri cearense, reisados fazem parte do conjunto de referências culturais pesquisadas pelo Iphan.",
       "visualKey": "reisado",
       "status": "draft-editorial",
-      "assetId": "festa-junina",
+      "assetId": "reisado",
       "tags": [
         "reisado"
       ],
@@ -2337,7 +2337,7 @@
       "curiosity": "Festa, arte e devoção podem se relacionar sem serem uma única coisa.",
       "visualKey": "padroeiro",
       "status": "draft-editorial",
-      "assetId": "festa-junina",
+      "assetId": "fogueira",
       "tags": [
         "padroeiro"
       ],
@@ -2362,7 +2362,7 @@
       "curiosity": "Ninguém precisa participar de uma prática religiosa para aprender sobre seu contexto cultural.",
       "visualKey": "diversidade",
       "status": "draft-editorial",
-      "assetId": "festa-junina",
+      "assetId": "diversidade-candomble",
       "tags": [
         "diversidade"
       ],
