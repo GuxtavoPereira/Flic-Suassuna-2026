@@ -1367,7 +1367,7 @@
       "curiosity": "Proteger uma espécie também exige cuidar de seu habitat.",
       "visualKey": "fauna",
       "status": "draft-editorial",
-      "assetId": "caatinga-verde",
+      "assetId": "fauna-caatinga",
       "tags": [
         "fauna"
       ],
@@ -1392,7 +1392,7 @@
       "curiosity": "Subsistência é produzir para o próprio consumo; muitas famílias também comercializam parte da colheita.",
       "visualKey": "agricultura",
       "status": "draft-editorial",
-      "assetId": "mandioca",
+      "assetId": "agricultura-milho",
       "tags": [
         "agricultura"
       ],
@@ -1418,7 +1418,7 @@
       "curiosity": "Criação para consumo familiar e produção comercial podem coexistir.",
       "visualKey": "pecuaria",
       "status": "draft-editorial",
-      "assetId": "serra",
+      "assetId": "caprinos",
       "tags": [
         "pecuaria"
       ],
@@ -1445,7 +1445,7 @@
       "curiosity": "Armazenar não basta: qualidade da água, manutenção e cuidados de uso também são necessários.",
       "visualKey": "cisterna",
       "status": "draft-editorial",
-      "assetId": "caatinga-verde",
+      "assetId": "cisterna",
       "tags": [
         "cisterna"
       ],
@@ -1471,7 +1471,7 @@
       "curiosity": "Nenhuma obra faz a água se tornar ilimitada: economizar e planejar continuam importantes.",
       "visualKey": "infraestrutura",
       "status": "draft-editorial",
-      "assetId": "serra",
+      "assetId": "irrigacao",
       "tags": [
         "infraestrutura"
       ],
@@ -1498,7 +1498,7 @@
       "curiosity": "Uma paisagem seca não conta, sozinha, toda a história econômica de um lugar.",
       "visualKey": "economia",
       "status": "draft-editorial",
-      "assetId": "mestre-vitalino",
+      "assetId": "feira-artesanato",
       "tags": [
         "economia"
       ],

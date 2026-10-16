@@ -2,6 +2,7 @@ import raw from './modules.json';
 import editorialSources from './editorial-sources.json';
 import excerptData from './excerpts.json';
 import poolData from './pools.json';
+import evolutionAssets from './evolution-assets.json';
 import topicAssets from './topic-assets.json';
 import documentaryAssets from './documentary-assets.json';
 import suppliedAssets from './supplied-assets.json';
@@ -42,7 +43,7 @@ const modules = [...parsed.modules,
   { id: 'musica-audiovisual' as const, title: 'Música e Audiovisual Nordestino', subtitle: 'Sons, artistas e histórias nas telas.', cover: '/images/topics/sanfona.webp', slides: [], quiz: [] },
   { id: 'festas-religiosidade' as const, title: 'Festas e Religiosidade', subtitle: 'Celebrações, encontros e diversidade.', cover: '/images/topics/festa-junina.webp', slides: [], quiz: [] },
 ];
-export const imageAssets = [...topicAssets, ...documentaryAssets, ...suppliedAssets];
+export const imageAssets = [...topicAssets, ...documentaryAssets, ...evolutionAssets, ...suppliedAssets];
 const pool = poolSchema.parse(poolData);
 const sourceIds: Record<string, string[]> = { clima: ['caatinga', 'embrapa'], cultura: ['cordel', 'forro', 'fundaj'], personalidades: ['gonzaga-bio', 'vitalino-bio', 'patativa-bio', 'abl-bio', 'rachel-bio', 'canudos'], 'linha-do-tempo': ['abl-bio', 'abl-obras', 'fundaj', 'canudos'], culinaria: ['fundaj-comida', 'embrapa-umbu', 'embrapa-rapadura'], ariano: ['abl-bio', 'abl-obras', 'fundaj'] };
 export const themes: Theme[] = modules.map(m => {
