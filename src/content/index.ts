@@ -32,13 +32,13 @@ export const sources = [
 const metadata: Partial<Record<RawModuleId, { category: string; color: string; tint: string; alt: string; sources: string[] }>> = {
   clima: { category: 'NATUREZA', color: '#3F6037', tint: '#EDF0E3', alt: 'Ilustração em estilo xilogravura de cactos e vegetação da Caatinga.', sources: [] },
   cultura: { category: 'TRADIÇÕES', color: '#A34427', tint: '#F6E8DF', alt: 'Ilustração em estilo xilogravura com referências à cultura popular nordestina.', sources: ['fundaj'] },
-  personalidades: { category: 'PESSOAS', color: '#88601E', tint: '#F7EEDB', alt: 'Galeria ilustrada de figuras culturais em estilo xilogravura, sem caráter fotográfico.', sources: [] },
+  personalidades: { category: 'PESSOAS', color: '#755018', tint: '#F7EEDB', alt: 'Galeria ilustrada de figuras culturais em estilo xilogravura, sem caráter fotográfico.', sources: [] },
   'linha-do-tempo': { category: 'HISTÓRIA', color: '#365E73', tint: '#E7EDF0', alt: 'Composição em estilo xilogravura sobre história e passagem do tempo.', sources: ['abl-bio', 'abl-obras', 'fundaj'] },
   culinaria: { category: 'SABORES', color: '#8E492F', tint: '#F5E7DA', alt: 'Mesa com alimentos nordestinos em ilustração no estilo da xilogravura.', sources: [] },
   ariano: { category: 'LITERATURA', color: '#66517B', tint: '#EDE8F1', alt: 'Composição ilustrada com máscaras de teatro, livro aberto, aves, cactos e sol.', sources: ['abl-bio', 'abl-obras', 'fundaj'] },
 };
 metadata['musica-audiovisual'] = { category: 'MÚSICA E TELAS', color: '#365E73', tint: '#E7EDF0', alt: 'Sanfona fotografada: um dos instrumentos das matrizes do forró.', sources: ['forro'] };
-metadata['festas-religiosidade'] = { category: 'CELEBRAÇÕES', color: '#88601E', tint: '#F7EEDB', alt: 'Capela tradicional da Fazenda Acauã, Aparecida, Paraíba, em fotografia real em preto e branco.', sources: ['forro'] };
+metadata['festas-religiosidade'] = { category: 'CELEBRAÇÕES', color: '#755018', tint: '#F7EEDB', alt: 'Capela tradicional da Fazenda Acauã, Aparecida, Paraíba, em fotografia real em preto e branco.', sources: ['forro'] };
 const parsed = contentSchema.parse(raw);
 const modules = [...parsed.modules,
   { id: 'musica-audiovisual' as const, title: 'Música e Audiovisual Nordestino', subtitle: 'Sons, artistas e histórias nas telas.', cover: '/images/topics/sanfona.webp', slides: [], quiz: [] },

@@ -33,3 +33,6 @@
 .video-reference{border:1px solid var(--border);background:#e7edf0;border-radius:16px;padding:30px;margin-top:28px}.video-reference h2{font-size:34px}.video-reference>p{font-size:24px;line-height:1.5;max-width:1100px}.video-dialog{max-width:760px}.video-dialog p{font-size:23px;line-height:1.5}.video-qr{display:block;width:min(100%,360px);height:auto;margin:22px auto;background:white}.video-address{overflow-wrap:anywhere;font-size:20px!important}@media(max-width:540px){.video-reference{padding:20px}.video-reference>p{font-size:21px}.video-reference h2{font-size:29px}.video-dialog .dialog-top{flex-wrap:wrap}}
 
 .theme-card[href="/tema/festas-religiosidade"] .card-image img{object-position:center 70%}.home-photo-credits{font-size:16px;margin-top:12px}.home-photo-credits summary{min-height:44px}.home-photo-credits p{font-size:16px;line-height:1.5}
+
+/* Foco SVG sem outline em unidades geográficas; toque sem sobreposição nativa. */
+.territory-map g[role="button"]{cursor:pointer;outline:none;-webkit-tap-highlight-color:transparent}.territory-map g[role="button"]:focus-visible circle{stroke:#185a93;stroke-width:.18}
