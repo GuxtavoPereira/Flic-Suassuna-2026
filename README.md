@@ -46,7 +46,7 @@ Na versão web, esperar “Pronto para usar offline” antes de desconectar. O P
 
 ## Limites editoriais
 
-As camadas de estados/Nordeste, Caatinga IBGE 2019 e semiárido IBGE 2022 são diferentes. Quatro painéis apresentam sub-regiões didáticas por localidades de referência; polígonos sub-regionais com metodologia validada continuam pendentes. Não tratar o recorte de 2022 como limite legal vigente em 2026.
+As camadas de estados/Nordeste, Caatinga IBGE 2019 e semiárido IBGE 2022 são diferentes. O mapa das quatro sub-regiões usa um desenho didático licenciado de Raphael Lorenzeto de Abreu (2006), com faixas aproximadas e quatro painéis. Não é uma delimitação oficial georreferenciada nem permite classificar municípios ou medir áreas. Não tratar o recorte de 2022 como limite legal vigente em 2026.
 
 Calango tem referência verificada por oEmbed e catálogos, mas reprodução integral/titularidade jurídica do canal não foram confirmadas. QR abre no celular; não há download de vídeo, letra, frame ou cartaz sem permissão. A ficha tipográfica não é cartaz oficial.
 

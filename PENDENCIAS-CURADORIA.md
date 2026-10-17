@@ -11,4 +11,4 @@
 
 Não marcar a entrega inteira como concluída enquanto esses aceites estiverem pendentes.
 
-**Publicação resolvida:** https://flic2026-sertao-guxtavopereira.vercel.app — produção autorizada pelo proprietário em16/10/2026 e verificada sem login. Deployment dpl_4LdHgvLZkBW71D6ZNNESJPxs6C6g, commit ad79d56f330b9416e2aa5899c578f825885f2fff. As pendências editoriais/cartográficas acima continuam abertas.
+**Publicação resolvida:** https://flic2026-sertao-guxtavopereira.vercel.app — produção autorizada pelo proprietário em16/10/2026 e verificada sem login. Atualização de mapas, display e QR: deployment dpl_3yiTQgBjVRYH8c6E1gqMjJp88Ze1, commit495a934da055d64b2b471bda38c70c3e9ab1bb4c. As pendências editoriais/cartográficas acima continuam abertas.

@@ -62,9 +62,9 @@
 
 ## Fase 3 — Mapas didáticos interativos [P0]
 
-- [ ] **PENDENTE:** No módulo **Clima e Vegetação**, incluir post **Mapa do Brasil** com região Nordeste destacada e indicação pedagógica aproximada da área do sertão. — Sertão indicado por localidade de referência; delimitação aproximada validada ainda ausente.
+- [x] No módulo **Clima e Vegetação**, incluir post **Mapa do Brasil** com região Nordeste destacada e indicação pedagógica aproximada da área do sertão. — Brasil/Nordeste no primeiro modo; Sertão em amarelo no modo Quatro sub-regiões do mesmo explorador, com faixas aproximadas e fonte identificada.
 - [x] Diferenciar, com legendas, **Nordeste (região político-administrativa)**, **sertão (sub-região/uso geográfico)**, **semiárido (delimitação climática oficial)** e **Caatinga (bioma)**. Não usar o mesmo contorno para todos.
-- [ ] **PENDENTE:** Adicionar mapa das **4 sub-regiões tradicionalmente usadas em materiais didáticos**: **Meio-Norte, Sertão, Agreste e Zona da Mata**; explicar que é uma regionalização didática e que a delimitação depende da metodologia/fonte. — Quatro painéis e pontos implementados; faltam polígonos sub-regionais com metodologia validada.
+- [x] Adicionar mapa das **4 sub-regiões tradicionalmente usadas em materiais didáticos**: **Meio-Norte, Sertão, Agreste e Zona da Mata**; explicar que é uma regionalização didática e que a delimitação depende da metodologia/fonte. — Quatro áreas coloridas/numeradas e painéis sincronizados; desenho de Raphael Lorenzeto de Abreu (2006), CC BY2.5, explicitamente aproximado e sem georreferenciamento.
 - [x] Ao tocar em cada sub-região, apresentar clima, vegetação, atividades econômicas, paisagens e um exemplo de localidade — sem generalizar que todos os municípios são iguais.
 - [ ] **PENDENTE:** Usar dados cartográficos georreferenciados de fontes confiáveis (IBGE e órgãos competentes), com data/fonte na interface e nos metadados. Não desenhar fronteiras por adivinhação. — Bases oficiais identificadas; confirmar condições específicas de redistribuição do produto temático Caatinga.
 - [x] Criar interação **offline**, preferencialmente via SVG/GeoJSON local e botões acessíveis; não exigir Google Maps ou outra API externa.
@@ -181,7 +181,7 @@
 - [x] **Título:** `O Sertão de Ariano Suassuna`, com assinatura `FLIC 2026`.
 - [x] **Home:** exatamente 8 cards no escopo atual; 6 originais + 2 novos.
 - [x] **Conteúdo:** pelo menos 8 posts por card; Clima 12+, Música/Audiovisual 10+, Festas/Religiosidade 10+.
-- [ ] **PENDENTE:** **Mapas:** Brasil/Nordeste/Sertão e quatro sub-regiões com descrições e uso offline. — Painéis/pontos e camadas oficiais offline prontos; polígonos das quatro sub-regiões pendentes.
+- [x] **Mapas:** Brasil/Nordeste/Sertão e quatro sub-regiões com descrições e uso offline. — Camadas oficiais e desenho didático licenciado têm modos separados; áreas aproximadas coloridas e painéis funcionam offline. Georreferenciamento sub-regional oficial e condições específicas do produto Caatinga continuam pendentes na fase3.
 - [x] **Economia:** agricultura, pecuária/animais, cisternas, tecnologias, infraestrutura e atividades diversas contextualizadas.
 - [x] **Religiosidade:** Padre Cícero, devoções marianas, fé e chuvas, São João e diversidade cultural representados com cuidado.
 - [ ] **PENDENTE:** **Audiovisual:** clássicos musicais, *Calango Lengo*, filmes/novelas e links verificados, com modo offline seguro. — Referência e QR funcionais; reprodução integral e miniatura autorizada pendentes.
@@ -202,3 +202,17 @@
 - [Iphan — Lugares Sagrados de Juazeiro do Norte](https://www.gov.br/iphan/pt-br/assuntos/noticias/iphan-aprova-registro-dos-lugares-sagrados-de-juazeiro-do-norte-ce).
 - [CNBB — Padre Cícero e devoções marianas](https://www.cnbb.org.br/vaticano-reconhece-virtudes-de-padre-cicero/).
 - [*Calango Lengo — Morte e Vida sem Ver Água* no YouTube](https://www.youtube.com/watch?v=hj1fyV3pvSM) — checar titularidade do vídeo e disponibilidade antes de adicionar à interface.
+
+
+### Pedidos complementares — display, mapas e celular
+
+- [x] Destacar as quatro sub-regiões com cores evidentes, legenda numerada e seleção por toque/teclado; conferir a correspondência de Agreste e Zona da Mata com o desenho-fonte.
+- [x] Selecionar estados diretamente no mapa e nos botões, com preenchimento amarelo, contorno, nome/sigla e ampliação do Nordeste.
+- [x] Home com quatro colunas e duas linhas em1920×1080 e1366×768: oito cards visíveis na primeira tela; responsividade móvel preservada.
+- [x] QR global Ver no celular, imagem local disponível offline, endereço público explícito e aviso de conexão no celular; fechamento conserva a visita.
+
+Evidências: CI38985823025,29/29E2E e56unitários; capturas Home1920/1366/390, sub-regiões e QR revisadas. Ajuste final do enquadramento da Bahia aprovado na CI38986103221 (29/29E2E,56unitários), com captura revisada sem corte. Não substitui ensaio no display escolar nem revisão pedagógica.
+
+Publicação desta atualização: https://flic2026-sertao-guxtavopereira.vercel.app/ — deployment dpl_3yiTQgBjVRYH8c6E1gqMjJp88Ze1, commit495a934d; Vercel também aprovou29/29E2E antes de reassociar o endereço público. Pacote offline sincronizado com o mesmo build.
+
+Entrega conferida: acesso público sem login e assets iguais ao build aprovado; ZIP com113arquivos do app e133checksums verificados. Ensaio no Windows/display real permanece aberto na fase10.

@@ -8,7 +8,7 @@
 | `/tema/:id/quiz` | Só nos cards habilitados e após leitura; três perguntas com feedback e resposta única. Cards livres retornam ao conteúdo. |
 | `/tema/:id/resultado` | Pontuação, explicações, treino e encerramento; treino não altera ranking. |
 | `/tema/:id/leitura/:work` | Cinco painéis literários com paráfrase identificada, registro contextual e trava de direitos. |
-| `/tema/clima-vegetacao/mapas` | Estados/Nordeste, Caatinga2019, semiárido2022, quatro painéis de sub-região, pontos/lista e teclado. Também presentes nos posts climáticos de mapa. |
+| `/tema/clima-vegetacao/mapas` | Estados/Nordeste com seleção no desenho e na lista, Caatinga2019, semiárido2022 e quatro áreas didáticas coloridas com painéis e teclado. Também presentes nos posts climáticos de mapa. |
 | `/tema/:id/caatinga` | Ciclo da vegetação com controle manual. |
 | `/tema/:id/marcos`, `/linha-do-tempo` | Seis marcos interativos complementares; o carrossel histórico tem pool maior. |
 | `/fim-da-visita` | Resumo e participação opcional por primeiro nome/apelido. |
