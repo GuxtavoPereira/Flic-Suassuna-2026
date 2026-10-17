@@ -216,3 +216,5 @@ Evidências: CI38985823025,29/29E2E e56unitários; capturas Home1920/1366/390, s
 Publicação desta atualização: https://flic2026-sertao-guxtavopereira.vercel.app/ — deployment dpl_3yiTQgBjVRYH8c6E1gqMjJp88Ze1, commit495a934d; Vercel também aprovou29/29E2E antes de reassociar o endereço público. Pacote offline sincronizado com o mesmo build.
 
 Entrega conferida: acesso público sem login e assets iguais ao build aprovado; ZIP com113arquivos do app e133checksums verificados. Ensaio no Windows/display real permanece aberto na fase10.
+
+Correção de aceite: a rota dedicada tinha quatro cores, mas a transição clima-09→clima-10 conservava o modo Brasil. Ajustada a identidade do componente por post; novo E2E do carrossel offline em validação. Não confundir a verificação da rota isolada com a navegação entre posts.

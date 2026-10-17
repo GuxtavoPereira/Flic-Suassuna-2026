@@ -31,6 +31,24 @@ test('mapas: camadas distintas, quatro painéis, toque e teclado sem rede',async
   await page.getByRole('button',{name:'Selecionar Sertão: Salgueiro'}).tap();await expect(page.locator('.region-panel')).toContainText('Salgueiro');
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:'test-results/maps-1920.png',fullPage:true});
 });
+test('carrossel offline abre as quatro cores ao avançar do mapa do Brasil',async({page,context})=>{
+  await page.goto('/');await expect(page.getByRole('status').filter({hasText:'Pronto para usar offline'})).toBeVisible({timeout:30000});await page.reload();await context.setOffline(true);
+  await findPost(page,'clima-vegetacao','Onde fica o Nordeste?');
+  await expect(page.getByRole('button',{name:'Brasil e Nordeste',exact:true})).toHaveAttribute('aria-pressed','true');
+  await page.getByRole('button',{name:'Paraíba',exact:true}).click();
+  await page.getByRole('button',{name:'Próximo',exact:true}).click();
+  await expect(page.locator('.slide-copy h1')).toHaveText('Quatro sub-regiões, muitos ambientes');
+  await expect(page.getByRole('button',{name:'Quatro sub-regiões',exact:true})).toHaveAttribute('aria-pressed','true');
+  await expect(page.locator('[data-subregion]')).toHaveCount(4);
+  const colors=await page.locator('[data-subregion]').evaluateAll(paths=>paths.map(p=>getComputedStyle(p).fill));
+  expect(new Set(colors).size).toBe(4);expect(colors).not.toContain('none');
+  await page.locator('.map-explorer').screenshot({path:'test-results/subregions-post-1920.png'});
+  await page.getByRole('button',{name:'Anterior',exact:true}).click();
+  await expect(page.locator('.slide-copy h1')).toHaveText('Onde fica o Nordeste?');
+  await expect(page.getByRole('button',{name:'Brasil e Nordeste',exact:true})).toHaveAttribute('aria-pressed','true');
+  await page.getByRole('button',{name:'Próximo',exact:true}).click();await expect(page.locator('[data-subregion]')).toHaveCount(4);
+  await page.reload();await expect(page.locator('[data-subregion]')).toHaveCount(4);
+});
 test('cisterna: diagrama, foto real e referências cruzadas',async({page})=>{
   await findPost(page,'clima-vegetacao','Chuva guardada para depois');await expect(page.locator('.slide-art img')).toHaveAttribute('src','/images/evolution/cisterna.webp');await expect(page.locator('.cistern-diagram')).toBeVisible();await page.screenshot({path:'test-results/cistern-1920.png',fullPage:true});await expect(page.locator('.economy-context')).toContainText('Consumo humano e produção');await page.getByRole('link',{name:'Alimentos e cotidiano',exact:true}).click();await expect(page).toHaveURL(/tema\/culinaria$/);
 });
