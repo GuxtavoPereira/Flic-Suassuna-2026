@@ -117,3 +117,13 @@ Conferência HTTP pública concluída sem cookies/login:200, HTML e dez assets i
 O mapa colorido estava publicado e testado na rota dedicada, mas o carrossel reutilizava a mesma instância de MapExplorer entre clima-09 e clima-10. useState(initialMode) conservava o modo Brasil ao mudar o post; o segundo post aparecia em terracota até selecionar a aba manualmente. A inspeção anterior da rota dedicada não cobria esse caminho e o aceite do carrossel foi prematuro.
 
 Correção: key=slide.id em MapExplorer para iniciar o modo correspondente a cada post. Teste de regressão percorre a navegação real, altera um estado, avança para as quatro sub-regiões sem clicar na aba, confere quatro cores computadas, volta, avança e recarrega, tudo sem rede após precache. Captura específica subregions-post-1920 será conferida após a execução remota. Geometrias, paleta, perguntas, pontuação e chaves de sessão não alteradas.
+
+CI38988317488 do commit7de3f019bd6a515e89d7c9ca1f9332af84ca3b60 aprovada: lint/tipos/conteúdo,56unitários, servidor, build e30/30E2E. O novo caso de regressão passou no carrossel offline; também passou no build Vercel. Captura e publicação final ainda em conferência nesta etapa.
+
+Captura subregions-post-1920 da CI38988317488 conferida: ao chegar pelo carrossel, a aba Quatro sub-regiões já está ativa e as quatro áreas estão preenchidas em laranja/amarelo/lilás/verde, com legenda/painel sincronizados. Artefato12083513656 verificado por SHA25603cdaa91573ae00c91ff76606a39a0c37532c8198e22009af0ea53cf2c9319ca.
+
+
+### Correção do carrossel publicada
+Deployment dpl_F5RW1cb68bFD4nfDus1oQesmXGkw em READY, target production explícito, commit7de3f019bd6a515e89d7c9ca1f9332af84ca3b60. Alias público confirmado para esse build. Vercel aprovou30/30E2E (7,2min), além dos gates de lint,56unitários, servidor e build. CI38988317488 também aprovada integralmente. O teste anterior cobria o mapa isolado; esta validação inclui a transição entre os posts reais, com captura e teste offline, voltar/avançar e recarregamento.
+
+Pacote offline reconstruído com o dist corrigido. CRC,133checksums e113arquivos do app são conferidos novamente antes de substituir o ZIP entregue. O ensaio físico e as pendências de curadoria continuam abertos; não dependem desta correção de estado do componente.

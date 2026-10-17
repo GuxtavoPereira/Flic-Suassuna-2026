@@ -217,4 +217,6 @@ Publicação desta atualização: https://flic2026-sertao-guxtavopereira.vercel.
 
 Entrega conferida: acesso público sem login e assets iguais ao build aprovado; ZIP com113arquivos do app e133checksums verificados. Ensaio no Windows/display real permanece aberto na fase10.
 
-Correção de aceite: a rota dedicada tinha quatro cores, mas a transição clima-09→clima-10 conservava o modo Brasil. Ajustada a identidade do componente por post; novo E2E do carrossel offline em validação. Não confundir a verificação da rota isolada com a navegação entre posts.
+Correção de aceite: a rota dedicada tinha quatro cores, mas a transição clima-09→clima-10 conservava o modo Brasil. Ajustada a identidade do componente por post; novo E2E do carrossel offline aprovado na CI38988317488 (30/30E2E,56unitários), com captura específica revisada. Não confundir a verificação da rota isolada com a navegação entre posts.
+
+Correção do carrossel publicada: dpl_F5RW1cb68bFD4nfDus1oQesmXGkw, commit7de3f019b, no mesmo endereço público.30/30E2E e56unitários aprovados na CI e na Vercel; captura do próprio post conferida com quatro cores. ZIP offline atualizado com o dist corrigido.

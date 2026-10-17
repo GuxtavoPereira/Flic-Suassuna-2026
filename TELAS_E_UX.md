@@ -15,7 +15,7 @@
 | `/ranking` | Ranking local por categoria; limpeza com confirmação nas opções. |
 | `/sobre` | Contexto, direitos, referências e orientação offline. |
 
-Fundo creme, cores pontuais, fontes locais, foco visível e alvos grandes. Botão de retorno nos percursos e navegação global. A seleção e posição sobrevivem a retornos/recarregamento. Opções: tela cheia, animação reduzida, retorno por inatividade com aviso e reinício.
+Fundo creme, cores pontuais, fontes locais, foco visível e alvos grandes. Botão de retorno nos percursos e navegação global. O post selecionado e a posição da visita sobrevivem a retornos/recarregamento. Opções: tela cheia, animação reduzida, retorno por inatividade com aviso e reinício.
 
 Cisterna: esquema autoral sem escala ao lado de foto real e explicação de finalidades. Economia tem referências cruzadas com Cultura/Culinária. Diversidade religiosa é cultural/educativa; a capela católica da capa não representa todas as crenças.
 
@@ -25,4 +25,4 @@ PWA: precache de textos compilados, mapas, imagens e fontes; indicador de prepar
 
 ## Ajuste para o display interativo
 
-Home horizontal com grade4×2 a partir de1200px. Mapas com áreas grandes, botões de seleção equivalentes e indicação por cor/contorno/nome; a seleção de um estado amplia o Nordeste. Quatro sub-regiões em faixas vetoriais licenciadas, numeradas1–4, com cores laranja/amarelo/lilás/verde e painel sincronizado. Camadas oficiais ficam em Brasil e Nordeste. Botão global Ver no celular abre diálogo nativo com QR local, URL pública e aviso de conexão no celular; fechar retorna à mesma visita.
+Home horizontal com grade4×2 a partir de1200px. Mapas com áreas grandes, botões de seleção equivalentes e indicação por cor/contorno/nome; a seleção de um estado amplia o Nordeste. Quatro sub-regiões em faixas vetoriais licenciadas, numeradas1–4, com cores laranja/amarelo/lilás/verde e painel sincronizado. No carrossel, cada post de mapa inicia seu próprio modo: clima-09 em Brasil e Nordeste, clima-10 em Quatro sub-regiões, inclusive ao avançar/voltar entre eles. Camadas oficiais ficam em Brasil e Nordeste. Botão global Ver no celular abre diálogo nativo com QR local, URL pública e aviso de conexão no celular; fechar retorna à mesma visita.
