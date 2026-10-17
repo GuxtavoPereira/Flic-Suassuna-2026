@@ -6,7 +6,7 @@ export function summarizeVisit(answers: Record<string, Answers>, rounds?: Rounds
   let correct = 0;
   let answered = 0;
   let completedThemes = 0;
-  for (const theme of themes) {
+  for (const theme of themes.filter(t => t.rankingEligible)) {
     let themeAnswered = 0;
     const locked = rounds?.[theme.id]?.rankingAnswers;
     const available = rounds ? theme.questionPool.filter(q => Object.hasOwn(locked ?? {}, q.id)) : theme.quiz;
@@ -19,5 +19,5 @@ export function summarizeVisit(answers: Record<string, Answers>, rounds?: Rounds
     }
     if (themeAnswered === 3) completedThemes++;
   }
-  return { correct, answered, total: themes.reduce((n, theme) => n + theme.quiz.length, 0), completedThemes };
+  return { correct, answered, total: themes.filter(t => t.rankingEligible).reduce((n, theme) => n + theme.quiz.length, 0), completedThemes };
 }

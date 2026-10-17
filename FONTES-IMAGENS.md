@@ -1,6 +1,18 @@
 # Fontes e direitos das imagens — FLIC 2026
 
-Fotografias reais obtidas em 15/10/2026. Arquivos locais redimensionados e convertidos para WebP. As seis xilogravuras originais permanecem nos cards da Home.
+Catálogo histórico de fotografias obtidas em15/10/2026, complementado na edição de evolução. Arquivos locais redimensionados e convertidos para WebP. As seis xilogravuras originais permanecem nos cards da Home.
+
+## Edição de evolução — fotos, mapas e capela
+
+A associação atual dos90posts, incluindo fonte/licença/status, está em [IMAGENS-POR-POST.md](IMAGENS-POR-POST.md) e em `public/content/image-manifest.json`. Os catálogos locais registram autor, origem, permissão, lugar, data e tipo de registro. Textos permanecem em revisão pedagógica.
+
+A capela da capa de Festas e Religiosidade é a da Fazenda Acauã, Aparecida/PB, fotografia de Rogerio121402 em2015, CC BY-SA4.0: https://commons.wikimedia.org/wiki/File:Capela_e_Sobrado_da_Fazenda_Acau%C3%A3.jpg . P&B original, reduzida/convertida para WebP, sem recorte editorial do arquivo. Créditos também na Home/post.
+
+Novas fotos reais de agricultura, animais, cisterna, patrimônio e artistas estão em evolution-assets.json; evidências de licenças em public/images/evolution/license-evidence.json. Anastácia, Dominguinhos e Alceu são identificados por nome e fonte. Licença da fotografia não licencia músicas/filmes.
+
+Mapas oficiais: fontes, datas e simplificações em src/content/maps/metadata.json. Contornos de estados, bioma e recorte semiárido não são intercambiáveis; polígonos sub-regionais continuam pendentes.
+
+A ficha de Calango é composição tipográfica original, não miniatura ou cartaz do filme. Os lotes sintéticos anteriores permanecem arquivados; não são usados como fotografia factual nesta edição. Pendências e limites em PENDENCIAS-CURADORIA.md.
 
 ## umbuzeiro
 
@@ -327,4 +339,10 @@ O Santo e a Porca e Uma Mulher Vestida de Sol usam retratos históricos contextu
 
 ## Novas artes fornecidas — lotes 1 e 2
 
-14 imagens geradas por IA foram fornecidas para substituir as imagens principais dos posts correspondentes. A procedência e os arquivos originais constam dos manifestos locais em `public/images/fornecidas/lote-1/manifest.json` e `lote-2/manifest.json`. Não foi declarada licença Creative Commons nem identificação da ferramenta/autoria nos pacotes. As legendas identificam a natureza ilustrativa, sem atribuir às artes status documental ou oficial. Os créditos e licenças dos registros reais acima continuam válidos; eles não foram convertidos em créditos das novas artes. Ver LOTES-IMAGENS.md.
+Registro histórico: 14 imagens geradas por IA foram fornecidas em uma edição anterior. Nesta edição permanecem arquivadas e não substituem fotografias factuais nos posts. A procedência e os arquivos originais constam dos manifestos locais em `public/images/fornecidas/lote-1/manifest.json` e `lote-2/manifest.json`. Não foi declarada licença Creative Commons nem identificação da ferramenta/autoria nos pacotes. As legendas identificam a natureza ilustrativa, sem atribuir às artes status documental ou oficial. Os créditos e licenças dos registros reais acima continuam válidos; eles não foram convertidos em créditos das novas artes. Ver LOTES-IMAGENS.md.
+
+## Mapa das quatro sub-regiões e QR do site
+
+Brazil Region Nordeste Subregions.svg, Raphael Lorenzeto de Abreu,29/04/2006. Arquivo original: https://commons.wikimedia.org/wiki/File:Brazil_Region_Nordeste_Subregions.svg . Licença selecionada: CC BY2.5, https://creativecommons.org/licenses/by/2.5/ . Extraídos os quatro polígonos e nove contornos estaduais; cores, coordenadas SVG e interação adaptadas. Correspondência conferida pela numeração original (1Meio-Norte,2Sertão,3Agreste,4Zona da Mata). Não é dado georreferenciado nem nova fronteira oficial. Fonte e alterações também aparecem na interface e em maps/subregions.json.
+
+O QR do site codifica exclusivamente https://flic2026-sertao-guxtavopereira.vercel.app/ . Gerado localmente com o codificador QR do ReportLab; nenhuma requisição externa é necessária para exibi-lo.

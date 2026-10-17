@@ -62,7 +62,7 @@ test('limpeza do ranking pede confirmação e preserva o restante do museu', asy
   page.once('dialog', dialog => dialog.accept()); await page.getByRole('button', { name: 'Apagar ranking deste navegador' }).click();
   await expect(page.getByRole('status').filter({ hasText: 'Ranking deste navegador apagado.' })).toBeVisible();
   await page.getByRole('button', { name: 'Fechar opções' }).click(); await expect(page.locator('.leaderboard-table')).toHaveCount(0);
-  await page.getByRole('link', { name: 'Explorar temas' }).click(); await expect(page.locator('.theme-card')).toHaveCount(6);
+  await page.getByRole('link', { name: 'Explorar temas' }).click(); await expect(page.locator('.theme-card')).toHaveCount(8);
 });
 test('ranking e formulário são acessíveis e cabem em totem e celular', async ({ page }) => {
   await finishQuiz(page); await page.getByRole('link', { name: 'Encerrar visita e ver ranking' }).click();

@@ -1,13 +1,15 @@
 import { expect, type Page } from '@playwright/test';
+import settings from '../src/content/experience-settings.json' with { type: 'json' };
 import pool from '../src/content/pools.json' with { type: 'json' };
 export async function readTheme(page: Page, id: string, navigate = true) {
   if (navigate) await page.goto(`/tema/${id}`);
-  for (let i = 0; i < 5; i++) {
-    await expect(page.locator('.slide-progress')).toContainText(`${i + 1} de 5`);
+  const total = settings.find(t=>t.id===id)!.postsPerVisit;
+  for (let i = 0; i < total; i++) {
+    await expect(page.locator('.slide-progress')).toContainText(`${i + 1} de ${total}`);
     const title = await page.getByRole('heading', { level: 1 }).innerText();
     expect(pool.posts.some(p => p.themeId === id && p.title === title)).toBe(true);
     await expect(page.locator('.slide-art img')).toBeVisible();
-    if (i < 4) await page.getByRole('button', { name: 'Próximo', exact: true }).click();
+    if (i < total - 1) await page.getByRole('button', { name: 'Próximo', exact: true }).click();
   }
   await page.getByRole('link', { name: 'Começar quiz' }).click();
   await expect(page.locator('.quiz-count')).toBeVisible();

@@ -1,4 +1,5 @@
-FLIC 2026 — MUSEU OFFLINE PARA DISPLAY COM WINDOWS
+O SERTÃO DE ARIANO SUASSUNA — FLIC 2026
+MUSEU OFFLINE PARA DISPLAY COM WINDOWS
 
 Windows 10/11 de 64 bits, com Edge ou Chrome atualizado.
 Este pacote inclui o runtime oficial Node.js; não requer instalação de Node,
@@ -11,7 +12,7 @@ NPM, Python, internet, cadastro ou acesso à Vercel no display.
 4. Abra INICIAR-MUSEU.cmd. Mantenha a janela do museu aberta.
 5. O navegador abre http://127.0.0.1:4173/.
 6. Nas opções do site, ative tela cheia e o retorno por inatividade desejado.
-7. Desconecte a rede e confirme os seis temas, imagens, quizzes e ranking.
+7. Desconecte a rede e confirme os oito temas, mapas, imagens, quizzes-base e ranking.
    É possível abrir o pacote pela primeira vez já sem rede.
 
 Para fechar: feche o navegador e a janela do museu (ou pressione Ctrl+C).
@@ -37,6 +38,8 @@ Nunca substitua os arquivos durante a visita de um aluno.
 FONTES E DIREITOS
 Veja FONTES-IMAGENS.md. As legendas e licenças também estão nos próprios posts.
 Links para fontes externas só abrem com internet; o museu não depende deles.
+O QR de Calango Lengo permite assistir pelo celular com internet; vídeo não
+está incluído no pacote. Música e Festas são percursos livres, sem pontuação.
 O texto literal das obras permanece protegido e oculto quando não aprovado.
 Este pacote contém software Node.js, com licenças em runtime/LICENSE.txt.
 

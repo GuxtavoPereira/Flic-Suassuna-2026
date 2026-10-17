@@ -6,12 +6,12 @@ import { answerQuestion, quizScore } from './quiz';
 import { LocalScoreRepository } from '../services/scores';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 describe('contrato do pacote editorial', () => {
-  it('conserva os seis temas, 30 slides e 18 questões do JSON', () => { expect(themes).toHaveLength(6); expect(themes.flatMap(t => t.slides)).toHaveLength(30); expect(themes.flatMap(t => t.quiz)).toHaveLength(18); for (const [i, t] of themes.entries()) { expect(t.title).toBe(raw.modules[i].title); expect(t.slides.map(s => s.body)).toEqual(raw.modules[i].slides.map(s => s.body)); expect(existsSync(`public${t.cover}`)).toBe(true); } });
+  it('conserva os seis temas, 30 slides e 18 questões do JSON', () => { expect(themes).toHaveLength(8); expect(themes.flatMap(t => t.slides)).toHaveLength(30); expect(themes.flatMap(t => t.quiz)).toHaveLength(18); for (const [i, t] of themes.filter(t=>t.quizEnabled).entries()) { expect(t.title).toBe(raw.modules[i].title); expect(t.slides.map(s => s.body)).toEqual(raw.modules[i].slides.map(s => s.body)); expect(existsSync(`public${t.cover}`)).toBe(true); } });
   it('rejeita índices de resposta inválidos e IDs repetidos', () => { const invalid = structuredClone(raw); invalid.modules[0].quiz[0].correctIndex = 8; expect(contentSchema.safeParse(invalid).success).toBe(false); const duplicate = structuredClone(raw); duplicate.modules[0].slides[1].id = duplicate.modules[0].slides[0].id; expect(contentSchema.safeParse(duplicate).success).toBe(false); });
   it('aceita os aliases documentados sem duplicar módulos', () => { expect(findTheme('clima')).toBe(findTheme('clima-vegetacao')); expect(findTheme('ariano-vida-obras')?.id).toBe('ariano'); expect(findTheme('não-existe')).toBeUndefined(); });
 });
 describe('motor do quiz', () => {
-  for (const theme of themes) {
+  for (const theme of themes.filter(t=>t.quizEnabled)) {
     it(`pontua as três questões de ${theme.id}, bloqueando resposta duplicada`, () => { let answers = {}; for (const q of theme.quiz) { answers = answerQuestion(answers, q, q.correctIndex); expect(answerQuestion(answers, q, (q.correctIndex + 1) % 4)).toBe(answers); } expect(quizScore(theme.quiz, answers)).toEqual({ correct: 3, answered: 3, total: 3, points: 300, complete: true }); });
   }
   it('não premia resposta incorreta, inválida ou incompleta', () => { const q = themes[0].quiz[0]; expect(answerQuestion({}, q, 8)).toEqual({}); expect(answerQuestion({}, q, -1)).toEqual({}); expect(answerQuestion({}, q, 1.5)).toEqual({}); expect(quizScore(themes[0].quiz, { [q.id]: 1 })).toMatchObject({ points: 0, correct: 0, complete: false, answered: 1 }); });

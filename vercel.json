@@ -1,10 +1,10 @@
 {
   "framework": "vite",
-  "buildCommand": "npm run lint && npm test && npm run test:offline && npm run build && npm test && npm run test:e2e",
+  "buildCommand": "node scripts/require-deployment-target.mjs && npm run lint && npm test && npm run test:offline && npm run build && npm test && npm run test:e2e && node scripts/export-qa.mjs",
   "outputDirectory": "dist",
   "rewrites": [
     {
-      "source": "/((?!api(?:/|$)|assets/|images/|icons/|sw\\.js|workbox-|manifest\\.webmanifest).*)",
+      "source": "/((?!api(?:/|$)|assets/|images/|icons/|review/|sw\\.js|workbox-|manifest\\.webmanifest).*)",
       "destination": "/index.html"
     }
   ],

@@ -1,61 +1,53 @@
-# Ariano Suassuna e o Sertão — FLIC 2026
+# O Sertão de Ariano Suassuna
 
-Museu touch com seis temas, **48 posts e 102 perguntas no pool**. A cada visita são selecionados cinco posts por tema e três perguntas ligadas aos posts efetivamente apresentados. As seis xilogravuras originais continuam nos cards da Home; os posts combinam fotografias/registros locais com as artes fornecidas nos lotes 1 e 2, sempre com crédito e identificação de origem. Tema claro, fontes locais, PWA e ranking local opcional.
+**FLIC 2026** · exposição touch, tema claro, textos/fontes/imagens locais e ranking opcional neste navegador.
+
+Versão pública: https://flic2026-sertao-guxtavopereira.vercel.app — oito percursos/90 posts, publicada por autorização expressa do proprietário em16/10/2026.
+
+São **8 percursos, 90 posts e 102 perguntas** no pool. A visita apresenta 12 posts de Clima, 10 de Música, 11 de Festas e 8 em cada um dos outros temas. Seis temas-base têm três perguntas por rodada, exclusivamente dos posts apresentados. Música e Festas são percursos livres sem pontuação. O ranking conserva o máximo de 18 acertos e os registros anteriores.
+
+A Home usa quatro colunas e duas linhas em displays horizontais. O cabeçalho oferece “Ver no celular”, com QR local para o endereço público. O mapa das quatro sub-regiões usa áreas vetoriais coloridas e numeradas; estados oficiais respondem a toque/teclado, com preenchimento amarelo, contorno e seleção sincronizada aos botões.
+
+A capa de Festas e Religiosidade mostra a capela da Fazenda Acauã, Aparecida/PB: fotografia real de Rogerio121402, 2015, CC BY-SA 4.0. As seis xilogravuras originais continuam nas seis capas-base. Posts factuais e painéis de obras usam fotografias ou registros identificados; obras sem reprodução autorizada usam contexto explicitamente descrito.
 
 ## Executar e validar
 
-Node.js 22/24. `npm ci`, `npm run dev`.
+Node.js 22/24. Instalação: `npm ci`. Desenvolvimento: `npm run dev`.
 
-- `npm run lint`: código e regras de hooks.
-- `npm test`: conteúdo, contratos, seleção, embaralhamento, histórico, sessões e ranking.
-- `npm run test:offline`: servidor local do pacote Windows.
-- `npm run build`: tipos strict, Vite e precache em `dist/`.
-- `npm run test:e2e`: percursos, toque, teclado, direitos, rede desligada, responsividade e acessibilidade.
+| Comando | Verificação |
+| --- | --- |
+| `npm run lint` | ESLint e hooks |
+| `npm run typecheck` | TypeScript strict |
+| `npm run validate:content` | Imagens/fontes locais e manifesto por post |
+| `npm test` | Conteúdo, seleção, migração, direitos e ranking |
+| `npm run test:offline` | Servidor portátil: rotas, MIME, métodos e arquivos ausentes |
+| `npm run build` | Tipos, Vite e precache PWA |
+| `npm run test:e2e` | Navegação, teclado/toque, axe, offline, QR e atualização PWA |
 
-Na Vercel, o build só publica se lint, testes, tipos, build e E2E passarem. O Chromium de testes roda no build remoto; nenhum navegador é instalado no computador do visitante.
+A CI do PR executa verificações e E2E sem publicar. O build da Vercel verifica explicitamente `VERCEL_ENV=preview` ou `production`. O proprietário autorizou a publicação desta evolução no endereço público em 16/10/2026. Resultados reais e limitações estão em [AUDITORIA-EVOLUCAO.md](AUDITORIA-EVOLUCAO.md), [CHECKLIST-EVOLUCAO.md](CHECKLIST-EVOLUCAO.md) e [PENDENCIAS-CURADORIA.md](PENDENCIAS-CURADORIA.md).
 
-## Como adicionar posts e perguntas
+## Onde editar
 
-Edite `src/content/pools.json` (fonte de verdade). Os dados originais de `modules.json` foram preservados como referência editorial; não são o pool ativo.
+- `src/content/pools.json`: posts e questões ativos; IDs estáveis, fontes e associação por `topicId`/`postIds`.
+- `experience-settings.json`: `quizEnabled`, `rankingEligible` e quantidade de posts por visita.
+- `editorial-sources.json`: referências editoriais. `src/content/index.ts` também conserva referências anteriores e normaliza o conteúdo.
+- `topic-assets.json`, `documentary-assets.json`, `evolution-assets.json`: imagens locais, legendas, créditos e licenças.
+- `src/content/maps/`: bases oficiais e metadados de aquisição/data/metodologia.
+- `videos.json`: URL externa, canal, título, data e limites da verificação de Calango Lengo.
+- `modules.json`: pacote original de referência; suas contagens antigas não determinam o carrossel ativo.
 
-Posts: `id`, `themeId`, `topicId`, `title`, `text`/`body`, `curiosity`, `assetId`, `tags`, `type`, `introductory`, `order`, `status`. A normalização resolve `assetId` em `image`, `alt` e `sourceMetadata` dos catálogos `topic-assets.json`/`documentary-assets.json`.
+Após editar, executar a validação de conteúdo, reconstruir `dist` antes de verificar o precache e executar testes. [MODELO-CONTEUDO.md](MODELO-CONTEUDO.md) detalha contratos e migração. [TELAS_E_UX.md](TELAS_E_UX.md) descreve as telas e rotas atuais.
 
-Perguntas: `id`, `themeId`, `topicId`, **`postIds`**, `question`, quatro `options` distintas, `correctIndex` (0–3), `feedback`, `difficulty` (1–3), `tags`. `postIds` restringe a pergunta ao post que realmente ensina a resposta, mesmo que dois posts tenham o mesmo assunto. A interface resolve a resposta canônica após embaralhar as alternativas. Se mudar alternativas ou resposta correta de uma pergunta existente, atribua um novo ID e revise a versão de conteúdo/sessão, evitando reinterpretar respostas de uma visita em andamento. O schema bloqueia IDs repetidos, referências órfãs, alternativas duplicadas e níveis inválidos.
+## Offline na escola
 
-Para acrescentar conteúdo: crie o post, associe a uma imagem local com fonte/licença, escreva perguntas que o texto responda e execute os testes. Introduções alternativas sobre o mesmo tópico podem ter `introductory: true`; somente uma será escolhida. `order` preserva a sequência pedagógica ou cronológica.
+O ZIP Windows contém o site completo e Node.js oficial portátil 22.23.3 x64. Extrair, abrir `INICIAR-MUSEU.cmd` e usar `http://127.0.0.1:4173/` no Edge/Chrome. Pode abrir pela primeira vez sem internet; não depende da Vercel. Não exige instalação/admin. O servidor só escuta no próprio computador. É possível extrair em F: no computador da escola.
 
-## Rotação e sessão
+Na versão web, esperar “Pronto para usar offline” antes de desconectar. O PWA oferece atualização apenas na Home e preserva a visita compatível. O ranking é separado por endereço e perfil: Vercel e localhost não compartilham nomes/resultados. Vídeos e fontes externas precisam de rede; mapas, textos e imagens não.
 
-`domain/rotation.ts` seleciona uma introdução e complementos sem repetir assunto na mesma rodada. Prioriza conteúdos ainda não vistos, depois os menos recentes, com fallback finito quando todos já apareceram. O histórico é local, anônimo e limitado a 120 IDs de cada tipo.
+## Limites editoriais
 
-A seleção fica fixa durante a visita, inclusive em retornos e recargas. `sessionStorage` guarda IDs, ordem das alternativas, posições e respostas com versão/validação. Sessões antigas incompatíveis recomeçam; ranking e preferências ficam preservados. Sem armazenamento, o museu continua em memória, com aviso se o ranking não puder ser salvo.
+As camadas de estados/Nordeste, Caatinga IBGE 2019 e semiárido IBGE 2022 são diferentes. O mapa das quatro sub-regiões usa um desenho didático licenciado de Raphael Lorenzeto de Abreu (2006), com faixas aproximadas e quatro painéis. Não é uma delimitação oficial georreferenciada nem permite classificar municípios ou medir áreas. Não tratar o recorte de 2022 como limite legal vigente em 2026.
 
-O quiz é liberado depois que os cinco posts foram exibidos. São três perguntas sem duplicação: uma de reconhecimento, uma de compreensão e uma de interpretação. Pool insuficiente ou desequilibrado não produz uma rodada competitiva menor. A ordem das perguntas e alternativas varia. Esses níveis são editoriais e ainda precisam de calibração com o público.
+Calango tem referência verificada por oEmbed e catálogos, mas reprodução integral/titularidade jurídica do canal não foram confirmadas. QR abre no celular; não há download de vídeo, letra, frame ou cartaz sem permissão. A ficha tipográfica não é cartaz oficial.
 
-## Ranking e tentativas
-
-A primeira rodada **concluída** de cada tema vale 100 pontos por acerto, até três acertos por tema. Uma rodada de treino sorteia novos posts/perguntas e não altera a pontuação inicial. Quizzes parciais não entram no ranking. Não há limite artificial de tempo para leitura.
-
-O ranking separa categorias de 1 a 6 temas concluídos, comparando 3, 6, 9, 12, 15 ou 18 respostas. Mesmo número de acertos compartilha posição. Resultados antigos continuam em **Edição anterior**, sem misturar regras ou apagar dados. Participação opcional com primeiro nome/apelido (2–24 caracteres) e escolha explícita de exibição; um registro por visita e até mil registros recentes.
-
-Não há identidade verificada, anti-fraude de servidor ou garantia contra pessoas que reiniciem visitas deliberadamente. Repetir apelidos não identifica a mesma pessoa de modo confiável. O ranking é uma atividade educativa local, não uma competição autenticada. Não foram adicionados Supabase nem serviços remotos; interfaces de repositório isolam a persistência para eventual trabalho futuro.
-
-## Offline no display Windows
-
-O pacote **FLIC2026-Offline-Windows.zip** inclui o build completo, fontes, imagens, iniciador, servidor e runtime oficial portátil Node.js 22.23.3 x64. No Windows 10/11 x64 do display: extrair o ZIP, abrir `INICIAR-MUSEU.cmd` e usar `http://127.0.0.1:4173/` no Edge/Chrome. Funciona desde a primeira abertura sem rede e sem acessar Vercel. Não instala dependências, exige login nem pede privilégios administrativos. O servidor só escuta no próprio computador. Ver `offline/LEIA-ME.txt`.
-
-O runtime Windows é distribuído no ZIP de entrega, não no Git nem no bundle Vercel. SHA-256 conferido contra `https://nodejs.org/dist/v22.23.3/SHASUMS256.txt`. O Windows do display ainda precisa de ensaio presencial; o ambiente de preparação é Linux.
-
-No site publicado, aguarde “Pronto para usar offline” antes de desligar a rede. As atualizações PWA só são oferecidas na Home. Todas as imagens e fontes ficam no precache. Links para fontes externas precisam de internet; os conteúdos não. O ranking local e o da Vercel são separados por endereço/perfil de navegador.
-
-## Conteúdo, direitos e limites
-
-[FONTES-IMAGENS.md](FONTES-IMAGENS.md) registra créditos/licenças e tipos documentais. Retratos, monumentos, documentos e locais são identificados; não se confundem com capas ou cenas. Não foram encontradas capas/encenações de O Santo e a Porca e Uma Mulher Vestida de Sol com reutilização confirmada; foram usados retratos contextuais reais do autor. Fontes primárias pedagógicas ficam nos posts.
-
-Os cinco painéis literários preservam a regra de direitos: paráfrases educativas identificadas; trechos literais só com aprovação, revisão, edição, página, autorização e fonte. Nenhuma citação pendente foi liberada. Nordeste, sertão e semiárido não são tratados como sinônimos.
-
-O repositório disponível não continha `AGENTS.md` nem `ARQUITETURA_VERCEL.md`; foram consideradas as regras originais já fornecidas e a arquitetura efetivamente implementada. Ver [CHECKLIST-IMPLEMENTACAO.md](CHECKLIST-IMPLEMENTACAO.md) para auditoria e pendências. Antes da feira, realizar revisão pedagógica, calibração das perguntas com alunos e ensaio no display definitivo. Testes automatizados não equivalem a validação presencial.
-
-## Lotes visuais 1 e 2 — 16/10/2026
-
-14 artes individuais substituem as imagens principais dos posts com IDs correspondentes. O catálogo `src/content/supplied-assets.json` relaciona post e painel à imagem; manifestos locais registram a procedência. Artes geradas por IA são identificadas e não são apresentadas como fotografias documentais, capas ou montagens oficiais. Os registros reais das obras permanecem em **Registro documental de contexto**. A alternativa de `ariano-04` fica reservada, e o lote 3 aguarda envio. Ver [LOTES-IMAGENS.md](LOTES-IMAGENS.md).
+Textos são sínteses pedagógicas em revisão. Trechos literais de Ariano continuam ocultos até conferência de edição, página, direitos e aprovação. O ensaio com alunos e no display Windows iluminado, a cerca de 1,5 m, permanece necessário. Ver [FONTES-IMAGENS.md](FONTES-IMAGENS.md) e a tabela [IMAGENS-POR-POST.md](IMAGENS-POR-POST.md).

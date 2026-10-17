@@ -1,5 +1,5 @@
 import type { EducationalSlide, QuizQuestion, Theme } from './content';
-export const POSTS_PER_VISIT = 5;
+export const POSTS_PER_VISIT = 8;
 export const QUESTIONS_PER_QUIZ = 3;
 export interface RecentContent { posts: string[]; questions: string[] }
 export interface ThemeRound { postIds: string[]; seenPostIds: string[]; questions: QuizQuestion[]; practice: boolean; rankingAnswers?: Record<string, number> }
@@ -18,8 +18,9 @@ export function shuffleQuestion(question: QuizQuestion, random: () => number = M
   return { ...question, options: optionOrder.map(i => question.options[i]), correctIndex: optionOrder.indexOf(question.correctIndex), optionOrder };
 }
 export function selectQuestions(questions: QuizQuestion[], posts: EducationalSlide[], recent: string[] = [], random = Math.random): QuizQuestion[] {
-  const topics = new Set(posts.map(p => p.topicId));
-  const candidates = preferFresh(questions.filter(q => topics.has(q.topicId) && q.postIds?.some(id => posts.some(p => p.id === id))), recent, random);
+  const eligiblePosts = posts.filter(p => p.quizEligible);
+  const topics = new Set(eligiblePosts.map(p => p.topicId));
+  const candidates = preferFresh(questions.filter(q => topics.has(q.topicId) && q.postIds?.some(id => eligiblePosts.some(p => p.id === id))), recent, random);
   const picked: QuizQuestion[] = [];
   for (const difficulty of [1, 2, 3]) {
     const q = candidates.find(q => q.difficulty === difficulty && !picked.some(p => p.id === q.id));
@@ -29,12 +30,14 @@ export function selectQuestions(questions: QuizQuestion[], posts: EducationalSli
   return shuffled(picked, random).map(q => shuffleQuestion(q, random));
 }
 export function createRound(theme: Theme, history: RecentContent, practice = false, random = Math.random): ThemeRound {
-  const mandatory = preferFresh(theme.postPool.filter(p => p.introductory), history.posts, random).slice(0, 1);
-  const optional = preferFresh(theme.postPool.filter(p => !p.introductory), history.posts, random);
+  const mandatory = [...preferFresh(theme.postPool.filter(p => p.introductory), history.posts, random).slice(0, 1), ...theme.postPool.filter(p => p.required && !p.introductory)];
+  const optional = preferFresh(theme.postPool.filter(p => !p.introductory && !p.required), history.posts, random);
   const selected = [...mandatory];
-  for (const post of optional) { if (selected.length >= POSTS_PER_VISIT) break; if (!selected.some(p => p.topicId === post.topicId)) selected.push(post); }
+  for (const post of optional) { if (selected.length >= theme.postsPerVisit) break; if (!selected.some(p => p.topicId === post.topicId)) selected.push(post); }
+  // A small pool may repeat a topic, never a post. This finite fallback keeps every available discovery reachable.
+  for (const post of optional) { if (selected.length >= theme.postsPerVisit) break; if (!selected.some(p => p.id === post.id)) selected.push(post); }
   selected.sort((a, b) => a.order - b.order);
-  return { postIds: selected.map(p => p.id), seenPostIds: [], questions: selectQuestions(theme.questionPool, selected, history.questions, random), practice };
+  return { postIds: selected.map(p => p.id), seenPostIds: [], questions: theme.quizEnabled ? selectQuestions(theme.questionPool, selected, history.questions, random) : [], practice };
 }
 export function roundReady(round: ThemeRound) { return round.questions.length === QUESTIONS_PER_QUIZ && round.postIds.every(id => round.seenPostIds.includes(id)); }
 export function remember(history: RecentContent, posts: string[], questions: string[]): RecentContent {

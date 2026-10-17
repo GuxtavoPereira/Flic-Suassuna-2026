@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "posts": [
     {
       "id": "clima-01",
@@ -17,7 +17,15 @@
       "type": "educational",
       "text": "Muitas áreas do sertão têm clima semiárido: faz calor e as chuvas são irregulares. Mas também há rios, serras, plantações e vida.",
       "introductory": true,
-      "order": 0
+      "order": 2,
+      "source": [
+        "caatinga",
+        "embrapa"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "clima-02",
@@ -35,7 +43,15 @@
       "type": "educational",
       "text": "A Caatinga é um bioma exclusivamente brasileiro. Suas plantas e seus animais desenvolveram maneiras de enfrentar longos períodos secos.",
       "introductory": false,
-      "order": 1
+      "order": 3,
+      "source": [
+        "caatinga",
+        "embrapa"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "clima-03",
@@ -53,7 +69,15 @@
       "type": "educational",
       "text": "Depois das chuvas, muitas plantas brotam, florescem e deixam a paisagem mais verde. A transformação pode ser rápida, mas varia de lugar para lugar.",
       "introductory": false,
-      "order": 2
+      "order": 4,
+      "source": [
+        "caatinga",
+        "embrapa"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "clima-04",
@@ -71,7 +95,15 @@
       "type": "educational",
       "text": "Mandacarus e xique-xiques armazenam água em seus tecidos e possuem espinhos. Outras plantas têm raízes, folhas ou ciclos de vida adaptados à escassez de água.",
       "introductory": false,
-      "order": 3
+      "order": 5,
+      "source": [
+        "caatinga",
+        "embrapa"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "clima-05",
@@ -89,7 +121,15 @@
       "type": "educational",
       "text": "O relevo reúne depressões, planaltos e serras. O Nordeste também possui outros ambientes, como o litoral e a Zona da Mata, além do sertão.",
       "introductory": false,
-      "order": 4
+      "order": 6,
+      "source": [
+        "caatinga",
+        "embrapa"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "clima-06",
@@ -107,7 +147,15 @@
       "type": "educational",
       "text": "O umbuzeiro é uma árvore da Caatinga adaptada às chuvas irregulares. Produz o umbu, fruto usado em doces e bebidas. Conhecer e conservar a árvore também ajuda a valorizar os saberes das comunidades.",
       "introductory": false,
-      "order": 5
+      "order": 7,
+      "source": [
+        "caatinga",
+        "embrapa"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "clima-07",
@@ -125,7 +173,15 @@
       "type": "educational",
       "text": "O xique-xique é um cacto da Caatinga. Seus ramos têm espinhos e tecidos que armazenam água. Ele e o mandacaru são plantas diferentes, embora compartilhem adaptações à vida em períodos secos.",
       "introductory": false,
-      "order": 6
+      "order": 8,
+      "source": [
+        "caatinga",
+        "embrapa"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "clima-08",
@@ -143,7 +199,15 @@
       "type": "educational",
       "text": "Na estação seca, muitas plantas da Caatinga perdem folhas, o que reduz a perda de água. Essa estratégia ajuda a atravessar a estiagem. A aparência sem folhas não significa que toda a vegetação morreu.",
       "introductory": false,
-      "order": 7
+      "order": 9,
+      "source": [
+        "caatinga",
+        "embrapa"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "cultura-01",
@@ -161,7 +225,15 @@
       "type": "educational",
       "text": "A oralidade preserva histórias, causos e saberes transmitidos entre gerações. Cada comunidade contribui com suas próprias versões e lembranças.",
       "introductory": true,
-      "order": 0
+      "order": 0,
+      "source": [
+        "cordel",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "cultura-02",
@@ -179,7 +251,15 @@
       "type": "educational",
       "text": "Muitos folhetos de cordel apresentam poemas narrativos e capas ilustradas por gravuras. A xilogravura usa uma matriz de madeira entalhada para imprimir imagens.",
       "introductory": false,
-      "order": 1
+      "order": 1,
+      "source": [
+        "cordel",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "cultura-03",
@@ -197,7 +277,15 @@
       "type": "educational",
       "text": "Cantorias, repente, baião, forró e xote fazem parte de diferentes tradições nordestinas. Instrumentos e estilos mudam conforme o lugar.",
       "introductory": false,
-      "order": 2
+      "order": 2,
+      "source": [
+        "cordel",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "cultura-04",
@@ -215,7 +303,15 @@
       "type": "educational",
       "text": "Festas juninas, quadrilhas e celebrações locais movimentam comidas, músicas e encontros comunitários.",
       "introductory": false,
-      "order": 3
+      "order": 3,
+      "source": [
+        "cordel",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "cultura-05",
@@ -233,7 +329,15 @@
       "type": "educational",
       "text": "Ariano Suassuna valorizou manifestações populares como a literatura de cordel e o teatro. Essa inspiração foi essencial ao Movimento Armorial.",
       "introductory": false,
-      "order": 4
+      "order": 4,
+      "source": [
+        "cordel",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "cultura-06",
@@ -251,7 +355,15 @@
       "type": "educational",
       "text": "Na xilogravura, o artista entalha uma matriz de madeira. A superfície recebe tinta e transfere a imagem para o papel. A matriz permite fazer impressões; cada impressão não é uma fotografia da madeira.",
       "introductory": false,
-      "order": 5
+      "order": 5,
+      "source": [
+        "cordel",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "cultura-07",
@@ -269,7 +381,15 @@
       "type": "educational",
       "text": "Sanfona, zabumba e triângulo formam um conjunto conhecido nas matrizes tradicionais do forró. A sanfona usa um fole; a zabumba é um tambor; o triângulo é um instrumento de percussão. Há muitas outras formações musicais.",
       "introductory": false,
-      "order": 6
+      "order": 6,
+      "source": [
+        "cordel",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "cultura-08",
@@ -287,7 +407,15 @@
       "type": "educational",
       "text": "No repente, cantadores criam versos no momento, muitas vezes em desafios de cantoria. Eles usam domínio da língua, ritmo, memória e imaginação. Improvisar não significa criar sem conhecimento ou prática.",
       "introductory": false,
-      "order": 7
+      "order": 7,
+      "source": [
+        "cordel",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "personalidades-01",
@@ -305,7 +433,19 @@
       "type": "educational",
       "text": "Nascido em Exu, Pernambuco, Luiz Gonzaga popularizou o baião e levou referências do Nordeste para diferentes públicos.",
       "introductory": true,
-      "order": 0
+      "order": 0,
+      "source": [
+        "gonzaga-bio",
+        "vitalino-bio",
+        "patativa-bio",
+        "abl-bio",
+        "rachel-bio",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "personalidades-02",
@@ -323,7 +463,19 @@
       "type": "educational",
       "text": "Patativa do Assaré, poeta cearense, retratou experiências e desigualdades sociais com uma voz marcante da poesia popular.",
       "introductory": false,
-      "order": 1
+      "order": 1,
+      "source": [
+        "gonzaga-bio",
+        "vitalino-bio",
+        "patativa-bio",
+        "abl-bio",
+        "rachel-bio",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "personalidades-03",
@@ -341,7 +493,19 @@
       "type": "educational",
       "text": "A escritora cearense publicou O Quinze, romance que aborda os efeitos da seca de 1915 sobre personagens e famílias.",
       "introductory": false,
-      "order": 2
+      "order": 2,
+      "source": [
+        "gonzaga-bio",
+        "vitalino-bio",
+        "patativa-bio",
+        "abl-bio",
+        "rachel-bio",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "personalidades-04",
@@ -359,7 +523,19 @@
       "type": "educational",
       "text": "O artista de Caruaru ficou conhecido pelas figuras de barro que representam cenas e personagens do cotidiano popular.",
       "introductory": false,
-      "order": 3
+      "order": 3,
+      "source": [
+        "gonzaga-bio",
+        "vitalino-bio",
+        "patativa-bio",
+        "abl-bio",
+        "rachel-bio",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "personalidades-05",
@@ -377,7 +553,19 @@
       "type": "educational",
       "text": "Antônio Conselheiro, Lampião e Maria Bonita integram episódios complexos da história regional. É preciso conhecer o contexto sem romantizar a violência.",
       "introductory": false,
-      "order": 4
+      "order": 4,
+      "source": [
+        "gonzaga-bio",
+        "vitalino-bio",
+        "patativa-bio",
+        "abl-bio",
+        "rachel-bio",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "personalidades-06",
@@ -395,7 +583,19 @@
       "type": "educational",
       "text": "Ariano Suassuna escreveu peças e romances e atuou como professor. Defendeu a valorização das culturas populares brasileiras. Estudar sua trajetória é conhecer um artista, sem tratar sua visão como a única voz do Nordeste.",
       "introductory": false,
-      "order": 5
+      "order": 5,
+      "source": [
+        "gonzaga-bio",
+        "vitalino-bio",
+        "patativa-bio",
+        "abl-bio",
+        "rachel-bio",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "personalidades-07",
@@ -413,7 +613,19 @@
       "type": "educational",
       "text": "Luiz Gonzaga ajudou a popularizar o baião e ficou associado à sanfona. A circulação de suas músicas levou referências nordestinas a novos públicos. Essa presença não apaga a diversidade de outros artistas e tradições.",
       "introductory": true,
-      "order": 6
+      "order": 6,
+      "source": [
+        "gonzaga-bio",
+        "vitalino-bio",
+        "patativa-bio",
+        "abl-bio",
+        "rachel-bio",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "personalidades-08",
@@ -431,7 +643,19 @@
       "type": "educational",
       "text": "As figuras de barro de Mestre Vitalino representam cenas do cotidiano. Uma obra de arte seleciona e interpreta o que mostra; não é um retrato completo de todas as pessoas de uma região.",
       "introductory": false,
-      "order": 7
+      "order": 7,
+      "source": [
+        "gonzaga-bio",
+        "vitalino-bio",
+        "patativa-bio",
+        "abl-bio",
+        "rachel-bio",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "linha-do-tempo-01",
@@ -449,7 +673,17 @@
       "type": "educational",
       "text": "O Nordeste já reunia tradições de cantoria, teatro, festas e folhetos populares antes de Ariano Suassuna nascer.",
       "introductory": true,
-      "order": 0
+      "order": 0,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "linha-do-tempo-02",
@@ -467,7 +701,17 @@
       "type": "educational",
       "text": "A Guerra de Canudos ocorreu no sertão baiano e revela conflitos sociais e políticos do período republicano.",
       "introductory": false,
-      "order": 1
+      "order": 1,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "linha-do-tempo-03",
@@ -485,7 +729,17 @@
       "type": "educational",
       "text": "Ariano Suassuna nasceu na Paraíba. Sua vida e seu contato com expressões populares ajudaram a formar sua visão artística.",
       "introductory": false,
-      "order": 2
+      "order": 2,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "linha-do-tempo-04",
@@ -503,7 +757,17 @@
       "type": "educational",
       "text": "Ariano escreveu Auto da Compadecida em 1955. A peça mistura humor, tradição popular e questões humanas.",
       "introductory": false,
-      "order": 3
+      "order": 4,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "linha-do-tempo-05",
@@ -521,7 +785,17 @@
       "type": "educational",
       "text": "O Movimento Armorial foi lançado em 1970. Em 1971, Ariano publicou o Romance d’A Pedra do Reino, rico em imaginação e referências sertanejas.",
       "introductory": false,
-      "order": 4
+      "order": 5,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "linha-do-tempo-06",
@@ -539,7 +813,17 @@
       "type": "educational",
       "text": "Em 1947, Ariano escreveu Uma Mulher Vestida de Sol, sua primeira peça. Ela pertence ao teatro. É um marco de sua trajetória anterior à escrita de Auto da Compadecida, em 1955.",
       "introductory": false,
-      "order": 5
+      "order": 6,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "linha-do-tempo-07",
@@ -557,7 +841,17 @@
       "type": "educational",
       "text": "O Santo e a Porca é uma comédia de 1957. A peça aborda avareza e apego ao dinheiro. Ela é um marco teatral diferente de A Pedra do Reino, romance publicado em 1971.",
       "introductory": false,
-      "order": 6
+      "order": 7,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "linha-do-tempo-08",
@@ -575,7 +869,17 @@
       "type": "educational",
       "text": "Ariano Suassuna faleceu em 2014. Suas peças, romances e propostas artísticas continuam sendo estudados. Montagens e adaptações são novas leituras e devem ser identificadas, sem confundi-las com a obra original.",
       "introductory": false,
-      "order": 7
+      "order": 9,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj",
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "culinaria-01",
@@ -593,7 +897,15 @@
       "type": "educational",
       "text": "Pratos e ingredientes revelam encontros entre tradições indígenas, africanas e europeias, com diferenças importantes entre estados e localidades.",
       "introductory": true,
-      "order": 0
+      "order": 0,
+      "source": [
+        "fundaj-comida",
+        "embrapa-umbu"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "culinaria-02",
@@ -611,7 +923,15 @@
       "type": "educational",
       "text": "Cuscuz e preparações com milho aparecem no cotidiano e nas festas, com receitas que mudam de família para família.",
       "introductory": false,
-      "order": 1
+      "order": 1,
+      "source": [
+        "fundaj-comida",
+        "embrapa-umbu"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "culinaria-03",
@@ -629,7 +949,15 @@
       "type": "educational",
       "text": "Macaxeira, mandioca ou aipim são nomes regionais associados a variedades e usos da mandioca, ingrediente importante em muitas mesas brasileiras.",
       "introductory": false,
-      "order": 2
+      "order": 2,
+      "source": [
+        "fundaj-comida",
+        "embrapa-umbu"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "culinaria-04",
@@ -647,7 +975,15 @@
       "type": "educational",
       "text": "O baião de dois costuma combinar arroz e feijão e pode ganhar diferentes complementos, conforme a região e a receita.",
       "introductory": false,
-      "order": 3
+      "order": 3,
+      "source": [
+        "fundaj-comida",
+        "embrapa-umbu"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "culinaria-05",
@@ -665,7 +1001,15 @@
       "type": "educational",
       "text": "O umbuzeiro é uma árvore adaptada ao semiárido. Seus frutos aparecem em doces, bebidas e outras preparações.",
       "introductory": false,
-      "order": 4
+      "order": 4,
+      "source": [
+        "fundaj-comida",
+        "embrapa-umbu"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "culinaria-06",
@@ -683,7 +1027,15 @@
       "type": "educational",
       "text": "A carne de sol é uma preparação de carne salgada presente em tradições culinárias nordestinas. Não é sinônimo de toda carne seca ou de charque. Receitas e acompanhamentos variam. A imagem mostra uma etapa real de preparação, não ensina a conservar carne em casa.",
       "introductory": false,
-      "order": 5
+      "order": 5,
+      "source": [
+        "fundaj-comida",
+        "embrapa-umbu"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "culinaria-07",
@@ -701,7 +1053,15 @@
       "type": "educational",
       "text": "A rapadura é um doce feito a partir do caldo da cana-de-açúcar concentrado. É encontrada em diferentes lugares do Brasil, inclusive em tradições nordestinas. Formatos e modos de fazer variam.",
       "introductory": false,
-      "order": 6
+      "order": 6,
+      "source": [
+        "fundaj-comida",
+        "embrapa-umbu"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "culinaria-08",
@@ -719,7 +1079,15 @@
       "type": "educational",
       "text": "O umbuzeiro produz o umbu. O fruto pode ser consumido e usado em doces e bebidas. Os saberes culinários ligados a ele aproximam a biodiversidade da Caatinga e a vida das comunidades.",
       "introductory": false,
-      "order": 7
+      "order": 7,
+      "source": [
+        "fundaj-comida",
+        "embrapa-umbu"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "ariano-01",
@@ -737,7 +1105,16 @@
       "type": "educational",
       "text": "Nascido em 1927, na Paraíba, Ariano Suassuna foi escritor, dramaturgo, professor e defensor da valorização das culturas populares brasileiras.",
       "introductory": true,
-      "order": 0
+      "order": 0,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "ariano-02",
@@ -755,7 +1132,16 @@
       "type": "educational",
       "text": "Escrita em 1955, a peça apresenta personagens como João Grilo e Chicó e combina humor, religiosidade e crítica social.",
       "introductory": false,
-      "order": 1
+      "order": 2,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "ariano-03",
@@ -773,7 +1159,16 @@
       "type": "educational",
       "text": "Na peça de 1957, a avareza e a relação das pessoas com o dinheiro são tratadas por meio da comédia.",
       "introductory": false,
-      "order": 2
+      "order": 3,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "ariano-04",
@@ -791,7 +1186,16 @@
       "type": "educational",
       "text": "Publicado em 1971, o romance constrói um universo narrativo de fantasia, memória, referências populares e imaginação sertaneja.",
       "introductory": false,
-      "order": 3
+      "order": 4,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "ariano-05",
@@ -809,7 +1213,16 @@
       "type": "educational",
       "text": "Lançado em 1970, o movimento buscou criar uma arte brasileira erudita ligada às raízes populares, envolvendo música, literatura e artes visuais.",
       "introductory": false,
-      "order": 4
+      "order": 5,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "ariano-06",
@@ -827,7 +1240,16 @@
       "type": "educational",
       "text": "Escrita em 1947, Uma Mulher Vestida de Sol é a primeira peça de Ariano. O drama aborda conflitos, relações de poder e disputas entre famílias. Teatro não se resume à comédia: a trajetória do autor também inclui o drama.",
       "introductory": false,
-      "order": 5
+      "order": 6,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "ariano-07",
@@ -845,7 +1267,16 @@
       "type": "educational",
       "text": "Além de escrever, Ariano Suassuna atuou como professor. Sua defesa das culturas populares aparece em sua trajetória artística e educativa. Conhecer o autor não exige atribuir a ele frases sem fonte: é possível estudar suas ideias com registros verificáveis.",
       "introductory": true,
-      "order": 6
+      "order": 7,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
     },
     {
       "id": "ariano-08",
@@ -863,7 +1294,1096 @@
       "type": "educational",
       "text": "O Movimento Armorial foi lançado em Recife em 1970. A proposta aproxima raízes populares de uma criação erudita brasileira, reunindo música, literatura e artes visuais. Não é o título de uma peça nem de um romance.",
       "introductory": false,
-      "order": 7
+      "order": 8,
+      "source": [
+        "abl-bio",
+        "abl-obras",
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
+    },
+    {
+      "id": "clima-09",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:mapa-brasil",
+      "title": "Onde fica o Nordeste?",
+      "body": "O Nordeste reúne nove estados do Brasil. Sertão, semiárido e Caatinga são outras formas de estudar o território: seus limites e significados não são iguais.",
+      "text": "O Nordeste reúne nove estados do Brasil. Sertão, semiárido e Caatinga são outras formas de estudar o território: seus limites e significados não são iguais.",
+      "curiosity": "O mapa político mostra estados; um mapa de biomas mostra ambientes.",
+      "visualKey": "mapa-brasil",
+      "status": "draft-editorial",
+      "assetId": "serra",
+      "tags": [
+        "mapa-brasil"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 0,
+      "source": [
+        "ibge-regioes"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": true,
+      "experience": "maps"
+    },
+    {
+      "id": "clima-10",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:sub-regioes",
+      "title": "Quatro sub-regiões, muitos ambientes",
+      "body": "Meio-Norte, Sertão, Agreste e Zona da Mata formam uma regionalização didática tradicional. Ela ajuda a comparar paisagens, mas não substitui os limites oficiais dos estados.",
+      "text": "Meio-Norte, Sertão, Agreste e Zona da Mata formam uma regionalização didática tradicional. Ela ajuda a comparar paisagens, mas não substitui os limites oficiais dos estados.",
+      "curiosity": "Os limites de uma regionalização dependem dos critérios e da fonte.",
+      "visualKey": "sub-regioes",
+      "status": "draft-editorial",
+      "assetId": "caatinga-verde",
+      "tags": [
+        "sub-regioes"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 1,
+      "source": [
+        "ibge-regioes"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": true,
+      "experience": "maps"
+    },
+    {
+      "id": "clima-11",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:fauna",
+      "title": "A Caatinga também é dos animais",
+      "body": "Aves, répteis e mamíferos participam da vida da Caatinga. A conservação precisa proteger os ambientes onde se alimentam e se reproduzem, inclusive durante a seca.",
+      "text": "Aves, répteis e mamíferos participam da vida da Caatinga. A conservação precisa proteger os ambientes onde se alimentam e se reproduzem, inclusive durante a seca.",
+      "curiosity": "Proteger uma espécie também exige cuidar de seu habitat.",
+      "visualKey": "fauna",
+      "status": "draft-editorial",
+      "assetId": "fauna-caatinga",
+      "tags": [
+        "fauna"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 10,
+      "source": [
+        "caatinga"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
+    },
+    {
+      "id": "clima-12",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:agricultura",
+      "title": "Trabalho, sementes e alimentos",
+      "body": "Na agricultura familiar, milho, feijão e mandioca podem dividir espaço com outros cultivos. Guardar sementes e cuidar do solo e da água ajuda a planejar a produção para a família e para a venda.",
+      "text": "Na agricultura familiar, milho, feijão e mandioca podem dividir espaço com outros cultivos. Guardar sementes e cuidar do solo e da água ajuda a planejar a produção para a família e para a venda.",
+      "curiosity": "Subsistência é produzir para o próprio consumo; muitas famílias também comercializam parte da colheita.",
+      "visualKey": "agricultura",
+      "status": "draft-editorial",
+      "assetId": "agricultura-milho",
+      "tags": [
+        "agricultura"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 11,
+      "source": [
+        "embrapa-sistemas"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": true,
+      "experience": "economy",
+      "imageContext": "A foto identifica um cultivo; não comprova o regime de propriedade familiar da roça."
+    },
+    {
+      "id": "clima-13",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:pecuaria",
+      "title": "Animais e modos de criar",
+      "body": "Caprinos, ovinos e bovinos podem fornecer alimentos e renda. Cada criação precisa de água, alimentação e cuidados adequados; a adaptação ao clima não elimina essas necessidades.",
+      "text": "Caprinos, ovinos e bovinos podem fornecer alimentos e renda. Cada criação precisa de água, alimentação e cuidados adequados; a adaptação ao clima não elimina essas necessidades.",
+      "curiosity": "Criação para consumo familiar e produção comercial podem coexistir.",
+      "visualKey": "pecuaria",
+      "status": "draft-editorial",
+      "assetId": "caprinos",
+      "tags": [
+        "pecuaria"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 12,
+      "source": [
+        "embrapa-animais",
+        "codevasf-animais"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": true,
+      "experience": "economy"
+    },
+    {
+      "id": "clima-14",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:cisterna",
+      "title": "Chuva guardada para depois",
+      "body": "Uma cisterna de placas pode receber a chuva recolhida pelo telhado e pelas calhas. O Programa Cisternas distingue tecnologias para consumo humano daquelas destinadas à produção de alimentos e aos animais.",
+      "text": "Uma cisterna de placas pode receber a chuva recolhida pelo telhado e pelas calhas. O Programa Cisternas distingue tecnologias para consumo humano daquelas destinadas à produção de alimentos e aos animais.",
+      "curiosity": "Armazenar não basta: qualidade da água, manutenção e cuidados de uso também são necessários.",
+      "visualKey": "cisterna",
+      "status": "draft-editorial",
+      "assetId": "cisterna",
+      "tags": [
+        "cisterna"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 13,
+      "source": [
+        "mds-cisternas"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": true,
+      "experience": "cistern"
+    },
+    {
+      "id": "clima-15",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:infraestrutura",
+      "title": "Conviver com o clima é planejar",
+      "body": "Cisternas, açudes, barragens e irrigação são soluções diferentes. A escolha precisa considerar a água disponível, o solo, a manutenção e os impactos ambientais. Reúso exige cuidados próprios para cada finalidade.",
+      "text": "Cisternas, açudes, barragens e irrigação são soluções diferentes. A escolha precisa considerar a água disponível, o solo, a manutenção e os impactos ambientais. Reúso exige cuidados próprios para cada finalidade.",
+      "curiosity": "Nenhuma obra faz a água se tornar ilimitada: economizar e planejar continuam importantes.",
+      "visualKey": "infraestrutura",
+      "status": "draft-editorial",
+      "assetId": "irrigacao",
+      "tags": [
+        "infraestrutura"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 14,
+      "source": [
+        "mds-cisternas",
+        "fundaj-irrigacao"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": true,
+      "experience": "economy"
+    },
+    {
+      "id": "clima-16",
+      "themeId": "clima-vegetacao",
+      "topicId": "clima-vegetacao:economia",
+      "title": "Muito além de uma única atividade",
+      "body": "Feiras, comércio, serviços, artesanato e produção de alimentos fazem parte de economias sertanejas diversas. Há cidades, circulação de conhecimentos e trabalho no campo e nos espaços urbanos.",
+      "text": "Feiras, comércio, serviços, artesanato e produção de alimentos fazem parte de economias sertanejas diversas. Há cidades, circulação de conhecimentos e trabalho no campo e nos espaços urbanos.",
+      "curiosity": "Uma paisagem seca não conta, sozinha, toda a história econômica de um lugar.",
+      "visualKey": "economia",
+      "status": "draft-editorial",
+      "assetId": "feira-artesanato",
+      "tags": [
+        "economia"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 15,
+      "source": [
+        "ibge-regioes",
+        "vitalino-bio"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": true,
+      "experience": "economy",
+      "imageContext": "A fotografia documenta comércio/artesanato; os serviços citados no texto não estão todos representados."
+    },
+    {
+      "id": "cultura-09",
+      "themeId": "cultura",
+      "topicId": "cultura:artesanato",
+      "title": "As mãos também contam histórias",
+      "body": "No trabalho de Mestre Vitalino, o barro ganhou cenas do cotidiano. O artesanato reúne escolhas artísticas, técnicas e aprendizados transmitidos entre pessoas; não é uma tradição parada no tempo.",
+      "text": "No trabalho de Mestre Vitalino, o barro ganhou cenas do cotidiano. O artesanato reúne escolhas artísticas, técnicas e aprendizados transmitidos entre pessoas; não é uma tradição parada no tempo.",
+      "curiosity": "Um objeto pode revelar como seu autor observa o mundo.",
+      "visualKey": "artesanato",
+      "status": "draft-editorial",
+      "assetId": "mestre-vitalino",
+      "tags": [
+        "artesanato"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 8,
+      "source": [
+        "vitalino-bio"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
+    },
+    {
+      "id": "cultura-10",
+      "themeId": "cultura",
+      "topicId": "cultura:saberes",
+      "title": "Aprender no cotidiano",
+      "body": "Cultivar, cozinhar, trabalhar o barro e contar histórias envolvem saberes aprendidos em família e na comunidade. Esses conhecimentos podem dialogar com pesquisas e tecnologias atuais.",
+      "text": "Cultivar, cozinhar, trabalhar o barro e contar histórias envolvem saberes aprendidos em família e na comunidade. Esses conhecimentos podem dialogar com pesquisas e tecnologias atuais.",
+      "curiosity": "Conhecimento tradicional e investigação científica podem colaborar no cuidado com a água e os alimentos.",
+      "visualKey": "saberes",
+      "status": "draft-editorial",
+      "assetId": "mandioca",
+      "tags": [
+        "saberes"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 9,
+      "source": [
+        "mds-cisternas",
+        "embrapa-sistemas"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false,
+      "experience": "economy"
+    },
+    {
+      "id": "personalidades-09",
+      "themeId": "personalidades",
+      "topicId": "personalidades:padre-cicero",
+      "title": "Padre Cícero e Juazeiro",
+      "body": "Padre Cícero Romão Batista marcou a história de Juazeiro do Norte, no Ceará. Para muitos romeiros, é o Padim Ciço. Sua atuação religiosa e social também atravessou conflitos com autoridades da Igreja.",
+      "text": "Padre Cícero Romão Batista marcou a história de Juazeiro do Norte, no Ceará. Para muitos romeiros, é o Padim Ciço. Sua atuação religiosa e social também atravessou conflitos com autoridades da Igreja.",
+      "curiosity": "Estudar um personagem histórico permite conhecer perspectivas diferentes sem julgar a fé das pessoas.",
+      "visualKey": "padre-cicero",
+      "status": "draft-editorial",
+      "assetId": "padre-cicero",
+      "tags": [
+        "padre-cicero"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 8,
+      "source": [
+        "iphan-juazeiro",
+        "cnbb-cicero"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
+    },
+    {
+      "id": "personalidades-10",
+      "themeId": "personalidades",
+      "topicId": "personalidades:conselheiro",
+      "title": "Antônio Conselheiro e Canudos",
+      "body": "Antônio Conselheiro foi uma liderança religiosa ligada à comunidade de Belo Monte, conhecida como Canudos, na Bahia. A guerra de 1896–1897 destruiu a comunidade e deve ser estudada com atenção à violência e aos seus moradores.",
+      "text": "Antônio Conselheiro foi uma liderança religiosa ligada à comunidade de Belo Monte, conhecida como Canudos, na Bahia. A guerra de 1896–1897 destruiu a comunidade e deve ser estudada com atenção à violência e aos seus moradores.",
+      "curiosity": "Canudos é um episódio histórico; uma narrativa literária sobre o sertão tem outra finalidade.",
+      "visualKey": "conselheiro",
+      "status": "draft-editorial",
+      "assetId": "canudos",
+      "tags": [
+        "conselheiro"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 9,
+      "source": [
+        "canudos"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
+    },
+    {
+      "id": "personalidades-11",
+      "themeId": "personalidades",
+      "topicId": "personalidades:anastacia",
+      "title": "Anastácia: voz e composição",
+      "body": "A pernambucana Anastácia é cantora e compositora. Sua parceria com Dominguinhos inclui Eu Só Quero um Xodó. Reconhecer quem compõe ajuda a perceber a participação das mulheres na história musical.",
+      "text": "A pernambucana Anastácia é cantora e compositora. Sua parceria com Dominguinhos inclui Eu Só Quero um Xodó. Reconhecer quem compõe ajuda a perceber a participação das mulheres na história musical.",
+      "curiosity": "Intérprete e compositor podem ser pessoas diferentes; os créditos registram essas contribuições.",
+      "visualKey": "anastacia",
+      "status": "draft-editorial",
+      "assetId": "anastacia",
+      "tags": [
+        "anastacia"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 10,
+      "source": [
+        "anastacia"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
+    },
+    {
+      "id": "linha-do-tempo-09",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:infancia",
+      "title": "Infância, mudanças e lembranças",
+      "body": "Ariano nasceu em 1927, na Paraíba. Viveu parte da infância em Taperoá e depois se mudou para o Recife. Experiências de vida e contato com culturas populares ajudam a estudar sua formação artística.",
+      "text": "Ariano nasceu em 1927, na Paraíba. Viveu parte da infância em Taperoá e depois se mudou para o Recife. Experiências de vida e contato com culturas populares ajudam a estudar sua formação artística.",
+      "curiosity": "Biografia é uma fonte de contexto; não prova sozinha a origem de cada personagem.",
+      "visualKey": "infancia",
+      "status": "draft-editorial",
+      "assetId": "ariano",
+      "tags": [
+        "infancia"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 3,
+      "source": [
+        "abl-bio"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
+    },
+    {
+      "id": "linha-do-tempo-10",
+      "themeId": "linha-do-tempo",
+      "topicId": "linha-do-tempo:armorial",
+      "title": "1970: encontro de linguagens",
+      "body": "O Movimento Armorial foi lançado em 1970, no Recife, com participação de Ariano. Música, literatura e artes visuais dialogam nessa proposta que aproxima referências populares e criação erudita.",
+      "text": "O Movimento Armorial foi lançado em 1970, no Recife, com participação de Ariano. Música, literatura e artes visuais dialogam nessa proposta que aproxima referências populares e criação erudita.",
+      "curiosity": "A publicação de A Pedra do Reino, em 1971, é outro marco: movimento e livro não são a mesma coisa.",
+      "visualKey": "armorial",
+      "status": "draft-editorial",
+      "assetId": "armorial",
+      "tags": [
+        "armorial"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 8,
+      "source": [
+        "fundaj"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
+    },
+    {
+      "id": "culinaria-09",
+      "themeId": "culinaria",
+      "topicId": "culinaria:queijo-coalho",
+      "title": "Queijo coalho: técnicas e sabores",
+      "body": "O queijo coalho faz parte de práticas alimentares nordestinas e pode aparecer em diferentes preparos. Produção, conservação e modos de servir variam: não existe uma única mesa para toda a região.",
+      "text": "O queijo coalho faz parte de práticas alimentares nordestinas e pode aparecer em diferentes preparos. Produção, conservação e modos de servir variam: não existe uma única mesa para toda a região.",
+      "curiosity": "Conhecer um alimento inclui observar quem o produz e como chega à mesa.",
+      "visualKey": "queijo-coalho",
+      "status": "draft-editorial",
+      "assetId": "baiao-de-dois",
+      "tags": [
+        "queijo-coalho"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 8,
+      "source": [
+        "fundaj-comida"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
+    },
+    {
+      "id": "culinaria-10",
+      "themeId": "culinaria",
+      "topicId": "culinaria:mesa-festa",
+      "title": "Uma mesa reúne trabalho e afeto",
+      "body": "Alimentos como milho, mandioca e queijo ligam o cotidiano às festas. Receitas circulam entre famílias e mudam conforme ingredientes disponíveis e costumes de cada comunidade.",
+      "text": "Alimentos como milho, mandioca e queijo ligam o cotidiano às festas. Receitas circulam entre famílias e mudam conforme ingredientes disponíveis e costumes de cada comunidade.",
+      "curiosity": "A festa também envolve agricultores, cozinheiras, feirantes e outros trabalhadores.",
+      "visualKey": "mesa-festa",
+      "status": "draft-editorial",
+      "assetId": "cuscuz",
+      "tags": [
+        "mesa-festa"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 9,
+      "source": [
+        "fundaj-comida",
+        "festas-juninas"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false,
+      "experience": "economy"
+    },
+    {
+      "id": "ariano-09",
+      "themeId": "ariano",
+      "topicId": "ariano:infancia",
+      "title": "Taperoá e as histórias da infância",
+      "body": "Parte da infância de Ariano passou por Taperoá, na Paraíba. O contato com histórias, espetáculos e expressões populares participa do contexto em que se formou o futuro escritor.",
+      "text": "Parte da infância de Ariano passou por Taperoá, na Paraíba. O contato com histórias, espetáculos e expressões populares participa do contexto em que se formou o futuro escritor.",
+      "curiosity": "Lembranças pessoais podem ser transformadas pela imaginação artística.",
+      "visualKey": "infancia",
+      "status": "draft-editorial",
+      "assetId": "ariano",
+      "tags": [
+        "infancia"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 1,
+      "source": [
+        "abl-bio"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
+    },
+    {
+      "id": "ariano-10",
+      "themeId": "ariano",
+      "topicId": "ariano:legado",
+      "title": "Uma obra que encontra novos leitores",
+      "body": "Teatro, romance, ensino e defesa das culturas populares fazem parte da trajetória de Ariano, que morreu em 2014. Ler e encenar suas obras cria novos encontros com públicos de outras gerações.",
+      "text": "Teatro, romance, ensino e defesa das culturas populares fazem parte da trajetória de Ariano, que morreu em 2014. Ler e encenar suas obras cria novos encontros com públicos de outras gerações.",
+      "curiosity": "Cada adaptação tem escolhas próprias e precisa identificar a obra e a equipe de criação.",
+      "visualKey": "legado",
+      "status": "draft-editorial",
+      "assetId": "auto",
+      "tags": [
+        "legado"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 9,
+      "source": [
+        "abl-bio",
+        "abl-obras"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": true,
+      "required": false
+    },
+    {
+      "id": "musica-01",
+      "themeId": "musica-audiovisual",
+      "topicId": "musica-audiovisual:ritmos",
+      "title": "Um Nordeste de muitos sons",
+      "body": "Baião, xote e outras matrizes do forró fazem parte de um universo musical amplo. A região também abriga maracatus, cocos e muitas criações contemporâneas. Um gênero não representa sozinho todas as pessoas.",
+      "text": "Baião, xote e outras matrizes do forró fazem parte de um universo musical amplo. A região também abriga maracatus, cocos e muitas criações contemporâneas. Um gênero não representa sozinho todas as pessoas.",
+      "curiosity": "O forró envolve música, dança e encontros sociais.",
+      "visualKey": "ritmos",
+      "status": "draft-editorial",
+      "assetId": "forro",
+      "tags": [
+        "ritmos"
+      ],
+      "type": "educational",
+      "introductory": true,
+      "order": 0,
+      "source": [
+        "forro",
+        "iphan-boi"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "musica-02",
+      "themeId": "musica-audiovisual",
+      "topicId": "musica-audiovisual:gonzaga",
+      "title": "Luiz Gonzaga e o baião",
+      "body": "Luiz Gonzaga, nascido em Exu, Pernambuco, tornou-se uma referência na divulgação do baião. Sua voz e sua sanfona levaram repertórios nordestinos a públicos de diferentes regiões.",
+      "text": "Luiz Gonzaga, nascido em Exu, Pernambuco, tornou-se uma referência na divulgação do baião. Sua voz e sua sanfona levaram repertórios nordestinos a públicos de diferentes regiões.",
+      "curiosity": "A circulação de uma música depende também de parceiros, rádio, discos e apresentações.",
+      "visualKey": "gonzaga",
+      "status": "draft-editorial",
+      "assetId": "luiz-gonzaga",
+      "tags": [
+        "gonzaga"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 1,
+      "source": [
+        "gonzaga-bio"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "musica-03",
+      "themeId": "musica-audiovisual",
+      "topicId": "musica-audiovisual:asa-branca",
+      "title": "Asa Branca: uma canção e seus autores",
+      "body": "Gravada por Luiz Gonzaga em 1947, Asa Branca é uma composição de Gonzaga e Humberto Teixeira. A canção fala de partida e da relação com a terra; aqui conhecemos seus créditos, sem reproduzir a letra.",
+      "text": "Gravada por Luiz Gonzaga em 1947, Asa Branca é uma composição de Gonzaga e Humberto Teixeira. A canção fala de partida e da relação com a terra; aqui conhecemos seus créditos, sem reproduzir a letra.",
+      "curiosity": "Uma obra pode tratar da seca sem definir toda a vida do sertão.",
+      "visualKey": "asa-branca",
+      "status": "draft-editorial",
+      "assetId": "luiz-gonzaga",
+      "tags": [
+        "asa-branca"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 2,
+      "source": [
+        "asa-branca"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "musica-04",
+      "themeId": "musica-audiovisual",
+      "topicId": "musica-audiovisual:xote-meninas",
+      "title": "O Xote das Meninas",
+      "body": "Luiz Gonzaga e Zé Dantas são os compositores de O Xote das Meninas, de 1953. A obra mostra como imagens da natureza e personagens do cotidiano entram no repertório musical.",
+      "text": "Luiz Gonzaga e Zé Dantas são os compositores de O Xote das Meninas, de 1953. A obra mostra como imagens da natureza e personagens do cotidiano entram no repertório musical.",
+      "curiosity": "O título da obra e os nomes de seus autores também são informação cultural.",
+      "visualKey": "xote-meninas",
+      "status": "draft-editorial",
+      "assetId": "sanfona",
+      "tags": [
+        "xote-meninas"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 3,
+      "source": [
+        "ze-dantas"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "musica-05",
+      "themeId": "musica-audiovisual",
+      "topicId": "musica-audiovisual:dominguinhos",
+      "title": "Dominguinhos e Anastácia",
+      "body": "O sanfoneiro Dominguinhos e a compositora Anastácia criaram juntos Eu Só Quero um Xodó. A parceria é um exemplo de como a música nasce da colaboração entre artistas.",
+      "text": "O sanfoneiro Dominguinhos e a compositora Anastácia criaram juntos Eu Só Quero um Xodó. A parceria é um exemplo de como a música nasce da colaboração entre artistas.",
+      "curiosity": "Uma canção pode ganhar novas interpretações sem mudar os créditos de composição.",
+      "visualKey": "dominguinhos",
+      "status": "draft-editorial",
+      "assetId": "dominguinhos",
+      "tags": [
+        "dominguinhos"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 4,
+      "source": [
+        "anastacia"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false,
+      "imageContext": "O registro mostra Dominguinhos; não é um retrato de Anastácia."
+    },
+    {
+      "id": "musica-06",
+      "themeId": "musica-audiovisual",
+      "topicId": "musica-audiovisual:alceu",
+      "title": "Anunciação e Alceu Valença",
+      "body": "Anunciação integra Anjo Avesso, álbum de Alceu Valença lançado em 1983. O artista pernambucano conecta referências populares a outras sonoridades e encontra ouvintes de diferentes gerações.",
+      "text": "Anunciação integra Anjo Avesso, álbum de Alceu Valença lançado em 1983. O artista pernambucano conecta referências populares a outras sonoridades e encontra ouvintes de diferentes gerações.",
+      "curiosity": "O disco ajuda a situar uma canção na trajetória do artista.",
+      "visualKey": "alceu",
+      "status": "draft-editorial",
+      "assetId": "alceu-valenca",
+      "tags": [
+        "alceu"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 5,
+      "source": [
+        "alceu",
+        "anjo-avesso"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "musica-07",
+      "themeId": "musica-audiovisual",
+      "topicId": "musica-audiovisual:instrumentos",
+      "title": "Três instrumentos, muitas combinações",
+      "body": "Sanfona, zabumba e triângulo são uma combinação conhecida no forró. Cada instrumento contribui de um jeito: melodia, marcação e timbre se encontram na apresentação.",
+      "text": "Sanfona, zabumba e triângulo são uma combinação conhecida no forró. Cada instrumento contribui de um jeito: melodia, marcação e timbre se encontram na apresentação.",
+      "curiosity": "Nem toda formação musical usa os mesmos instrumentos.",
+      "visualKey": "instrumentos",
+      "status": "draft-editorial",
+      "assetId": "sanfona",
+      "tags": [
+        "instrumentos"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 6,
+      "source": [
+        "forro"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "musica-08",
+      "themeId": "musica-audiovisual",
+      "topicId": "musica-audiovisual:calango",
+      "title": "Calango Lengo: animação e imaginação",
+      "body": "Calango Lengo: Morte e Vida sem Ver Água é um curta de animação de 2008, dirigido por Fernando Miller. A história de um calango usa humor e imagens do sertão; é uma ficção, não um documentário da natureza.",
+      "text": "Calango Lengo: Morte e Vida sem Ver Água é um curta de animação de 2008, dirigido por Fernando Miller. A história de um calango usa humor e imagens do sertão; é uma ficção, não um documentário da natureza.",
+      "curiosity": "A sinopse fica disponível offline. Assistir ao vídeo externo exige conexão.",
+      "visualKey": "calango",
+      "status": "draft-editorial",
+      "assetId": "calango-ficha",
+      "tags": [
+        "calango"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 7,
+      "source": [
+        "calango-curta"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": true,
+      "experience": "video"
+    },
+    {
+      "id": "musica-09",
+      "themeId": "musica-audiovisual",
+      "topicId": "musica-audiovisual:adaptacoes",
+      "title": "Do palco para a televisão",
+      "body": "A minissérie O Auto da Compadecida, exibida em 1999, adapta a peça de Ariano Suassuna. Guel Arraes, Adriana Falcão e João Falcão assinam sua autoria televisiva. Adaptar envolve recriar para outra linguagem.",
+      "text": "A minissérie O Auto da Compadecida, exibida em 1999, adapta a peça de Ariano Suassuna. Guel Arraes, Adriana Falcão e João Falcão assinam sua autoria televisiva. Adaptar envolve recriar para outra linguagem.",
+      "curiosity": "Uma imagem da minissérie não deve ser apresentada como foto da primeira montagem teatral.",
+      "visualKey": "adaptacoes",
+      "status": "draft-editorial",
+      "assetId": "auto",
+      "tags": [
+        "adaptacoes"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 8,
+      "source": [
+        "globo-auto"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false,
+      "imageContext": "Documento de contexto do teatro: não é imagem da minissérie de 1999."
+    },
+    {
+      "id": "musica-10",
+      "themeId": "musica-audiovisual",
+      "topicId": "musica-audiovisual:outros-autores",
+      "title": "Nem toda ficção do Nordeste é de Ariano",
+      "body": "O cinema e a televisão reúnem autores e visões diferentes. Calango Lengo é de Fernando Miller; Auto da Compadecida nasce da peça de Ariano. Identificar autoria evita misturar obras e trajetórias.",
+      "text": "O cinema e a televisão reúnem autores e visões diferentes. Calango Lengo é de Fernando Miller; Auto da Compadecida nasce da peça de Ariano. Identificar autoria evita misturar obras e trajetórias.",
+      "curiosity": "Paisagens parecidas não tornam duas histórias uma mesma obra.",
+      "visualKey": "outros-autores",
+      "status": "draft-editorial",
+      "assetId": "pedra",
+      "tags": [
+        "outros-autores"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 9,
+      "source": [
+        "calango-curta",
+        "globo-auto"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false,
+      "imageContext": "Paisagem de referência cultural: não é cena de Calango Lengo nem de uma adaptação audiovisual."
+    },
+    {
+      "id": "musica-11",
+      "themeId": "musica-audiovisual",
+      "topicId": "musica-audiovisual:circulacao",
+      "title": "Tradição também se transforma",
+      "body": "O reconhecimento das matrizes tradicionais do forró valoriza saberes, músicos e espaços de encontro. A tradição continua sendo praticada e recriada, com novos públicos e modos de circulação.",
+      "text": "O reconhecimento das matrizes tradicionais do forró valoriza saberes, músicos e espaços de encontro. A tradição continua sendo praticada e recriada, com novos públicos e modos de circulação.",
+      "curiosity": "Ouvir com atenção inclui perguntar de onde vem a música e quem a produz.",
+      "visualKey": "circulacao",
+      "status": "draft-editorial",
+      "assetId": "repente",
+      "tags": [
+        "circulacao"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 10,
+      "source": [
+        "forro"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "festas-01",
+      "themeId": "festas-religiosidade",
+      "topicId": "festas-religiosidade:sao-joao",
+      "title": "São João: uma festa de encontros",
+      "body": "As festas juninas reúnem música, comidas, danças e diferentes formas de participação. São João, celebrado em 24 de junho, integra esse ciclo; cada comunidade dá suas marcas à festa.",
+      "text": "As festas juninas reúnem música, comidas, danças e diferentes formas de participação. São João, celebrado em 24 de junho, integra esse ciclo; cada comunidade dá suas marcas à festa.",
+      "curiosity": "As tradições juninas mudaram com encontros entre diferentes culturas.",
+      "visualKey": "sao-joao",
+      "status": "draft-editorial",
+      "assetId": "sao-joao",
+      "tags": [
+        "sao-joao"
+      ],
+      "type": "educational",
+      "introductory": true,
+      "order": 0,
+      "source": [
+        "festas-juninas"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "festas-02",
+      "themeId": "festas-religiosidade",
+      "topicId": "festas-religiosidade:quadrilha",
+      "title": "Quadrilha: dançar em conjunto",
+      "body": "A quadrilha junina combina dança coletiva, ensaios, figurinos e criação. Grupos reinventam suas apresentações; a festa também mobiliza costureiras, músicos e organizadores.",
+      "text": "A quadrilha junina combina dança coletiva, ensaios, figurinos e criação. Grupos reinventam suas apresentações; a festa também mobiliza costureiras, músicos e organizadores.",
+      "curiosity": "As formas de dançar e brincar não são iguais em todos os lugares.",
+      "visualKey": "quadrilha",
+      "status": "draft-editorial",
+      "assetId": "quadrilha",
+      "tags": [
+        "quadrilha"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 1,
+      "source": [
+        "juninas-dancas"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "festas-03",
+      "themeId": "festas-religiosidade",
+      "topicId": "festas-religiosidade:sao-pedro",
+      "title": "São Pedro e o ciclo junino",
+      "body": "São Pedro, celebrado em 29 de junho, participa do calendário das festas juninas. Em diferentes localidades, celebrações religiosas e encontros comunitários se cruzam com música e alimentação.",
+      "text": "São Pedro, celebrado em 29 de junho, participa do calendário das festas juninas. Em diferentes localidades, celebrações religiosas e encontros comunitários se cruzam com música e alimentação.",
+      "curiosity": "Participar de uma festa cultural não significa que todas as pessoas compartilhem a mesma religião.",
+      "visualKey": "sao-pedro",
+      "status": "draft-editorial",
+      "assetId": "sao-pedro-patrimonio",
+      "tags": [
+        "sao-pedro"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 2,
+      "source": [
+        "festas-juninas"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "festas-04",
+      "themeId": "festas-religiosidade",
+      "topicId": "festas-religiosidade:romarias",
+      "title": "Romarias: caminhos compartilhados",
+      "body": "Em Juazeiro do Norte, no Ceará, romeiros percorrem lugares ligados às suas devoções e memórias. A viagem também cria encontros, redes de acolhimento e circulação de pessoas e trabalho.",
+      "text": "Em Juazeiro do Norte, no Ceará, romeiros percorrem lugares ligados às suas devoções e memórias. A viagem também cria encontros, redes de acolhimento e circulação de pessoas e trabalho.",
+      "curiosity": "O patrimônio cultural inclui os sentidos que comunidades atribuem aos lugares.",
+      "visualKey": "romarias",
+      "status": "draft-editorial",
+      "assetId": "romaria",
+      "tags": [
+        "romarias"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 3,
+      "source": [
+        "iphan-juazeiro"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "festas-05",
+      "themeId": "festas-religiosidade",
+      "topicId": "festas-religiosidade:padre-cicero",
+      "title": "Padim Ciço: história e devoção",
+      "body": "Padre Cícero marcou Juazeiro e é chamado de Padim Ciço por muitos devotos. Sua trajetória inclui conflitos com autoridades eclesiásticas e, mais tarde, uma reconciliação anunciada pela Igreja.",
+      "text": "Padre Cícero marcou Juazeiro e é chamado de Padim Ciço por muitos devotos. Sua trajetória inclui conflitos com autoridades eclesiásticas e, mais tarde, uma reconciliação anunciada pela Igreja.",
+      "curiosity": "Aqui estudamos história e cultura: crenças não são avaliadas como certas ou erradas.",
+      "visualKey": "padre-cicero",
+      "status": "draft-editorial",
+      "assetId": "padre-cicero",
+      "tags": [
+        "padre-cicero"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 4,
+      "source": [
+        "cnbb-cicero",
+        "iphan-juazeiro"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "festas-06",
+      "themeId": "festas-religiosidade",
+      "topicId": "festas-religiosidade:dores",
+      "title": "Nossa Senhora das Dores em Juazeiro",
+      "body": "A Basílica de Nossa Senhora das Dores integra os lugares de peregrinação de Juazeiro do Norte. A romaria de setembro compõe o calendário local e tem história própria.",
+      "text": "A Basílica de Nossa Senhora das Dores integra os lugares de peregrinação de Juazeiro do Norte. A romaria de setembro compõe o calendário local e tem história própria.",
+      "curiosity": "Nossa Senhora das Dores é uma devoção local importante; não deve ser confundida com Aparecida.",
+      "visualKey": "dores",
+      "status": "draft-editorial",
+      "assetId": "dores",
+      "tags": [
+        "dores"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 5,
+      "source": [
+        "iphan-juazeiro"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "festas-07",
+      "themeId": "festas-religiosidade",
+      "topicId": "festas-religiosidade:candeias",
+      "title": "Candeias: luzes de uma romaria",
+      "body": "A Romaria de Candeias, em fevereiro, é uma das peregrinações de Juazeiro do Norte. As luzes e os percursos fazem parte de práticas coletivas de fé e de memória dos romeiros.",
+      "text": "A Romaria de Candeias, em fevereiro, é uma das peregrinações de Juazeiro do Norte. As luzes e os percursos fazem parte de práticas coletivas de fé e de memória dos romeiros.",
+      "curiosity": "Uma fotografia precisa indicar de qual romaria e local está tratando.",
+      "visualKey": "candeias",
+      "status": "draft-editorial",
+      "assetId": "candeias",
+      "tags": [
+        "candeias"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 6,
+      "source": [
+        "iphan-juazeiro"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "festas-08",
+      "themeId": "festas-religiosidade",
+      "topicId": "festas-religiosidade:aparecida",
+      "title": "Aparecida: uma devoção nacional",
+      "body": "A devoção a Nossa Senhora Aparecida se liga à imagem encontrada em 1717 no rio Paraíba do Sul, em São Paulo. Sua presença alcança diferentes regiões do Brasil, inclusive comunidades nordestinas.",
+      "text": "A devoção a Nossa Senhora Aparecida se liga à imagem encontrada em 1717 no rio Paraíba do Sul, em São Paulo. Sua presença alcança diferentes regiões do Brasil, inclusive comunidades nordestinas.",
+      "curiosity": "Uma devoção de alcance nacional convive com festas e padroeiras de histórias locais.",
+      "visualKey": "aparecida",
+      "status": "draft-editorial",
+      "assetId": "aparecida-basilica",
+      "tags": [
+        "aparecida"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 7,
+      "source": [
+        "aparecida"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "festas-09",
+      "themeId": "festas-religiosidade",
+      "topicId": "festas-religiosidade:chuva-fe",
+      "title": "Fé e chuva: perguntas diferentes",
+      "body": "No Ceará, São José está ligado a crenças populares sobre a quadra chuvosa. Orações e promessas expressam fé; a previsão do tempo usa dados e análise meteorológica. Uma crença não substitui uma previsão.",
+      "text": "No Ceará, São José está ligado a crenças populares sobre a quadra chuvosa. Orações e promessas expressam fé; a previsão do tempo usa dados e análise meteorológica. Uma crença não substitui uma previsão.",
+      "curiosity": "A Funceme explica que chover no dia de São José, sozinho, não determina como será toda a estação.",
+      "visualKey": "chuva-fe",
+      "status": "draft-editorial",
+      "assetId": "caatinga-verde",
+      "tags": [
+        "chuva-fe"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 8,
+      "source": [
+        "funceme"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false,
+      "imageContext": "Paisagem após chuvas: não é registro de uma procissão ou previsão meteorológica."
+    },
+    {
+      "id": "festas-10",
+      "themeId": "festas-religiosidade",
+      "topicId": "festas-religiosidade:reisado",
+      "title": "Reisado: música, personagens e memória",
+      "body": "Reisados e Folias de Reis se relacionam à tradição cristã do Dia de Reis, em 6 de janeiro. As formas locais têm personagens, sons e maneiras próprias de celebrar.",
+      "text": "Reisados e Folias de Reis se relacionam à tradição cristã do Dia de Reis, em 6 de janeiro. As formas locais têm personagens, sons e maneiras próprias de celebrar.",
+      "curiosity": "No Cariri cearense, reisados fazem parte do conjunto de referências culturais pesquisadas pelo Iphan.",
+      "visualKey": "reisado",
+      "status": "draft-editorial",
+      "assetId": "reisado",
+      "tags": [
+        "reisado"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 9,
+      "source": [
+        "iphan-reisado",
+        "iphan-ceara"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
+    },
+    {
+      "id": "festas-11",
+      "themeId": "festas-religiosidade",
+      "topicId": "festas-religiosidade:padroeiro",
+      "title": "Festas de padroeiro e vida comunitária",
+      "body": "Uma festa de padroeiro pode reunir celebração religiosa, encontros, comida e trabalho. No Maranhão, o bumba meu boi também aproxima devoções a santos e tradições de matriz africana, de formas locais específicas.",
+      "text": "Uma festa de padroeiro pode reunir celebração religiosa, encontros, comida e trabalho. No Maranhão, o bumba meu boi também aproxima devoções a santos e tradições de matriz africana, de formas locais específicas.",
+      "curiosity": "Festa, arte e devoção podem se relacionar sem serem uma única coisa.",
+      "visualKey": "padroeiro",
+      "status": "draft-editorial",
+      "assetId": "chapel",
+      "tags": [
+        "padroeiro"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 10,
+      "source": [
+        "iphan-boi"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": true,
+      "imageContext": "Arquitetura católica tradicional do sertão paraibano. A foto não mostra uma festa em andamento e não representa todas as crenças."
+    },
+    {
+      "id": "festas-12",
+      "themeId": "festas-religiosidade",
+      "topicId": "festas-religiosidade:diversidade",
+      "title": "Muitas crenças, o mesmo respeito",
+      "body": "Comunidades católicas, evangélicas, afro-brasileiras, indígenas e de outras tradições fazem parte da diversidade brasileira. Há também pessoas sem religião. Conhecer diferenças exige escuta e respeito, sem supor uma crença única para o Nordeste.",
+      "text": "Comunidades católicas, evangélicas, afro-brasileiras, indígenas e de outras tradições fazem parte da diversidade brasileira. Há também pessoas sem religião. Conhecer diferenças exige escuta e respeito, sem supor uma crença única para o Nordeste.",
+      "curiosity": "Ninguém precisa participar de uma prática religiosa para aprender sobre seu contexto cultural.",
+      "visualKey": "diversidade",
+      "status": "draft-editorial",
+      "assetId": "diversidade-candomble",
+      "tags": [
+        "diversidade"
+      ],
+      "type": "educational",
+      "introductory": false,
+      "order": 11,
+      "source": [
+        "ibge-religioes",
+        "iphan-ceara"
+      ],
+      "postType": "educational",
+      "editorialStatus": "review-pending",
+      "quizEligible": false,
+      "required": false
     }
   ],
   "questions": [
